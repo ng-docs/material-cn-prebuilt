@@ -1,5 +1,6 @@
 <html><head></head><body><span class="hljs-keyword">import</span> {NgModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
 <span class="hljs-keyword">import</span> {ReactiveFormsModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
+<span class="hljs-keyword">import</span> {CommonModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/common'</span>;
 <span class="hljs-keyword">import</span> {MatButtonModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/button'</span>;
 <span class="hljs-keyword">import</span> {MatIconModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/icon'</span>;
 <span class="hljs-keyword">import</span> {MatInputModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/input'</span>;
@@ -14,6 +15,8 @@
 <span class="hljs-keyword">import</span> {StepperStatesExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./stepper-states/stepper-states-example'</span>;
 <span class="hljs-keyword">import</span> {StepperVerticalExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./stepper-vertical/stepper-vertical-example'</span>;
 <span class="hljs-keyword">import</span> {StepperHarnessExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./stepper-harness/stepper-harness-example'</span>;
+<span class="hljs-keyword">import</span> {StepperLazyContentExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./stepper-lazy-content/stepper-lazy-content-example'</span>;
+<span class="hljs-keyword">import</span> {StepperResponsiveExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./stepper-responsive/stepper-responsive-example'</span>;
 
 <span class="hljs-keyword">export</span> {
   StepperEditableExample,
@@ -24,6 +27,8 @@
   StepperOverviewExample,
   StepperStatesExample,
   StepperVerticalExample,
+  StepperLazyContentExample,
+  StepperResponsiveExample,
 };
 
 <span class="hljs-keyword">const</span> EXAMPLES = [
@@ -35,6 +40,8 @@
   StepperOverviewExample,
   StepperStatesExample,
   StepperVerticalExample,
+  StepperLazyContentExample,
+  StepperResponsiveExample,
 ];
 
 <span class="hljs-meta">@NgModule</span>({
@@ -44,6 +51,7 @@
     MatInputModule,
     MatStepperModule,
     ReactiveFormsModule,
+    CommonModule,
   ],
   <span class="hljs-attr">declarations</span>: EXAMPLES,
   <span class="hljs-attr">exports</span>: EXAMPLES,

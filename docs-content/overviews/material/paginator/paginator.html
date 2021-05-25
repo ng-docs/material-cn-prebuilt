@@ -77,6 +77,9 @@ This will allow you to change the following:</p>
         </h3>
       
         
-      <p translation-result="on">可以在 <code>MatPaginatorIntl</code> 中设置 "上一页"、"下一页"、"首页" 和 "尾页" 按钮的 <code>aria-label</code>。</p><p translation-origin="off">The <code>aria-label</code>s for next page, previous page, first page and last page buttons can be set in <code>MatPaginatorIntl</code>.</p>
-
+      <p>The paginator uses <code>role="group"</code> to semantically group its child controls. You must add an
+<code>aria-label</code> or <code>aria-labelledby</code> attribute to <code>&lt;mat-paginator&gt;</code> with a label that describes
+the content controlled by the pagination control.</p>
+<p>You can set the <code>aria-label</code> attributes for the button and select controls within the paginator in 
+<code>MatPaginatorIntl</code>.</p>
 </div></body></html>

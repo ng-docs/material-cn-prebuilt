@@ -39,6 +39,8 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取纸片列表中的纸片列表。</p><p translation-origin="off">Gets the list of chips inside the chip list.</p>
 
+<p translation-result="on">（可选项）用于过滤纸片。</p><p translation-origin="off">@param filter Optionally filters which chips are included.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -56,9 +58,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">（可选项）用于过滤纸片。</p><p translation-origin="off">Optionally filters which chips are included.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -95,6 +95,8 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取纸片列表中的 <code>MatChipInput</code></p><p translation-origin="off">Gets the <code>MatChipInput</code> inside the chip list.</p>
 
+<p translation-result="on">一个可选的过滤器，用于过滤纸片。。</p><p translation-origin="off">@param filter Optionally filters which chip input is included.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -112,9 +114,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一个可选的过滤器，用于过滤纸片。。</p><p translation-origin="off">Optionally filters which chip input is included.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -145,7 +145,13 @@
       <th colspan="2" class="docs-api-method-name-cell">getOrientation
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表的方向。</p><p translation-origin="off">Gets whether the orientation of the chip list.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -207,7 +213,13 @@
       <th colspan="2" class="docs-api-method-name-cell">isDisabled
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表是否被禁用。</p><p translation-origin="off">Gets whether the chip list is disabled.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -234,7 +246,13 @@
       <th colspan="2" class="docs-api-method-name-cell">isInvalid
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表是否无效。</p><p translation-origin="off">Gets whether the chip list is invalid.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -261,7 +279,13 @@
       <th colspan="2" class="docs-api-method-name-cell">isMultiple
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表是否处于多选模式。</p><p translation-origin="off">Gets whether the chip list is in multi selection mode.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -288,7 +312,13 @@
       <th colspan="2" class="docs-api-method-name-cell">isRequired
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表是否必填的。</p><p translation-origin="off">Gets whether the chip list is required.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -312,7 +342,7 @@
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 或更高版本中删除">
             已弃用
           </div><div class="docs-api-async-method-marker">
           异步
@@ -323,6 +353,11 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">选定纸片列表中的纸片。</p><p translation-origin="off">Selects a chip inside the chip list.</p>
 
+<p translation-result="on">一个可选的过滤器，适用于子纸片。所有与过滤器匹配的纸片都会被选定。</p><p translation-origin="off">@param filter An optional filter to apply to the child chips.
+   All the chips matching the filter will be selected.</p>
+
+<p>@deprecated Use <code>MatChipListboxHarness.selectChips</code> instead.
+@breaking-change 12.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -340,10 +375,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一个可选的过滤器，适用于子纸片。所有与过滤器匹配的纸片都会被选定。</p><p translation-origin="off">An optional filter to apply to the child chips.
-   All the chips matching the filter will be selected.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -405,6 +437,8 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取一个纸片里面的移除按钮。</p><p translation-origin="off">Gets the remove button inside of a chip.</p>
 
+<p translation-result="on">可选择过滤哪些纸片。</p><p translation-origin="off">@param filter Optionally filters which chips are included.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -422,9 +456,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">可选择过滤哪些纸片。</p><p translation-origin="off">Optionally filters which chips are included.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -593,7 +625,7 @@
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 或更高版本中删除">
             已弃用
           </div><div class="docs-api-async-method-marker">
           异步
@@ -604,6 +636,8 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">取消选定指定的纸片。仅当它可选时才适用。</p><p translation-origin="off">Deselects the given chip. Only applies if it's selectable.</p>
 
+<p>@deprecated Use <code>MatChipOptionHarness.deselect</code> instead.
+@breaking-change 12.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -631,7 +665,7 @@
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 或更高版本中删除">
             已弃用
           </div><div class="docs-api-async-method-marker">
           异步
@@ -642,6 +676,8 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">纸片是否被选定。</p><p translation-origin="off">Whether the chip is selected.</p>
 
+<p>@deprecated Use <code>MatChipOptionHarness.isSelected</code> instead.
+@breaking-change 12.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -668,7 +704,7 @@
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 或更高版本中删除">
             已弃用
           </div><div class="docs-api-async-method-marker">
           异步
@@ -679,6 +715,8 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">选定指定的纸片。仅当它可选时才适用。</p><p translation-origin="off">Selects the given chip. Only applies if it's selectable.</p>
 
+<p>@deprecated Use <code>MatChipOptionHarness.select</code> instead.
+@breaking-change 12.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -706,7 +744,7 @@
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 或更高版本中删除">
             已弃用
           </div><div class="docs-api-async-method-marker">
           异步
@@ -717,6 +755,8 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">切换指定纸片的选定状态。仅当它可选时才适用。</p><p translation-origin="off">Toggles the selected state of the given chip. Only applies if it's selectable.</p>
 
+<p>@deprecated Use <code>MatChipOptionHarness.toggle</code> instead.
+@breaking-change 12.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -1325,6 +1365,8 @@ keypresses that correspond to the given value.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取一个纸片里面的移除按钮。</p><p translation-origin="off">Gets the remove button inside of a chip.</p>
 
+<p translation-result="on">可选择过滤哪些纸片。</p><p translation-origin="off">@param filter Optionally filters which chips are included.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1342,9 +1384,7 @@ keypresses that correspond to the given value.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">可选择过滤哪些纸片。</p><p translation-origin="off">Optionally filters which chips are included.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1646,6 +1686,8 @@ keypresses that correspond to the given value.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取纸片列表中的各个纸片。</p><p translation-origin="off">Gets the list of chips inside the chip list.</p>
 
+<p translation-result="on">可选择过滤哪些纸片。</p><p translation-origin="off">@param filter Optionally filters which chips are included.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1663,9 +1705,7 @@ keypresses that correspond to the given value.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">可选择过滤哪些纸片。</p><p translation-origin="off">Optionally filters which chips are included.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1696,7 +1736,13 @@ keypresses that correspond to the given value.</p>
       <th colspan="2" class="docs-api-method-name-cell">getOrientation
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表的方向。</p><p translation-origin="off">Gets whether the orientation of the chip list.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1758,7 +1804,13 @@ keypresses that correspond to the given value.</p>
       <th colspan="2" class="docs-api-method-name-cell">isDisabled
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表是否被禁用。</p><p translation-origin="off">Gets whether the chip list is disabled.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1785,7 +1837,13 @@ keypresses that correspond to the given value.</p>
       <th colspan="2" class="docs-api-method-name-cell">isInvalid
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表是否无效。</p><p translation-origin="off">Gets whether the chip list is invalid.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1812,7 +1870,13 @@ keypresses that correspond to the given value.</p>
       <th colspan="2" class="docs-api-method-name-cell">isMultiple
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表是否处于多选模式。</p><p translation-origin="off">Gets whether the chip list is in multi selection mode.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1839,7 +1903,13 @@ keypresses that correspond to the given value.</p>
       <th colspan="2" class="docs-api-method-name-cell">isRequired
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取纸片列表是否必填的。</p><p translation-origin="off">Gets whether the chip list is required.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1872,6 +1942,9 @@ keypresses that correspond to the given value.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">选择纸片列表中的纸片。</p><p translation-origin="off">Selects a chip inside the chip list.</p>
 
+<p translation-result="on">一个可选的过滤器，适用于子纸片。所有与过滤器匹配的纸片都会被选定。</p><p translation-origin="off">@param filter An optional filter to apply to the child chips.
+   All the chips matching the filter will be selected.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1889,10 +1962,7 @@ keypresses that correspond to the given value.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一个可选的过滤器，适用于子纸片。所有与过滤器匹配的纸片都会被选定。</p><p translation-origin="off">An optional filter to apply to the child chips.
-   All the chips matching the filter will be selected.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1955,7 +2025,7 @@ keypresses that correspond to the given value.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 中删除">
+  <td class="docs-api-properties-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 或更高版本中删除">
         已弃用
       </div><p class="docs-api-property-name">
       <code>selected: boolean</code>
@@ -1963,6 +2033,8 @@ keypresses that correspond to the given value.</p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">只查找选定状态与指定值匹配的纸片实例。</p><p translation-origin="off">Only find chip instances whose selected state matches the given value.</p>
 
+<p>@deprecated Use <code>MatChipOptionHarness</code> together with <code>ChipOptionHarnessFilters</code>.
+@breaking-change 12.0.0</p>
 </td>
 </tr>
 

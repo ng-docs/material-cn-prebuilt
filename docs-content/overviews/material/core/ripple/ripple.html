@@ -5,7 +5,8 @@ confirm that touch input was received. For touch or mouse, this occurs at the po
 
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">matRipple</span> [<span class="hljs-attr">matRippleColor</span>]=<span class="hljs-string">"myColor"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ng-content</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ng-content</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
 <p translation-result="on">默认情况下，当 <code>matRipple</code> 指令的宿主元素收到鼠标或触摸事件时，就会激活一个涟漪。当按下时，一个涟漪就会从接触点出现并逐渐消失，其辐射范围会覆盖宿主元件。当释放鼠标或结束触摸时，其涟漪就会淡出。</p><p translation-origin="off">By default, a ripple is activated when the host element of the <code>matRipple</code> directive receives
 mouse or touch events. Upon being pressed, a ripple will begin fading in from the point of contact,
 radiating to cover the host element. Each ripple will fade out only upon release of the mouse or touch.</p>
@@ -34,7 +35,8 @@ the <code>matRippleTrigger</code> option that expects a reference to an <code>HT
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> #<span class="hljs-attr">trigger</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
 
         <h3 id="manual-ripples" class="docs-header-link" translation-result="on">
           <span header-link="手动涟漪"></span>
@@ -62,7 +64,8 @@ the <code>matRippleTrigger</code> option that expects a reference to an <code>HT
     <span class="hljs-comment">// Fade out the ripple later.</span>
     rippleRef.fadeOut();
   }
-}</code></pre>
+}
+</code></pre>
 <p translation-result="on">在上面的例子中，并没有传递特定的坐标，因为涟漪的 <code>centered</code> 选项已设置为 <code>true</code>，这时坐标就无关紧要了。</p><p translation-origin="off">In the example above, no specific coordinates have been passed, because the <code>centered</code>
 ripple option has been set to <code>true</code> and the coordinates would not matter.</p>
 
@@ -74,7 +77,8 @@ the <code>RippleRef</code> (<em>useful for focus indicators</em>).</p>
 <code>launch()</code> method also accepts <code>x</code> and <code>y</code> coordinates as parameters. Those coordinates
 are relative to the ripple container element.</p>
 
-<pre><code class="language-ts"><span class="hljs-keyword">const</span> rippleRef = <span class="hljs-built_in">this</span>.ripple.launch(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, {<span class="hljs-attr">persistent</span>: <span class="hljs-literal">true</span>});</code></pre>
+<pre><code class="language-ts"><span class="hljs-keyword">const</span> rippleRef = <span class="hljs-built_in">this</span>.ripple.launch(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, {<span class="hljs-attr">persistent</span>: <span class="hljs-literal">true</span>});
+</code></pre>
 
         <h3 id="global-options" class="docs-header-link" translation-result="on">
           <span header-link="全局选项"></span>
@@ -103,7 +107,8 @@ are relative to the ripple container element.</p>
   <span class="hljs-attr">providers</span>: [
     {<span class="hljs-attr">provide</span>: MAT_RIPPLE_GLOBAL_OPTIONS, <span class="hljs-attr">useValue</span>: globalRippleConfig}
   ]
-})</code></pre>
+})
+</code></pre>
 <p translation-result="on">所有可用的全局选项都能在 <code>RippleGlobalOptions</code> 接口中找到。</p><p translation-origin="off">All available global options can be seen in the <code>RippleGlobalOptions</code> interface.</p>
 
 
@@ -130,7 +135,8 @@ those ripples for performance reasons, the duration can be set to <code>0</code>
     <span class="hljs-attr">enterDuration</span>: <span class="hljs-number">0</span>,
     <span class="hljs-attr">exitDuration</span>: <span class="hljs-number">0</span>
   }
-};</code></pre>
+};
+</code></pre>
 <p translation-result="on"><strong>注意</strong>：如果正在使用 <code>NoopAnimationsModule</code> 涟漪也不会有动画。这意味着不必考虑 <code>animation</code> 配置中的持续时间。</p><p translation-origin="off"><strong>Note</strong>: Ripples will also have no animation if the <code>NoopAnimationsModule</code> is being used. This
 also means that the durations in the <code>animation</code> configuration won't be taken into account.</p>
 
@@ -157,7 +163,8 @@ the same for Angular Material. This behavior can be activated by specifying the
 
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> globalRippleConfig: RippleGlobalOptions = {
   <span class="hljs-attr">terminateOnPointerUp</span>: <span class="hljs-literal">true</span>
-};</code></pre>
+};
+</code></pre>
 
         <h3 id="updating-global-options-at-runtime" class="docs-header-link" translation-result="on">
           <span header-link="在运行时更新全局选项"></span>
@@ -179,13 +186,15 @@ the <code>RippleGlobalOptions</code> interface.</p>
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppGlobalRippleOptions</span> <span class="hljs-title">implements</span> <span class="hljs-title">RippleGlobalOptions</span> </span>{
   <span class="hljs-comment">/** Whether ripples should be disabled globally. */</span>
   <span class="hljs-attr">disabled</span>: <span class="hljs-built_in">boolean</span> = <span class="hljs-literal">false</span>;
-}</code></pre>
+}
+</code></pre>
 <pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
   <span class="hljs-attr">providers</span>: [
     {<span class="hljs-attr">provide</span>: MAT_RIPPLE_GLOBAL_OPTIONS, <span class="hljs-attr">useExisting</span>: AppGlobalRippleOptions},
   ]
 })
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyModule</span> </span>{...}</code></pre>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyModule</span> </span>{...}
+</code></pre>
 <p translation-result="on">既然全局的 ripple 选项被设置为了我们可以注入的服务，那么该服务可以在运行时更新任何全局的 ripple 选项。</p><p translation-origin="off">Now that the global ripple options are set to a service we can inject, the service can be
 used update any global ripple option at runtime.</p>
 
@@ -196,5 +205,6 @@ used update any global ripple option at runtime.</p>
   <span class="hljs-function"><span class="hljs-title">disableRipples</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-built_in">this</span>._appRippleOptions.disabled = <span class="hljs-literal">true</span>;
   }
-}</code></pre>
+}
+</code></pre>
 </div></body></html>

@@ -34,7 +34,7 @@
       <code>handsetCssClass: 'mat-snack-bar-handset'</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on">适用于手机模式的 CSS 类。</p><p translation-origin="off">The CSS class to applie for handset mode.</p>
+  <td class="docs-api-property-description"><p translation-result="on">适用于手机模式的 CSS 类。</p><p translation-origin="off">The CSS class to apply for handset mode.</p>
 
 </td>
 </tr>
@@ -104,6 +104,12 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">带有信息和可选操作的快餐栏。</p><p translation-origin="off">Opens a snackbar with a message and an optional action.</p>
 
+<p translation-result="on">要显示在快餐栏里的消息。</p><p translation-origin="off">@param message The message to show in the snackbar.</p>
+
+<p translation-result="on">快餐栏的动作标签。</p><p translation-origin="off">@param action The label for the snackbar action.</p>
+
+<p translation-result="on">快餐栏的其它配置选项。</p><p translation-origin="off">@param config Additional configuration options for the snackbar.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -121,9 +127,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要显示在快餐栏里的消息。</p><p translation-origin="off">The message to show in the snackbar.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -136,9 +140,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">快餐栏的动作标签。</p><p translation-origin="off">The label for the snackbar action.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -151,9 +153,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">快餐栏的其它配置选项。</p><p translation-origin="off">Additional configuration options for the snackbar.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -189,6 +189,10 @@
       <p translation-result="on">为内容创建并派发带有自定义组件的快餐栏，删除任何目前打开着的快餐栏。</p><p translation-origin="off">Creates and dispatches a snack bar with a custom component for the content, removing any
 currently opened snack bars.</p>
 
+<p translation-result="on">要实例化的组件。</p><p translation-origin="off">@param component Component to be instantiated.</p>
+
+<p translation-result="on">快餐栏的额外配置。</p><p translation-origin="off">@param config Extra configuration for the snack bar.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -206,9 +210,7 @@ currently opened snack bars.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要实例化的组件。</p><p translation-origin="off">Component to be instantiated.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -221,9 +223,7 @@ currently opened snack bars.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">快餐栏的额外配置。</p><p translation-origin="off">Extra configuration for the snack bar.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -259,6 +259,10 @@ currently opened snack bars.</p>
       <p translation-result="on">使用该内容的自定义模板创建并派发一个快餐栏，删除任何目前打开着的快餐栏。</p><p translation-origin="off">Creates and dispatches a snack bar with a custom template for the content, removing any
 currently opened snack bars.</p>
 
+<p translation-result="on">要实例化的模板</p><p translation-origin="off">@param template Template to be instantiated.</p>
+
+<p translation-result="on">快餐栏的额外配置。</p><p translation-origin="off">@param config Extra configuration for the snack bar.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -276,9 +280,7 @@ currently opened snack bars.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要实例化的模板</p><p translation-origin="off">Template to be instantiated.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -291,9 +293,7 @@ currently opened snack bars.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">快餐栏的额外配置。</p><p translation-origin="off">Extra configuration for the snack bar.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -744,7 +744,7 @@ injection. Note: this does not affect where the snackbar is inserted in the DOM.
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
             已弃用
           </div>closeWithAction
       </th>
@@ -753,6 +753,8 @@ injection. Note: this does not affect where the snackbar is inserted in the DOM.
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">标记某个快餐栏动作被点击过。</p><p translation-origin="off">Marks the snackbar action clicked.</p>
 
+<p>@deprecated Use <code>dismissWithAction</code> instead.
+@breaking-change 8.0.0</p>
 
     </td>
   </tr></tbody></table>

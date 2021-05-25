@@ -18,15 +18,7 @@
   <span header-link="MatTableHarness"></span>
   <code>MatTableHarness</code>
   
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/testing/api#ContentContainerComponentHarness" class="docs-api-class-extends-type">
-      ContentContainerComponentHarness
-    </a>
-  </span>
-  
-</h4><div class="docs-api-class-description"><p translation-result="on">在测试中用来与标准 mat-table 进行交互的测试工具。</p><p translation-origin="off">Harness for interacting with a standard mat-table in tests.</p>
-
+</h4><div class="docs-api-class-description"><p>Harness for interacting with a standard mat-table in tests.</p>
 </div>
 
 
@@ -286,7 +278,7 @@
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;MatFooterRowHarness[]&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;FooterRow[]&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -387,7 +379,7 @@
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;MatHeaderRowHarness[]&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;HeaderRow[]&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -440,7 +432,7 @@
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;MatRowHarness[]&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;Row[]&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -495,13 +487,6 @@
 <h4 id="MatRowHarness" class="docs-header-link docs-api-h4 docs-api-class-name">
   <span header-link="MatRowHarness"></span>
   <code>MatRowHarness</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/testing/api#ComponentHarness" class="docs-api-class-extends-type">
-      ComponentHarness
-    </a>
-  </span>
   
 </h4><div class="docs-api-class-description"><p>Harness for interacting with a standard Angular Material table row.</p>
 </div>
@@ -638,7 +623,7 @@
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;MatCellHarness[]&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;Cell[]&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -694,13 +679,6 @@
   <span header-link="MatHeaderRowHarness"></span>
   <code>MatHeaderRowHarness</code>
   
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/testing/api#ComponentHarness" class="docs-api-class-extends-type">
-      ComponentHarness
-    </a>
-  </span>
-  
 </h4><div class="docs-api-class-description"><p>Harness for interacting with a standard Angular Material table header row.</p>
 </div>
 
@@ -719,7 +697,7 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the text inside the header row organized by columns.</p>
+      <p>Gets the text inside the row organized by columns.</p>
 
     </td>
   </tr></tbody><thead>
@@ -753,7 +731,7 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the text of the cells in the header row.</p>
+      <p>Gets the text of the cells in the row.</p>
 
     </td>
   </tr></tbody><thead>
@@ -806,7 +784,7 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets a list of <code>MatHeaderCellHarness</code> for all cells in the row.</p>
+      <p>Gets a list of <code>MatCellHarness</code> for all cells in the row.</p>
 
     </td>
   </tr></tbody><thead>
@@ -836,7 +814,7 @@
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;MatHeaderCellHarness[]&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;Cell[]&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -892,13 +870,6 @@
   <span header-link="MatFooterRowHarness"></span>
   <code>MatFooterRowHarness</code>
   
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/testing/api#ComponentHarness" class="docs-api-class-extends-type">
-      ComponentHarness
-    </a>
-  </span>
-  
 </h4><div class="docs-api-class-description"><p>Harness for interacting with a standard Angular Material table footer row.</p>
 </div>
 
@@ -917,7 +888,7 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the text inside the footer row organized by columns.</p>
+      <p>Gets the text inside the row organized by columns.</p>
 
     </td>
   </tr></tbody><thead>
@@ -951,7 +922,7 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the text of the cells in the footer row.</p>
+      <p>Gets the text of the cells in the row.</p>
 
     </td>
   </tr></tbody><thead>
@@ -1004,7 +975,7 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets a list of <code>MatFooterCellHarness</code> for all cells in the row.</p>
+      <p>Gets a list of <code>MatCellHarness</code> for all cells in the row.</p>
 
     </td>
   </tr></tbody><thead>
@@ -1034,7 +1005,7 @@
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;MatFooterCellHarness[]&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;Cell[]&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">

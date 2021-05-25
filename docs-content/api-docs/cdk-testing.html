@@ -151,6 +151,41 @@ cases where it is needed to fully flush animation events.</p>
       <p translation-result="on">创建可用于查找一个异步定位器函数，它可用于查找此 <code>ComponentHarness</code> 宿主元素下的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">Creates an asynchronous locator function that can be used to find a <code>ComponentHarness</code> instance
 or element under the host element of this <code>ComponentHarness</code>.</p>
 
+<p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">@param queries A list of queries specifying which harnesses and elements to search for:</p>
+
+<ul>
+<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
+
+</li>
+<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
+given class.</p>
+
+</li>
+<li><p translation-result="on"><code>HarnessPredicate</code> 会搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
+predicate.</p>
+
+</li>
+</ul>
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 会拒绝。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+  first element or harness matching the given search criteria. Matches are ordered first by
+  order in the DOM, and second by order in the queries list. If no matches are found, the
+  <code>Promise</code> rejects. The type that the <code>Promise</code> resolves to is a union of all result types for
+  each query.</p>
+
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<code>DivHarness.hostSelector === 'div'</code>:</p>
+
+<ul>
+<li><p translation-result="on"><code>await ch.locatorFor(DivHarness, 'div')()</code> 会得到 <code>#d1</code> 的 <code>DivHarness</code> 实例</p><p translation-origin="off"><code>await ch.locatorFor(DivHarness, 'div')()</code> gets a <code>DivHarness</code> instance for <code>#d1</code></p>
+
+</li>
+<li><p translation-result="on"><code>await ch.locatorFor('div', DivHarness)()</code> 会得到 <code>#d1</code> 的 <code>TestElement</code> 实例</p><p translation-origin="off"><code>await ch.locatorFor('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
+
+</li>
+<li><p translation-result="on"><code>await ch.locatorFor('span')()</code> 会抛出错误，因为 <code>Promise</code> 拒绝了。</p><p translation-origin="off"><code>await ch.locatorFor('span')()</code> throws because the <code>Promise</code> rejects.</p>
+
+</li>
+</ul>
 
     </td>
   </tr></tbody><thead>
@@ -168,22 +203,7 @@ or element under the host element of this <code>ComponentHarness</code>.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">A list of queries specifying which harnesses and elements to search for:</p>
-
-<ul>
-<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
-
-</li>
-<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
-given class.</p>
-
-</li>
-<li><p translation-result="on"><code>HarnessPredicate</code> 会搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
-predicate.</p>
-
-</li>
-</ul>
-
+        
       </div>
     </td>
   </tr>
@@ -252,6 +272,70 @@ predicate.</p>
       <p translation-result="on">创建异步定位器函数，可用于查找此 <code>ComponentHarness</code> 的宿主元素下的 <code>ComponentHarness</code> 实例或元素。</p><p translation-origin="off">Creates an asynchronous locator function that can be used to find <code>ComponentHarness</code> instances
 or elements under the host element of this <code>ComponentHarness</code>.</p>
 
+<p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">@param queries A list of queries specifying which harnesses and elements to search for:</p>
+
+<ul>
+<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
+
+</li>
+<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
+given class.</p>
+
+</li>
+<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
+predicate.</p>
+
+</li>
+</ul>
+<p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。 <code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for all
+  elements and harnesses matching the given search criteria. Matches are ordered first by
+  order in the DOM, and second by order in the queries list. If an element matches more than
+  one <code>ComponentHarness</code> class, the locator gets an instance of each for the same element. If
+  an element matches multiple <code>string</code> selectors, only one <code>TestElement</code> instance is returned
+  for that element. The type that the <code>Promise</code> resolves to is an array where each element is
+  the union of all result types for each query.</p>
+
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
+
+<ul>
+<li><p translation-result="on"><code>await ch.locatorForAll(DivHarness, 'div')()</code> 会得到 <code>[
+  DivHarness, // 对于 #d1
+  TestElement, // 对于 #d1
+  DivHarness, // 对于 #d2
+  TestElement // 对于 #d2
+]</code></p><p translation-origin="off"><code>await ch.locatorForAll(DivHarness, 'div')()</code> gets <code>[
+  DivHarness, // for #d1
+  TestElement, // for #d1
+  DivHarness, // for #d2
+  TestElement // for #d2
+]</code></p>
+
+</li>
+<li><p translation-result="on"><code>await ch.locatorForAll('div', '#d1')()</code> 会得到 <code>[
+  TestElement, // 对于 #d1
+  TestElement // 对于 #d2
+]</code></p><p translation-origin="off"><code>await ch.locatorForAll('div', '#d1')()</code> gets <code>[
+  TestElement, // for #d1
+  TestElement // for #d2
+]</code></p>
+
+</li>
+<li><p translation-result="on"><code>await ch.locatorForAll(DivHarness, IdIsD1Harness)()</code> 会得到  <code>[
+  DivHarness, // 对于 #d1
+  IdIsD1Harness, // 对于 #d1
+  DivHarness // 对于 #d2
+]</code></p><p translation-origin="off"><code>await ch.locatorForAll(DivHarness, IdIsD1Harness)()</code> gets <code>[
+  DivHarness, // for #d1
+  IdIsD1Harness, // for #d1
+  DivHarness // for #d2
+]</code></p>
+
+</li>
+<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+
+</li>
+</ul>
 
     </td>
   </tr></tbody><thead>
@@ -269,22 +353,7 @@ or elements under the host element of this <code>ComponentHarness</code>.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">A list of queries specifying which harnesses and elements to search for:</p>
-
-<ul>
-<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
-
-</li>
-<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
-given class.</p>
-
-</li>
-<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
-predicate.</p>
-
-</li>
-</ul>
-
+        
       </div>
     </td>
   </tr>
@@ -382,6 +451,41 @@ predicate.</p>
       <p translation-result="on">创建一个异步定位器函数，可用于查找此 <code>ComponentHarness</code> 宿主元素下的 <code>ComponentHarness</code> 实例或元素。</p><p translation-origin="off">Creates an asynchronous locator function that can be used to find a <code>ComponentHarness</code> instance
 or element under the host element of this <code>ComponentHarness</code>.</p>
 
+<p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">@param queries A list of queries specifying which harnesses and elements to search for:</p>
+
+<ul>
+<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
+
+</li>
+<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
+given class.</p>
+
+</li>
+<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
+predicate.</p>
+
+</li>
+</ul>
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+  first element or harness matching the given search criteria. Matches are ordered first by
+  order in the DOM, and second by order in the queries list. If no matches are found, the
+  <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
+  result types for each query or null.</p>
+
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<code>DivHarness.hostSelector === 'div'</code>:</p>
+
+<ul>
+<li><p translation-result="on"><code>await ch.locatorForOptional(DivHarness, 'div')()</code> 获取 <code>#d1</code> <code>DivHarness</code> 实例</p><p translation-origin="off"><code>await ch.locatorForOptional(DivHarness, 'div')()</code> gets a <code>DivHarness</code> instance for <code>#d1</code></p>
+
+</li>
+<li><p translation-result="on"><code>await ch.locatorForOptional('div', DivHarness)()</code> 获取 <code>#d1</code> <code>TestElement</code> 实例</p><p translation-origin="off"><code>await ch.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
+
+</li>
+<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code> 。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+
+</li>
+</ul>
 
     </td>
   </tr></tbody><thead>
@@ -399,22 +503,7 @@ or element under the host element of this <code>ComponentHarness</code>.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">A list of queries specifying which harnesses and elements to search for:</p>
-
-<ul>
-<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
-
-</li>
-<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
-given class.</p>
-
-</li>
-<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
-predicate.</p>
-
-</li>
-</ul>
-
+        
       </div>
     </td>
   </tr>
@@ -828,6 +917,12 @@ filter instances of the class.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">添加谓词函数来筛选候选工具。</p><p translation-origin="off">Adds a predicate function to be run against candidate harnesses.</p>
 
+<p translation-result="on">该谓词的描述，可以用在错误信息中。</p><p translation-origin="off">@param description A description of this predicate that may be used in error messages.</p>
+
+<p translation-result="on">一个异步谓词函数。</p><p translation-origin="off">@param predicate An async predicate function.</p>
+
+<p translation-result="on">this（用于支持方法的链式调用）。</p><p translation-origin="off">@return this (for method chaining).</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -845,9 +940,7 @@ filter instances of the class.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">该谓词的描述，可以用在错误信息中。</p><p translation-origin="off">A description of this predicate that may be used in error messages.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -860,9 +953,7 @@ filter instances of the class.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一个异步谓词函数。</p><p translation-origin="off">An async predicate function.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -883,6 +974,14 @@ filter instances of the class.</p>
       <p translation-result="on">添加一个谓词函数，该函数取决于要对候选工具使用的选项值。如果该选项值未定义，那么该谓词就会被忽略。</p><p translation-origin="off">Adds a predicate function that depends on an option value to be run against candidate
 harnesses. If the option value is undefined, the predicate will be ignored.</p>
 
+<p translation-result="on">该选项的名字（可以在错误信息中使用）。</p><p translation-origin="off">@param name The name of the option (may be used in error messages).</p>
+
+<p translation-result="on">选项的值。</p><p translation-origin="off">@param option The option value.</p>
+
+<p translation-result="on">如果选项值未定义，则要运行的谓词函数。</p><p translation-origin="off">@param predicate The predicate function to run if the option value is not undefined.</p>
+
+<p translation-result="on">this（用于支持方法的链式调用）。</p><p translation-origin="off">@return this (for method chaining).</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -900,9 +999,7 @@ harnesses. If the option value is undefined, the predicate will be ignored.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">该选项的名字（可以在错误信息中使用）。</p><p translation-origin="off">The name of the option (may be used in error messages).</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -915,9 +1012,7 @@ harnesses. If the option value is undefined, the predicate will be ignored.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">选项的值。</p><p translation-origin="off">The option value.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -930,9 +1025,7 @@ harnesses. If the option value is undefined, the predicate will be ignored.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">如果选项值未定义，则要运行的谓词函数。</p><p translation-origin="off">The predicate function to run if the option value is not undefined.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -954,6 +1047,11 @@ harnesses. If the option value is undefined, the predicate will be ignored.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">评估指定的测试工具是否满足这个谓词。</p><p translation-origin="off">Evaluates whether the given harness satisfies this predicate.</p>
 
+<p translation-result="on">要检查的测试工具</p><p translation-origin="off">@param harness The harness to check</p>
+
+<p translation-result="on">如果测试工具满足这个谓词就会返回一个解析成 true 的 Promise，否则返回解析成 false 的。</p><p translation-origin="off">@return A promise that resolves to true if the harness satisfies this predicate,
+  and resolves to false otherwise.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -971,9 +1069,7 @@ harnesses. If the option value is undefined, the predicate will be ignored.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要检查的测试工具</p><p translation-origin="off">The harness to check</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1013,6 +1109,10 @@ harnesses. If the option value is undefined, the predicate will be ignored.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">使用此谓词过滤测试工具列表。</p><p translation-origin="off">Filters a list of harnesses on this predicate.</p>
 
+<p translation-result="on">要过滤的测试工具列表。</p><p translation-origin="off">@param harnesses The list of harnesses to filter.</p>
+
+<p translation-result="on">一些满足此谓词的测试工具列表。</p><p translation-origin="off">@return A list of harnesses that satisfy this predicate.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1030,9 +1130,7 @@ harnesses. If the option value is undefined, the predicate will be ignored.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要过滤的测试工具列表。</p><p translation-origin="off">The list of harnesses to filter.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2027,6 +2125,10 @@ instantiate <code>ComponentHarness</code>es.</p>
 and returns an array of <code>HarnessLoader</code>s, one for each matching element, rooted at that
 element.</p>
 
+<p translation-result="on">新 <code>HarnessLoader</code> 的根元素的选择器</p><p translation-origin="off">@param selector The selector for the root element of the new <code>HarnessLoader</code></p>
+
+<p translation-result="on"><code>HarnessLoader</code> 列表，它是每个匹配元素的列表，并以相应的元素为根。</p><p translation-origin="off">@return A list of <code>HarnessLoader</code>s, one for each matching element, rooted at that element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2044,9 +2146,7 @@ element.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">新 <code>HarnessLoader</code> 的根元素的选择器</p><p translation-origin="off">The selector for the root element of the new <code>HarnessLoader</code></p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2086,6 +2186,10 @@ element.</p>
       <p translation-result="on">在 <code>HarnessLoader</code> 的根元素下搜索与指定的测试工具类型对应的所有组件实例，并为每个实例返回 <code>ComponentHarness</code>。</p><p translation-origin="off">Searches for all instances of the component corresponding to the given harness type under the
 <code>HarnessLoader</code>'s root element, and returns a list <code>ComponentHarness</code> for each instance.</p>
 
+<p translation-result="on">要创建的测试工具的查询</p><p translation-origin="off">@param query A query for a harness to create</p>
+
+<p translation-result="on">指定测试工具类型的列表实例。</p><p translation-origin="off">@return A list instances of the given harness type.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2103,9 +2207,7 @@ element.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要创建的测试工具的查询</p><p translation-origin="off">A query for a harness to create</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2146,6 +2248,12 @@ element.</p>
 and returns a <code>HarnessLoader</code> rooted at the matching element. If multiple elements match the
 selector, the first is used. If no elements match, an error is thrown.</p>
 
+<p translation-result="on"><code>HarnessLoader</code> 根元素的选择器</p><p translation-origin="off">@param selector The selector for the root element of the new <code>HarnessLoader</code></p>
+
+<p translation-result="on">一个根据指定选择器匹配的元素为根的 <code>HarnessLoader</code></p><p translation-origin="off">@return A <code>HarnessLoader</code> rooted at the element matching the given selector.</p>
+
+<p translation-result="on">是否未找到匹配的元素。</p><p translation-origin="off">@throws If a matching element can't be found.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2163,9 +2271,7 @@ selector, the first is used. If no elements match, an error is thrown.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on"><code>HarnessLoader</code> 根元素的选择器</p><p translation-origin="off">The selector for the root element of the new <code>HarnessLoader</code></p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2207,6 +2313,12 @@ selector, the first is used. If no elements match, an error is thrown.</p>
 matching components are found, a harness for the first one is returned. If no matching
 component is found, an error is thrown.</p>
 
+<p translation-result="on">要创建的测试工具的查询</p><p translation-origin="off">@param query A query for a harness to create</p>
+
+<p translation-result="on">指定测试工具类型的一个实例</p><p translation-origin="off">@return An instance of the given harness type</p>
+
+<p translation-result="on">如果匹配的组件实例无法找到。</p><p translation-origin="off">@throws If a matching component instance can't be found.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2224,9 +2336,7 @@ component is found, an error is thrown.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要创建的测试工具的查询</p><p translation-origin="off">A query for a harness to create</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2375,6 +2485,12 @@ cases where it is needed to fully flush animation events.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">从 <code>LocatorFactory</code> 的根下为某个元素获取一个 <code>HarnessLoader</code> 实例。</p><p translation-origin="off">Gets a <code>HarnessLoader</code> instance for an element under the root of this <code>LocatorFactory</code>.</p>
 
+<p translation-result="on">根元素的选择器。</p><p translation-origin="off">@param selector The selector for the root element.</p>
+
+<p translation-result="on">一个以指定选择器匹配的第一个元素为根的 <code>HarnessLoader</code></p><p translation-origin="off">@return A <code>HarnessLoader</code> rooted at the first element matching the given selector.</p>
+
+<p translation-result="on">是否找不到匹配指定选择器的元素。</p><p translation-origin="off">@throws If no matching element is found for the given selector.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2392,9 +2508,7 @@ cases where it is needed to fully flush animation events.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">根元素的选择器。</p><p translation-origin="off">The selector for the root element.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2433,6 +2547,10 @@ cases where it is needed to fully flush animation events.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取 <code>HarnessLoader</code> 实例的列表，每个实例对应一个匹配的元素。</p><p translation-origin="off">Gets a list of <code>HarnessLoader</code> instances, one for each matching element.</p>
 
+<p translation-result="on">根元素的选择器。</p><p translation-origin="off">@param selector The selector for the root element.</p>
+
+<p translation-result="on"><code>HarnessLoader</code> 列表，每一条目都以指定选择器匹配的元素为根。</p><p translation-origin="off">@return A list of <code>HarnessLoader</code>, one rooted at each element matching the given selector.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2450,9 +2568,7 @@ cases where it is needed to fully flush animation events.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">根元素的选择器。</p><p translation-origin="off">The selector for the root element.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2491,6 +2607,11 @@ cases where it is needed to fully flush animation events.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在 <code>LocatorFactory</code> 的根下为一个元素获取 <code>HarnessLoader</code> 实例。</p><p translation-origin="off">Gets a <code>HarnessLoader</code> instance for an element under the root of this <code>LocatorFactory</code></p>
 
+<p translation-result="on">根元素的选择器。</p><p translation-origin="off">@param selector The selector for the root element.</p>
+
+<p translation-result="on">一个以指定选择器匹配的第一个元素为根的 <code>HarnessLoader</code> 实例，如果没有找到匹配的元素则为 null。</p><p translation-origin="off">@return A <code>HarnessLoader</code> rooted at the first element matching the given selector, or null if
+    no matching element is found.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2508,9 +2629,7 @@ cases where it is needed to fully flush animation events.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">根元素的选择器。</p><p translation-origin="off">The selector for the root element.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2549,6 +2668,41 @@ cases where it is needed to fully flush animation events.</p>
       <p translation-result="on">创建一个异步定位器函数，用于在这个 <code>LocatorFactory</code> 的根元素下查找 <code>ComponentHarness</code> 实例或元素。</p><p translation-origin="off">Creates an asynchronous locator function that can be used to find a <code>ComponentHarness</code> instance
 or element under the root element of this <code>LocatorFactory</code>.</p>
 
+<p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">@param queries A list of queries specifying which harnesses and elements to search for:</p>
+
+<ul>
+<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
+
+</li>
+<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
+given class.</p>
+
+</li>
+<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例
+@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+first element or harness matching the given search criteria. Matches are ordered first by
+order in the DOM, and second by order in the queries list. If no matches are found, the
+<code>Promise</code> rejects. The type that the <code>Promise</code> resolves to is a union of all result types for
+each query.</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
+ predicate.</p>
+
+</li>
+</ul>
+<p>一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会拒绝（reject）。 <code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p>
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<code>DivHarness.hostSelector === 'div'</code>:</p>
+
+<ul>
+<li><p translation-result="on"><code>await lf.locatorFor(DivHarness, 'div')()</code> 会得到 <code>#d1</code> 的 <code>DivHarness</code> 实例</p><p translation-origin="off"><code>await lf.locatorFor(DivHarness, 'div')()</code> gets a <code>DivHarness</code> instance for <code>#d1</code></p>
+
+</li>
+<li><p translation-result="on"><code>await lf.locatorFor('div', DivHarness)()</code> 会得到 <code>#d1</code> 的 <code>TestElement</code> 实例</p><p translation-origin="off"><code>await lf.locatorFor('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
+
+</li>
+<li><p translation-result="on"><code>await lf.locatorFor('span')()</code> 会抛出错误，因为 <code>Promise</code> 拒绝了。</p><p translation-origin="off"><code>await lf.locatorFor('span')()</code> throws because the <code>Promise</code> rejects.</p>
+
+</li>
+</ul>
 
     </td>
   </tr></tbody><thead>
@@ -2566,22 +2720,7 @@ or element under the root element of this <code>LocatorFactory</code>.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">A list of queries specifying which harnesses and elements to search for:</p>
-
-<ul>
-<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
-
-</li>
-<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
-given class.</p>
-
-</li>
-<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
- predicate.</p>
-
-</li>
-</ul>
-
+        
       </div>
     </td>
   </tr>
@@ -2650,6 +2789,70 @@ given class.</p>
       <p translation-result="on">创建一个异步定位器函数，用于查找 <code>LocatorFactory</code> 根元素下的 <code>ComponentHarness</code> 实例或元素。</p><p translation-origin="off">Creates an asynchronous locator function that can be used to find <code>ComponentHarness</code> instances
 or elements under the root element of this <code>LocatorFactory</code>.</p>
 
+<p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">@param queries A list of queries specifying which harnesses and elements to search for:</p>
+
+<ul>
+<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
+
+</li>
+<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
+given class.</p>
+
+</li>
+<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
+predicate.</p>
+
+</li>
+</ul>
+<p translation-result="on">一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为它返回一个 <code>TestElement</code> 实例。<code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for all
+  elements and harnesses matching the given search criteria. Matches are ordered first by
+  order in the DOM, and second by order in the queries list. If an element matches more than
+  one <code>ComponentHarness</code> class, the locator gets an instance of each for the same element. If
+  an element matches multiple <code>string</code> selectors, only one <code>TestElement</code> instance is returned
+  for that element. The type that the <code>Promise</code> resolves to is an array where each element is
+  the union of all result types for each query.</p>
+
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
+
+<ul>
+<li><p translation-result="on"><code>await lf.locatorForAll(DivHarness, 'div')()</code> 会得到 <code>[
+  DivHarness, // 对于 #d1
+  TestElement, // 对于 #d1
+  DivHarness, // 对于 #d2
+  TestElement // 对于 #d2
+]</code></p><p translation-origin="off"><code>await lf.locatorForAll(DivHarness, 'div')()</code> gets <code>[
+  DivHarness, // for #d1
+  TestElement, // for #d1
+  DivHarness, // for #d2
+  TestElement // for #d2
+]</code></p>
+
+</li>
+<li><p translation-result="on"><code>await lf.locatorForAll('div', '#d1')()</code> 会得到 <code>[
+  TestElement, // 对于 #d1
+  TestElement // 对于 #d2
+]</code></p><p translation-origin="off"><code>await lf.locatorForAll('div', '#d1')()</code> gets <code>[
+  TestElement, // for #d1
+  TestElement // for #d2
+]</code></p>
+
+</li>
+<li><p translation-result="on"><code>await lf.locatorForAll(DivHarness, IdIsD1Harness)()</code> 会得到 <code>[
+  DivHarness, // 对于 #d1
+  IdIsD1Harness, // 对于 #d1
+  DivHarness // 对于 #d2
+]</code></p><p translation-origin="off"><code>await lf.locatorForAll(DivHarness, IdIsD1Harness)()</code> gets <code>[
+  DivHarness, // for #d1
+  IdIsD1Harness, // for #d1
+  DivHarness // for #d2
+]</code></p>
+
+</li>
+<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+
+</li>
+</ul>
 
     </td>
   </tr></tbody><thead>
@@ -2667,22 +2870,7 @@ or elements under the root element of this <code>LocatorFactory</code>.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">A list of queries specifying which harnesses and elements to search for:</p>
-
-<ul>
-<li><p translation-result="on"><code>string</code> 搜索匹配字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
-
-</li>
-<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
-given class.</p>
-
-</li>
-<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
-predicate.</p>
-
-</li>
-</ul>
-
+        
       </div>
     </td>
   </tr>
@@ -2780,6 +2968,41 @@ predicate.</p>
       <p translation-result="on">创建一个异步定位器函数，用于查找 <code>LocatorFactory</code> 根元素下的 <code>ComponentHarness</code> 实例或元素。</p><p translation-origin="off">Creates an asynchronous locator function that can be used to find a <code>ComponentHarness</code> instance
 or element under the root element of this <code>LocatorFactory</code>.</p>
 
+<p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">@param queries A list of queries specifying which harnesses and elements to search for:</p>
+
+<ul>
+<li><p translation-result="on"><code>string</code> 搜索满足此字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
+
+</li>
+<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
+given class.</p>
+
+</li>
+<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
+predicate.</p>
+
+</li>
+</ul>
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+  first element or harness matching the given search criteria. Matches are ordered first by
+  order in the DOM, and second by order in the queries list. If no matches are found, the
+  <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
+  result types for each query or null.</p>
+
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<code>DivHarness.hostSelector === 'div'</code>:</p>
+
+<ul>
+<li><p translation-result="on"><code>await lf.locatorForOptional(DivHarness, 'div')()</code> 会得到 <code>#d1</code> 的 <code>DivHarness</code> 实例</p><p translation-origin="off"><code>await lf.locatorForOptional(DivHarness, 'div')()</code> gets a <code>DivHarness</code> instance for <code>#d1</code></p>
+
+</li>
+<li><p translation-result="on"><code>await lf.locatorForOptional('div', DivHarness)()</code> 会获取 <code>#d1</code> 的 <code>TestElement</code> 实例</p><p translation-origin="off"><code>await lf.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
+
+</li>
+<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code> 。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+
+</li>
+</ul>
 
     </td>
   </tr></tbody><thead>
@@ -2797,22 +3020,7 @@ or element under the root element of this <code>LocatorFactory</code>.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">一系列查询，用于指定要搜索的测试工具和元素：</p><p translation-origin="off">A list of queries specifying which harnesses and elements to search for:</p>
-
-<ul>
-<li><p translation-result="on"><code>string</code> 搜索满足此字符串指定的 CSS 选择器的元素。</p><p translation-origin="off">A <code>string</code> searches for elements matching the CSS selector specified by the string.</p>
-
-</li>
-<li><p translation-result="on"><code>ComponentHarness</code> 构造函数会搜索与指定类匹配的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>ComponentHarness</code> constructor searches for <code>ComponentHarness</code> instances matching the
-given class.</p>
-
-</li>
-<li><p translation-result="on"><code>HarnessPredicate</code> 搜索满足指定谓词的 <code>ComponentHarness</code> 实例。</p><p translation-origin="off">A <code>HarnessPredicate</code> searches for <code>ComponentHarness</code> instances matching the given
-predicate.</p>
-
-</li>
-</ul>
-
+        
       </div>
     </td>
   </tr>
@@ -2878,7 +3086,13 @@ predicate.</p>
         </div>rootHarnessLoader
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">一个以此 <code>LocatorFactory</code> 的根元素为根的 <code>HarnessLoader</code>。</p><p translation-origin="off">@return A <code>HarnessLoader</code> rooted at the root element of this <code>LocatorFactory</code>.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -3302,6 +3516,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">派发具有特定名称的事件。</p><p translation-origin="off">Dispatches an event with a particular name.</p>
 
+<p translation-result="on">要派发的事件名称。</p><p translation-origin="off">@param name Name of the event to be dispatched.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3319,9 +3535,7 @@ the element is clicked at a specific location, consider using <code>click('cente
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要派发的事件名称。</p><p translation-origin="off">Name of the event to be dispatched.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3820,6 +4034,12 @@ the element is clicked at a specific location, consider using <code>click('cente
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在相对于该元素左上角的指定坐标处右键单击它。</p><p translation-origin="off">Right clicks on the element at the specified coordinates relative to the top-left of it.</p>
 
+<p translation-result="on">元素内部的相对坐标 x。</p><p translation-origin="off">@param relativeX Coordinate within the element, along the X-axis at which to click.</p>
+
+<p translation-result="on">元素内部的相对坐标 y。</p><p translation-origin="off">@param relativeY Coordinate within the element, along the Y-axis at which to click.</p>
+
+<p translation-result="on">单击时按住的修饰键</p><p translation-origin="off">@param modifiers Modifier keys held while clicking</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3837,9 +4057,7 @@ the element is clicked at a specific location, consider using <code>click('cente
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">元素内部的相对坐标 x。</p><p translation-origin="off">Coordinate within the element, along the X-axis at which to click.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3852,9 +4070,7 @@ the element is clicked at a specific location, consider using <code>click('cente
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">元素内部的相对坐标 y。</p><p translation-origin="off">Coordinate within the element, along the Y-axis at which to click.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3867,9 +4083,7 @@ the element is clicked at a specific location, consider using <code>click('cente
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">单击时会按住的修饰键</p><p translation-origin="off">Modifier keys held while clicking</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -4073,6 +4287,8 @@ and attempts to add the string to the Element's value.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">从元素中获取文本。</p><p translation-origin="off">Gets the text from the element.</p>
 
+<p translation-result="on">影响要包含哪些文本的选项。</p><p translation-origin="off">@param options Options that affect what text is included.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -4090,9 +4306,7 @@ and attempts to add the string to the Element's value.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">影响要包含哪些文本的选项。</p><p translation-origin="off">Options that affect what text is included.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -4293,6 +4507,8 @@ detection is done.</p>
       <p translation-result="on">允许测试 <code>HarnessEnvironment</code> 安装自己的处理程序，以便自动更改变更检测状态。</p><p translation-origin="off">Allows a test <code>HarnessEnvironment</code> to install its own handler for auto change detection status
 changes.</p>
 
+<p translation-result="on">自动变更检测状态的处理程序。</p><p translation-origin="off">@param handler The handler for the auto change detection status.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -4310,9 +4526,7 @@ changes.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">自动变更检测状态的处理程序。</p><p translation-origin="off">The handler for the auto change detection status.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -4354,6 +4568,10 @@ changes.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在指定函数的持续时间内，禁用测试工具体系的自动变更检测功能。</p><p translation-origin="off">Disables the harness system's auto change detection for the duration of the given function.</p>
 
+<p translation-result="on">禁用自动变更检测的功能。</p><p translation-origin="off">@param fn The function to disable auto change detection for.</p>
+
+<p translation-result="on">指定函数的结果。</p><p translation-origin="off">@return The result of the given function.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -4371,9 +4589,7 @@ changes.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">禁用自动变更检测的功能。</p><p translation-origin="off">The function to disable auto change detection for.</p>
-
-
+        
       </div>
     </td>
   </tr>

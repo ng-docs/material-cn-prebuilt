@@ -1,43 +1,30 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture, waitForAsync, inject} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
 <span class="hljs-keyword">import</span> {TestbedHarnessEnvironment} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing/testbed'</span>;
 <span class="hljs-keyword">import</span> {MatAutocompleteHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/autocomplete/testing'</span>;
 <span class="hljs-keyword">import</span> {HarnessLoader} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing'</span>;
-<span class="hljs-keyword">import</span> {BrowserDynamicTestingModule, platformBrowserDynamicTesting}
-  <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
+<span class="hljs-keyword">import</span> {
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
 <span class="hljs-keyword">import</span> {MatAutocompleteModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/autocomplete'</span>;
 <span class="hljs-keyword">import</span> {AutocompleteHarnessExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./autocomplete-harness-example'</span>;
-<span class="hljs-keyword">import</span> {OverlayContainer} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/overlay'</span>;
 
 describe(<span class="hljs-string">'AutocompleteHarnessExample'</span>, <span class="hljs-function">() =&gt;</span> {
   <span class="hljs-keyword">let</span> fixture: ComponentFixture&lt;AutocompleteHarnessExample&gt;;
   <span class="hljs-keyword">let</span> loader: HarnessLoader;
-  <span class="hljs-keyword">let</span> overlayContainer: OverlayContainer;
 
   beforeAll(<span class="hljs-function">() =&gt;</span> {
     TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
   });
 
-  beforeEach(
-    waitForAsync(<span class="hljs-function">() =&gt;</span> {
-      TestBed.configureTestingModule({
-        <span class="hljs-attr">imports</span>: [MatAutocompleteModule],
-        <span class="hljs-attr">declarations</span>: [AutocompleteHarnessExample]
-      }).compileComponents();
-    }));
-
-  beforeEach( <span class="hljs-function">() =&gt;</span> {
+  beforeEach(<span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> TestBed.configureTestingModule({
+      <span class="hljs-attr">imports</span>: [MatAutocompleteModule],
+      <span class="hljs-attr">declarations</span>: [AutocompleteHarnessExample]
+    }).compileComponents();
     fixture = TestBed.createComponent(AutocompleteHarnessExample);
     fixture.detectChanges();
     loader = TestbedHarnessEnvironment.loader(fixture);
-    inject([OverlayContainer], <span class="hljs-function">(<span class="hljs-params">oc: OverlayContainer</span>) =&gt;</span> {
-      overlayContainer = oc;
-    })();
-  });
-
-  afterEach(<span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-comment">// Angular won't call this for us so we need to do it ourselves to avoid leaks.</span>
-    overlayContainer.ngOnDestroy();
-    overlayContainer = <span class="hljs-literal">null</span>!;
   });
 
   it(<span class="hljs-string">'should load all autocomplete harnesses'</span>, <span class="hljs-keyword">async</span> () =&gt; {

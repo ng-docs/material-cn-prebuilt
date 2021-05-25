@@ -1,12 +1,13 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture, waitForAsync, inject} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
 <span class="hljs-keyword">import</span> {TestbedHarnessEnvironment} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing/testbed'</span>;
 <span class="hljs-keyword">import</span> {MatBottomSheetHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/bottom-sheet/testing'</span>;
 <span class="hljs-keyword">import</span> {HarnessLoader} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing'</span>;
-<span class="hljs-keyword">import</span> {BrowserDynamicTestingModule, platformBrowserDynamicTesting}
-  <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
+<span class="hljs-keyword">import</span> {
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
 <span class="hljs-keyword">import</span> {MatBottomSheetModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/bottom-sheet'</span>;
 <span class="hljs-keyword">import</span> {BottomSheetHarnessExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./bottom-sheet-harness-example'</span>;
-<span class="hljs-keyword">import</span> {OverlayContainer} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/overlay'</span>;
 <span class="hljs-keyword">import</span> {NoopAnimationsModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser/animations'</span>;
 
 describe(<span class="hljs-string">'BottomSheetHarnessExample'</span>, <span class="hljs-function">() =&gt;</span> {
@@ -17,19 +18,14 @@ describe(<span class="hljs-string">'BottomSheetHarnessExample'</span>, <span cla
     TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
   });
 
-  beforeEach(
-    waitForAsync(<span class="hljs-function">() =&gt;</span> {
-      TestBed.configureTestingModule({
-        <span class="hljs-attr">imports</span>: [MatBottomSheetModule, NoopAnimationsModule],
-        <span class="hljs-attr">declarations</span>: [BottomSheetHarnessExample]
-      }).compileComponents();
-    }));
-
-  beforeEach(<span class="hljs-function">() =&gt;</span> {
+  beforeEach(<span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> TestBed.configureTestingModule({
+      <span class="hljs-attr">imports</span>: [MatBottomSheetModule, NoopAnimationsModule],
+      <span class="hljs-attr">declarations</span>: [BottomSheetHarnessExample]
+    }).compileComponents();
     fixture = TestBed.createComponent(BottomSheetHarnessExample);
     fixture.detectChanges();
     loader = TestbedHarnessEnvironment.documentRootLoader(fixture);
-    inject([OverlayContainer], <span class="hljs-function">() =&gt;</span> {})();
   });
 
   it(<span class="hljs-string">'should load harness for a bottom sheet'</span>, <span class="hljs-keyword">async</span> () =&gt; {

@@ -133,6 +133,8 @@
 menu template that displays in the overlay container.  Otherwise, it's difficult
 to style the containing menu from outside the component.</p>
 
+<p translation-result="on">类名列表</p><p translation-origin="off">@param classes list of class names</p>
+
 </td>
 </tr>
 
@@ -173,7 +175,7 @@ to style the containing menu from outside the component.</p>
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">
           @Output()</div><p class="docs-api-property-name">
-      <code>closed: EventEmitter&lt;void | 'click' | 'keydown' | 'tab'&gt;</code>
+      <code>closed: EventEmitter&lt;MenuCloseReason&gt;</code>
     </p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">当菜单关闭时会发出本事件。</p><p translation-origin="off">Event emitted when the menu is closed.</p>
@@ -241,7 +243,7 @@ to style the containing menu from outside the component.</p>
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">
-          @Input()</div><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+          @Input()</div><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
         已弃用
       </div><p class="docs-api-property-name">
       <code>classList: string</code>
@@ -251,6 +253,9 @@ to style the containing menu from outside the component.</p>
 menu template that displays in the overlay container.  Otherwise, it's difficult
 to style the containing menu from outside the component.</p>
 
+<p translation-result="on">请改用 <code>panelClass</code> 。</p><p translation-origin="off">@deprecated Use <code>panelClass</code> instead.</p>
+
+<p>@breaking-change 8.0.0</p>
 </td>
 </tr>
 
@@ -260,13 +265,16 @@ to style the containing menu from outside the component.</p>
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">
-          @Output()</div><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+          @Output()</div><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
         已弃用
       </div><p class="docs-api-property-name">
-      <code>close: EventEmitter&lt;void | 'click' | 'keydown' | 'tab'&gt;</code>
+      <code>close: EventEmitter&lt;MenuCloseReason&gt;</code>
     </p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">当菜单关闭时会发出本事件。</p><p translation-origin="off">Event emitted when the menu is closed.</p>
+
+<p translation-result="on">切换到 <code>closed</code>
+@breaking-change 8.0.0</p><p translation-origin="off">@deprecated Switch to <code>closed</code> instead</p>
 
 </td>
 </tr>
@@ -276,7 +284,7 @@ to style the containing menu from outside the component.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+  <td class="docs-api-properties-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
         已弃用
       </div><p class="docs-api-property-name">
       <code>items: QueryList&lt;MatMenuItem&gt;</code>
@@ -284,6 +292,8 @@ to style the containing menu from outside the component.</p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">菜单里面的菜单项列表。</p><p translation-origin="off">List of the items inside of a menu.</p>
 
+<p>@deprecated
+@breaking-change 8.0.0</p>
 </td>
 </tr>
 
@@ -337,6 +347,8 @@ to style the containing menu from outside the component.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">让菜单中的第一项获得焦点。</p><p translation-origin="off">Focus the first item in the menu.</p>
 
+<p translation-result="on">导致获得焦点的动作来源。用来设置正确的样式。</p><p translation-origin="off">@param origin Action from which the focus originated. Used to set the correct styling.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -354,9 +366,7 @@ to style the containing menu from outside the component.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">导致获得焦点的动作来源。用来设置正确的样式。</p><p translation-origin="off">Action from which the focus originated. Used to set the correct styling.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -395,6 +405,8 @@ the user to start from the first option when pressing the down arrow.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置菜单面板的纵深。</p><p translation-origin="off">Sets the menu panel elevation.</p>
 
+<p translation-result="on">本菜单前的父菜单数量。</p><p translation-origin="off">@param depth Number of parent menus that come before the menu.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -412,9 +424,7 @@ the user to start from the first option when pressing the down arrow.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">本菜单前的父菜单数量。</p><p translation-origin="off">Number of parent menus that come before the menu.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -714,13 +724,16 @@ and it's up to you to manage focus, if you decide to turn it off.</p>
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">
-          @Output()</div><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+          @Output()</div><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
         已弃用
       </div><p class="docs-api-property-name">
       <code>onMenuClose: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">当关联的菜单关闭时会发出本事件。</p><p translation-origin="off">Event emitted when the associated menu is closed.</p>
+
+<p translation-result="on">切换到 <code>menuClosed</code> 代替
+@breaking-change 8.0.0</p><p translation-origin="off">@deprecated Switch to <code>menuClosed</code> instead</p>
 
 </td>
 </tr>
@@ -731,13 +744,16 @@ and it's up to you to manage focus, if you decide to turn it off.</p>
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">
-          @Output()</div><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+          @Output()</div><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
         已弃用
       </div><p class="docs-api-property-name">
       <code>onMenuOpen: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">关联菜单打开时发出的事件。</p><p translation-origin="off">Event emitted when the associated menu is opened.</p>
+
+<p translation-result="on">切换到 <code>menuOpened</code> 代替
+@breaking-change 8.0.0</p><p translation-origin="off">@deprecated Switch to <code>menuOpened</code> instead</p>
 
 </td>
 </tr>
@@ -779,6 +795,8 @@ and it's up to you to manage focus, if you decide to turn it off.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">重点关注菜单触发器。</p><p translation-origin="off">Focuses the menu trigger.</p>
 
+<p translation-result="on">菜单触发器的焦点来源于此。</p><p translation-origin="off">@param origin Source of the menu trigger's focus.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -796,9 +814,7 @@ and it's up to you to manage focus, if you decide to turn it off.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">菜单触发器的焦点来源于此。</p><p translation-origin="off">Source of the menu trigger's focus.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -883,6 +899,23 @@ and it's up to you to manage focus, if you decide to turn it off.</p>
       <div class="docs-api-method-returns-description">
         
       </div>
+    </td>
+  </tr></tbody></table>
+
+
+  
+    
+
+<table class="docs-api-method-table">
+  <thead>
+    <tr class="docs-api-method-name-row">
+      <th colspan="2" class="docs-api-method-name-cell">updatePosition
+      </th>
+    </tr>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Updates the position of the menu to ensure that it fits all options within the viewport.</p>
+
     </td>
   </tr></tbody></table>
 

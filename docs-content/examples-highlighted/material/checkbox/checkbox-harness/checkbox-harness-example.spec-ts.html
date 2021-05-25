@@ -1,10 +1,12 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture, waitForAsync} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
 <span class="hljs-keyword">import</span> {TestbedHarnessEnvironment} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing/testbed'</span>;
 <span class="hljs-keyword">import</span> {MatCheckboxHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/checkbox/testing'</span>;
 <span class="hljs-keyword">import</span> {HarnessLoader} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing'</span>;
 <span class="hljs-keyword">import</span> {ReactiveFormsModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
-<span class="hljs-keyword">import</span> {BrowserDynamicTestingModule, platformBrowserDynamicTesting}
-  <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
+<span class="hljs-keyword">import</span> {
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
 <span class="hljs-keyword">import</span> {MatCheckboxModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/checkbox'</span>;
 <span class="hljs-keyword">import</span> {CheckboxHarnessExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./checkbox-harness-example'</span>;
 
@@ -16,15 +18,11 @@ describe(<span class="hljs-string">'CheckboxHarnessExample'</span>, <span class=
     TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
   });
 
-  beforeEach(
-    waitForAsync(<span class="hljs-function">() =&gt;</span> {
-      TestBed.configureTestingModule({
-        <span class="hljs-attr">imports</span>: [MatCheckboxModule, ReactiveFormsModule],
-        <span class="hljs-attr">declarations</span>: [CheckboxHarnessExample]
-      }).compileComponents();
-    }));
-
-  beforeEach(<span class="hljs-function">() =&gt;</span> {
+  beforeEach(<span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> TestBed.configureTestingModule({
+      <span class="hljs-attr">imports</span>: [MatCheckboxModule, ReactiveFormsModule],
+      <span class="hljs-attr">declarations</span>: [CheckboxHarnessExample]
+    }).compileComponents();
     fixture = TestBed.createComponent(CheckboxHarnessExample);
     fixture.detectChanges();
     loader = TestbedHarnessEnvironment.loader(fixture);

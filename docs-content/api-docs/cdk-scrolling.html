@@ -61,6 +61,10 @@ scroll event subscriptions.</p>
       <p translation-result="on">返回一个可观察对象，它只在元素的任何可滚动祖先发生滚动时才会触发。</p><p translation-origin="off">Returns an observable that emits whenever any of the
 scrollable ancestors of an element are scrolled.</p>
 
+<p translation-result="on">祖先要监听的元素。</p><p translation-origin="off">@param elementOrElementRef Element whose ancestors to listen for.</p>
+
+<p translation-result="on">要对滚动事件进行限流的毫秒数。</p><p translation-origin="off">@param auditTimeInMs Time to throttle the scroll events.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -78,9 +82,7 @@ scrollable ancestors of an element are scrolled.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">祖先要监听的元素。</p><p translation-origin="off">Element whose ancestors to listen for.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -93,9 +95,7 @@ scrollable ancestors of an element are scrolled.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要对滚动事件进行限流的毫秒数。</p><p translation-origin="off">Time to throttle the scroll events.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -130,6 +130,8 @@ scrollable ancestors of an element are scrolled.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">注销一个可滚动对象的引用，并从它的 scroll 事件的可观察对象中取消订阅。</p><p translation-origin="off">Deregisters a Scrollable reference and unsubscribes from its scroll event observable.</p>
 
+<p translation-result="on">要注销的可滚动实例。</p><p translation-origin="off">@param scrollable Scrollable instance to be deregistered.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -147,9 +149,7 @@ scrollable ancestors of an element are scrolled.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要注销的可滚动实例。</p><p translation-origin="off">Scrollable instance to be deregistered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -222,6 +222,8 @@ scrollable ancestors of an element are scrolled.</p>
       <p translation-result="on">使用该服务注册一个可滚动的实例，并侦听其滚动的事件。当可滚动对象发生滚动时，此服务会把事件发送到记录其滚动的可观察对象中。</p><p translation-origin="off">Registers a scrollable instance with the service and listens for its scrolled events. When the
 scrollable is scrolled, the service emits the event to its scrolled observable.</p>
 
+<p translation-result="on">要注册的可滚动对象实例。</p><p translation-origin="off">@param scrollable Scrollable instance to be registered.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -239,9 +241,7 @@ scrollable is scrolled, the service emits the event to its scrolled observable.<
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要注册的可滚动对象实例。</p><p translation-origin="off">Scrollable instance to be registered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -477,6 +477,8 @@ left and right always refer to the left and right side of the scrolling containe
 of the layout direction. start and end refer to left and right in an LTR context and vice-versa
 in an RTL context.</p>
 
+<p translation-result="on">要测量的边缘。</p><p translation-origin="off">@param from The edge to measure from.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -494,9 +496,7 @@ in an RTL context.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要测量的边缘。</p><p translation-origin="off">The edge to measure from.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -536,6 +536,8 @@ left and right always refer to the left and right side of the scrolling containe
 of the layout direction. start and end refer to left and right in an LTR context and vice-versa
 in an RTL context.</p>
 
+<p translation-result="on">指定要滚动到的偏移量。</p><p translation-origin="off">@param options specified the offsets to scroll to.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -553,9 +555,7 @@ in an RTL context.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">指定要滚动到的偏移量。</p><p translation-origin="off">specified the offsets to scroll to.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -728,7 +728,7 @@ the item and produces a value to be used as the item's identity when tracking ch
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>dataStream: Observable&lt;T[] | ReadonlyArray&lt;T&gt;&gt;</code>
+      <code>dataStream: Observable&lt;readonly T[]&gt;</code>
     </p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">只要当前 DataSource 中的数据发生变化，就会发出通知。</p><p translation-origin="off">Emits whenever the data in the current DataSource changes.</p>
@@ -1285,6 +1285,9 @@ not rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">从视口的开头得到当前的滚动偏移量（以像素为单位）。</p><p translation-origin="off">Gets the current scroll offset from the start of the viewport (in pixels).</p>
 
+<p translation-result="on">测量到边缘的偏移。在垂直模式下默认为 “top”，在水平模式下默认为 “start”。</p><p translation-origin="off">@param from The edge to measure the offset from. Defaults to 'top' in vertical mode and 'start'
+    in horizontal mode.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1302,10 +1305,7 @@ not rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">测量到边缘的偏移。在垂直模式下默认为 “top”，在水平模式下默认为 “start”。</p><p translation-origin="off">The edge to measure the offset from. Defaults to 'top' in vertical mode and 'start'
-    in horizontal mode.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1345,6 +1345,8 @@ left and right always refer to the left and right side of the scrolling containe
 of the layout direction. start and end refer to left and right in an LTR context and vice-versa
 in an RTL context.</p>
 
+<p translation-result="on">指定要滚动到的偏移量。</p><p translation-origin="off">@param options specified the offsets to scroll to.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1362,9 +1364,7 @@ in an RTL context.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">指定要滚动到的偏移量。</p><p translation-origin="off">specified the offsets to scroll to.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1384,6 +1384,10 @@ in an RTL context.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">滚动到指定索引处的偏移量。</p><p translation-origin="off">Scrolls to the offset for the given index.</p>
 
+<p translation-result="on">要滚动的元素的索引。</p><p translation-origin="off">@param index The index of the element to scroll to.</p>
+
+<p translation-result="on">滚动时要使用的 ScrollBehavior。行为默认是 <code>auto</code> 。</p><p translation-origin="off">@param behavior The ScrollBehavior to use when scrolling. Default is behavior is <code>auto</code>.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1401,9 +1405,7 @@ in an RTL context.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要滚动的元素的索引。</p><p translation-origin="off">The index of the element to scroll to.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1416,9 +1418,7 @@ in an RTL context.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">滚动时要使用的 ScrollBehavior。行为默认是 <code>auto</code> 。</p><p translation-origin="off">The ScrollBehavior to use when scrolling. Default is behavior is <code>auto</code>.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1440,6 +1440,10 @@ in an RTL context.</p>
 the same as setting <code>scrollTop</code> or <code>scrollLeft</code>. In a horizontal viewport with right-to-left
 direction, this would be the equivalent of setting a fictional <code>scrollRight</code> property.</p>
 
+<p translation-result="on">要滚动到的偏移量。</p><p translation-origin="off">@param offset The offset to scroll to.</p>
+
+<p translation-result="on">滚动时要使用的 ScrollBehavior。行为默认是 <code>auto</code> 。</p><p translation-origin="off">@param behavior The ScrollBehavior to use when scrolling. Default is behavior is <code>auto</code>.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1457,9 +1461,7 @@ direction, this would be the equivalent of setting a fictional <code>scrollRight
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要滚动到的偏移量。</p><p translation-origin="off">The offset to scroll to.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1472,9 +1474,7 @@ direction, this would be the equivalent of setting a fictional <code>scrollRight
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">滚动时要使用的 ScrollBehavior。行为默认是 <code>auto</code> 。</p><p translation-origin="off">The ScrollBehavior to use when scrolling. Default is behavior is <code>auto</code>.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1641,6 +1641,8 @@ rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">把这个滚动策略附加到视口中。</p><p translation-origin="off">Attaches this scroll strategy to a viewport.</p>
 
+<p translation-result="on">要把此策略附加到的视口。</p><p translation-origin="off">@param viewport The viewport to attach this strategy to.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1658,9 +1660,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要把此策略附加到的视口。</p><p translation-origin="off">The viewport to attach this strategy to.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1698,6 +1698,10 @@ rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">滚动到指定索引的偏移量。</p><p translation-origin="off">Scroll to the offset for the given index.</p>
 
+<p translation-result="on">要滚动的元素的索引。</p><p translation-origin="off">@param index The index of the element to scroll to.</p>
+
+<p translation-result="on">滚动时要使用的 ScrollBehavior。</p><p translation-origin="off">@param behavior The ScrollBehavior to use when scrolling.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1715,9 +1719,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要滚动的元素的索引。</p><p translation-origin="off">The index of the element to scroll to.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1730,9 +1732,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">滚动时要使用的 ScrollBehavior。</p><p translation-origin="off">The ScrollBehavior to use when scrolling.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1752,6 +1752,12 @@ rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">更新条目大小和缓冲区大小。</p><p translation-origin="off">Update the item size and buffer size.</p>
 
+<p translation-result="on">虚拟滚动列表中各条目的大小。</p><p translation-origin="off">@param itemSize The size of the items in the virtually scrolling list.</p>
+
+<p translation-result="on">在需要渲染更多内容之前，缓冲区的最小量（以像素为单位）</p><p translation-origin="off">@param minBufferPx The minimum amount of buffer (in pixels) before needing to render more</p>
+
+<p translation-result="on">渲染时要渲染的缓冲区（以像素为单位）。</p><p translation-origin="off">@param maxBufferPx The amount of buffer (in pixels) to render when rendering more.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1769,9 +1775,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">虚拟滚动列表中各条目的大小。</p><p translation-origin="off">The size of the items in the virtually scrolling list.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1784,9 +1788,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">在需要渲染更多内容之前，缓冲区的最小量（以像素为单位）</p><p translation-origin="off">The minimum amount of buffer (in pixels) before needing to render more</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1799,9 +1801,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">渲染时要渲染的缓冲区（以像素为单位）。</p><p translation-origin="off">The amount of buffer (in pixels) to render when rendering more.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1908,6 +1908,8 @@ rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">把这个滚动策略附加到视口中。</p><p translation-origin="off">Attaches this scroll strategy to a viewport.</p>
 
+<p translation-result="on">要把此策略附加到的视口。</p><p translation-origin="off">@param viewport The viewport to attach this strategy to.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1925,9 +1927,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要把此策略附加到的视口。</p><p translation-origin="off">The viewport to attach this strategy to.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2037,6 +2037,10 @@ rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">滚动到指定索引的偏移量。</p><p translation-origin="off">Scroll to the offset for the given index.</p>
 
+<p translation-result="on">要滚动的元素的索引。</p><p translation-origin="off">@param index The index of the element to scroll to.</p>
+
+<p translation-result="on">滚动时要使用的 ScrollBehavior。</p><p translation-origin="off">@param behavior The ScrollBehavior to use when scrolling.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2054,9 +2058,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要滚动的元素的索引。</p><p translation-origin="off">The index of the element to scroll to.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2069,9 +2071,7 @@ rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">滚动时要使用的 ScrollBehavior。</p><p translation-origin="off">The ScrollBehavior to use when scrolling.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2101,7 +2101,7 @@ rendered.</p>
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>dataStream: Observable&lt;T[] | ReadonlyArray&lt;T&gt;&gt;</code>
+      <code>dataStream: Observable&lt;readonly T[]&gt;</code>
     </p>
   </td>
   <td class="docs-api-property-description"></td>

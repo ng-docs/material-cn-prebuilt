@@ -6,6 +6,7 @@
     location / {
         try_files $uri $uri.html $uri/ /index.html;
     }
-}</code></pre>
+}
+</code></pre>
 <p>注意其中的 <code>$uri.html</code>，这是本文档相对于常规 Angular 应用的主要差别，因为本文档进行了预先渲染（Prerender），这项工作可以让你在不需要 Node 服务器的情况下获得等同于服务端渲染的体验改善。</p>
 </div></body></html>

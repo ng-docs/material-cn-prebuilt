@@ -62,7 +62,8 @@ by referencing the <code>id</code> of another drop container:</p>
 
 <span class="hljs-comment">&lt;!-- This is valid as well --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDropList</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-one"</span> [<span class="hljs-attr">cdkDropListConnectedTo</span>]=<span class="hljs-string">"['list-two']"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDropList</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-two"</span> [<span class="hljs-attr">cdkDropListConnectedTo</span>]=<span class="hljs-string">"['list-one']"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDropList</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-two"</span> [<span class="hljs-attr">cdkDropListConnectedTo</span>]=<span class="hljs-string">"['list-one']"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
 <p translation-result="on">如果有一个未知数量的连接拖放列表，你也可以使用 <code>cdkDropListGroup</code> 指令来自动建立连接。注意，添加到组下的所有新 <code>cdkDropList</code> 都会自动和其它的列表连接起来。</p><p translation-origin="off">If you have an unknown number of connected drop lists, you can use the <code>cdkDropListGroup</code> directive
 to set up the connection automatically. Note that any new <code>cdkDropList</code> that is added under a group
 will be connected to all other lists automatically.</p>
@@ -70,7 +71,8 @@ will be connected to all other lists automatically.</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDropListGroup</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- All lists in here will be connected. --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDropList</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let list of lists"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
 <div material-docs-example="cdk-drag-drop-connected-sorting-group"></div>
 
 
@@ -89,7 +91,8 @@ you to easily identify the origin of the drag or drop interaction.</p>
 
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDropList</span> [<span class="hljs-attr">cdkDropListData</span>]=<span class="hljs-string">"list"</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let list of lists"</span> (<span class="hljs-attr">cdkDropListDropped</span>)=<span class="hljs-string">"drop($event)"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDrag</span> [<span class="hljs-attr">cdkDragData</span>]=<span class="hljs-string">"item"</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let item of list"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
 
         <h3 id="styling" class="docs-header-link" translation-result="on">
           <span header-link="样式"></span>
@@ -194,7 +197,8 @@ following classes can be used for animations:</p>
 <span class="hljs-comment">/* Animate an item that has been dropped. */</span>
 <span class="hljs-selector-class">.cdk-drag-animating</span> {
   <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">300ms</span> <span class="hljs-built_in">cubic-bezier</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>, <span class="hljs-number">1</span>);
-}</code></pre>
+}
+</code></pre>
 
         <h3 id="customizing-the-drag-area-using-a-handle" class="docs-header-link" translation-result="on">
           <span header-link="使用拖动把手自定义拖曳区域"></span>
@@ -236,6 +240,43 @@ to be applied.</p>
 
 <div material-docs-example="cdk-drag-drop-custom-preview"></div>
 
+
+        <h3 id="drag-preview-insertion-point" class="docs-header-link">
+          <span header-link="drag-preview-insertion-point"></span>
+          Drag preview insertion point
+        </h3>
+      <p>By default, the preview of a <code>cdkDrag</code> will be inserted into the <code>&lt;body&gt;</code> of the page in order to
+avoid issues with <code>z-index</code> and <code>overflow: hidden</code>. This may not be desireable in some cases,
+because the preview won't retain its inherited styles. You can control where the preview is inserted
+using the <code>cdkDrawPreviewContainer</code> input. The possible values are:</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+<th>Advantages</th>
+<th>Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>global</code></td>
+<td>Default value. Preview is inserted into the <code>&lt;body&gt;</code> or the closest shadow root.</td>
+<td>Preview won't be affected by <code>z-index</code> or <code>overflow: hidden</code>. It also won't affect <code>:nth-child</code> selectors and flex layouts.</td>
+<td>Doesn't retain inherited styles.</td>
+</tr>
+<tr>
+<td><code>parent</code></td>
+<td>Preview is inserted inside the parent of the item that is being dragged.</td>
+<td>Preview inherits the same styles as the dragged item.</td>
+<td>Preview may be clipped by <code>overflow: hidden</code> or be placed under other elements due to <code>z-index</code>. Furthermore, it can affect <code>:nth-child</code> selectors and some flex layouts.</td>
+</tr>
+<tr>
+<td><code>ElementRef</code> or <code>HTMLElement</code></td>
+<td>Preview will be inserted into the specified element.</td>
+<td>Preview inherits styles from the specified container element.</td>
+<td>Preview may be clipped by <code>overflow: hidden</code> or be placed under other elements due to <code>z-index</code>. Furthermore, it can affect <code>:nth-child</code> selectors and some flex layouts.</td>
+</tr>
+</tbody></table>
 
         <h3 id="customizing-the-drag-placeholder" class="docs-header-link" translation-result="on">
           <span header-link="自定义拖动占位符"></span>

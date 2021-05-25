@@ -40,6 +40,10 @@ which take too long to successfully render and be copied in the same tick.</p>
 
 <p translation-result="on">调用者必须调用 <code>PendingCopy</code> 型返回值上的 <code>destroy</code> 方法。</p><p translation-origin="off">The caller must call <code>destroy</code> on the returned <code>PendingCopy</code>.</p>
 
+<p translation-result="on">要复制的字符串。</p><p translation-origin="off">@param text The string to copy.</p>
+
+<p translation-result="on">挂起的复制操作。</p><p translation-origin="off">@returns the pending copy operation.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -57,9 +61,7 @@ which take too long to successfully render and be copied in the same tick.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要复制的字符串。</p><p translation-origin="off">The string to copy.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -96,6 +98,10 @@ which take too long to successfully render and be copied in the same tick.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">把提供的文本复制到用户的剪贴板中。</p><p translation-origin="off">Copies the provided text into the user's clipboard.</p>
 
+<p translation-result="on">要复制的字符串。</p><p translation-origin="off">@param text The string to copy.</p>
+
+<p translation-result="on">操作是否成功。</p><p translation-origin="off">@returns Whether the operation was successful.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -113,9 +119,7 @@ which take too long to successfully render and be copied in the same tick.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要复制的字符串。</p><p translation-origin="off">The string to copy.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -390,11 +394,25 @@ called.</p>
     
       
 
+<h4 id="CDK_COPY_TO_CLIPBOARD_CONFIG" class="docs-header-link docs-api-h4 docs-api-constant-name">
+  <span header-link="CDK_COPY_TO_CLIPBOARD_CONFIG"></span>
+  <code>CDK_COPY_TO_CLIPBOARD_CONFIG</code>
+</h4><div class="docs-api-constant-description"><p translation-result="on">这个注入令牌可以用来为 <code>CdkCopyToClipboard</code> 提供默认选项。</p><p translation-origin="off">Injection token that can be used to provide the default options to <code>CdkCopyToClipboard</code>.</p>
+
+</div><div class="docs-markdown">
+<pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">const</span> CDK_COPY_TO_CLIPBOARD_CONFIG: InjectionToken&lt;CdkCopyToClipboardConfig&gt;;</code>
+</pre>
+</div>
+
+
+    
+      
+
 <h4 id="CKD_COPY_TO_CLIPBOARD_CONFIG" class="docs-header-link docs-api-h4 docs-api-constant-name">
   <span header-link="CKD_COPY_TO_CLIPBOARD_CONFIG"></span>
   <code>CKD_COPY_TO_CLIPBOARD_CONFIG</code>
-</h4><div class="docs-api-constant-description"><p translation-result="on">这个注入令牌可以用来为 <code>CdkCopyToClipboard</code> 提供默认选项。</p><p translation-origin="off">Injection token that can be used to provide the default options to <code>CdkCopyToClipboard</code>.</p>
-
+</h4><div class="docs-api-constant-deprecated-marker" title="将会在 v13.0.0 或更高版本中删除">
+  已弃用
 </div><div class="docs-markdown">
 <pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">const</span> CKD_COPY_TO_CLIPBOARD_CONFIG: InjectionToken&lt;CdkCopyToClipboardConfig&gt;;</code>
 </pre>

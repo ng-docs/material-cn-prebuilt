@@ -173,7 +173,8 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
   <span class="hljs-keyword">const</span> dialogHarness = <span class="hljs-keyword">await</span> rootLoader.getHarness(MyDialogHarness);
 
   <span class="hljs-comment">// ... make some assertions</span>
-});</code></pre>
+});
+</code></pre>
 <p translation-result="on"><code>ProtractorHarnessEnvironment</code> 有一个提供单个静态方法的 API：</p><p translation-origin="off"><code>ProtractorHarnessEnvironment</code> has an API that offers a single static method:</p>
 
 <table>
@@ -280,7 +281,8 @@ code. For example:</p>
     <span class="hljs-comment">// Check expectations after async click operation complete.</span>
     expect(isProgressSpinnerVisible()).toBe(<span class="hljs-literal">false</span>);
   });
-});</code></pre>
+});
+</code></pre>
 
         <h4 id="working-with-asynchronous-component-harness-methods" class="docs-header-link" translation-result="on">
           <span header-link="使用组件测试工具的异步方法"></span>
@@ -314,7 +316,8 @@ can read multiple properties from a harness with <code>parallel</code>:</p>
   ]);
   expect(checked).toBe(<span class="hljs-literal">false</span>);
   expect(indeterminate).toBe(<span class="hljs-literal">true</span>);
-});</code></pre>
+});
+</code></pre>
 
         <h3 id="api-for-component-harness-authors" class="docs-header-link" translation-result="on">
           <span header-link="组件测试工具作者的-api"></span>
@@ -362,12 +365,14 @@ subclass. In most cases, the <code>hostSelector</code> should be the same as the
   <span class="hljs-function"><span class="hljs-title">toggle</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-built_in">this</span>.open = !<span class="hljs-built_in">this</span>.open;
   }
-}</code></pre>
+}
+</code></pre>
 <p translation-result="on">在这种情况下，该组件的最简测试工具如下所示：</p><p translation-origin="off">In this case, a minimal harness for the component would look like the following:</p>
 
 <pre><code class="language-ts"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyPopupHarness</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ComponentHarness</span> </span>{
   <span class="hljs-keyword">static</span> hostSelector = <span class="hljs-string">'my-popup'</span>;
-}</code></pre>
+}
+</code></pre>
 <p translation-result="on">虽然 <code>ComponentHarness</code> 子类只需要 <code>hostSelector</code> 属性，但大多数测试工具还应该使用静态方法 <code>with</code> 来生成 <code>HarnessPredicate</code> 实例。下面的 <a href="#filtering-harness-instances-with-harnesspredicate"><code>HarnessPredicate</code></a> 部分会更详细介绍这一点。</p><p translation-origin="off">While <code>ComponentHarness</code> subclasses require only the <code>hostSelector</code> property, most harnesses should
 also implement a static <code>with</code> method to generate <code>HarnessPredicate</code> instances. The
 <a href="#filtering-harness-instances-with-harnesspredicate"><code>HarnessPredicate</code></a> section below covers this
@@ -434,7 +439,8 @@ and content elements as follows:</p>
 
   <span class="hljs-comment">/** Gets the content element. */</span>
   getContentElement = <span class="hljs-built_in">this</span>.locatorForOptional(<span class="hljs-string">'.my-popup-content'</span>);
-}</code></pre>
+}
+</code></pre>
 
         <h4 id="working-with-testelement-instances" class="docs-header-link" translation-result="on">
           <span header-link="使用-testelement-实例"></span>
@@ -568,7 +574,8 @@ like <code>toggle</code> and <code>isOpen</code>:</p>
     <span class="hljs-keyword">const</span> content = <span class="hljs-keyword">await</span> <span class="hljs-built_in">this</span>.getContentElement();
     <span class="hljs-keyword">return</span> !!content;
   }
-}</code></pre>
+}
+</code></pre>
 
         <h4 id="loading-harnesses-for-subcomponents" class="docs-header-link" translation-result="on">
           <span header-link="为子组件加载测试工具"></span>
@@ -626,7 +633,8 @@ earlier has an alternate signature that can be used for locating sub-harnesses r
 <span class="hljs-meta">@Directive</span>({
   <span class="hljs-attr">selector</span>: <span class="hljs-string">'my-menu-item'</span>
 })
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyMenuItem</span> </span>{}</code></pre>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyMenuItem</span> </span>{}
+</code></pre>
 <p translation-result="on"><code>MyMenu</code> 的测试工具就可以利用 <code>MyPopup</code> 和 <code>MyMenuItem</code> 的其他测试工具：</p><p translation-origin="off">The harness for <code>MyMenu</code> can then take advantage of other harnesses for <code>MyPopup</code> and <code>MyMenuItem</code>:</p>
 
 <pre><code class="language-ts"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyMenuHarness</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ComponentHarness</span> </span>{
@@ -646,7 +654,8 @@ earlier has an alternate signature that can be used for locating sub-harnesses r
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyMenuItemHarness</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ComponentHarness</span> </span>{
   <span class="hljs-keyword">static</span> hostSelector = <span class="hljs-string">'my-menu-item'</span>;
-}</code></pre>
+}
+</code></pre>
 
         <h4 id="filtering-harness-instances-with-harnesspredicate" class="docs-header-link" translation-result="on">
           <span header-link="使用-harnesspredicate-过滤测试工具实例"></span>
@@ -748,7 +757,8 @@ trigger text and to filter menu items based on their text:</p>
     <span class="hljs-keyword">const</span> host = <span class="hljs-keyword">await</span> <span class="hljs-built_in">this</span>.host();
     <span class="hljs-keyword">return</span> host.text();
   }
-}</code></pre>
+}
+</code></pre>
 <p translation-result="on">你可以用 <code>HarnessPredicate</code> 代替 <code>ComponentHarness</code> 传给 <code>HarnessLoader</code>、<code>LocatorFactory</code> 或 <code>ComponentHarness</code> 上的任何 API。这样，测试作者就可以在创建测试工具实例时轻松定位到特定的组件实例。它还能让测试工具的作者利用同样的 <code>HarnessPredicate</code>，在他们的测试工具类上支持更强大的 API。例如前面看过的 <code>MyMenuHarness</code> 的 <code>getItems</code> 方法。现在可以很容易地扩展它以允许本测试工具的用户搜索特定的菜单项：</p><p translation-origin="off">You can pass a <code>HarnessPredicate</code> in place of a <code>ComponentHarness</code> class to any of the APIs on
 <code>HarnessLoader</code>, <code>LocatorFactory</code>, or <code>ComponentHarness</code>. This allows test authors to easily target
 a particular component instance when creating a harness instance. It also allows the harness author
@@ -766,7 +776,8 @@ This can now easily be expanded to allow users of the harness to search for part
   }
 
   ...
-}</code></pre>
+}
+</code></pre>
 
         <h4 id="creating-a-harnessloader-for-an-element" class="docs-header-link" translation-result="on">
           <span header-link="为元素创建一个-harnessloader"></span>
@@ -814,7 +825,8 @@ extending <code>ContentContainerComponentHarness</code>.</p>
 
 <pre><code class="language-ts"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyPopupHarness</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ContentContainerComponentHarness</span>&lt;<span class="hljs-title">string</span>&gt; </span>{
   <span class="hljs-keyword">static</span> hostSelector = <span class="hljs-string">'my-popup'</span>;
-}</code></pre>
+}
+</code></pre>
 
         <h4 id="accessing-elements-outside-of-the-components-host-element" class="docs-header-link" translation-result="on">
           <span header-link="访问该组件的宿主元素之外的元素"></span>
@@ -859,7 +871,8 @@ via <code>documentRootLocatorFactory()</code>:</p>
     <span class="hljs-keyword">const</span> rootLocator = <span class="hljs-built_in">this</span>.documentRootLocatorFactory();
     <span class="hljs-keyword">return</span> rootLocator.harnessLoaderFor(<span class="hljs-string">'my-popup-content'</span>);
   }
-}</code></pre>
+}
+</code></pre>
 
         <h4 id="waiting-for-asynchronous-tasks" class="docs-header-link" translation-result="on">
           <span header-link="等待异步任务"></span>

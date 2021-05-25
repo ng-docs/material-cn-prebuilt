@@ -10,7 +10,8 @@ config object. The <code>open</code> method will return an instance of <code>Mat
 <pre><code class="language-ts"><span class="hljs-keyword">let</span> dialogRef = dialog.open(UserProfileComponent, {
   <span class="hljs-attr">height</span>: <span class="hljs-string">'400px'</span>,
   <span class="hljs-attr">width</span>: <span class="hljs-string">'600px'</span>,
-});</code></pre>
+});
+</code></pre>
 <p translation-result="on"><code>MatDialogRef</code> 提供了已打开对话框的一个引用。可用它来关闭对话框和接受关闭对话框后的通知。
 当该对话框关闭时，任何一个通知用的 Observable 都会结束（complete）。</p><p translation-origin="off">The <code>MatDialogRef</code> provides a handle on the opened dialog. It can be used to close the dialog and to
 receive notifications when the dialog has been closed. Any notification Observables will complete when the dialog closes.</p>
@@ -19,7 +20,8 @@ receive notifications when the dialog has been closed. Any notification Observab
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Dialog result: <span class="hljs-subst">${result}</span>`</span>); <span class="hljs-comment">// Pizza!</span>
 });
 
-dialogRef.close(<span class="hljs-string">'Pizza!'</span>);</code></pre>
+dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
+</code></pre>
 <p translation-result="on">通过 <code>MatDialog</code> 创建的组件可以<em>注入</em> <code>MatDialogRef</code>，并用它来关闭包含该组件的对话框。
 当关闭时，可以提供一个可选的结果值。该结果值会作为结果转发给 <code>afterClosed</code> 事件。</p><p translation-origin="off">Components created via <code>MatDialog</code> can <em>inject</em> <code>MatDialogRef</code> and use it to close the dialog
 in which they are contained. When closing, an optional result value can be provided. This result
@@ -32,17 +34,20 @@ value is forwarded as the result of the <code>afterClosed</code> Observable.</p>
   <span class="hljs-function"><span class="hljs-title">closeDialog</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-built_in">this</span>.dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
   }
-}</code></pre>
+}
+</code></pre>
 
-        <h3 id="configuring-dialog-content-via-entrycomponents" class="docs-header-link" translation-result="on">
-          <span header-link="通过-entrycomponents-配置对话框的内容"></span>
-          通过 <code>entryComponents</code> 配置对话框的内容
-        </h3><h3 class="docs-header-link" translation-origin="off">
+        <h3 id="configuring-dialog-content-via-entrycomponents" class="docs-header-link">
           <span header-link="configuring-dialog-content-via-entrycomponents"></span>
           Configuring dialog content via <code>entryComponents</code>
         </h3>
-      
-        
+      <p><strong>You only need to specify <code>entryComponents</code> if your project uses ViewEngine. Projects
+using Angular Ivy don't need <code>entryComponents</code>.</strong></p>
+
+        <h3 id="通过-entrycomponents-配置对话框的内容" class="docs-header-link">
+          <span header-link="通过-entrycomponents-配置对话框的内容"></span>
+          通过 <code>entryComponents</code> 配置对话框的内容
+        </h3>
       <p translation-result="on">由于 <code>MatDialog</code> 是在运行时实例化组件的，所以 Angular 编译器需要额外的信息才能为对话框内容组件创建所需的 <code>ComponentFactory</code>。</p><p translation-origin="off">Because <code>MatDialog</code> instantiates components at run-time, the Angular compiler needs extra
 information to create the necessary <code>ComponentFactory</code> for your dialog content component.</p>
 
@@ -67,7 +72,8 @@ the <code>ComponentFactory</code> for it.</p>
 
   <span class="hljs-attr">bootstrap</span>: [AppComponent]
 })
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppModule</span> </span>{}</code></pre>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppModule</span> </span>{}
+</code></pre>
 
         <h3 id="specifying-global-configuration-defaults" class="docs-header-link" translation-result="on">
           <span header-link="指定全局默认值"></span>
@@ -85,7 +91,8 @@ MAT_DIALOG_DEFAULT_OPTIONS in your application's root module.</p>
   <span class="hljs-attr">providers</span>: [
     {<span class="hljs-attr">provide</span>: MAT_DIALOG_DEFAULT_OPTIONS, <span class="hljs-attr">useValue</span>: {<span class="hljs-attr">hasBackdrop</span>: <span class="hljs-literal">false</span>}}
   ]
-})</code></pre>
+})
+</code></pre>
 
         <h3 id="sharing-data-with-the-dialog-component" class="docs-header-link" translation-result="on">
           <span header-link="与对话框组件共享数据"></span>
@@ -101,7 +108,8 @@ option to pass information to the dialog component.</p>
 
 <pre><code class="language-ts"><span class="hljs-keyword">let</span> dialogRef = dialog.open(YourDialog, {
   <span class="hljs-attr">data</span>: { <span class="hljs-attr">name</span>: <span class="hljs-string">'austin'</span> },
-});</code></pre>
+});
+</code></pre>
 <p translation-result="on">要在对话框组件中访问此数据，可以使用依赖注入令牌 <code>MAT_DIALOG_DATA</code>：</p><p translation-origin="off">To access the data in your dialog component, you have to use the MAT_DIALOG_DATA injection token:</p>
 
 <pre><code class="language-ts"><span class="hljs-keyword">import</span> {Component, Inject} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
@@ -113,13 +121,15 @@ option to pass information to the dialog component.</p>
 })
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YourDialog</span> </span>{
   <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"><span class="hljs-meta">@Inject</span>(MAT_DIALOG_DATA) <span class="hljs-keyword">public</span> data: {name: <span class="hljs-built_in">string</span>}</span>)</span> { }
-}</code></pre>
+}
+</code></pre>
 <p translation-result="on">注意，如果你正在使用模板对话框（用 <code>TemplateRef</code> 打开的对话框），其数据在模板中是隐式可用的：</p><p translation-origin="off">Note that if you're using a template dialog (one that was opened with a <code>TemplateRef</code>), the data
 will be available implicitly in the template:</p>
 
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ng-template</span> <span class="hljs-attr">let-data</span>&gt;</span>
   Hello, {{data.name}}
-<span class="hljs-tag">&lt;/<span class="hljs-name">ng-template</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ng-template</span>&gt;</span>
+</code></pre>
 <div material-docs-example="dialog-data"></div>
 
 
@@ -171,12 +181,14 @@ will be available implicitly in the template:</p>
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">mat-button</span> <span class="hljs-attr">mat-dialog-close</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">mat-button</span> [<span class="hljs-attr">mat-dialog-close</span>]=<span class="hljs-string">"true"</span>&gt;</span>Delete<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">mat-dialog-actions</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">mat-dialog-actions</span>&gt;</span>
+</code></pre>
 <p translation-result="on">一旦打开了对话框，它就会自动把焦点转给第一个可接受焦点的元素。</p><p translation-origin="off">Once a dialog opens, the dialog will automatically focus the first tabbable element.</p>
 
 <p translation-result="on">你可以通过 <code>tabindex</code> 属性来控制哪个元素可以接受焦点。</p><p translation-origin="off">You can control which elements are tab stops with the <code>tabindex</code> attribute</p>
 
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">mat-button</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>Not Tabbable<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">mat-button</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span>Not Tabbable<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
 <div material-docs-example="dialog-content"></div>
 
 
@@ -214,7 +226,8 @@ the <code>ComponentFactory</code> for it.</p>
   <span class="hljs-attr">providers</span>: [],
   <span class="hljs-attr">bootstrap</span>: [AppComponent]
 })
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppModule</span> </span>{}</code></pre>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppModule</span> </span>{}
+</code></pre>
 
         <h3 id="accessibility" class="docs-header-link" translation-result="on">
           <span header-link="无障碍性"></span>

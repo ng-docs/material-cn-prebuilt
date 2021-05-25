@@ -20,7 +20,8 @@
       <p translation-result="on"><code>isMatched</code> 方法用于根据当前视口大小来对一个或多个媒体查询进行求值。</p><p translation-origin="off">The <code>isMatched</code> method is used to evaluate one or more media queries against the current viewport
 size.</p>
 
-<pre><code class="language-ts"><span class="hljs-keyword">const</span> isSmallScreen = breakpointObserver.isMatched(<span class="hljs-string">'(max-width: 599px)'</span>);</code></pre>
+<pre><code class="language-ts"><span class="hljs-keyword">const</span> isSmallScreen = breakpointObserver.isMatched(<span class="hljs-string">'(max-width: 599px)'</span>);
+</code></pre>
 
         <h4 id="react-to-changes-to-the-viewport" class="docs-header-link" translation-result="on">
           <span header-link="对视口的更改做出反应"></span>
@@ -41,7 +42,8 @@ media queries would have a different result.</p>
 
 layoutChanges.subscribe(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> {
   updateMyLayoutForOrientationChange();
-});</code></pre>
+});
+</code></pre>
 
         <h4 id="default-breakpoints" class="docs-header-link" translation-result="on">
           <span header-link="默认断点"></span>
@@ -69,7 +71,8 @@ types.</p>
       }
     });
   }
-}</code></pre>
+}
+</code></pre>
 <p translation-result="on">内置的断点基于 <a href="https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints">Google 的 Material Design 规范</a> 。可用的值有：</p><p translation-origin="off">The built-in breakpoints based on <a href="https://material.io/design/layout/responsive-layout-grid.html#breakpoints">Google's Material Design
 specification</a>.
 The available values are:</p>
@@ -118,5 +121,6 @@ The <code>matchMedia</code> method can be used to get a native
   <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">mediaMatcher: MediaMatcher</span>)</span> {
     <span class="hljs-keyword">const</span> mediaQueryList = mediaMatcher.matchMedia(<span class="hljs-string">'(min-width: 1px)'</span>);
   }
-}</code></pre>
+}
+</code></pre>
 </div></body></html>

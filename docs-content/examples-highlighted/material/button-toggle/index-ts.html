@@ -1,4 +1,5 @@
 <html><head></head><body><span class="hljs-keyword">import</span> {NgModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> {FormsModule, ReactiveFormsModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
 <span class="hljs-keyword">import</span> {MatButtonToggleModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/button-toggle'</span>;
 <span class="hljs-keyword">import</span> {MatIconModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/icon'</span>;
 <span class="hljs-keyword">import</span> {
@@ -9,12 +10,14 @@
 } <span class="hljs-keyword">from</span> <span class="hljs-string">'./button-toggle-exclusive/button-toggle-exclusive-example'</span>;
 <span class="hljs-keyword">import</span> {ButtonToggleOverviewExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./button-toggle-overview/button-toggle-overview-example'</span>;
 <span class="hljs-keyword">import</span> {ButtonToggleHarnessExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./button-toggle-harness/button-toggle-harness-example'</span>;
+<span class="hljs-keyword">import</span> {ButtonToggleFormsExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./button-toggle-forms/button-toggle-forms-example'</span>;
 
 <span class="hljs-keyword">export</span> {
   ButtonToggleAppearanceExample,
   ButtonToggleExclusiveExample,
   ButtonToggleOverviewExample,
   ButtonToggleHarnessExample,
+  ButtonToggleFormsExample,
 };
 
 <span class="hljs-keyword">const</span> EXAMPLES = [
@@ -22,12 +25,15 @@
   ButtonToggleExclusiveExample,
   ButtonToggleOverviewExample,
   ButtonToggleHarnessExample,
+  ButtonToggleFormsExample,
 ];
 
 <span class="hljs-meta">@NgModule</span>({
   <span class="hljs-attr">imports</span>: [
+    FormsModule,
     MatButtonToggleModule,
     MatIconModule,
+    ReactiveFormsModule,
   ],
   <span class="hljs-attr">declarations</span>: EXAMPLES,
   <span class="hljs-attr">exports</span>: EXAMPLES,

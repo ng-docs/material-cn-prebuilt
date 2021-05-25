@@ -10,7 +10,8 @@ optional config object. The <code>open</code> method will return an instance of 
 
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> bottomSheetRef = bottomSheet.open(SocialShareComponent, {
   <span class="hljs-attr">ariaLabel</span>: <span class="hljs-string">'Share on social media'</span>
-});</code></pre>
+});
+</code></pre>
 <p translation-result="on"><code>MatBottomSheetRef</code> 是一个到当前打开的底部操作表的引用，可以通过此引用来关闭它或订阅其事件。
 注意，同一时间只能打开一个底部操作表。
 底部操作表中包含的任何组件也同样可以注入这个 <code>MatBottomSheetRef</code> 引用。</p><p translation-origin="off">The <code>MatBottomSheetRef</code> is a reference to the currently-opened bottom sheet and can be used to close
@@ -21,7 +22,8 @@ contained inside of a bottom sheet can inject the <code>MatBottomSheetRef</code>
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Bottom sheet has been dismissed.'</span>);
 });
 
-bottomSheetRef.dismiss();</code></pre>
+bottomSheetRef.dismiss();
+</code></pre>
 
         <h3 id="sharing-data-with-the-bottom-sheet-component" class="docs-header-link" translation-result="on">
           <span header-link="与底部操作表组件共享数据"></span>
@@ -36,7 +38,8 @@ bottomSheetRef.dismiss();</code></pre>
 
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> bottomSheetRef = bottomSheet.open(HobbitSheet, {
   <span class="hljs-attr">data</span>: { <span class="hljs-attr">names</span>: [<span class="hljs-string">'Frodo'</span>, <span class="hljs-string">'Bilbo'</span>] },
-});</code></pre>
+});
+</code></pre>
 <p translation-result="on">然后，你就可以通过注入令牌 <code>MAT_BOTTOM_SHEET_DATA</code> 来访问所注入的这些数据了：</p><p translation-origin="off">Afterwards you can access the injected data using the <code>MAT_BOTTOM_SHEET_DATA</code> injection token:</p>
 
 <pre><code class="language-ts"><span class="hljs-keyword">import</span> {Component, Inject} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
@@ -48,17 +51,20 @@ bottomSheetRef.dismiss();</code></pre>
 })
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HobbitSheet</span> </span>{
   <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"><span class="hljs-meta">@Inject</span>(MAT_BOTTOM_SHEET_DATA) <span class="hljs-keyword">public</span> data: {names: <span class="hljs-built_in">string</span>[]}</span>)</span> { }
-}</code></pre>
+}
+</code></pre>
 
-        <h3 id="configuring-bottom-sheet-content-via-entrycomponents" class="docs-header-link" translation-result="on">
-          <span header-link="通过-entrycomponents-配置底部操作表的内容"></span>
-          通过 <code>entryComponents</code> 配置底部操作表的内容
-        </h3><h3 class="docs-header-link" translation-origin="off">
+        <h3 id="configuring-bottom-sheet-content-via-entrycomponents" class="docs-header-link">
           <span header-link="configuring-bottom-sheet-content-via-entrycomponents"></span>
           Configuring bottom sheet content via <code>entryComponents</code>
         </h3>
-      
-        
+      <p><strong>You only need to specify <code>entryComponents</code> if your project uses ViewEngine. Projects
+using Angular Ivy don't need <code>entryComponents</code>.</strong></p>
+
+        <h3 id="通过-entrycomponents-配置底部操作表的内容" class="docs-header-link">
+          <span header-link="通过-entrycomponents-配置底部操作表的内容"></span>
+          通过 <code>entryComponents</code> 配置底部操作表的内容
+        </h3>
       <p translation-result="on">和 <code>MatDialog</code> 一样，<code>MatBottomSheet</code> 也会在运行期间实例化组件。
 为了让它能正常工作，Angular 编译器需要一些额外的信息，以便为你在底部操作表中使用的内容组件创建必要的 <code>ComponentFactory</code>。</p><p translation-origin="off">Similarly to <code>MatDialog</code>, <code>MatBottomSheet</code> instantiates components at run-time. In order for it to
 work, the Angular compiler needs extra information to create the necessary <code>ComponentFactory</code> for
@@ -85,7 +91,8 @@ inside your <code>NgModule</code>.</p>
   <span class="hljs-attr">providers</span>: [],
   <span class="hljs-attr">bootstrap</span>: [AppComponent]
 })
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppModule</span> </span>{}</code></pre>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppModule</span> </span>{}
+</code></pre>
 
         <h3 id="specifying-global-configuration-defaults" class="docs-header-link" translation-result="on">
           <span header-link="全局指定配置的默认值"></span>
@@ -103,7 +110,8 @@ for <code>MAT_BOTTOM_SHEET_DEFAULT_OPTIONS</code> in your application's root mod
   <span class="hljs-attr">providers</span>: [
     {<span class="hljs-attr">provide</span>: MAT_BOTTOM_SHEET_DEFAULT_OPTIONS, <span class="hljs-attr">useValue</span>: {<span class="hljs-attr">hasBackdrop</span>: <span class="hljs-literal">false</span>}}
   ]
-})</code></pre>
+})
+</code></pre>
 
         <h3 id="accessibility" class="docs-header-link" translation-result="on">
           <span header-link="无障碍性"></span>

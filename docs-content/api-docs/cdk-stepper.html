@@ -185,6 +185,20 @@ Will be cleared if <code>aria-label</code> is set at the same time.</p>
       
 
 <tr class="docs-api-properties-row">
+  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">'interacted'</span>)
+        </div><p class="docs-api-property-name">
+      <code>interactedStream: EventEmitter&lt;CdkStep&gt;</code>
+    </p>
+  </td>
+  <td class="docs-api-property-description"><p>Emits when the user has attempted to move away from the step.</p>
+</td>
+</tr>
+
+
+    
+      
+
+<tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
       <code>content: TemplateRef&lt;any&gt;</code>
     </p>
@@ -203,7 +217,7 @@ Will be cleared if <code>aria-label</code> is set at the same time.</p>
       <code>interacted: false</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on">用户是否看过展开后的步骤内容。</p><p translation-origin="off">Whether user has seen the expanded step content or not.</p>
+  <td class="docs-api-property-description"><p translation-result="on">用户是否试图从这一步离开。</p><p translation-origin="off">Whether user has attempted to move away from the step.</p>
 
 </td>
 </tr>
@@ -308,7 +322,21 @@ Will be cleared if <code>aria-label</code> is set at the same time.</p>
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">
           @Input()</div><p class="docs-api-property-name">
-      <code>selected: CdkStep</code>
+      <code>orientation: StepperOrientation</code>
+    </p>
+  </td>
+  <td class="docs-api-property-description"><p>Orientation of the stepper.</p>
+</td>
+</tr>
+
+
+    
+      
+
+<tr class="docs-api-properties-row">
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">
+          @Input()</div><p class="docs-api-property-name">
+      <code>selected: CdkStep | undefined</code>
     </p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">选定的步骤</p><p translation-origin="off">The step that is selected.</p>
@@ -782,24 +810,6 @@ the content into correct position upon step selection change.</p>
 
 </div><div class="docs-markdown">
 <pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">const</span> STEPPER_GLOBAL_OPTIONS: InjectionToken&lt;StepperOptions&gt;;</code>
-</pre>
-</div>
-
-
-    
-      
-
-<h4 id="MAT_STEPPER_GLOBAL_OPTIONS" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="MAT_STEPPER_GLOBAL_OPTIONS"></span>
-  <code>MAT_STEPPER_GLOBAL_OPTIONS</code>
-</h4><div class="docs-api-constant-deprecated-marker" title="将会在 v8.0.0.
-
-8.0.0 中删除">
-  已弃用
-</div><div class="docs-api-constant-description"><p translation-result="on">这个注入令牌可以用来指定全局的步进器选项。</p><p translation-origin="off">InjectionToken that can be used to specify the global stepper options.</p>
-
-</div><div class="docs-markdown">
-<pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">const</span> MAT_STEPPER_GLOBAL_OPTIONS: InjectionToken&lt;StepperOptions&gt;;</code>
 </pre>
 </div>
 

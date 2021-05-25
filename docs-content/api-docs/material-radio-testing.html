@@ -18,13 +18,6 @@
   <span header-link="MatRadioGroupHarness"></span>
   <code>MatRadioGroupHarness</code>
   
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/testing/api#ComponentHarness" class="docs-api-class-extends-type">
-      ComponentHarness
-    </a>
-  </span>
-  
 </h4><div class="docs-api-class-description"><p translation-result="on">在测试中用来与标准 mat-radio-group 进行交互的测试工具。</p><p translation-origin="off">Harness for interacting with a standard mat-radio-group in tests.</p>
 
 </div>
@@ -44,7 +37,9 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Checks a radio button in this group.</p>
+      <p>Checks a radio button in this group.
+@param filter An optional filter to apply to the child radio buttons. The first tab matching
+    the filter will be selected.</p>
 
     </td>
   </tr></tbody><thead>
@@ -57,14 +52,12 @@
   <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
-        filter</p>
-      <code class="docs-api-method-parameter-type">RadioButtonHarnessFilters = {}</code>
+        filter<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">ButtonFilters</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p>An optional filter to apply to the child radio buttons. The first tab matching
-    the filter will be selected.</p>
-
+        
       </div>
     </td>
   </tr>
@@ -111,7 +104,7 @@
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;MatRadioButtonHarness | null&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;Button | null&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -236,7 +229,8 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets a list of radio buttons which are part of the radio-group.</p>
+      <p>Gets a list of radio buttons which are part of the radio-group.
+@param filter Optionally filters which radio buttons are included.</p>
 
     </td>
   </tr></tbody><thead>
@@ -249,13 +243,12 @@
   <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
-        filter</p>
-      <code class="docs-api-method-parameter-type">RadioButtonHarnessFilters = {}</code>
+        filter<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">ButtonFilters</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p>Optionally filters which radio buttons are included.</p>
-
+        
       </div>
     </td>
   </tr>
@@ -267,7 +260,7 @@
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;MatRadioButtonHarness[]&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;Button[]&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -323,15 +316,7 @@
   <span header-link="MatRadioButtonHarness"></span>
   <code>MatRadioButtonHarness</code>
   
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/testing/api#ComponentHarness" class="docs-api-class-extends-type">
-      ComponentHarness
-    </a>
-  </span>
-  
-</h4><div class="docs-api-class-description"><p translation-result="on">在测试中用来与标准 mat-radio-button 进行交互的测试工具。</p><p translation-origin="off">Harness for interacting with a standard mat-radio-button in tests.</p>
-
+</h4><div class="docs-api-class-description"><p>Harness for interacting with a standard mat-radio-button in tests.</p>
 </div>
 
 

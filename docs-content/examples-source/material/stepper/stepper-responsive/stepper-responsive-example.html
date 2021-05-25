@@ -1,0 +1,50 @@
+<html><head></head><body><ng-container [ngswitch]="stepperOrientation | async">
+  <div *ngswitchcase="'horizontal'">Make your screen smaller to see a vertical stepper</div>
+  <div *ngswitchcase="'vertical'">Make your screen larger to see a horizontal stepper</div>
+</ng-container>
+
+<mat-stepper class="example-stepper" [orientation]="(stepperOrientation | async)!">
+  <mat-step [stepcontrol]="firstFormGroup" label="Fill out your name">
+    <form [formgroup]="firstFormGroup">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matinput="" placeholder="Last name, First name" formcontrolname="firstCtrl" required="">
+      </mat-form-field>
+      <div>
+        <button mat-button="" matsteppernext="">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepcontrol]="secondFormGroup" label="Fill out your address">
+    <form [formgroup]="secondFormGroup">
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matinput="" formcontrolname="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required="">
+      </mat-form-field>
+      <div>
+        <button mat-button="" matstepperprevious="">Back</button>
+        <button mat-button="" matsteppernext="">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepcontrol]="thirdFormGroup" label="Fill out your phone number">
+    <form [formgroup]="thirdFormGroup">
+      <mat-form-field>
+        <mat-label>Phone number</mat-label>
+        <input matinput="" formcontrolname="thirdCtrl" placeholder="Ex. 12345678" required="">
+      </mat-form-field>
+      <div>
+        <button mat-button="" matstepperprevious="">Back</button>
+        <button mat-button="" matsteppernext="">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matsteplabel="">Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button="" matstepperprevious="">Back</button>
+    </div>
+  </mat-step>
+</mat-stepper>
+</body></html>

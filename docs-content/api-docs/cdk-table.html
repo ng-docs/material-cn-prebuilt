@@ -14,6 +14,29 @@
     
       
 
+<h4 id="CdkRecycleRows" class="docs-header-link docs-api-h4 docs-api-class-name">
+  <span header-link="CdkRecycleRows"></span>
+  <code>CdkRecycleRows</code>
+  
+</h4><div class="docs-api-class-description"><p>Enables the recycle view repeater strategy, which reduces rendering latency. Not compatible with
+tables that animate rows.</p>
+</div><div class="docs-api-directive-selectors">
+  <span class="docs-api-class-selector-label">选择器：</span>
+  
+    <span class="docs-api-class-selector-name">cdk-table[recycleRows]</span>
+  
+    <span class="docs-api-class-selector-name">table[cdk-table][recycleRows]</span>
+  
+</div>
+
+
+
+
+
+
+    
+      
+
 <h4 id="CdkTable" class="docs-header-link docs-api-h4 docs-api-class-name">
   <span header-link="CdkTable"></span>
   <code>CdkTable</code>
@@ -2149,6 +2172,30 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
+      <code>elements: readonly (HTMLElement[] | undefined)[]</code>
+    </p>
+  </td>
+  <td class="docs-api-property-description"></td>
+</tr>
+
+
+    
+      
+
+<tr class="docs-api-properties-row">
+  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
+      <code>offsets: StickyOffset[]</code>
+    </p>
+  </td>
+  <td class="docs-api-property-description"></td>
+</tr>
+
+
+    
+      
+
+<tr class="docs-api-properties-row">
+  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
       <code>sizes: StickySize[]</code>
     </p>
   </td>
@@ -2404,6 +2451,18 @@ text is not provided.</p>
   <code>StickySize</code>
 </h4><div class="docs-markdown">
 <pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">type</span> StickySize = <span class="hljs-built_in">number</span> | <span class="hljs-literal">null</span> | <span class="hljs-literal">undefined</span>;</code>
+</pre>
+</div>
+
+
+    
+      
+
+<h4 id="StickyOffset" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
+  <span header-link="StickyOffset"></span>
+  <code>StickyOffset</code>
+</h4><div class="docs-markdown">
+<pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">type</span> StickyOffset = <span class="hljs-built_in">number</span> | <span class="hljs-literal">null</span> | <span class="hljs-literal">undefined</span>;</code>
 </pre>
 </div>
 

@@ -27,7 +27,8 @@ the appropriate level.</p>
   <span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span>&gt;</span> parent node <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span>&gt;</span> -- child node1 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span>&gt;</span> -- child node2 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree</span>&gt;</span>
+</code></pre>
 <p translation-result="on">扁平的树通常更容易设置样式和进行探查。它们对各种滚动（如无限滚动或虚拟滚动）也更友好。</p><p translation-origin="off">Flat trees are generally easier to style and inspect. They are also more friendly to scrolling
 variations, such as infinite or virtual scrolling.</p>
 
@@ -52,7 +53,8 @@ a node outlet into which children are projected.</p>
     <span class="hljs-tag">&lt;<span class="hljs-name">cdk-nested-tree-node</span>&gt;</span> -- child node1 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-nested-tree-node</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">cdk-nested-tree-node</span>&gt;</span> -- child node2 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-nested-tree-node</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-nested-tree-node</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree</span>&gt;</span>
+</code></pre>
 <p translation-result="on">当需要以可视的方式来表示层次关系时，用嵌套树会比用扁平树更容易。</p><p translation-origin="off">Nested trees are easier to work with when hierarchical relationships are visually represented in
 ways that would be difficult to accomplish with flat nodes.</p>
 
@@ -86,18 +88,40 @@ data to be used in any bindings in the node template.</p>
 
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span>&gt;</span>
   {{node.key}}: {{node.value}}
-<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span></code></pre>
-<h5 id="flat-tree-node-template" translation-result="on">扁平树节点模板</h5><h5 translation-origin="off">Flat tree node template</h5><p translation-result="on">扁平树使用每个节点的 <code>level</code> 来渲染节点的层次结构。指定节点的“缩进（indent）”是通过根据每个节点的级别为其增加间距来完成的。可以通过应用 <code>cdkNodePadding</code> 指令或自定义样式来添加间距。</p><p translation-origin="off">Flat tree uses each node's <code>level</code> to render the hierarchy of the nodes.
+<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
+</code></pre>
+
+        <h5 id="flat-tree-node-template" class="docs-header-link" translation-result="on">
+          <span header-link="扁平树节点模板"></span>
+          扁平树节点模板
+        </h5><h5 class="docs-header-link" translation-origin="off">
+          <span header-link="flat-tree-node-template"></span>
+          Flat tree node template
+        </h5>
+      
+        
+      <p translation-result="on">扁平树使用每个节点的 <code>level</code> 来渲染节点的层次结构。指定节点的“缩进（indent）”是通过根据每个节点的级别为其增加间距来完成的。可以通过应用 <code>cdkNodePadding</code> 指令或自定义样式来添加间距。</p><p translation-origin="off">Flat tree uses each node's <code>level</code> to render the hierarchy of the nodes.
 The "indent" for a given node is accomplished by adding spacing to each node based on its level.
 Spacing can be added either by applying the <code>cdkNodePadding</code> directive or by applying custom styles.</p>
 
-<h5 id="nested-tree-node-template" translation-result="on">嵌套树节点模板</h5><h5 translation-origin="off">Nested tree node template</h5><p translation-result="on">当使用嵌套树节点时，该节点模板中必须包含一个 <code>cdkTreeNodeOutlet</code>，用于标记该节点的子节点要渲染到的位置。</p><p translation-origin="off">When using nested tree nodes, the node template must contain a <code>cdkTreeNodeOutlet</code>, which marks
+
+        <h5 id="nested-tree-node-template" class="docs-header-link" translation-result="on">
+          <span header-link="嵌套树节点模板"></span>
+          嵌套树节点模板
+        </h5><h5 class="docs-header-link" translation-origin="off">
+          <span header-link="nested-tree-node-template"></span>
+          Nested tree node template
+        </h5>
+      
+        
+      <p translation-result="on">当使用嵌套树节点时，该节点模板中必须包含一个 <code>cdkTreeNodeOutlet</code>，用于标记该节点的子节点要渲染到的位置。</p><p translation-origin="off">When using nested tree nodes, the node template must contain a <code>cdkTreeNodeOutlet</code>, which marks
 where the children of the node will be rendered.</p>
 
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-nested-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span>&gt;</span>
   {{node.value}}
   <span class="hljs-tag">&lt;<span class="hljs-name">ng-container</span> <span class="hljs-attr">cdkTreeNodeOutlet</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ng-container</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-nested-tree-node</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-nested-tree-node</span>&gt;</span>
+</code></pre>
 
         <h4 id="adding-expandcollapse" class="docs-header-link" translation-result="on">
           <span header-link="添加展开折叠器"></span>
@@ -114,7 +138,8 @@ a tree node recursively by setting <code>[cdkTreeNodeToggleRecursive]</code> to 
 
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span> <span class="hljs-attr">cdkTreeNodeToggle</span> [<span class="hljs-attr">cdkTreeNodeToggleRecursive</span>]=<span class="hljs-string">"true"</span>&gt;</span>
     {{node.value}}
-<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
+</code></pre>
 <p translation-result="on">这个切换开关可以放在树节点中的任意位置，而且只能通过点击动作进行切换。为了获得最佳的无障碍性，<code>cdkTreeNodeToggle</code> 应该放在一个 button 元素上，并拥有一个合适的 <code>aria-label</code> 。</p><p translation-origin="off">The toggle can be placed anywhere in the tree node, and is only toggled by click action.
 For best accessibility, <code>cdkTreeNodeToggle</code> should be on a button element and have an appropriate
 <code>aria-label</code>.</p>
@@ -124,7 +149,8 @@ For best accessibility, <code>cdkTreeNodeToggle</code> should be on a button ele
     <span class="hljs-tag">&lt;<span class="hljs-name">mat-icon</span>&gt;</span>expand<span class="hljs-tag">&lt;/<span class="hljs-name">mat-icon</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   {{node.value}}
-<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
+</code></pre>
 
         <h4 id="padding-flat-tree-only" class="docs-header-link" translation-result="on">
           <span header-link="衬距（仅限扁平树）"></span>
@@ -140,7 +166,8 @@ information of a flat tree node.</p>
 
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span> <span class="hljs-attr">cdkNodePadding</span>&gt;</span>
   {{node.value}}
-<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
+</code></pre>
 <p translation-result="on">嵌套树不需要这种衬距，因为 <code>padding</code> 可以很容易地添加到 DOM 中的层次结构上。</p><p translation-origin="off">Nested tree does not need this padding since padding can be easily added to the hierarchy structure
 in DOM.</p>
 
@@ -162,7 +189,8 @@ for a particular data node via the <code>when</code> predicate of the template.<
 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node; when: isSpecial"</span> <span class="hljs-attr">cdkTreeNodePadding</span>&gt;</span>
   [ A special node {{node.value}} ]
-<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
+</code></pre>
 
         <h3 id="data-source" class="docs-header-link" translation-result="on">
           <span header-link="数据源"></span>
@@ -218,9 +246,15 @@ nodes should be sent to tree component based on current expansion status.</p>
       <p translation-result="on">嵌套树的数据源有一个选项，可让每个树节点组件处理该节点的展开/折叠事件。</p><p translation-origin="off">The data source for nested tree has an option to leave the node expansion/collapsing event for each
 tree node component to handle.</p>
 
-<h5 id="trackby"><code>trackBy</code></h5><p translation-result="on">为了提高性能，可以为树提供一个类似于 Angular 的 <a href="https://angular.cn/api/common/NgForOf#change-propagation"><code>ngFor</code> <code>trackBy</code></a>的<a href="https://angular.cn/api/common/NgForOf#change-propagation"><code>ngFor</code> <code>trackBy</code></a> 指令。这会告诉树要如何唯一地标识节点，以跟踪每次更新时数据的变化情况。</p><p translation-origin="off">To improve performance, a <code>trackBy</code> function can be provided to the tree similar to Angular’s
+
+        <h5 id="trackby" class="docs-header-link">
+          <span header-link="trackby"></span>
+          <code>trackBy</code>
+        </h5>
+      <p translation-result="on">为了提高性能，可以为树提供一个类似于 Angular 的 <a href="https://angular.cn/api/common/NgForOf#change-propagation"><code>ngFor</code> <code>trackBy</code></a>的<a href="https://angular.cn/api/common/NgForOf#change-propagation"><code>ngFor</code> <code>trackBy</code></a> 指令。这会告诉树要如何唯一地标识节点，以跟踪每次更新时数据的变化情况。</p><p translation-origin="off">To improve performance, a <code>trackBy</code> function can be provided to the tree similar to Angular’s
 <a href="https://angular.io/api/common/NgForOf#change-propagation"><code>ngFor</code> <code>trackBy</code></a>. This informs the
 tree how to uniquely identify nodes to track how the data changes with each update.</p>
 
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree</span> [<span class="hljs-attr">dataSource</span>]=<span class="hljs-string">"dataSource"</span> [<span class="hljs-attr">treeControl</span>]=<span class="hljs-string">"treeControl"</span> [<span class="hljs-attr">trackBy</span>]=<span class="hljs-string">"trackByFn"</span>&gt;</span></code></pre>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree</span> [<span class="hljs-attr">dataSource</span>]=<span class="hljs-string">"dataSource"</span> [<span class="hljs-attr">treeControl</span>]=<span class="hljs-string">"treeControl"</span> [<span class="hljs-attr">trackBy</span>]=<span class="hljs-string">"trackByFn"</span>&gt;</span>
+</code></pre>
 </div></body></html>

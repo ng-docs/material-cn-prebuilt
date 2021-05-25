@@ -62,6 +62,10 @@ of re-usable components rather than developers building end-user applications.</
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">创建一个浮层。</p><p translation-origin="off">Creates an overlay.</p>
 
+<p translation-result="on">应用于浮层的配置。</p><p translation-origin="off">@param config Configuration applied to the overlay.</p>
+
+<p translation-result="on">所创建浮层的引用。</p><p translation-origin="off">@returns Reference to the created overlay.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -79,9 +83,7 @@ of re-usable components rather than developers building end-user applications.</
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">应用于浮层的配置。</p><p translation-origin="off">Configuration applied to the overlay.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -118,6 +120,8 @@ of re-usable components rather than developers building end-user applications.</
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取一个位置构建器，可以通过流式 API 来构建和配置定位策略。</p><p translation-origin="off">Gets a position builder that can be used, via fluent API,
 to construct and configure a position strategy.</p>
+
+<p translation-result="on">浮层位置构建器。</p><p translation-origin="off">@returns An overlay position builder.</p>
 
 
     </td>
@@ -172,6 +176,8 @@ to construct and configure a position strategy.</p>
       <p translation-result="on">该方法返回浮层的容器元素。它会在第一次调用时惰性创建该元素，以便在非浏览器环境中使用该容器。</p><p translation-origin="off">This method returns the overlay container element. It will lazily
 create the element the first time  it is called to facilitate using
 the container in non-browser environments.</p>
+
+<p translation-result="on">容器元素</p><p translation-origin="off">@returns the container element</p>
 
 
     </td>
@@ -237,6 +243,8 @@ Fullscreen mode
       <p translation-result="on">该方法返回浮层的容器元素。它会在第一次调用时惰性创建该元素，以便在非浏览器环境中使用该容器。</p><p translation-origin="off">This method returns the overlay container element. It will lazily
 create the element the first time  it is called to facilitate using
 the container in non-browser environments.</p>
+
+<p translation-result="on">容器元素</p><p translation-origin="off">@returns the container element</p>
 
 
     </td>
@@ -324,6 +332,8 @@ Only that element and its children are visible when in fullscreen mode.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">创建灵活定位策略。</p><p translation-origin="off">Creates a flexible position strategy.</p>
 
+<p translation-result="on">浮层定位相对的原点。</p><p translation-origin="off">@param origin Origin relative to which to position the overlay.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -341,9 +351,7 @@ Only that element and its children are visible when in fullscreen mode.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">浮层定位相对的原点。</p><p translation-origin="off">Origin relative to which to position the overlay.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -404,7 +412,7 @@ Only that element and its children are visible when in fullscreen mode.</p>
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
             已弃用
           </div>connectedTo
       </th>
@@ -413,6 +421,12 @@ Only that element and its children are visible when in fullscreen mode.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">创建相对定位策略。</p><p translation-origin="off">Creates a relative position strategy.</p>
 
+<p translation-result="on">请改用 <code>flexibleConnectedTo</code> 。</p><p translation-origin="off">@param elementRef
+@param originPos
+@param overlayPos
+@deprecated Use <code>flexibleConnectedTo</code> instead.</p>
+
+<p>@breaking-change 8.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -524,6 +538,8 @@ behaviors. This class primarily acts as a factory for ScrollStrategy instances.<
   </td>
   <td class="docs-api-property-description"><p translation-result="on">用户滚动后立即关闭浮层。</p><p translation-origin="off">Close the overlay as soon as the user scrolls.</p>
 
+<p translation-result="on">要在滚动策略中使用的配置。</p><p translation-origin="off">@param config Configuration to be used inside the scroll strategy.</p>
+
 </td>
 </tr>
 
@@ -551,6 +567,9 @@ behaviors. This class primarily acts as a factory for ScrollStrategy instances.<
     </p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">更新浮层在滚动条上的位置。</p><p translation-origin="off">Update the overlay's position on scroll.</p>
+
+<p translation-result="on">在滚动策略中使用的配置。允许针对重定位调用的防抖。</p><p translation-origin="off">@param config Configuration to be used inside the scroll strategy.
+Allows debouncing the reposition calls.</p>
 
 </td>
 </tr>
@@ -643,7 +662,13 @@ on event target and order of overlay opens.</p>
       <th colspan="2" class="docs-api-method-name-cell">remove
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">从已附加的浮层引用列表中删除浮层。</p><p translation-origin="off">Remove an overlay from the list of attached overlay refs.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -748,7 +773,13 @@ on event target and order of overlay opens.</p>
       <th colspan="2" class="docs-api-method-name-cell">remove
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">从已附加的浮层引用列表中删除浮层。</p><p translation-origin="off">Remove an overlay from the list of attached overlay refs.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1616,6 +1647,8 @@ required around the overlay pane.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">从浮层中拆除传送点。</p><p translation-origin="off">Detaches an overlay from a portal.</p>
 
+<p translation-result="on">拆除传送点的结果。</p><p translation-origin="off">@returns The portal detachment result.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1935,7 +1968,7 @@ required around the overlay pane.</p>
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         dir</p>
-      <code class="docs-api-method-parameter-type">"ltr" | "rtl" | Directionality</code>
+      <code class="docs-api-method-parameter-type">Directionality | Direction</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
@@ -2139,6 +2172,8 @@ element to become blurry.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层的底部位置。清除任何先前设置的垂直位置。</p><p translation-origin="off">Sets the bottom position of the overlay. Clears any previously set vertical position.</p>
 
+<p translation-result="on">新的底部偏移量。</p><p translation-origin="off">@param value New bottom offset.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2156,9 +2191,7 @@ element to become blurry.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">新的底部偏移量。</p><p translation-origin="off">New bottom offset.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2194,6 +2227,8 @@ element to become blurry.</p>
       <p translation-result="on">使浮层水平居中，并具有可选的偏移量。清除任何先前设置的水平位置。</p><p translation-origin="off">Centers the overlay horizontally with an optional offset.
 Clears any previously set horizontal position.</p>
 
+<p translation-result="on">相对于水平中心的浮层偏移量。</p><p translation-origin="off">@param offset Overlay offset from the horizontal center.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2211,9 +2246,7 @@ Clears any previously set horizontal position.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">相对于水平中心的浮层偏移量。</p><p translation-origin="off">Overlay offset from the horizontal center.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2249,6 +2282,8 @@ Clears any previously set horizontal position.</p>
       <p translation-result="on">使浮层垂直居中，并带有可选的偏移量。清除任何先前设置的垂直位置。</p><p translation-origin="off">Centers the overlay vertically with an optional offset.
 Clears any previously set vertical position.</p>
 
+<p translation-result="on">相对于垂直中心的浮层偏移量。</p><p translation-origin="off">@param offset Overlay offset from the vertical center.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2266,9 +2301,7 @@ Clears any previously set vertical position.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">相对于垂直中心的浮层偏移量。</p><p translation-origin="off">Overlay offset from the vertical center.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2303,6 +2336,8 @@ Clears any previously set vertical position.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层的左侧位置。清除任何先前设置的水平位置。</p><p translation-origin="off">Sets the left position of the overlay. Clears any previously set horizontal position.</p>
 
+<p translation-result="on">新的左侧偏移量。</p><p translation-origin="off">@param value New left offset.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2320,9 +2355,7 @@ Clears any previously set vertical position.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">新的左侧偏移量。</p><p translation-origin="off">New left offset.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2357,6 +2390,8 @@ Clears any previously set vertical position.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层的正确位置。清除任何先前设置的水平位置。</p><p translation-origin="off">Sets the right position of the overlay. Clears any previously set horizontal position.</p>
 
+<p translation-result="on">新的右侧偏移量。</p><p translation-origin="off">@param value New right offset.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2374,9 +2409,7 @@ Clears any previously set vertical position.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">新的右侧偏移量。</p><p translation-origin="off">New right offset.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2411,6 +2444,8 @@ Clears any previously set vertical position.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层的顶部位置。清除任何先前设置的垂直位置。</p><p translation-origin="off">Sets the top position of the overlay. Clears any previously set vertical position.</p>
 
+<p translation-result="on">新的顶部偏移量。</p><p translation-origin="off">@param value New top offset.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2428,9 +2463,7 @@ Clears any previously set vertical position.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">新的顶部偏移量。</p><p translation-origin="off">New top offset.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2458,7 +2491,7 @@ Clears any previously set vertical position.</p>
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
             已弃用
           </div>height
       </th>
@@ -2467,6 +2500,11 @@ Clears any previously set vertical position.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层高度并清除任何先前设置的高度。</p><p translation-origin="off">Sets the overlay height and clears any previously set height.</p>
 
+<p translation-result="on">浮层的新高度
+@deprecated Pass the <code>height</code> through the <code>OverlayConfig</code>.</p><p translation-result="on">通过 <code>OverlayConfig</code> 传递 <code>height</code> 。</p><p translation-origin="off">@param value New height for the overlay</p>
+
+
+<p>@breaking-change 8.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -2484,9 +2522,7 @@ Clears any previously set vertical position.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">浮层的新高度</p><p translation-origin="off">New height for the overlay</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2514,7 +2550,7 @@ Clears any previously set vertical position.</p>
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
             已弃用
           </div>width
       </th>
@@ -2523,6 +2559,11 @@ Clears any previously set vertical position.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层宽度并清除任何先前设置的宽度。</p><p translation-origin="off">Sets the overlay width and clears any previously set width.</p>
 
+<p translation-result="on">浮层的新宽度
+@deprecated Pass the <code>width</code> through the <code>OverlayConfig</code>.</p><p translation-result="on">通过 <code>OverlayConfig</code> 传递 <code>width</code> 。</p><p translation-origin="off">@param value New width for the overlay</p>
+
+
+<p>@breaking-change 8.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -2540,9 +2581,7 @@ Clears any previously set vertical position.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">浮层的新宽度</p><p translation-origin="off">New width for the overlay</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2581,7 +2620,7 @@ a point on the origin element that is connected to a point on the overlay elemen
 a basic dropdown is connecting the bottom-left corner of the origin to the top-left corner
 of the overlay.</p>
 
-</div><div class="docs-api-class-deprecated-marker" title="将会在 v8.0.0 中删除">
+</div><div class="docs-api-class-deprecated-marker" title="将会在 v8.0.0 或更高版本中删除">
   已弃用
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-5">属性</h5>
   <table class="docs-api-properties-table">
@@ -2710,6 +2749,8 @@ allows one to re-align the panel without changing the orientation of the panel.<
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层的原点元素。</p><p translation-origin="off">Sets the origin element, relative to which to position the overlay.</p>
 
+<p translation-result="on">到新原点元素的引用。</p><p translation-origin="off">@param origin Reference to the new origin element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2727,9 +2768,7 @@ allows one to re-align the panel without changing the orientation of the panel.<
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">到新原点元素的引用。</p><p translation-origin="off">Reference to the new origin element.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2764,6 +2803,8 @@ allows one to re-align the panel without changing the orientation of the panel.<
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置布局方向，以便可以调整浮层的位置以匹配它。</p><p translation-origin="off">Sets the layout direction so the overlay's position can be adjusted to match.</p>
 
+<p translation-result="on">新的布局方向。</p><p translation-origin="off">@param dir New layout direction.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2781,9 +2822,7 @@ allows one to re-align the panel without changing the orientation of the panel.<
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">新的布局方向。</p><p translation-origin="off">New layout direction.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2818,6 +2857,8 @@ allows one to re-align the panel without changing the orientation of the panel.<
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">添加新的首选后备排名。</p><p translation-origin="off">Adds a new preferred fallback position.</p>
 
+<p>@param originPos
+@param overlayPos</p>
 
     </td>
   </tr></tbody><thead>
@@ -2911,6 +2952,8 @@ allows one to re-align the panel without changing the orientation of the panel.<
 initially. When an overlay is locked in, it won't attempt to reposition itself
 when the position is re-applied (e.g. when the user scrolls away).</p>
 
+<p translation-result="on">浮层是否应锁定。</p><p translation-origin="off">@param isLocked Whether the overlay should locked in.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2928,9 +2971,7 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">浮层是否应锁定。</p><p translation-origin="off">Whether the overlay should locked in.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2965,6 +3006,8 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层在 x 轴上的连接点的偏移量</p><p translation-origin="off">Sets an offset for the overlay's connection point on the x-axis</p>
 
+<p translation-result="on">X 轴上的新偏移量。</p><p translation-origin="off">@param offset New offset in the X axis.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2982,9 +3025,7 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">X 轴上的新偏移量。</p><p translation-origin="off">New offset in the X axis.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3019,6 +3060,7 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层在 y 轴上的连接点的偏移量</p><p translation-origin="off">Sets an offset for the overlay's connection point on the y-axis</p>
 
+<p>@param  offset New offset in the Y axis.</p>
 
     </td>
   </tr></tbody><thead>
@@ -3036,8 +3078,7 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p>New offset in the Y axis.</p>
-
+        
       </div>
     </td>
   </tr>
@@ -3072,6 +3113,8 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">用一组新的位置覆盖当前位置。</p><p translation-origin="off">Overwrites the current set of positions with an array of new ones.</p>
 
+<p translation-result="on">要设置在本策略上的位置对。</p><p translation-origin="off">@param positions Position pairs to be set on the strategy.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3089,9 +3132,7 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置在本策略上的位置对。</p><p translation-origin="off">Position pairs to be set on the strategy.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3311,6 +3352,8 @@ Using an element origin is useful for building components that need to be positi
 relatively to a trigger (e.g. dropdown menus or tooltips), whereas using a point can be
 used for cases like contextual menus which open relative to the user's pointer.</p>
 
+<p translation-result="on">新原点的引用。</p><p translation-origin="off">@param origin Reference to the new origin.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3328,9 +3371,7 @@ used for cases like contextual menus which open relative to the user's pointer.<
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">新原点的引用。</p><p translation-origin="off">Reference to the new origin.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3365,6 +3406,8 @@ used for cases like contextual menus which open relative to the user's pointer.<
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层在 x 轴上的连接点的默认偏移量。</p><p translation-origin="off">Sets the default offset for the overlay's connection point on the x-axis.</p>
 
+<p translation-result="on">X 轴上的新偏移量。</p><p translation-origin="off">@param offset New offset in the X axis.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3382,9 +3425,7 @@ used for cases like contextual menus which open relative to the user's pointer.<
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">X 轴上的新偏移量。</p><p translation-origin="off">New offset in the X axis.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3419,6 +3460,8 @@ used for cases like contextual menus which open relative to the user's pointer.<
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层在 y 轴上的连接点的默认偏移量。</p><p translation-origin="off">Sets the default offset for the overlay's connection point on the y-axis.</p>
 
+<p translation-result="on">Y 轴上的新偏移量。</p><p translation-origin="off">@param offset New offset in the Y axis.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3436,9 +3479,7 @@ used for cases like contextual menus which open relative to the user's pointer.<
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">Y 轴上的新偏移量。</p><p translation-origin="off">New offset in the Y axis.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3579,6 +3620,8 @@ used for cases like contextual menus which open relative to the user's pointer.<
 initially. When an overlay is locked in, it won't attempt to reposition itself
 when the position is re-applied (e.g. when the user scrolls away).</p>
 
+<p translation-result="on">浮层是否应锁定。</p><p translation-origin="off">@param isLocked Whether the overlay should locked in.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3596,9 +3639,7 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">浮层是否应锁定。</p><p translation-origin="off">Whether the overlay should locked in.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3633,6 +3674,8 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">添加新的首选位置。</p><p translation-origin="off">Adds new preferred positions.</p>
 
+<p translation-result="on">此浮层的定位选项列表。</p><p translation-origin="off">@param positions List of positions options for this overlay.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3650,9 +3693,7 @@ when the position is re-applied (e.g. when the user scrolls away).</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">此浮层的定位选项列表。</p><p translation-origin="off">List of positions options for this overlay.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3796,6 +3837,9 @@ inside the overlay, depending on the current position that is being applied. Thi
 useful for the cases where the origin of an animation can change depending on the
 alignment of the overlay.</p>
 
+<p translation-result="on">CSS 选择器，将用于查找要设置为形变原点的目标元素。</p><p translation-origin="off">@param selector CSS selector that will be used to find the target
+   elements onto which to set the transform origin.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3813,10 +3857,7 @@ alignment of the overlay.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">CSS 选择器，将用于查找要设置为形变原点的目标元素。</p><p translation-origin="off">CSS selector that will be used to find the target
-   elements onto which to set the transform origin.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3851,6 +3892,8 @@ alignment of the overlay.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置浮层可以放置到视口边缘的最小距离。</p><p translation-origin="off">Sets a minimum distance the overlay may be positioned to the edge of the viewport.</p>
 
+<p translation-result="on">浮层和视口边缘之间的必要边距（以像素为单位）。</p><p translation-origin="off">@param margin Required margin between the overlay and the viewport edge in pixels.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3868,9 +3911,7 @@ alignment of the overlay.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">浮层和视口边缘之间的必要边距（以像素为单位）。</p><p translation-origin="off">Required margin between the overlay and the viewport edge in pixels.</p>
-
-
+        
       </div>
     </td>
   </tr>

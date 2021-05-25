@@ -1,0 +1,23 @@
+<html><head></head><body><mat-vertical-stepper>
+  <mat-step>
+    <ng-template matsteplabel="">Step 1</ng-template>
+    <ng-template matstepcontent="">
+      <p>This content was rendered lazily</p>
+      <button mat-button="" matsteppernext="">Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matsteplabel="">Step 2</ng-template>
+    <ng-template matstepcontent="">
+      <p>This content was also rendered lazily</p>
+      <button mat-button="" matstepperprevious="">Back</button>
+      <button mat-button="" matsteppernext="">Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matsteplabel="">Step 3</ng-template>
+    <p>This content was rendered eagerly</p>
+    <button mat-button="" matstepperprevious="">Back</button>
+  </mat-step>
+</mat-vertical-stepper>
+</body></html>

@@ -33,7 +33,14 @@
       <th colspan="2" class="docs-api-method-name-cell">getItems
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of harnesses representing the items in this list.
+@param filters Optional filters used to narrow which harnesses are included
+@return The list of items matching the given filters.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -79,7 +86,15 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsGroupedByDividers
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of sub-lists representing the list items grouped by dividers. If the list has no
+dividers it is represented as a list with a single sub-list.
+@param filters Optional filters used to narrow which list item harnesses are included
+@return The list of items matching the given filters, grouped into sub-lists by divider.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -125,7 +140,15 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsGroupedBySubheader
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of <code>ListSection</code> representing the list items grouped by subheaders. If the list has
+no subheaders it is represented as a single <code>ListSection</code> with an undefined <code>heading</code> property.
+@param filters Optional filters used to narrow which list item harnesses are included
+@return The list of items matching the given filters, grouped into sections by subheader.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -171,7 +194,19 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsWithSubheadersAndDividers
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of harnesses representing all of the items, subheaders, and dividers
+(in the order they appear in the list). Use <code>instanceof</code> to check which type of harness a given
+item is.
+@param filters Optional filters used to narrow which list items, subheaders, and dividers are
+    included. A value of <code>false</code> for the <code>item</code>, <code>subheader</code>, or <code>divider</code> properties indicates
+    that the respective harness type should be omitted completely.
+@return The list of harnesses representing the items, subheaders, and dividers matching the
+    given filters.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -888,7 +923,14 @@
       <th colspan="2" class="docs-api-method-name-cell">getHarnessLoaderForContent
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a <code>HarnessLoader</code> used to get harnesses within the list item's content.
+@deprecated Use <code>getChildLoader(MatListItemSection.CONTENT)</code> or <code>getHarness</code> instead.
+@breaking-change 12.0.0</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -915,7 +957,12 @@
       <th colspan="2" class="docs-api-method-name-cell">getLinesText
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the lines of text (<code>mat-line</code> elements) in this nav list item.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -942,7 +989,12 @@
       <th colspan="2" class="docs-api-method-name-cell">getText
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the full text content of the list item.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -969,7 +1021,12 @@
       <th colspan="2" class="docs-api-method-name-cell">hasAvatar
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Whether this list item has an avatar.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -996,7 +1053,12 @@
       <th colspan="2" class="docs-api-method-name-cell">hasIcon
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Whether this list item has an icon.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1109,7 +1171,14 @@
       <th colspan="2" class="docs-api-method-name-cell">getItems
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of harnesses representing the items in this list.
+@param filters Optional filters used to narrow which harnesses are included
+@return The list of items matching the given filters.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1155,7 +1224,15 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsGroupedByDividers
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of sub-lists representing the list items grouped by dividers. If the list has no
+dividers it is represented as a list with a single sub-list.
+@param filters Optional filters used to narrow which list item harnesses are included
+@return The list of items matching the given filters, grouped into sub-lists by divider.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1201,7 +1278,15 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsGroupedBySubheader
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of <code>ListSection</code> representing the list items grouped by subheaders. If the list has
+no subheaders it is represented as a single <code>ListSection</code> with an undefined <code>heading</code> property.
+@param filters Optional filters used to narrow which list item harnesses are included
+@return The list of items matching the given filters, grouped into sections by subheader.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1247,7 +1332,19 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsWithSubheadersAndDividers
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of harnesses representing all of the items, subheaders, and dividers
+(in the order they appear in the list). Use <code>instanceof</code> to check which type of harness a given
+item is.
+@param filters Optional filters used to narrow which list items, subheaders, and dividers are
+    included. A value of <code>false</code> for the <code>item</code>, <code>subheader</code>, or <code>divider</code> properties indicates
+    that the respective harness type should be omitted completely.
+@return The list of harnesses representing the items, subheaders, and dividers matching the
+    given filters.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1859,7 +1956,14 @@
       <th colspan="2" class="docs-api-method-name-cell">getHarnessLoaderForContent
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a <code>HarnessLoader</code> used to get harnesses within the list item's content.
+@deprecated Use <code>getChildLoader(MatListItemSection.CONTENT)</code> or <code>getHarness</code> instead.
+@breaking-change 12.0.0</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1886,7 +1990,12 @@
       <th colspan="2" class="docs-api-method-name-cell">getLinesText
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the lines of text (<code>mat-line</code> elements) in this nav list item.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1913,7 +2022,12 @@
       <th colspan="2" class="docs-api-method-name-cell">getText
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the full text content of the list item.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1940,7 +2054,12 @@
       <th colspan="2" class="docs-api-method-name-cell">hasAvatar
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Whether this list item has an avatar.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1967,7 +2086,12 @@
       <th colspan="2" class="docs-api-method-name-cell">hasIcon
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Whether this list item has an icon.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -2046,7 +2170,14 @@
       <th colspan="2" class="docs-api-method-name-cell">getItems
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of harnesses representing the items in this list.
+@param filters Optional filters used to narrow which harnesses are included
+@return The list of items matching the given filters.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2092,7 +2223,15 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsGroupedByDividers
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of sub-lists representing the list items grouped by dividers. If the list has no
+dividers it is represented as a list with a single sub-list.
+@param filters Optional filters used to narrow which list item harnesses are included
+@return The list of items matching the given filters, grouped into sub-lists by divider.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2138,7 +2277,15 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsGroupedBySubheader
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of <code>ListSection</code> representing the list items grouped by subheaders. If the list has
+no subheaders it is represented as a single <code>ListSection</code> with an undefined <code>heading</code> property.
+@param filters Optional filters used to narrow which list item harnesses are included
+@return The list of items matching the given filters, grouped into sections by subheader.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2184,7 +2331,19 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsWithSubheadersAndDividers
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of harnesses representing all of the items, subheaders, and dividers
+(in the order they appear in the list). Use <code>instanceof</code> to check which type of harness a given
+item is.
+@param filters Optional filters used to narrow which list items, subheaders, and dividers are
+    included. A value of <code>false</code> for the <code>item</code>, <code>subheader</code>, or <code>divider</code> properties indicates
+    that the respective harness type should be omitted completely.
+@return The list of harnesses representing the items, subheaders, and dividers matching the
+    given filters.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2901,7 +3060,14 @@
       <th colspan="2" class="docs-api-method-name-cell">getHarnessLoaderForContent
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a <code>HarnessLoader</code> used to get harnesses within the list item's content.
+@deprecated Use <code>getChildLoader(MatListItemSection.CONTENT)</code> or <code>getHarness</code> instead.
+@breaking-change 12.0.0</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -2962,7 +3128,12 @@
       <th colspan="2" class="docs-api-method-name-cell">getLinesText
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the lines of text (<code>mat-line</code> elements) in this nav list item.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -2989,7 +3160,12 @@
       <th colspan="2" class="docs-api-method-name-cell">getText
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the full text content of the list item.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -3016,7 +3192,12 @@
       <th colspan="2" class="docs-api-method-name-cell">hasAvatar
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Whether this list item has an avatar.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -3043,7 +3224,12 @@
       <th colspan="2" class="docs-api-method-name-cell">hasIcon
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Whether this list item has an icon.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -3160,7 +3346,8 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Deselects all items matching any of the given filters.</p>
+      <p>Deselects all items matching any of the given filters.
+@param filters Filters that specify which items should be deselected.</p>
 
     </td>
   </tr></tbody><thead>
@@ -3178,8 +3365,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p>Filters that specify which items should be deselected.</p>
-
+        
       </div>
     </td>
   </tr>
@@ -3224,7 +3410,14 @@
       <th colspan="2" class="docs-api-method-name-cell">getItems
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of harnesses representing the items in this list.
+@param filters Optional filters used to narrow which harnesses are included
+@return The list of items matching the given filters.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -3270,7 +3463,15 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsGroupedByDividers
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of sub-lists representing the list items grouped by dividers. If the list has no
+dividers it is represented as a list with a single sub-list.
+@param filters Optional filters used to narrow which list item harnesses are included
+@return The list of items matching the given filters, grouped into sub-lists by divider.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -3316,7 +3517,15 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsGroupedBySubheader
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of <code>ListSection</code> representing the list items grouped by subheaders. If the list has
+no subheaders it is represented as a single <code>ListSection</code> with an undefined <code>heading</code> property.
+@param filters Optional filters used to narrow which list item harnesses are included
+@return The list of items matching the given filters, grouped into sections by subheader.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -3362,7 +3571,19 @@
       <th colspan="2" class="docs-api-method-name-cell">getItemsWithSubheadersAndDividers
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a list of harnesses representing all of the items, subheaders, and dividers
+(in the order they appear in the list). Use <code>instanceof</code> to check which type of harness a given
+item is.
+@param filters Optional filters used to narrow which list items, subheaders, and dividers are
+    included. A value of <code>false</code> for the <code>item</code>, <code>subheader</code>, or <code>divider</code> properties indicates
+    that the respective harness type should be omitted completely.
+@return The list of harnesses representing the items, subheaders, and dividers matching the
+    given filters.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -3805,7 +4026,8 @@
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Selects all items matching any of the given filters.</p>
+      <p>Selects all items matching any of the given filters.
+@param filters Filters that specify which items should be selected.</p>
 
     </td>
   </tr></tbody><thead>
@@ -3823,8 +4045,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p>Filters that specify which items should be selected.</p>
-
+        
       </div>
     </td>
   </tr>
@@ -4201,7 +4422,14 @@ nothing if it is already unchecked.</p>
       <th colspan="2" class="docs-api-method-name-cell">getHarnessLoaderForContent
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets a <code>HarnessLoader</code> used to get harnesses within the list item's content.
+@deprecated Use <code>getChildLoader(MatListItemSection.CONTENT)</code> or <code>getHarness</code> instead.
+@breaking-change 12.0.0</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4228,7 +4456,12 @@ nothing if it is already unchecked.</p>
       <th colspan="2" class="docs-api-method-name-cell">getLinesText
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the lines of text (<code>mat-line</code> elements) in this nav list item.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4255,7 +4488,12 @@ nothing if it is already unchecked.</p>
       <th colspan="2" class="docs-api-method-name-cell">getText
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the full text content of the list item.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4282,7 +4520,12 @@ nothing if it is already unchecked.</p>
       <th colspan="2" class="docs-api-method-name-cell">hasAvatar
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Whether this list item has an avatar.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4309,7 +4552,12 @@ nothing if it is already unchecked.</p>
       <th colspan="2" class="docs-api-method-name-cell">hasIcon
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Whether this list item has an icon.</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>

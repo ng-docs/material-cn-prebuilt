@@ -18,13 +18,6 @@
   <span header-link="MatFormFieldHarness"></span>
   <code>MatFormFieldHarness</code>
   
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/testing/api#ComponentHarness" class="docs-api-class-extends-type">
-      ComponentHarness
-    </a>
-  </span>
-  
 </h4><div class="docs-api-class-description"><p>Harness for interacting with a standard Material form-field's in tests.</p>
 </div>
 
@@ -90,7 +83,7 @@ supported.</p>
   </thead>
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">Promise&lt;FormFieldControlHarness | null&gt;</code>
+      <code class="docs-api-method-returns-type">Promise&lt;ControlHarness | null&gt;</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -763,7 +756,7 @@ if no form control is set up.</p>
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v11.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v11.0.0 或更高版本中删除">
             已弃用
           </div><div class="docs-api-async-method-marker">
           异步
@@ -773,7 +766,9 @@ if no form control is set up.</p>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p>Gets a reference to the container element which contains all projected
-prefixes of the form-field.</p>
+prefixes of the form-field.
+@deprecated Use <code>getPrefixText</code> instead.
+@breaking-change 11.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -800,7 +795,7 @@ prefixes of the form-field.</p>
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v11.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v11.0.0 或更高版本中删除">
             已弃用
           </div><div class="docs-api-async-method-marker">
           异步
@@ -810,7 +805,9 @@ prefixes of the form-field.</p>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p>Gets a reference to the container element which contains all projected
-suffixes of the form-field.</p>
+suffixes of the form-field.
+@deprecated Use <code>getSuffixText</code> instead.
+@breaking-change 11.0.0</p>
 
     </td>
   </tr></tbody><thead>
@@ -898,7 +895,7 @@ suffixes of the form-field.</p>
   <code>FormFieldControlHarness</code>
 </h4><div class="docs-api-type-alias-description"><p>Possible harnesses of controls which can be bound to a form-field.</p>
 </div><div class="docs-markdown">
-<pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">type</span> FormFieldControlHarness = MatInputHarness | MatSelectHarness;</code>
+<pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">type</span> FormFieldControlHarness = MatInputHarness | MatSelectHarness | MatDatepickerInputHarness | MatDateRangeInputHarness;</code>
 </pre>
 </div>
 

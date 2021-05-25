@@ -973,10 +973,41 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
 
 
     
+      
+
+<tr class="docs-api-properties-row">
+  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
+      <code>inputElement: HTMLInputElement</code>
+    </p>
+  </td>
+  <td class="docs-api-property-description"><p translation-result="on">该指令所附属的原生输入框元素。</p><p translation-origin="off">The native input element to which this directive is attached.</p>
+
+</td>
+</tr>
+
+
+    
   </tbody></table>
 
 
 <h5 class="docs-api-h5 docs-api-method-header" id="方法-2">方法</h5>
+  
+    
+
+<table class="docs-api-method-table">
+  <thead>
+    <tr class="docs-api-method-name-row">
+      <th colspan="2" class="docs-api-method-name-cell">clear
+      </th>
+    </tr>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Clears the input</p>
+
+    </td>
+  </tr></tbody></table>
+
+
   
     
 
@@ -1192,11 +1223,11 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>input: HTMLInputElement</code>
+      <code>chipInput: MatChipInput</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on">触发该事件的原生 <code>&lt;input&gt;</code></p><p translation-origin="off">The native <code>&lt;input&gt;</code> element that the event is being fired for.</p>
-
+  <td class="docs-api-property-description"><p>Reference to the chip input that emitted the event.
+@breaking-change 13.0.0 This property will be made required.</p>
 </td>
 </tr>
 
@@ -1211,6 +1242,24 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">输入框的值。</p><p translation-origin="off">The value of the input.</p>
 
+</td>
+</tr>
+
+
+    
+      
+
+<tr class="docs-api-properties-row">
+  <td class="docs-api-properties-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v13.0.0 This property will be removed. 或更高版本中删除">
+        已弃用
+      </div><p class="docs-api-property-name">
+      <code>input: HTMLInputElement</code>
+    </p>
+  </td>
+  <td class="docs-api-property-description"><p translation-result="on">触发该事件的原生 <code>&lt;input&gt;</code></p><p translation-origin="off">The native <code>&lt;input&gt;</code> element that the event is being fired for.</p>
+
+<p>@deprecated Use <code>MatChipInputEvent#chipInput.inputElement</code> instead.
+@breaking-change 13.0.0 This property will be removed.</p>
 </td>
 </tr>
 

@@ -1,9 +1,11 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture, waitForAsync} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
 <span class="hljs-keyword">import</span> {TestbedHarnessEnvironment} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing/testbed'</span>;
 <span class="hljs-keyword">import</span> {MatPaginatorHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/paginator/testing'</span>;
 <span class="hljs-keyword">import</span> {HarnessLoader} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing'</span>;
-<span class="hljs-keyword">import</span> {BrowserDynamicTestingModule, platformBrowserDynamicTesting}
-  <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
+<span class="hljs-keyword">import</span> {
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
 <span class="hljs-keyword">import</span> {MatPaginatorModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/paginator'</span>;
 <span class="hljs-keyword">import</span> {PaginatorHarnessExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./paginator-harness-example'</span>;
 <span class="hljs-keyword">import</span> {NoopAnimationsModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser/animations'</span>;
@@ -17,18 +19,16 @@ describe(<span class="hljs-string">'PaginatorHarnessExample'</span>, <span class
     TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
   });
 
-  beforeEach(
-    waitForAsync(<span class="hljs-function">() =&gt;</span> {
-      TestBed.configureTestingModule({
-        <span class="hljs-attr">imports</span>: [MatPaginatorModule, NoopAnimationsModule],
-        <span class="hljs-attr">declarations</span>: [PaginatorHarnessExample]
-      }).compileComponents();
-      fixture = TestBed.createComponent(PaginatorHarnessExample);
-      fixture.detectChanges();
-      loader = TestbedHarnessEnvironment.loader(fixture);
-      instance = fixture.componentInstance;
-    })
-  );
+  beforeEach(<span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> TestBed.configureTestingModule({
+      <span class="hljs-attr">imports</span>: [MatPaginatorModule, NoopAnimationsModule],
+      <span class="hljs-attr">declarations</span>: [PaginatorHarnessExample]
+    }).compileComponents();
+    fixture = TestBed.createComponent(PaginatorHarnessExample);
+    fixture.detectChanges();
+    loader = TestbedHarnessEnvironment.loader(fixture);
+    instance = fixture.componentInstance;
+  });
 
   it(<span class="hljs-string">'should load all paginator harnesses'</span>, <span class="hljs-keyword">async</span> () =&gt; {
     <span class="hljs-keyword">const</span> paginators = <span class="hljs-keyword">await</span> loader.getAllHarnesses(MatPaginatorHarness);

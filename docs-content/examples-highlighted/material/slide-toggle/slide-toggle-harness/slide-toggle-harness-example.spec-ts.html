@@ -1,9 +1,11 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture, waitForAsync} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
 <span class="hljs-keyword">import</span> {TestbedHarnessEnvironment} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing/testbed'</span>;
 <span class="hljs-keyword">import</span> {MatSlideToggleHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/slide-toggle/testing'</span>;
 <span class="hljs-keyword">import</span> {HarnessLoader} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing'</span>;
-<span class="hljs-keyword">import</span> {BrowserDynamicTestingModule, platformBrowserDynamicTesting}
-  <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
+<span class="hljs-keyword">import</span> {
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
 <span class="hljs-keyword">import</span> {MatSlideToggleModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/slide-toggle'</span>;
 <span class="hljs-keyword">import</span> {SlideToggleHarnessExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./slide-toggle-harness-example'</span>;
 <span class="hljs-keyword">import</span> {ReactiveFormsModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
@@ -16,17 +18,15 @@ describe(<span class="hljs-string">'SlideToggleHarnessExample'</span>, <span cla
     TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
   });
 
-  beforeEach(
-    waitForAsync(<span class="hljs-function">() =&gt;</span> {
-      TestBed.configureTestingModule({
-        <span class="hljs-attr">imports</span>: [MatSlideToggleModule, ReactiveFormsModule],
-        <span class="hljs-attr">declarations</span>: [SlideToggleHarnessExample]
-      }).compileComponents();
-      fixture = TestBed.createComponent(SlideToggleHarnessExample);
-      fixture.detectChanges();
-      loader = TestbedHarnessEnvironment.loader(fixture);
-    })
-  );
+  beforeEach(<span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> TestBed.configureTestingModule({
+      <span class="hljs-attr">imports</span>: [MatSlideToggleModule, ReactiveFormsModule],
+      <span class="hljs-attr">declarations</span>: [SlideToggleHarnessExample]
+    }).compileComponents();
+    fixture = TestBed.createComponent(SlideToggleHarnessExample);
+    fixture.detectChanges();
+    loader = TestbedHarnessEnvironment.loader(fixture);
+  });
 
   it(<span class="hljs-string">'should load all slide-toggle harnesses'</span>, <span class="hljs-keyword">async</span> () =&gt; {
     <span class="hljs-keyword">const</span> slideToggles = <span class="hljs-keyword">await</span> loader.getAllHarnesses(MatSlideToggleHarness);

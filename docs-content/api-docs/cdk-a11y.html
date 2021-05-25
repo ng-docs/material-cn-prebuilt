@@ -263,16 +263,12 @@ message element.</p>
     
       
 
-<h4 id="FocusTrapFactory" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="FocusTrapFactory"></span>
-  <code>FocusTrapFactory</code>
+<h4 id="ConfigurableFocusTrapFactory" class="docs-header-link docs-api-h4 docs-api-class-name">
+  <span header-link="ConfigurableFocusTrapFactory"></span>
+  <code>ConfigurableFocusTrapFactory</code>
   
-</h4><div class="docs-api-class-description"><p translation-result="on">允许轻松实例化焦点陷阱的工厂。</p><p translation-origin="off">Factory that allows easy instantiation of focus traps.</p>
+</h4><div class="docs-api-class-description"><p translation-result="on">本工厂允许轻松实例化可配置的焦点陷阱。</p><p translation-origin="off">Factory that allows easy instantiation of configurable focus traps.</p>
 
-</div><div class="docs-api-class-deprecated-marker" title="将会在 vfor 11.0.0 Remove this class.
-
-11.0.0 删除此类。 中删除">
-  已弃用
 </div>
 
 
@@ -288,97 +284,14 @@ message element.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">在指定元素周围创建一个焦点捕获 zone 。</p><p translation-origin="off">Creates a focus-trapped region around the given element.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
-    </tr>
-    
-  </thead>
-  
-  <tbody><tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        element</p>
-      <code class="docs-api-method-parameter-type">HTMLElement</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        <p translation-result="on">将在其周围捕获焦点的元素。</p><p translation-origin="off">The element around which focus will be trapped.</p>
-
-
-      </div>
-    </td>
-  </tr>
-  
-  <tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        deferCaptureElements</p>
-      <code class="docs-api-method-parameter-type">boolean = false</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        <p translation-result="on">推迟创建由用户手动完成的焦点捕获元素。</p><p translation-origin="off">Defers the creation of focus-capturing elements to be done
-    manually by the user.</p>
-
-
-      </div>
-    </td>
-  </tr>
-  </tbody><thead>
-    <tr class="docs-api-method-returns-header-row">
-        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
-    </tr>
-    
-  </thead>
-  <tbody><tr>
-    <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">FocusTrap</code>
-    </td>
-    <td class="docs-api-method-returns-description-cell">
-      <div class="docs-api-method-returns-description">
-        <p translation-result="on">创建的焦点陷阱实例。</p><p translation-origin="off">The created focus trap instance.</p>
-
-
-      </div>
-    </td>
-  </tr></tbody></table>
-
-
-  
-
-
-
-    
-      
-
-<h4 id="ConfigurableFocusTrapFactory" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="ConfigurableFocusTrapFactory"></span>
-  <code>ConfigurableFocusTrapFactory</code>
-  
-</h4><div class="docs-api-class-description"><p translation-result="on">本工厂允许轻松实例化可配置的焦点陷阱。</p><p translation-origin="off">Factory that allows easy instantiation of configurable focus traps.</p>
-
-</div>
-
-
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-3">方法</h5>
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">create
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在指定元素周围创建一个焦点捕获区域。</p><p translation-origin="off">Creates a focus-trapped region around the given element.</p>
 
+<p translation-result="on">要在其周围捕获焦点的元素。</p><p translation-origin="off">@param element The element around which focus will be trapped.</p>
+
+<p translation-result="on">焦点陷阱配置。</p><p translation-origin="off">@param config The focus trap configuration.</p>
+
+<p translation-result="on">所创建的焦点陷阱实例。</p><p translation-origin="off">@returns The created focus trap instance.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -396,9 +309,7 @@ message element.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要在其周围捕获焦点的元素。</p><p translation-origin="off">The element around which focus will be trapped.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -411,9 +322,7 @@ message element.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">焦点陷阱配置。</p><p translation-origin="off">The focus trap configuration.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -443,12 +352,19 @@ message element.</p>
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v11.0.0 中删除">
+      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v11.0.0 或更高版本中删除">
             已弃用
           </div>create
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">传递一个配置对象，而不是 <code>deferCaptureElements</code> 标志。</p><p translation-origin="off">@deprecated Pass a config object instead of the <code>deferCaptureElements</code> flag.</p>
+
+<p>@breaking-change 11.0.0</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -505,6 +421,99 @@ message element.</p>
     
       
 
+<h4 id="FocusTrapFactory" class="docs-header-link docs-api-h4 docs-api-class-name">
+  <span header-link="FocusTrapFactory"></span>
+  <code>FocusTrapFactory</code>
+  
+</h4><div class="docs-api-class-description"><p translation-result="on">允许轻松实例化焦点陷阱的工厂。</p><p translation-origin="off">Factory that allows easy instantiation of focus traps.</p>
+
+</div><div class="docs-api-class-deprecated-marker" title="将会在 v11.0.0 或更高版本中删除">
+  已弃用
+</div>
+
+
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-3">方法</h5>
+  
+    
+
+<table class="docs-api-method-table">
+  <thead>
+    <tr class="docs-api-method-name-row">
+      <th colspan="2" class="docs-api-method-name-cell">create
+      </th>
+    </tr>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">在指定元素周围创建一个焦点捕获 zone 。</p><p translation-origin="off">Creates a focus-trapped region around the given element.</p>
+
+<p translation-result="on">将在其周围捕获焦点的元素。</p><p translation-origin="off">@param element The element around which focus will be trapped.</p>
+
+<p translation-result="on">推迟创建由用户手动完成的焦点捕获元素。</p><p translation-origin="off">@param deferCaptureElements Defers the creation of focus-capturing elements to be done
+    manually by the user.</p>
+
+<p translation-result="on">创建的焦点陷阱实例。</p><p translation-origin="off">@returns The created focus trap instance.</p>
+
+
+    </td>
+  </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        element</p>
+      <code class="docs-api-method-parameter-type">HTMLElement</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  
+  <tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        deferCaptureElements</p>
+      <code class="docs-api-method-parameter-type">boolean = false</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
+    <tr class="docs-api-method-returns-header-row">
+        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
+    </tr>
+    
+  </thead>
+  <tbody><tr>
+    <td class="docs-api-method-returns-type-cell">
+      <code class="docs-api-method-returns-type">FocusTrap</code>
+    </td>
+    <td class="docs-api-method-returns-description-cell">
+      <div class="docs-api-method-returns-description">
+        <p translation-result="on">创建的焦点陷阱实例。</p><p translation-origin="off">The created focus trap instance.</p>
+
+
+      </div>
+    </td>
+  </tr></tbody></table>
+
+
+  
+
+
+
+    
+      
+
 <h4 id="InteractivityChecker" class="docs-header-link docs-api-h4 docs-api-class-name">
   <span header-link="InteractivityChecker"></span>
   <code>InteractivityChecker</code>
@@ -529,6 +538,10 @@ tabbable.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取元素是否被禁用。</p><p translation-origin="off">Gets whether an element is disabled.</p>
 
+<p translation-result="on">要检查的元素。</p><p translation-origin="off">@param element Element to be checked.</p>
+
+<p translation-result="on">元素是否被禁用。</p><p translation-origin="off">@returns Whether the element is disabled.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -546,9 +559,7 @@ tabbable.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要检查的元素。</p><p translation-origin="off">Element to be checked.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -585,6 +596,12 @@ tabbable.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取用户是否可以给某个元素设置焦点。</p><p translation-origin="off">Gets whether an element can be focused by the user.</p>
 
+<p translation-result="on">要检查的元素。</p><p translation-origin="off">@param element Element to be checked.</p>
+
+<p translation-result="on">带有用于自定义此方法行为的选项的配置对象</p><p translation-origin="off">@param config The config object with options to customize this method's behavior</p>
+
+<p translation-result="on">元素是否可获得焦点。</p><p translation-origin="off">@returns Whether the element is focusable.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -602,9 +619,7 @@ tabbable.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要检查的元素。</p><p translation-origin="off">Element to be checked.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -617,9 +632,7 @@ tabbable.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">带有用于自定义此方法行为的选项的配置对象</p><p translation-origin="off">The config object with options to customize this method's behavior</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -657,6 +670,10 @@ tabbable.</p>
       <p translation-result="on">获取是否可以通过 Tab 键访问元素。假定已经使用 isFocusable 检查过此元素。</p><p translation-origin="off">Gets whether an element can be reached via Tab key.
 Assumes that the element has already been checked with isFocusable.</p>
 
+<p translation-result="on">要检查的元素。</p><p translation-origin="off">@param element Element to be checked.</p>
+
+<p translation-result="on">元素是否可 tab。</p><p translation-origin="off">@returns Whether the element is tabbable.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -674,9 +691,7 @@ Assumes that the element has already been checked with isFocusable.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要检查的元素。</p><p translation-origin="off">Element to be checked.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -715,6 +730,8 @@ Assumes that the element has already been checked with isFocusable.</p>
 
 <p translation-result="on">这包括 <code>display: none</code> 和 <code>visibility: hidden</code> 状态下的，但被 <code>overflow: hidden</code> 的父对象切掉或位于视口之外的除外。</p><p translation-origin="off">This will capture states like <code>display: none</code> and <code>visibility: hidden</code>, but not things like
 being clipped by an <code>overflow: hidden</code> parent or being outside the viewport.</p>
+
+<p translation-result="on">元素是否可见。</p><p translation-origin="off">@returns Whether the element is visible.</p>
 
 
     </td>
@@ -787,6 +804,10 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">向屏幕阅读器发布一条消息。</p><p translation-origin="off">Announces a message to screenreaders.</p>
 
+<p translation-result="on">要通知到屏幕阅读器的消息。</p><p translation-origin="off">@param message Message to be announced to the screenreader.</p>
+
+<p translation-result="on">将消息添加到 DOM 时将解决的 Promise。</p><p translation-origin="off">@returns Promise that will be resolved when the message is added to the DOM.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -804,9 +825,7 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要通知到屏幕阅读器的消息。</p><p translation-origin="off">Message to be announced to the screenreader.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -845,6 +864,12 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">向屏幕阅读器发布一条消息。</p><p translation-origin="off">Announces a message to screenreaders.</p>
 
+<p translation-result="on">要通知屏幕阅读器的消息。</p><p translation-origin="off">@param message Message to be announced to the screenreader.</p>
+
+<p translation-result="on">播音员元素的礼貌度。</p><p translation-origin="off">@param politeness The politeness of the announcer element.</p>
+
+<p translation-result="on">将消息添加到 DOM 时将解决的 Promise。</p><p translation-origin="off">@returns Promise that will be resolved when the message is added to the DOM.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -862,9 +887,7 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要通知屏幕阅读器的消息。</p><p translation-origin="off">Message to be announced to the screenreader.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -877,9 +900,7 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">播音员元素的礼貌度。</p><p translation-origin="off">The politeness of the announcer element.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -918,6 +939,14 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">向屏幕阅读器发布一条消息。</p><p translation-origin="off">Announces a message to screenreaders.</p>
 
+<p translation-result="on">要通知屏幕阅读器的消息。</p><p translation-origin="off">@param message Message to be announced to the screenreader.</p>
+
+<p translation-result="on">清除播音员元素的时间（以毫秒为单位）。请注意，这是在将消息添加到 DOM 后生效的，这可能在调用 <code>announce</code> 之后的最多 100ms。</p><p translation-origin="off">@param duration Time in milliseconds after which to clear out the announcer element. Note
+  that this takes effect after the message has been added to the DOM, which can be up to
+  100ms after <code>announce</code> has been called.</p>
+
+<p translation-result="on">将消息添加到 DOM 时将解决的 Promise。</p><p translation-origin="off">@returns Promise that will be resolved when the message is added to the DOM.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -935,9 +964,7 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要通知屏幕阅读器的消息。</p><p translation-origin="off">Message to be announced to the screenreader.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -950,11 +977,7 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">清除播音员元素的时间（以毫秒为单位）。请注意，这是在将消息添加到 DOM 后生效的，这可能在调用 <code>announce</code> 之后的最多 100ms。</p><p translation-origin="off">Time in milliseconds after which to clear out the announcer element. Note
-  that this takes effect after the message has been added to the DOM, which can be up to
-  100ms after <code>announce</code> has been called.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -993,6 +1016,16 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">向屏幕阅读器发布一条消息。</p><p translation-origin="off">Announces a message to screenreaders.</p>
 
+<p translation-result="on">要通知屏幕阅读器的消息。</p><p translation-origin="off">@param message Message to be announced to the screenreader.</p>
+
+<p translation-result="on">播音员元素的礼貌度。</p><p translation-origin="off">@param politeness The politeness of the announcer element.</p>
+
+<p translation-result="on">清除播音员元素的时间（以毫秒为单位）。请注意，这是在将消息添加到 DOM 后生效的，这可能在 <code>announce</code> 被调用之后最多 100ms。</p><p translation-origin="off">@param duration Time in milliseconds after which to clear out the announcer element. Note
+  that this takes effect after the message has been added to the DOM, which can be up to
+  100ms after <code>announce</code> has been called.</p>
+
+<p translation-result="on">将消息添加到 DOM 时将解决的 Promise。</p><p translation-origin="off">@returns Promise that will be resolved when the message is added to the DOM.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1010,9 +1043,7 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要通知屏幕阅读器的消息。</p><p translation-origin="off">Message to be announced to the screenreader.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1025,9 +1056,7 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">播音员元素的礼貌度。</p><p translation-origin="off">The politeness of the announcer element.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1040,11 +1069,7 @@ being clipped by an <code>overflow: hidden</code> parent or being outside the vi
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">清除播音员元素的时间（以毫秒为单位）。请注意，这是在将消息添加到 DOM 后生效的，这可能在 <code>announce</code> 被调用之后最多 100ms。</p><p translation-origin="off">Time in milliseconds after which to clear out the announcer element. Note
-  that this takes effect after the message has been added to the DOM, which can be up to
-  100ms after <code>announce</code> has been called.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1118,6 +1143,12 @@ through the page landmarks.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">通过指定的焦点来源对元素进行聚焦。</p><p translation-origin="off">Focuses the element via the specified focus origin.</p>
 
+<p translation-result="on">要获取焦点的元素。</p><p translation-origin="off">@param element Element to focus.</p>
+
+<p translation-result="on">焦点来源。</p><p translation-origin="off">@param origin Focus origin.</p>
+
+<p translation-result="on">可用于配置焦点行为的选项。</p><p translation-origin="off">@param options Options that can be used to configure the focus behavior.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1135,9 +1166,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要获取焦点的元素。</p><p translation-origin="off">Element to focus.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1150,9 +1179,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">焦点来源。</p><p translation-origin="off">Focus origin.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1165,9 +1192,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">可用于配置焦点行为的选项。</p><p translation-origin="off">Options that can be used to configure the focus behavior.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1187,6 +1212,12 @@ through the page landmarks.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">通过指定的焦点来源对元素进行聚焦。</p><p translation-origin="off">Focuses the element via the specified focus origin.</p>
 
+<p translation-result="on">要获取焦点的元素。</p><p translation-origin="off">@param element Element to focus.</p>
+
+<p translation-result="on">焦点来源。</p><p translation-origin="off">@param origin Focus origin.</p>
+
+<p translation-result="on">可用于配置焦点行为的选项。</p><p translation-origin="off">@param options Options that can be used to configure the focus behavior.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1204,9 +1235,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要获取焦点的元素。</p><p translation-origin="off">Element to focus.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1219,9 +1248,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">焦点来源。</p><p translation-origin="off">Focus origin.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1234,9 +1261,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">可用于配置焦点行为的选项。</p><p translation-origin="off">Options that can be used to configure the focus behavior.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1256,6 +1281,13 @@ through the page landmarks.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">监视元素的焦点，并应用适当的 CSS 类。</p><p translation-origin="off">Monitors focus on an element and applies appropriate CSS classes.</p>
 
+<p translation-result="on">要监视的元素</p><p translation-origin="off">@param element The element to monitor</p>
+
+<p translation-result="on">当子元素获得焦点时是否要计入这个焦点。</p><p translation-origin="off">@param checkChildren Whether to count the element as focused when its children are focused.</p>
+
+<p translation-result="on">会在元素的焦点状态更改时发出通知的可观察对象。当元素失焦时，将发出 null。</p><p translation-origin="off">@returns An observable that emits when the focus state of the element changes.
+    When the element is blurred, null will be emitted.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1273,9 +1305,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要监视的元素</p><p translation-origin="off">The element to monitor</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1288,9 +1318,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">当子元素获得焦点时是否要计入这个焦点。</p><p translation-origin="off">Whether to count the element as focused when its children are focused.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1328,6 +1356,13 @@ through the page landmarks.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">监视元素的焦点，并应用适当的 CSS 类。</p><p translation-origin="off">Monitors focus on an element and applies appropriate CSS classes.</p>
 
+<p translation-result="on">要监视的元素</p><p translation-origin="off">@param element The element to monitor</p>
+
+<p translation-result="on">当子元素获得焦点时是否要计入这个焦点。</p><p translation-origin="off">@param checkChildren Whether to count the element as focused when its children are focused.</p>
+
+<p translation-result="on">会在元素的焦点状态更改时发出通知的可观察对象。当元素失焦时，将发出 null。</p><p translation-origin="off">@returns An observable that emits when the focus state of the element changes.
+    When the element is blurred, null will be emitted.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1345,9 +1380,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要监视的元素</p><p translation-origin="off">The element to monitor</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1360,9 +1393,7 @@ through the page landmarks.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">当子元素获得焦点时是否要计入这个焦点。</p><p translation-origin="off">Whether to count the element as focused when its children are focused.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1728,6 +1759,8 @@ when focus is shifted off of the list.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">根据传入的键盘事件设置激活条目。</p><p translation-origin="off">Sets the active item depending on the key event passed in.</p>
 
+<p translation-result="on">用于确定哪个元素应处于活动状态的键盘事件。</p><p translation-origin="off">@param event Keyboard event to be used for determining which element should be active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1745,9 +1778,7 @@ when focus is shifted off of the list.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">用于确定哪个元素应处于活动状态的键盘事件。</p><p translation-origin="off">Keyboard event to be used for determining which element should be active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1769,6 +1800,8 @@ when focus is shifted off of the list.</p>
 active styles to the newly active item. Also removes active styles
 from the previously active item.</p>
 
+<p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">@param index Index of the item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1786,9 +1819,7 @@ from the previously active item.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">Index of the item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1810,6 +1841,8 @@ from the previously active item.</p>
 active styles to the it. Also removes active styles from the
 previously active item.</p>
 
+<p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">@param item Item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1827,9 +1860,7 @@ previously active item.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">Item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1922,6 +1953,8 @@ previously active item.</p>
       <p translation-result="on">设置谓词函数，该函数会确定列表按键管理器应跳过哪些条目。</p><p translation-origin="off">Sets the predicate function that determines which items should be skipped by the
 list key manager.</p>
 
+<p translation-result="on">确定是否应跳过指定条目的函数。</p><p translation-origin="off">@param predicate Function that determines whether the given item should be skipped.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1939,9 +1972,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">确定是否应跳过指定条目的函数。</p><p translation-origin="off">Function that determines whether the given item should be skipped.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1976,6 +2007,8 @@ list key manager.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">允许在没有任何其他效果的情况下设置激活状态。</p><p translation-origin="off">Allows setting the active without any other effects.</p>
 
+<p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">@param index Index of the item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1993,9 +2026,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">Index of the item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2015,6 +2046,8 @@ list key manager.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">允许设置活动条目，而没有任何其他影响。</p><p translation-origin="off">Allows setting the active item without any other effects.</p>
 
+<p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">@param item Item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2032,9 +2065,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">Item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2108,6 +2139,8 @@ as the user is pressing the arrow keys. Defaults to not allowing any modifier ke
       <p translation-result="on">配置按键管理器，以在按下 Home 或 End 键时分别激活第一项和最后一项。</p><p translation-origin="off">Configures the key manager to activate the first and last items
 respectively when the Home or End key is pressed.</p>
 
+<p translation-result="on">按下 Home 键或 End 键时是否激活第一项/最后一项。</p><p translation-origin="off">@param enabled Whether pressing the Home or End key activates the first/last item.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2125,9 +2158,7 @@ respectively when the Home or End key is pressed.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">按下 Home 键或 End 键时是否激活第一项/最后一项。</p><p translation-origin="off">Whether pressing the Home or End key activates the first/last item.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2163,6 +2194,8 @@ respectively when the Home or End key is pressed.</p>
       <p translation-result="on">配置按键管理器以水平移动选择。传递 <code>null</code> 将禁用水平移动。</p><p translation-origin="off">Configures the key manager to move the selection horizontally.
 Passing in <code>null</code> will disable horizontal movement.</p>
 
+<p translation-result="on">所选内容可以移动的方向。</p><p translation-origin="off">@param direction Direction in which the selection can be moved.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2180,9 +2213,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">所选内容可以移动的方向。</p><p translation-origin="off">Direction in which the selection can be moved.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2217,6 +2248,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">打开预输入模式，该模式允许用户通过键入来设置活动条目。</p><p translation-origin="off">Turns on typeahead mode which allows users to set the active item by typing.</p>
 
+<p translation-result="on">在最后一次按键操作之后等待一小段时间，然后再设置活动条目。</p><p translation-origin="off">@param debounceInterval Time to wait after the last keystroke before setting the active item.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2234,9 +2267,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">在最后一次按键操作之后等待一小段时间，然后再设置活动条目。</p><p translation-origin="off">Time to wait after the last keystroke before setting the active item.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2271,6 +2302,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">配置按键管理器是否应该能够垂直移动选择。</p><p translation-origin="off">Configures whether the key manager should be able to move the selection vertically.</p>
 
+<p translation-result="on">是否应启用垂直选择。</p><p translation-origin="off">@param enabled Whether vertical selection should be enabled.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2288,9 +2321,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">是否应启用垂直选择。</p><p translation-origin="off">Whether vertical selection should be enabled.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2326,6 +2357,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
       <p translation-result="on">配置回卷模式，当该模式确定在指定方向上没有更多条目时，活动条目是否将回卷列表的另一端。</p><p translation-origin="off">Configures wrapping mode, which determines whether the active item will wrap to
 the other end of list when there are no more items in the given direction.</p>
 
+<p translation-result="on">到达末尾时列表是否应该回卷。</p><p translation-origin="off">@param shouldWrap Whether the list should wrap when reaching the end.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2343,9 +2376,7 @@ the other end of list when there are no more items in the given direction.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">到达末尾时列表是否应该回卷。</p><p translation-origin="off">Whether the list should wrap when reaching the end.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2499,6 +2530,8 @@ when focus is shifted off of the list.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">根据传入的键盘事件设置激活条目。</p><p translation-origin="off">Sets the active item depending on the key event passed in.</p>
 
+<p translation-result="on">用于确定哪个元素应处于活动状态的键盘事件。</p><p translation-origin="off">@param event Keyboard event to be used for determining which element should be active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2516,9 +2549,7 @@ when focus is shifted off of the list.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">用于确定哪个元素应处于活动状态的键盘事件。</p><p translation-origin="off">Keyboard event to be used for determining which element should be active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2539,6 +2570,8 @@ when focus is shifted off of the list.</p>
       <p translation-result="on">将活动条目设置为指定索引处的条目，并让新的活动条目获得焦点。</p><p translation-origin="off">Sets the active item to the item at the specified
 index and focuses the newly active item.</p>
 
+<p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">@param index Index of the item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2556,9 +2589,7 @@ index and focuses the newly active item.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">Index of the item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2578,6 +2609,8 @@ index and focuses the newly active item.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">将活动条目设置为指定的条目并让它获得焦点。</p><p translation-origin="off">Sets the active item to the item that is specified and focuses it.</p>
 
+<p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">@param item Item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2595,9 +2628,7 @@ index and focuses the newly active item.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">Item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2635,6 +2666,8 @@ index and focuses the newly active item.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">设置焦点来源，该焦点来源将传递给所有后续调用 <code>focus</code> 的条目。</p><p translation-origin="off">Sets the focus origin that will be passed in to the items for any subsequent <code>focus</code> calls.</p>
 
+<p translation-result="on">用来让条目获取焦点时的焦点来源。</p><p translation-origin="off">@param origin Focus origin to be used when focusing items.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2652,9 +2685,7 @@ index and focuses the newly active item.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">用来让条目获取焦点时的焦点来源。</p><p translation-origin="off">Focus origin to be used when focusing items.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2744,6 +2775,8 @@ index and focuses the newly active item.</p>
       <p translation-result="on">设置谓词函数，该函数会确定列表按键管理器应跳过哪些条目。</p><p translation-origin="off">Sets the predicate function that determines which items should be skipped by the
 list key manager.</p>
 
+<p translation-result="on">确定是否应跳过指定条目的函数。</p><p translation-origin="off">@param predicate Function that determines whether the given item should be skipped.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2761,9 +2794,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">确定是否应跳过指定条目的函数。</p><p translation-origin="off">Function that determines whether the given item should be skipped.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2798,6 +2829,8 @@ list key manager.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">允许在没有任何其他效果的情况下设置激活状态。</p><p translation-origin="off">Allows setting the active without any other effects.</p>
 
+<p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">@param index Index of the item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2815,9 +2848,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">Index of the item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2837,6 +2868,8 @@ list key manager.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">允许设置活动条目，而没有任何其他影响。</p><p translation-origin="off">Allows setting the active item without any other effects.</p>
 
+<p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">@param item Item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2854,9 +2887,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">Item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2930,6 +2961,8 @@ as the user is pressing the arrow keys. Defaults to not allowing any modifier ke
       <p translation-result="on">配置按键管理器，以在按下 Home 或 End 键时分别激活第一项和最后一项。</p><p translation-origin="off">Configures the key manager to activate the first and last items
 respectively when the Home or End key is pressed.</p>
 
+<p translation-result="on">按下 Home 键或 End 键时是否激活第一项/最后一项。</p><p translation-origin="off">@param enabled Whether pressing the Home or End key activates the first/last item.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2947,9 +2980,7 @@ respectively when the Home or End key is pressed.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">按下 Home 键或 End 键时是否激活第一项/最后一项。</p><p translation-origin="off">Whether pressing the Home or End key activates the first/last item.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -2985,6 +3016,8 @@ respectively when the Home or End key is pressed.</p>
       <p translation-result="on">配置按键管理器以水平移动选择。传递 <code>null</code> 将禁用水平移动。</p><p translation-origin="off">Configures the key manager to move the selection horizontally.
 Passing in <code>null</code> will disable horizontal movement.</p>
 
+<p translation-result="on">所选内容可以移动的方向。</p><p translation-origin="off">@param direction Direction in which the selection can be moved.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3002,9 +3035,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">所选内容可以移动的方向。</p><p translation-origin="off">Direction in which the selection can be moved.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3039,6 +3070,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">打开预输入模式，该模式允许用户通过键入来设置活动条目。</p><p translation-origin="off">Turns on typeahead mode which allows users to set the active item by typing.</p>
 
+<p translation-result="on">在最后一次按键操作之后等待一小段时间，然后再设置活动条目。</p><p translation-origin="off">@param debounceInterval Time to wait after the last keystroke before setting the active item.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3056,9 +3089,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">在最后一次按键操作之后等待一小段时间，然后再设置活动条目。</p><p translation-origin="off">Time to wait after the last keystroke before setting the active item.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3093,6 +3124,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">配置按键管理器是否应该能够垂直移动选择。</p><p translation-origin="off">Configures whether the key manager should be able to move the selection vertically.</p>
 
+<p translation-result="on">是否应启用垂直选择。</p><p translation-origin="off">@param enabled Whether vertical selection should be enabled.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3110,9 +3143,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">是否应启用垂直选择。</p><p translation-origin="off">Whether vertical selection should be enabled.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3148,6 +3179,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
       <p translation-result="on">配置回卷模式，当该模式确定在指定方向上没有更多条目时，活动条目是否将回卷列表的另一端。</p><p translation-origin="off">Configures wrapping mode, which determines whether the active item will wrap to
 the other end of list when there are no more items in the given direction.</p>
 
+<p translation-result="on">到达末尾时列表是否应该回卷。</p><p translation-origin="off">@param shouldWrap Whether the list should wrap when reaching the end.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3165,9 +3198,7 @@ the other end of list when there are no more items in the given direction.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">到达末尾时列表是否应该回卷。</p><p translation-origin="off">Whether the list should wrap when reaching the end.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3317,6 +3348,8 @@ when focus is shifted off of the list.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">根据传入的键盘事件设置激活条目。</p><p translation-origin="off">Sets the active item depending on the key event passed in.</p>
 
+<p translation-result="on">用于确定哪个元素应处于活动状态的键盘事件。</p><p translation-origin="off">@param event Keyboard event to be used for determining which element should be active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3334,9 +3367,7 @@ when focus is shifted off of the list.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">用于确定哪个元素应处于活动状态的键盘事件。</p><p translation-origin="off">Keyboard event to be used for determining which element should be active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3356,6 +3387,8 @@ when focus is shifted off of the list.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">把激活条目设置为由索引指定的条目。</p><p translation-origin="off">Sets the active item to the item at the index specified.</p>
 
+<p translation-result="on">要设置为活动的条目的索引。</p><p translation-origin="off">@param index The index of the item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3373,9 +3406,7 @@ when focus is shifted off of the list.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动的条目的索引。</p><p translation-origin="off">The index of the item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3395,6 +3426,8 @@ when focus is shifted off of the list.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">将活动条目设置为指定的条目。</p><p translation-origin="off">Sets the active item to the specified item.</p>
 
+<p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">@param item The item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3412,9 +3445,7 @@ when focus is shifted off of the list.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">The item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3507,6 +3538,8 @@ when focus is shifted off of the list.</p>
       <p translation-result="on">设置谓词函数，该函数会确定列表按键管理器应跳过哪些条目。</p><p translation-origin="off">Sets the predicate function that determines which items should be skipped by the
 list key manager.</p>
 
+<p translation-result="on">确定是否应跳过指定条目的函数。</p><p translation-origin="off">@param predicate Function that determines whether the given item should be skipped.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3524,9 +3557,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">确定是否应跳过指定条目的函数。</p><p translation-origin="off">Function that determines whether the given item should be skipped.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3561,6 +3592,8 @@ list key manager.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">允许在没有任何其他效果的情况下设置激活状态。</p><p translation-origin="off">Allows setting the active without any other effects.</p>
 
+<p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">@param index Index of the item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3578,9 +3611,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动条目的索引。</p><p translation-origin="off">Index of the item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3600,6 +3631,8 @@ list key manager.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">允许设置活动条目，而没有任何其他影响。</p><p translation-origin="off">Allows setting the active item without any other effects.</p>
 
+<p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">@param item Item to be set as active.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3617,9 +3650,7 @@ list key manager.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要设置为活动的条目。</p><p translation-origin="off">Item to be set as active.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3693,6 +3724,8 @@ as the user is pressing the arrow keys. Defaults to not allowing any modifier ke
       <p translation-result="on">配置按键管理器，以在按下 Home 或 End 键时分别激活第一项和最后一项。</p><p translation-origin="off">Configures the key manager to activate the first and last items
 respectively when the Home or End key is pressed.</p>
 
+<p translation-result="on">按下 Home 键或 End 键时是否激活第一项/最后一项。</p><p translation-origin="off">@param enabled Whether pressing the Home or End key activates the first/last item.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3710,9 +3743,7 @@ respectively when the Home or End key is pressed.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">按下 Home 键或 End 键时是否激活第一项/最后一项。</p><p translation-origin="off">Whether pressing the Home or End key activates the first/last item.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3748,6 +3779,8 @@ respectively when the Home or End key is pressed.</p>
       <p translation-result="on">配置按键管理器以水平移动选择。传递 <code>null</code> 将禁用水平移动。</p><p translation-origin="off">Configures the key manager to move the selection horizontally.
 Passing in <code>null</code> will disable horizontal movement.</p>
 
+<p translation-result="on">所选内容可以移动的方向。</p><p translation-origin="off">@param direction Direction in which the selection can be moved.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3765,9 +3798,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">所选内容可以移动的方向。</p><p translation-origin="off">Direction in which the selection can be moved.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3802,6 +3833,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">打开预输入模式，该模式允许用户通过键入来设置活动条目。</p><p translation-origin="off">Turns on typeahead mode which allows users to set the active item by typing.</p>
 
+<p translation-result="on">在最后一次按键操作之后等待一小段时间，然后再设置活动条目。</p><p translation-origin="off">@param debounceInterval Time to wait after the last keystroke before setting the active item.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3819,9 +3852,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">在最后一次按键操作之后等待一小段时间，然后再设置活动条目。</p><p translation-origin="off">Time to wait after the last keystroke before setting the active item.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3856,6 +3887,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">配置按键管理器是否应该能够垂直移动选择。</p><p translation-origin="off">Configures whether the key manager should be able to move the selection vertically.</p>
 
+<p translation-result="on">是否应启用垂直选择。</p><p translation-origin="off">@param enabled Whether vertical selection should be enabled.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3873,9 +3906,7 @@ Passing in <code>null</code> will disable horizontal movement.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">是否应启用垂直选择。</p><p translation-origin="off">Whether vertical selection should be enabled.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3911,6 +3942,8 @@ Passing in <code>null</code> will disable horizontal movement.</p>
       <p translation-result="on">配置回卷模式，当该模式确定在指定方向上没有更多条目时，活动条目是否将回卷列表的另一端。</p><p translation-origin="off">Configures wrapping mode, which determines whether the active item will wrap to
 the other end of list when there are no more items in the given direction.</p>
 
+<p translation-result="on">到达末尾时列表是否应该回卷。</p><p translation-origin="off">@param shouldWrap Whether the list should wrap when reaching the end.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3928,9 +3961,7 @@ the other end of list when there are no more items in the given direction.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">到达末尾时列表是否应该回卷。</p><p translation-origin="off">Whether the list should wrap when reaching the end.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -4014,6 +4045,9 @@ See FocusTrapInertStrategy.</p>
       <p translation-result="on">将这些锚点插入 DOM。这通常是在构造函数中自动完成的，但是对于诸如 <code>*ngIf</code> 之类的指令，可以将其推迟。</p><p translation-origin="off">Inserts the anchors into the DOM. This is usually done automatically
 in the constructor, but can be deferred for cases like directives with <code>*ngIf</code>.</p>
 
+<p translation-result="on">焦点陷阱是否成功附加。如果目标元素当前不在 DOM 中，则可能不是这种情况。</p><p translation-origin="off">@returns Whether the focus trap managed to attach successfully. This may not be the case
+if the target element isn't currently in the DOM.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -4028,7 +4062,7 @@ in the constructor, but can be deferred for cases like directives with <code>*ng
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">焦点陷阱是否成功附加。如果目标元素当前不在 DOM 中，则可能不是这种情况。</p><p translation-origin="off">Whether the focus trap managed to attach successfuly. This may not be the case
+        <p translation-result="on">焦点陷阱是否成功附加。如果目标元素当前不在 DOM 中，则可能不是这种情况。</p><p translation-origin="off">Whether the focus trap managed to attach successfully. This may not be the case
 if the target element isn't currently in the DOM.</p>
 
 
@@ -4068,9 +4102,30 @@ if the target element isn't currently in the DOM.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">让焦点陷阱范围内第一个可 tab 的元素获得焦点。</p><p translation-origin="off">Focuses the first tabbable element within the focus trap region.</p>
 
+<p translation-result="on">焦点是否成功移动。</p><p translation-origin="off">@returns Whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4106,9 +4161,31 @@ if the target element isn't currently in the DOM.</p>
       <p translation-result="on">等待 zone 稳定，然后让焦点陷阱内第一个可 tab 的元素获得焦点。</p><p translation-origin="off">Waits for the zone to stabilize, then focuses
 the first tabbable element within the focus trap region.</p>
 
+<p translation-result="on">返回一个解析为布尔值的 promise，具体取决于焦点是否成功移动。</p><p translation-origin="off">@returns Returns a promise that resolves with a boolean, depending
+on whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4142,9 +4219,30 @@ on whether focus was moved successfully.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在初始化焦点陷阱时应获得焦点的元素。</p><p translation-origin="off">Focuses the element that should be focused when the focus trap is initialized.</p>
 
+<p translation-result="on">焦点是否成功移动。</p><p translation-origin="off">@returns Whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4180,9 +4278,31 @@ on whether focus was moved successfully.</p>
       <p translation-result="on">等待 zone 稳定，然后聚焦用户指定的第一个元素或第一个可 tab 的元素。</p><p translation-origin="off">Waits for the zone to stabilize, then either focuses the first element that the
 user specified, or the first tabbable element.</p>
 
+<p translation-result="on">返回一个解析为布尔值的 promise，具体取决于焦点是否成功移动。</p><p translation-origin="off">@returns Returns a promise that resolves with a boolean, depending
+on whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4216,9 +4336,30 @@ on whether focus was moved successfully.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">让焦点陷阱范围内最后一个可 tab 的元素获得焦点。</p><p translation-origin="off">Focuses the last tabbable element within the focus trap region.</p>
 
+<p translation-result="on">焦点是否成功移动。</p><p translation-origin="off">@returns Whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4254,9 +4395,31 @@ on whether focus was moved successfully.</p>
       <p translation-result="on">等待 zone 稳定，然后让焦点陷阱内最后一个可 tab 的元素获得焦点。</p><p translation-origin="off">Waits for the zone to stabilize, then focuses
 the last tabbable element within the focus trap region.</p>
 
+<p translation-result="on">返回一个解析为布尔值的 promise，具体取决于焦点是否成功移动。</p><p translation-origin="off">@returns Returns a promise that resolves with a boolean, depending
+on whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4417,11 +4580,9 @@ listener to redirect focus back inside the FocusTrap.</p>
 
 <p translation-result="on">此类当前使用相对简单的方法进行焦点捕获。它假定 tab 顺序与 DOM 顺序相同，但这不一定正确。和 <code>tabIndex &gt; 0</code> 一样，flex <code>order</code> 和 Shadow DOM 之类的都可能导致两者未对齐。</p><p translation-origin="off">This class currently uses a relatively simple approach to focus trapping.
 It assumes that the tab order is the same as DOM order, which is not necessarily true.
-Things like <code>tabIndex &gt; 0</code>, flex <code>order</code>, and shadow roots can cause the two to misalign.</p>
+Things like <code>tabIndex &gt; 0</code>, flex <code>order</code>, and shadow roots can cause the two to be misaligned.</p>
 
-</div><div class="docs-api-class-deprecated-marker" title="将会在 vfor 11.0.0 Remove this class.
-
-11.0.0 删除此类。 中删除">
+</div><div class="docs-api-class-deprecated-marker" title="将会在 v11.0.0 或更高版本中删除">
   已弃用
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-7">属性</h5>
   <table class="docs-api-properties-table">
@@ -4486,6 +4647,9 @@ Things like <code>tabIndex &gt; 0</code>, flex <code>order</code>, and shadow ro
       <p translation-result="on">将这些锚点插入 DOM。这通常是在构造函数中自动完成的，但是对于诸如 <code>*ngIf</code> 之类的指令，可以将其推迟。</p><p translation-origin="off">Inserts the anchors into the DOM. This is usually done automatically
 in the constructor, but can be deferred for cases like directives with <code>*ngIf</code>.</p>
 
+<p translation-result="on">焦点陷阱是否成功附加。如果目标元素当前不在 DOM 中，则可能不是这种情况。</p><p translation-origin="off">@returns Whether the focus trap managed to attach successfully. This may not be the case
+if the target element isn't currently in the DOM.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -4500,7 +4664,7 @@ in the constructor, but can be deferred for cases like directives with <code>*ng
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">焦点陷阱是否成功附加。如果目标元素当前不在 DOM 中，则可能不是这种情况。</p><p translation-origin="off">Whether the focus trap managed to attach successfuly. This may not be the case
+        <p translation-result="on">焦点陷阱是否成功附加。如果目标元素当前不在 DOM 中，则可能不是这种情况。</p><p translation-origin="off">Whether the focus trap managed to attach successfully. This may not be the case
 if the target element isn't currently in the DOM.</p>
 
 
@@ -4540,9 +4704,30 @@ if the target element isn't currently in the DOM.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">让焦点陷阱范围内第一个可 tab 的元素获得焦点。</p><p translation-origin="off">Focuses the first tabbable element within the focus trap region.</p>
 
+<p translation-result="on">焦点是否成功移动。</p><p translation-origin="off">@returns Whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4578,9 +4763,31 @@ if the target element isn't currently in the DOM.</p>
       <p translation-result="on">等待 zone 稳定，然后让焦点陷阱内第一个可 tab 的元素获得焦点。</p><p translation-origin="off">Waits for the zone to stabilize, then focuses
 the first tabbable element within the focus trap region.</p>
 
+<p translation-result="on">返回一个解析为布尔值的 promise，具体取决于焦点是否成功移动。</p><p translation-origin="off">@returns Returns a promise that resolves with a boolean, depending
+on whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4614,9 +4821,30 @@ on whether focus was moved successfully.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在初始化焦点陷阱时应获得焦点的元素。</p><p translation-origin="off">Focuses the element that should be focused when the focus trap is initialized.</p>
 
+<p translation-result="on">焦点是否成功移动。</p><p translation-origin="off">@returns Whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4652,9 +4880,31 @@ on whether focus was moved successfully.</p>
       <p translation-result="on">等待 zone 稳定，然后聚焦用户指定的第一个元素或第一个可 tab 的元素。</p><p translation-origin="off">Waits for the zone to stabilize, then either focuses the first element that the
 user specified, or the first tabbable element.</p>
 
+<p translation-result="on">返回一个解析为布尔值的 promise，具体取决于焦点是否成功移动。</p><p translation-origin="off">@returns Returns a promise that resolves with a boolean, depending
+on whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4688,9 +4938,30 @@ on whether focus was moved successfully.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">让焦点陷阱范围内最后一个可 tab 的元素获得焦点。</p><p translation-origin="off">Focuses the last tabbable element within the focus trap region.</p>
 
+<p translation-result="on">焦点是否成功移动。</p><p translation-origin="off">@returns Whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4726,9 +4997,31 @@ on whether focus was moved successfully.</p>
       <p translation-result="on">等待 zone 稳定，然后让焦点陷阱内最后一个可 tab 的元素获得焦点。</p><p translation-origin="off">Waits for the zone to stabilize, then focuses
 the last tabbable element within the focus trap region.</p>
 
+<p translation-result="on">返回一个解析为布尔值的 promise，具体取决于焦点是否成功移动。</p><p translation-origin="off">@returns Returns a promise that resolves with a boolean, depending
+on whether focus was moved successfully.</p>
+
 
     </td>
   </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <code class="docs-api-method-parameter-type">FocusOptions</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -4795,6 +5088,7 @@ on whether focus was moved successfully.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">切换 <code>tabindex</code> 以捕获 Tab 焦点或允许脱离。</p><p translation-origin="off">Toggles the<code>tabindex</code> of both anchors to either trap Tab focus or allow it to escape.</p>
 
+<p>@param enabled: Whether the anchors should trap Tab.</p>
 
     </td>
   </tr></tbody><thead>
@@ -4812,8 +5106,7 @@ on whether focus was moved successfully.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p>Whether the anchors should trap Tab.</p>
-
+        
       </div>
     </td>
   </tr>
@@ -5111,6 +5404,42 @@ and be able to supply its label.</p>
     
       
 
+<h4 id="ConfigurableFocusTrapConfig" class="docs-header-link docs-api-h4 docs-api-interface-name">
+  <span header-link="ConfigurableFocusTrapConfig"></span>
+  <code>ConfigurableFocusTrapConfig</code>
+</h4><div class="docs-api-interface-description"><p translation-result="on">用于创建 ConfigurableFocusTrap 的选项。</p><p translation-origin="off">Options for creating a ConfigurableFocusTrap.</p>
+
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-11">属性</h5>
+  <table class="docs-api-properties-table">
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th">名称</th>
+      <th class="docs-api-properties-th">描述</th>
+    </tr>
+    
+      
+
+<tr class="docs-api-properties-row">
+  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
+      <code>defer: boolean</code>
+    </p>
+  </td>
+  <td class="docs-api-property-description"><p translation-result="on">是否推迟到由用户手动完成 FocusTrap 元素的创建。</p><p translation-origin="off">Whether to defer the creation of FocusTrap elements to be done manually by the user.</p>
+
+</td>
+</tr>
+
+
+    
+  </tbody></table>
+
+
+
+
+
+
+    
+      
+
 <h4 id="FocusTrapInertStrategy" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="FocusTrapInertStrategy"></span>
   <code>FocusTrapInertStrategy</code>
@@ -5207,7 +5536,7 @@ outside of the FocusTrap from being focused.</p>
   <code>LiveAnnouncerDefaultOptions</code>
 </h4><div class="docs-api-interface-description"><p translation-result="on">可用于配置 LiveAnnouncer 的默认选项的对象。</p><p translation-origin="off">Object that can be used to configure the default options for the LiveAnnouncer.</p>
 
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-11">属性</h5>
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-12">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -5258,7 +5587,7 @@ outside of the FocusTrap from being focused.</p>
 </h4><div class="docs-api-interface-description"><p translation-result="on">对应于可以传递给原生 <code>focus</code> 事件的选项。通过 <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus</a></p><p translation-origin="off">Corresponds to the options that can be passed to the native <code>focus</code> event.
 via <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus</a></p>
 
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-12">属性</h5>
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-13">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -5294,7 +5623,7 @@ via <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus"
   <code>FocusMonitorOptions</code>
 </h4><div class="docs-api-interface-description"><p translation-result="on">FocusMonitor 在可注入服务级别的选项。</p><p translation-origin="off">Injectable service-level options for FocusMonitor.</p>
 
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-13">属性</h5>
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-14">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -5336,12 +5665,7 @@ via <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus"
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">当使用键盘激活可获得焦点的元素时，屏幕阅读器通常会触发一个伪 mousedown 事件。我们通常可以使用 “buttons” 属性来区分这些伪 mousedown 事件和真实的 mousedown 事件。真实的 mousedown 会指出被按下的鼠标按键（比如鼠标左键是“1”），而伪造的 mousedown 通常会把该属性值设置为 0。</p><p translation-origin="off">Screenreaders will often fire fake mousedown events when a focusable element
-is activated using the keyboard. We can typically distinguish between these faked
-mousedown events and real mousedown events using the "buttons" property. While
-real mousedowns will indicate the mouse button that was pressed (e.g. "1" for
-the left mouse button), faked mousedowns will usually set the property value to 0.</p>
-
+      <p>Gets whether an event could be a faked <code>mousedown</code> event dispatched by a screen reader.</p>
 
     </td>
   </tr></tbody><thead>
@@ -5356,6 +5680,58 @@ the left mouse button), faked mousedowns will usually set the property value to 
       <p class="docs-api-method-parameter-name">
         event</p>
       <code class="docs-api-method-parameter-type">MouseEvent</code>
+    </td>
+    <td class="docs-api-method-parameter-description-cell">
+      <div class="docs-api-method-parameter-description">
+        
+      </div>
+    </td>
+  </tr>
+  </tbody><thead>
+    <tr class="docs-api-method-returns-header-row">
+        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
+    </tr>
+    
+  </thead>
+  <tbody><tr>
+    <td class="docs-api-method-returns-type-cell">
+      <code class="docs-api-method-returns-type">boolean</code>
+    </td>
+    <td class="docs-api-method-returns-description-cell">
+      <div class="docs-api-method-returns-description">
+        
+      </div>
+    </td>
+  </tr></tbody></table>
+
+
+    
+      
+      
+
+<table class="docs-api-method-table">
+  <thead>
+    <tr class="docs-api-method-name-row">
+      <th colspan="2" class="docs-api-method-name-cell">isFakeTouchstartFromScreenReader
+      </th>
+    </tr>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets whether an event could be a faked <code>touchstart</code> event dispatched by a screen reader.</p>
+
+    </td>
+  </tr></tbody><thead>
+    <tr class="docs-api-method-parameters-header-row">
+      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
+    </tr>
+    
+  </thead>
+  
+  <tbody><tr class="docs-api-method-parameter-row">
+    <td class="docs-api-method-parameter-cell">
+      <p class="docs-api-method-parameter-name">
+        event</p>
+      <code class="docs-api-method-parameter-type">TouchEvent</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">

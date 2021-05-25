@@ -51,6 +51,9 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在默认命名空间中用 URL 注册一个图标。</p><p translation-origin="off">Registers an icon by URL in the default namespace.</p>
 
+<p translation-result="on">图标要注册成的名称。</p><p translation-origin="off">@param iconName Name under which the icon should be registered.</p>
+
+<p>@param url</p>
 
     </td>
   </tr></tbody><thead>
@@ -68,9 +71,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">图标要注册成的名称。</p><p translation-origin="off">Name under which the icon should be registered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -131,6 +132,11 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在指定的命名空间中按 URL 注册一个图标。</p><p translation-origin="off">Registers an icon by URL in the specified namespace.</p>
 
+<p translation-result="on">要注册图标的命名空间。</p><p translation-origin="off">@param namespace Namespace in which the icon should be registered.</p>
+
+<p translation-result="on">图标要注册成的名称。</p><p translation-origin="off">@param iconName Name under which the icon should be registered.</p>
+
+<p>@param url</p>
 
     </td>
   </tr></tbody><thead>
@@ -148,9 +154,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要注册图标的命名空间。</p><p translation-origin="off">Namespace in which the icon should be registered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -163,9 +167,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">图标要注册成的名称。</p><p translation-origin="off">Name under which the icon should be registered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -226,6 +228,10 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在默认命名空间中使用 HTML 字符串注册一个图标。</p><p translation-origin="off">Registers an icon using an HTML string in the default namespace.</p>
 
+<p translation-result="on">图标要注册成的名称。</p><p translation-origin="off">@param iconName Name under which the icon should be registered.</p>
+
+<p translation-result="on">图标 SVG 源码。</p><p translation-origin="off">@param literal SVG source of the icon.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -243,9 +249,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">图标要注册成的名称。</p><p translation-origin="off">Name under which the icon should be registered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -258,9 +262,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">图标 SVG 源码。</p><p translation-origin="off">SVG source of the icon.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -308,6 +310,12 @@
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在指定的命名空间中，以 HTML 字符串注册一个图标。</p><p translation-origin="off">Registers an icon using an HTML string in the specified namespace.</p>
 
+<p translation-result="on">要注册图标的命名空间。</p><p translation-origin="off">@param namespace Namespace in which the icon should be registered.</p>
+
+<p translation-result="on">图标要注册成的名称。</p><p translation-origin="off">@param iconName Name under which the icon should be registered.</p>
+
+<p translation-result="on">图标的 SVG 源码。</p><p translation-origin="off">@param literal SVG source of the icon.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -325,9 +333,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要注册图标的命名空间。</p><p translation-origin="off">Namespace in which the icon should be registered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -340,9 +346,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">图标要注册成的名称。</p><p translation-origin="off">Name under which the icon should be registered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -355,9 +359,7 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">图标的 SVG 源码。</p><p translation-origin="off">SVG source of the icon.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -409,6 +411,8 @@ the icon. The resolver is expected to return a <code>SafeResourceUrl</code> that
 an object with the icon URL and icon options, or <code>null</code> if the icon is not supported. Resolvers
 will be invoked in the order in which they have been registered.</p>
 
+<p translation-result="on">要注册的解析器函数。</p><p translation-origin="off">@param resolver Resolver function to be registered.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -426,9 +430,7 @@ will be invoked in the order in which they have been registered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要注册的解析器函数。</p><p translation-origin="off">Resolver function to be registered.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -463,6 +465,7 @@ will be invoked in the order in which they have been registered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在默认命名空间中通过 URL 注册一个图标集。</p><p translation-origin="off">Registers an icon set by URL in the default namespace.</p>
 
+<p>@param url</p>
 
     </td>
   </tr></tbody><thead>
@@ -528,6 +531,9 @@ will be invoked in the order in which they have been registered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在指定的命名空间中，使用 HTML 字符串注册一个图标集。</p><p translation-origin="off">Registers an icon set by URL in the specified namespace.</p>
 
+<p translation-result="on">要在其中注册图标集的命名空间。</p><p translation-origin="off">@param namespace Namespace in which to register the icon set.</p>
+
+<p>@param url</p>
 
     </td>
   </tr></tbody><thead>
@@ -545,9 +551,7 @@ will be invoked in the order in which they have been registered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要在其中注册图标集的命名空间。</p><p translation-origin="off">Namespace in which to register the icon set.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -608,6 +612,8 @@ will be invoked in the order in which they have been registered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在默认命名空间中，使用 HTML 字符串注册一个图标集。</p><p translation-origin="off">Registers an icon set using an HTML string in the default namespace.</p>
 
+<p translation-result="on">图标集的 SVG 源码。</p><p translation-origin="off">@param literal SVG source of the icon set.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -625,9 +631,7 @@ will be invoked in the order in which they have been registered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">图标集的 SVG 源码。</p><p translation-origin="off">SVG source of the icon set.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -675,6 +679,10 @@ will be invoked in the order in which they have been registered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">在指定的命名空间中，使用 HTML 字符串注册一个图标集。</p><p translation-origin="off">Registers an icon set using an HTML string in the specified namespace.</p>
 
+<p translation-result="on">要在其中注册图标集的命名空间。</p><p translation-origin="off">@param namespace Namespace in which to register the icon set.</p>
+
+<p translation-result="on">图标集的 SVG 源码。</p><p translation-origin="off">@param literal SVG source of the icon set.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -692,9 +700,7 @@ will be invoked in the order in which they have been registered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要在其中注册图标集的命名空间。</p><p translation-origin="off">Namespace in which to register the icon set.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -707,9 +713,7 @@ will be invoked in the order in which they have been registered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">图标集的 SVG 源码。</p><p translation-origin="off">SVG source of the icon set.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -846,6 +850,10 @@ have a fontSet input value, and is not loading an icon by name or URL.</p>
 and namespace. The icon must have been previously registered with addIcon or addIconSet;
 if not, the Observable will throw an error.</p>
 
+<p translation-result="on">要检索的图标名称。</p><p translation-origin="off">@param name Name of the icon to be retrieved.</p>
+
+<p translation-result="on">要在其中查找图标的命名空间。</p><p translation-origin="off">@param namespace Namespace in which to look for the icon.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -863,9 +871,7 @@ if not, the Observable will throw an error.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要检索的图标名称。</p><p translation-origin="off">Name of the icon to be retrieved.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -878,9 +884,7 @@ if not, the Observable will throw an error.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要在其中查找图标的命名空间。</p><p translation-origin="off">Namespace in which to look for the icon.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -918,6 +922,8 @@ The response from the URL may be cached so this will not always cause an HTTP re
 the produced element will always be a new copy of the originally fetched icon. (That is,
 it will not contain any modifications made to elements previously returned).</p>
 
+<p translation-result="on">要从中获取 SVG 图标的 URL。</p><p translation-origin="off">@param safeUrl URL from which to fetch the SVG icon.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -935,9 +941,7 @@ it will not contain any modifications made to elements previously returned).</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要从中获取 SVG 图标的 URL。</p><p translation-origin="off">URL from which to fetch the SVG icon.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -974,6 +978,10 @@ it will not contain any modifications made to elements previously returned).</p>
 component with the alias as the fontSet input will cause the class name to be applied
 to the <code>&lt;mat-icon&gt;</code> element.</p>
 
+<p translation-result="on">该字体的别名。</p><p translation-origin="off">@param alias Alias for the font.</p>
+
+<p translation-result="on">用于代替别名进行改写的类名。</p><p translation-origin="off">@param className Class name override to be used instead of the alias.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -991,9 +999,7 @@ to the <code>&lt;mat-icon&gt;</code> element.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">该字体的别名。</p><p translation-origin="off">Alias for the font.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1006,9 +1012,7 @@ to the <code>&lt;mat-icon&gt;</code> element.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">用于代替别名进行改写的类名。</p><p translation-origin="off">Class name override to be used instead of the alias.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1044,6 +1048,7 @@ to the <code>&lt;mat-icon&gt;</code> element.</p>
       <p translation-result="on">当 <code>&lt;mat-icon&gt;</code> 组件的输入属性 fontSet 没有值，并且不是在按名字或 URL 加载图标时，设置要用于字体图标的 CSS 类名。</p><p translation-origin="off">Sets the CSS class name to be used for icon fonts when an <code>&lt;mat-icon&gt;</code> component does not
 have a fontSet input value, and is not loading an icon by name or URL.</p>
 
+<p>@param className</p>
 
     </td>
   </tr></tbody><thead>

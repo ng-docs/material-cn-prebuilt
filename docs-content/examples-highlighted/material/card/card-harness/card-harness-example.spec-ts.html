@@ -1,4 +1,4 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture, waitForAsync} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
 <span class="hljs-keyword">import</span> {TestbedHarnessEnvironment} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing/testbed'</span>;
 <span class="hljs-keyword">import</span> {MatButtonHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/button/testing'</span>;
 <span class="hljs-keyword">import</span> {MatCardHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/card/testing'</span>;
@@ -16,15 +16,11 @@ describe(<span class="hljs-string">'CardHarnessExample'</span>, <span class="hlj
   beforeAll(<span class="hljs-function">() =&gt;</span> {
     TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
   });
-  beforeEach(
-    waitForAsync(<span class="hljs-function">() =&gt;</span> {
-      TestBed.configureTestingModule({
-        <span class="hljs-attr">imports</span>: [MatCardModule],
-        <span class="hljs-attr">declarations</span>: [CardHarnessExample]
-      }).compileComponents();
-    }));
-
-  beforeEach(<span class="hljs-function">() =&gt;</span> {
+  beforeEach(<span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> TestBed.configureTestingModule({
+      <span class="hljs-attr">imports</span>: [MatCardModule],
+      <span class="hljs-attr">declarations</span>: [CardHarnessExample]
+    }).compileComponents();
     fixture = TestBed.createComponent(CardHarnessExample);
     fixture.detectChanges();
     loader = TestbedHarnessEnvironment.loader(fixture);

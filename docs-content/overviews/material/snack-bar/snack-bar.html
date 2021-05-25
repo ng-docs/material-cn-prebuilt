@@ -21,7 +21,8 @@
 <span class="hljs-keyword">let</span> snackBarRef = snackBar.open(<span class="hljs-string">'Message archived'</span>, <span class="hljs-string">'Undo'</span>);
 
 <span class="hljs-comment">// Load the given component into the snack-bar.</span>
-<span class="hljs-keyword">let</span> snackBarRef = snackbar.openFromComponent(MessageArchivedComponent);</code></pre>
+<span class="hljs-keyword">let</span> snackBarRef = snackbar.openFromComponent(MessageArchivedComponent);
+</code></pre>
 <p translation-result="on">无论哪种形式，都会返回一个 <code>MatSnackBarRef</code>。它可以用来关闭快餐栏或在快餐栏关闭时接收通知。
 对于只有一个操作的简单消息，当该动作被触发时，<code>MatSnackBarRef</code> 会暴露出一个 <code>Observable</code>。
 如果你要关闭一个用 <code>openFromComponent</code> 打开的自定义快餐栏，可以在该组件中注入一个 <code>MatSnackBarRef</code>。</p><p translation-origin="off">In either case, a <code>MatSnackBarRef</code> is returned. This can be used to dismiss the snack-bar or to
@@ -39,7 +40,8 @@ snackBarRef.onAction().subscribe(<span class="hljs-function">() =&gt;</span> {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'The snack-bar action was triggered!'</span>);
 });
 
-snackBarRef.dismiss();</code></pre>
+snackBarRef.dismiss();
+</code></pre>
 
         <h3 id="dismissal" class="docs-header-link" translation-result="on">
           <span header-link="关闭"></span>
@@ -60,7 +62,8 @@ message is still showing, the older message will be automatically dismissed.</p>
 
 <pre><code class="language-ts">snackbar.open(<span class="hljs-string">'Message archived'</span>, <span class="hljs-string">'Undo'</span>, {
   <span class="hljs-attr">duration</span>: <span class="hljs-number">3000</span>
-});</code></pre>
+});
+</code></pre>
 
         <h3 id="sharing-data-with-a-custom-snack-bar" class="docs-header-link" translation-result="on">
           <span header-link="与自定义快餐栏共享数据"></span>
@@ -76,7 +79,8 @@ by passing it through the <code>data</code> property.</p>
 
 <pre><code class="language-ts">snackbar.openFromComponent(MessageArchivedComponent, {
   <span class="hljs-attr">data</span>: <span class="hljs-string">'some data'</span>
-});</code></pre>
+});
+</code></pre>
 <p translation-result="on">要在组件中访问该数据，可以使用依赖注入令牌 <code>MAT_SNACK_BAR_DATA</code>：</p><p translation-origin="off">To access the data in your component, you have to use the <code>MAT_SNACK_BAR_DATA</code> injection token:</p>
 
 <pre><code class="language-ts"><span class="hljs-keyword">import</span> {Component, Inject} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
@@ -88,7 +92,8 @@ by passing it through the <code>data</code> property.</p>
 })
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MessageArchivedComponent</span> </span>{
   <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"><span class="hljs-meta">@Inject</span>(MAT_SNACK_BAR_DATA) <span class="hljs-keyword">public</span> data: <span class="hljs-built_in">string</span></span>)</span> { }
-}</code></pre>
+}
+</code></pre>
 
         <h3 id="setting-the-global-configuration-defaults" class="docs-header-link" translation-result="on">
           <span header-link="设置全局配置的默认值"></span>
@@ -106,7 +111,8 @@ by passing it through the <code>data</code> property.</p>
   <span class="hljs-attr">providers</span>: [
     {<span class="hljs-attr">provide</span>: MAT_SNACK_BAR_DEFAULT_OPTIONS, <span class="hljs-attr">useValue</span>: {<span class="hljs-attr">duration</span>: <span class="hljs-number">2500</span>}}
   ]
-})</code></pre>
+})
+</code></pre>
 
         <h3 id="accessibility" class="docs-header-link" translation-result="on">
           <span header-link="无障碍性"></span>
@@ -122,19 +128,17 @@ used. While <code>polite</code> is recommended, this can be customized by settin
 the <code>MatSnackBarConfig</code>.</p>
 
 <p translation-result="on">焦点不会也不应该自动移到快餐栏元素上，否则会打断用户的工作流。建议的方式是，对于快餐栏中提供的任何操作，
-都应该为用户提供一种替代途径来触发 —— 通常会用键盘快捷键或菜单项。当用这些方式执行完之后，应该自动关闭快餐栏。</p><p translation-origin="off">Focus is not, and should not be, moved to the snack-bar element. Moving the focus would be
-disruptive to a user in the middle of a workflow. It is recommended that, for any action offered
-in the snack-bar, the application offers the user an alternative way to perform the action.
+都应该为用户提供一种替代途径来触发 —— 通常会用键盘快捷键或菜单项。当用这些方式执行完之后，应该自动关闭快餐栏。快餐栏可以只包含一个动作。“关闭”或“取消”之类的操作是可选的。</p><p translation-origin="off">Focus is not moved to the snack-bar element as that would be disruptive to a user in the middle of a workflow. 
+It is recommended that, for any action offered in the snack-bar, the application offers the user an 
+alternative way to perform the action.
 Alternative interactions are typically keyboard shortcuts or menu options. When the action is
-performed in this way, the snack-bar should be dismissed.</p>
+performed in this way, the snack-bar should be dismissed. A snack-bar can contain a single action. 
+"Dismiss" or "cancel" actions are optional.</p>
 
 <p translation-result="on">具有可用动作的快餐栏不应该指定持续时间（<code>duration</code>），以支持那些希望导航到快餐栏中进行操作的屏幕阅读器用户。
 如果用户手动把焦点移到了快餐栏中，那么当快餐栏关闭时，焦点应该根据应用上下文移到某些有意义的元素上。</p><p translation-origin="off">Snack-bars that have an action available should not be given a <code>duration</code>, as to accommodate
 screen-reader users that want to navigate to the snack-bar element to activate the action. If the
 user has manually moved their focus within the snackbar, focus should be placed somewhere sensible
 based on the application context when the snack-bar is dismissed.</p>
-
-<p translation-result="on">当没有与该通知有关的操作时，不要把 "关闭" 作为快餐栏的标准操作，而应该优先使用 <code>duration</code> 来自动关闭它。</p><p translation-origin="off">Don't use "Dismiss" as a snack-bar-action, instead preferring to use a <code>duration</code> when there is
-no additional action associated with the notification. </p>
 
 </div></body></html>

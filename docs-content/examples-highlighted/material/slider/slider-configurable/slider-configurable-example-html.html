@@ -51,7 +51,13 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">mat-card</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-result-card"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">mat-card-content</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Result<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
 
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-label-container"</span> [<span class="hljs-attr">class</span>]=<span class="hljs-string">"vertical ? 'example-label-vertical' : 'example-label-horizontal'"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"example-name-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-name-label"</span>&gt;</span>Max Value<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-value-label"</span>&gt;</span>{{value}}<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">mat-slider</span>
         <span class="hljs-attr">class</span>=<span class="hljs-string">"example-margin"</span>
         [<span class="hljs-attr">disabled</span>]=<span class="hljs-string">"disabled"</span>
@@ -62,7 +68,8 @@
         [<span class="hljs-attr">thumbLabel</span>]=<span class="hljs-string">"thumbLabel"</span>
         [<span class="hljs-attr">tickInterval</span>]=<span class="hljs-string">"getSliderTickInterval()"</span>
         [(<span class="hljs-attr">ngModel</span>)]=<span class="hljs-string">"value"</span>
-        [<span class="hljs-attr">vertical</span>]=<span class="hljs-string">"vertical"</span>&gt;</span>
+        [<span class="hljs-attr">vertical</span>]=<span class="hljs-string">"vertical"</span>
+        <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"example-name-label"</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">mat-slider</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">mat-card-content</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">mat-card</span>&gt;</span>

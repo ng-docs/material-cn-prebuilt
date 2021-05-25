@@ -105,6 +105,8 @@ Will emit on subscribe if there are no open dialogs to begin with.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">通过 id 查找一个打开的对话框。</p><p translation-origin="off">Finds an open dialog by its id.</p>
 
+<p translation-result="on">在查找对话框时要用到的 ID。</p><p translation-origin="off">@param id ID to use when looking up the dialog.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -122,9 +124,7 @@ Will emit on subscribe if there are no open dialogs to begin with.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">在查找对话框时要用到的 ID。</p><p translation-origin="off">ID to use when looking up the dialog.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -159,6 +159,12 @@ Will emit on subscribe if there are no open dialogs to begin with.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">打开一个包含指定组件的模态对话框。</p><p translation-origin="off">Opens a modal dialog containing the given component.</p>
 
+<p translation-result="on">要加载到对话框中的组件类型。</p><p translation-origin="off">@param component Type of the component to load into the dialog.</p>
+
+<p translation-result="on">额外的配置选项。</p><p translation-origin="off">@param config Extra configuration options.</p>
+
+<p translation-result="on">引用新打开的对话框。</p><p translation-origin="off">@returns Reference to the newly-opened dialog.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -176,9 +182,7 @@ Will emit on subscribe if there are no open dialogs to begin with.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">要加载到对话框中的组件类型。</p><p translation-origin="off">Type of the component to load into the dialog.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -191,9 +195,7 @@ Will emit on subscribe if there are no open dialogs to begin with.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">额外的配置选项。</p><p translation-origin="off">Extra configuration options.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -230,6 +232,12 @@ Will emit on subscribe if there are no open dialogs to begin with.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">打开一个包含指定模板的模态对话框。</p><p translation-origin="off">Opens a modal dialog containing the given template.</p>
 
+<p translation-result="on">TemplateRef 要实例化为对话框内容。</p><p translation-origin="off">@param template TemplateRef to instantiate as the dialog content.</p>
+
+<p translation-result="on">额外的配置选项。</p><p translation-origin="off">@param config Extra configuration options.</p>
+
+<p translation-result="on">引用新打开的对话框。</p><p translation-origin="off">@returns Reference to the newly-opened dialog.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -247,9 +255,7 @@ Will emit on subscribe if there are no open dialogs to begin with.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">TemplateRef 要实例化为对话框内容。</p><p translation-origin="off">TemplateRef to instantiate as the dialog content.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -262,9 +268,7 @@ Will emit on subscribe if there are no open dialogs to begin with.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">额外的配置选项。</p><p translation-origin="off">Extra configuration options.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1164,6 +1168,8 @@ content will be rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">关闭对话框。</p><p translation-origin="off">Close the dialog.</p>
 
+<p translation-result="on">返回到窗口对话框的可选结果。</p><p translation-origin="off">@param dialogResult Optional result to return to the dialog opener.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1181,9 +1187,7 @@ content will be rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">返回到窗口对话框的可选结果。</p><p translation-origin="off">Optional result to return to the dialog opener.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1321,6 +1325,8 @@ content will be rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">更新对话框的位置。</p><p translation-origin="off">Updates the dialog's position.</p>
 
+<p translation-result="on">新对话框位置。</p><p translation-origin="off">@param position New dialog position.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1338,9 +1344,7 @@ content will be rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">新对话框位置。</p><p translation-origin="off">New dialog position.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1375,6 +1379,10 @@ content will be rendered.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">更新对话框的宽度和高度。</p><p translation-origin="off">Updates the dialog's width and height.</p>
 
+<p translation-result="on">对话框的新宽度。</p><p translation-origin="off">@param width New width of the dialog.</p>
+
+<p translation-result="on">对话框的新高度。</p><p translation-origin="off">@param height New height of the dialog.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1392,9 +1400,7 @@ content will be rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">对话框的新宽度。</p><p translation-origin="off">New width of the dialog.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -1407,9 +1413,7 @@ content will be rendered.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">对话框的新高度。</p><p translation-origin="off">New height of the dialog.</p>
-
-
+        
       </div>
     </td>
   </tr>

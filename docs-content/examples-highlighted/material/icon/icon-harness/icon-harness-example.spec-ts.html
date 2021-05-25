@@ -1,8 +1,10 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture, waitForAsync} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {TestBed, ComponentFixture} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core/testing'</span>;
 <span class="hljs-keyword">import</span> {TestbedHarnessEnvironment} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing/testbed'</span>;
 <span class="hljs-keyword">import</span> {HarnessLoader, parallel} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing'</span>;
-<span class="hljs-keyword">import</span> {BrowserDynamicTestingModule, platformBrowserDynamicTesting}
-  <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
+<span class="hljs-keyword">import</span> {
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/platform-browser-dynamic/testing'</span>;
 <span class="hljs-keyword">import</span> {IconHarnessExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./icon-harness-example'</span>;
 <span class="hljs-keyword">import</span> {MatIconModule, MatIconRegistry} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/icon'</span>;
 <span class="hljs-keyword">import</span> {MatIconHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/icon/testing'</span>;
@@ -17,16 +19,11 @@ describe(<span class="hljs-string">'IconHarnessExample'</span>, <span class="hlj
     TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
   });
 
-  beforeEach(
-    waitForAsync(<span class="hljs-function">() =&gt;</span> {
-      TestBed.configureTestingModule({
-        <span class="hljs-attr">imports</span>: [MatIconModule],
-        <span class="hljs-attr">declarations</span>: [IconHarnessExample]
-      }).compileComponents();
-    })
-  );
-
-  beforeEach(<span class="hljs-function">() =&gt;</span> {
+  beforeEach(<span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> TestBed.configureTestingModule({
+      <span class="hljs-attr">imports</span>: [MatIconModule],
+      <span class="hljs-attr">declarations</span>: [IconHarnessExample]
+    }).compileComponents();
     <span class="hljs-keyword">const</span> registry = TestBed.inject(MatIconRegistry);
     <span class="hljs-keyword">const</span> sanitizer = TestBed.inject(DomSanitizer);
 

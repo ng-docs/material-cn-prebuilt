@@ -374,462 +374,6 @@ components if the labels have changed after initialization.</p>
 
 
 
-    
-      
-
-<h4 id="MatSingleDateSelectionModel" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="MatSingleDateSelectionModel"></span>
-  <code>MatSingleDateSelectionModel</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="components/datepicker/api#MatDateSelectionModel" class="docs-api-class-extends-type">
-      MatDateSelectionModel
-    </a>
-  </span>
-  
-</h4><div class="docs-api-class-description"><p translation-result="on">包含单个日期的选择模型。</p><p translation-origin="off">A selection model that contains a single date.</p>
-
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-1">属性</h5>
-  <table class="docs-api-properties-table">
-    <tbody><tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">名称</th>
-      <th class="docs-api-properties-th">描述</th>
-    </tr>
-    
-      
-
-<tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>selection: S</code>
-    </p>
-  </td>
-  <td class="docs-api-property-description"><p>The current selection.</p>
-</td>
-</tr>
-
-
-    
-      
-
-<tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>selectionChanged: Observable&lt;DateSelectionModelChange&lt;S&gt;&gt;</code>
-    </p>
-  </td>
-  <td class="docs-api-property-description"><p translation-result="on">当选择发生变化时会触发。</p><p translation-origin="off">Emits when the selection has changed.</p>
-
-</td>
-</tr>
-
-
-    
-  </tbody></table>
-
-
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-2">方法</h5>
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">add
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">在当前选择里添加一个日期。对于单个日期选择，添加的日期只会改写之前的选择。</p><p translation-origin="off">Adds a date to the current selection. In the case of a single date selection, the added date
-simply overwrites the previous selection</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
-    </tr>
-    
-  </thead>
-  
-  <tbody><tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        date</p>
-      <code class="docs-api-method-parameter-type">D</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        
-      </div>
-    </td>
-  </tr>
-  </tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">clone
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">克隆选择模型。</p><p translation-origin="off">Clones the selection model.</p>
-
-
-    </td>
-  </tr></tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">isComplete
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">检查当前选择是否已完成。在单选日期的情况下，如果当前选择不为 null，则为 true。</p><p translation-origin="off">Checks whether the current selection is complete. In the case of a single date selection, this
-is true if the current selection is not null.</p>
-
-
-    </td>
-  </tr></tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">isValid
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">检查当前选择是否有效。</p><p translation-origin="off">Checks whether the current selection is valid.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-returns-header-row">
-        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
-    </tr>
-    
-  </thead>
-  <tbody><tr>
-    <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">boolean</code>
-    </td>
-    <td class="docs-api-method-returns-description-cell">
-      <div class="docs-api-method-returns-description">
-        
-      </div>
-    </td>
-  </tr></tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">updateSelection
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">更新模型中的当前选择。</p><p translation-origin="off">Updates the current selection in the model.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
-    </tr>
-    
-  </thead>
-  
-  <tbody><tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        value</p>
-      <code class="docs-api-method-parameter-type">S</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        <p translation-result="on">应该赋值的新选择。</p><p translation-origin="off">New selection that should be assigned.</p>
-
-
-      </div>
-    </td>
-  </tr>
-  
-  <tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        source</p>
-      <code class="docs-api-method-parameter-type">unknown</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        <p translation-result="on">触发了选择更改的对象。</p><p translation-origin="off">Object that triggered the selection change.</p>
-
-
-      </div>
-    </td>
-  </tr>
-  </tbody></table>
-
-
-  
-
-
-
-    
-      
-
-<h4 id="MatRangeDateSelectionModel" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="MatRangeDateSelectionModel"></span>
-  <code>MatRangeDateSelectionModel</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="components/datepicker/api#MatDateSelectionModel" class="docs-api-class-extends-type">
-      MatDateSelectionModel
-    </a>
-  </span>
-  
-</h4><div class="docs-api-class-description"><p translation-result="on">一个包含日期范围的选择模型。</p><p translation-origin="off">A selection model that contains a date range.</p>
-
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-2">属性</h5>
-  <table class="docs-api-properties-table">
-    <tbody><tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">名称</th>
-      <th class="docs-api-properties-th">描述</th>
-    </tr>
-    
-      
-
-<tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>selection: S</code>
-    </p>
-  </td>
-  <td class="docs-api-property-description"><p>The current selection.</p>
-</td>
-</tr>
-
-
-    
-      
-
-<tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>selectionChanged: Observable&lt;DateSelectionModelChange&lt;S&gt;&gt;</code>
-    </p>
-  </td>
-  <td class="docs-api-property-description"><p translation-result="on">当选择发生变化时会触发。</p><p translation-origin="off">Emits when the selection has changed.</p>
-
-</td>
-</tr>
-
-
-    
-  </tbody></table>
-
-
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-3">方法</h5>
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">add
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">在当前选择中添加一个日期。对于日期范围选择，添加的日期会填充该范围内的下一个 <code>null</code> 值。如果 start 和 end 都有日期，那就重置一下当前选择，以便把指定的日期作为新的 <code>start</code>，而其 <code>end</code> 是 null。</p><p translation-origin="off">Adds a date to the current selection. In the case of a date range selection, the added date
-fills in the next <code>null</code> value in the range. If both the start and the end already have a date,
-the selection is reset so that the given date is the new <code>start</code> and the <code>end</code> is null.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
-    </tr>
-    
-  </thead>
-  
-  <tbody><tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        date</p>
-      <code class="docs-api-method-parameter-type">D</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        
-      </div>
-    </td>
-  </tr>
-  </tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">clone
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">克隆选择模型。</p><p translation-origin="off">Clones the selection model.</p>
-
-
-    </td>
-  </tr></tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">isComplete
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">检查当前选择是否已完成。对于日期范围选择，如果当前选择的 <code>start</code> 和 <code>end</code> 都是非 null，则为 true。</p><p translation-origin="off">Checks whether the current selection is complete. In the case of a date range selection, this
-is true if the current selection has a non-null <code>start</code> and <code>end</code>.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-returns-header-row">
-        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
-    </tr>
-    
-  </thead>
-  <tbody><tr>
-    <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">boolean</code>
-    </td>
-    <td class="docs-api-method-returns-description-cell">
-      <div class="docs-api-method-returns-description">
-        
-      </div>
-    </td>
-  </tr></tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">isValid
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">检查当前选择是否有效。</p><p translation-origin="off">Checks whether the current selection is valid.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-returns-header-row">
-        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
-    </tr>
-    
-  </thead>
-  <tbody><tr>
-    <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">boolean</code>
-    </td>
-    <td class="docs-api-method-returns-description-cell">
-      <div class="docs-api-method-returns-description">
-        
-      </div>
-    </td>
-  </tr></tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">updateSelection
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">更新模型中的当前选择。</p><p translation-origin="off">Updates the current selection in the model.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
-    </tr>
-    
-  </thead>
-  
-  <tbody><tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        value</p>
-      <code class="docs-api-method-parameter-type">S</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        <p translation-result="on">应该赋值的新选择。</p><p translation-origin="off">New selection that should be assigned.</p>
-
-
-      </div>
-    </td>
-  </tr>
-  
-  <tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        source</p>
-      <code class="docs-api-method-parameter-type">unknown</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        <p translation-result="on">触发了选择更改的对象。</p><p translation-origin="off">Object that triggered the selection change.</p>
-
-
-      </div>
-    </td>
-  </tr>
-  </tbody></table>
-
-
-  
-
-
-
     <h3 id="material-datepicker-directives" class="docs-header-link docs-api-h3">
       <span header-link="directives"></span>
       指令
@@ -849,7 +393,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
     <span class="docs-api-class-selector-name">input[matDatepicker]</span>
   
 </div><span class="docs-api-class-export-label">导出为：</span>
-<span class="docs-api-class-export-name">matDatepickerInput</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-3">属性</h5>
+<span class="docs-api-class-export-name">matDatepickerInput</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-1">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -879,7 +423,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">datepicker-input 是否被禁用了。</p><p translation-origin="off">Whether the datepicker-input is disabled.</p>
+
+</td>
 </tr>
 
 
@@ -937,7 +483,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>value: D | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">输入框的值。</p><p translation-origin="off">The value of the input.</p>
+
+</td>
 </tr>
 
 
@@ -950,7 +498,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>dateChange: EventEmitter&lt;MatDatepickerInputEvent&lt;D, S&gt;&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on"><code>&lt;input&gt;</code> 上触发 <code>change</code> 事件时发出通知。</p><p translation-origin="off">Emits when a <code>change</code> event is fired on this <code>&lt;input&gt;</code>.</p>
+
+</td>
 </tr>
 
 
@@ -963,7 +513,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>dateInput: EventEmitter&lt;MatDatepickerInputEvent&lt;D, S&gt;&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on"><code>&lt;input&gt;</code> 上触发 <code>input</code> 事件时发出通知。</p><p translation-origin="off">Emits when an <code>input</code> event is fired on this <code>&lt;input&gt;</code>.</p>
+
+</td>
 </tr>
 
 
@@ -975,7 +527,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>stateChanges: Subject&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当内部状态发生变化时触发</p><p translation-origin="off">Emits when the internal state has changed</p>
+
+</td>
 </tr>
 
 
@@ -983,7 +537,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-4">方法</h5>
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-2">方法</h5>
   
     
 
@@ -996,6 +550,8 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">获取日期选择器弹出框应该连接到的元素。</p><p translation-origin="off">Gets the element that the datepicker popup should be connected to.</p>
+
+<p translation-result="on">要把弹出框连接到的元素。</p><p translation-origin="off">@return The element to connect the popup to.</p>
 
 
     </td>
@@ -1014,6 +570,38 @@ is true if the current selection has a non-null <code>start</code> and <code>end
         <p translation-result="on">要把弹出框连接到的元素。</p><p translation-origin="off">The element to connect the popup to.</p>
 
 
+      </div>
+    </td>
+  </tr></tbody></table>
+
+
+  
+    
+
+<table class="docs-api-method-table">
+  <thead>
+    <tr class="docs-api-method-name-row">
+      <th colspan="2" class="docs-api-method-name-cell">getOverlayLabelId
+      </th>
+    </tr>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the ID of an element that should be used a description for the calendar overlay.</p>
+
+    </td>
+  </tr></tbody><thead>
+    <tr class="docs-api-method-returns-header-row">
+        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
+    </tr>
+    
+  </thead>
+  <tbody><tr>
+    <td class="docs-api-method-returns-type-cell">
+      <code class="docs-api-method-returns-type">string | null</code>
+    </td>
+    <td class="docs-api-method-returns-description-cell">
+      <div class="docs-api-method-returns-description">
+        
       </div>
     </td>
   </tr></tbody></table>
@@ -1094,7 +682,12 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">registerOnValidatorChange
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>@docs-private</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1125,7 +718,12 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">validate
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>@docs-private</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1181,7 +779,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
     <span class="docs-api-class-selector-name">mat-date-range-picker</span>
   
 </div><span class="docs-api-class-export-label">导出为：</span>
-<span class="docs-api-class-export-name">matDateRangePicker</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-4">属性</h5>
+<span class="docs-api-class-export-name">matDateRangePicker</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-2">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -1196,7 +794,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>calendarHeaderComponent: ComponentType&lt;any&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">一个输入属性，用于指示日历的自定义标头组件的类型（如果已设置）。</p><p translation-origin="off">An input indicating the type of the custom header component for the calendar, if set.</p>
+
+</td>
 </tr>
 
 
@@ -1209,7 +809,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>color: ThemePalette</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">要在日期选择器的日历上使用的调色板。</p><p translation-origin="off">Color palette to use on the datepicker's calendar.</p>
+
+</td>
 </tr>
 
 
@@ -1222,7 +824,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>dateClass: MatCalendarCellClassFunction&lt;D&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">可以用来为日期添加自定义 CSS 类的函数。</p><p translation-origin="off">Function that can be used to add custom CSS classes to dates.</p>
+
+</td>
 </tr>
 
 
@@ -1235,7 +839,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">是否应该禁用日期选择器的弹出窗口。</p><p translation-origin="off">Whether the datepicker pop-up should be disabled.</p>
+
+</td>
 </tr>
 
 
@@ -1248,7 +854,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>opened: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日历是否处于打开状态。</p><p translation-origin="off">Whether the calendar is open.</p>
+
+</td>
 </tr>
 
 
@@ -1261,7 +869,10 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>panelClass: string | string[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">要传递给日期选择器面板的类。支持字符串和字符串数组的值，类似于 <code>ngClass</code> 。</p><p translation-origin="off">Classes to be passed to the date picker panel.
+Supports string and string array values, similar to <code>ngClass</code>.</p>
+
+</td>
 </tr>
 
 
@@ -1274,7 +885,11 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>restoreFocus: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当日历关闭时，是否要把焦点恢复到之前拥有焦点的元素。请注意，自动恢复焦点是一种无障碍功能，如果你决定将其关闭，建议你提供自己的等效对象。</p><p translation-origin="off">Whether to restore focus to the previously-focused element when the calendar is closed.
+Note that automatic focus restoration is an accessibility feature and it is recommended that
+you provide your own equivalent, if you decide to turn it off.</p>
+
+</td>
 </tr>
 
 
@@ -1287,7 +902,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>startAt: D | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">打开日历时的初始日期。</p><p translation-origin="off">The date to open the calendar to initially.</p>
+
+</td>
 </tr>
 
 
@@ -1300,7 +917,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>startView: 'month' | 'year' | 'multi-year'</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日历应该启动到哪个视图。</p><p translation-origin="off">The view that the calendar should start in.</p>
+
+</td>
 </tr>
 
 
@@ -1313,7 +932,10 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>touchUi: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日历 UI 是否处于触控模式。在触控模式下，日历会在一个对话框中打开，而不是下拉框，而且元素有更大的衬距，以允许更大的触控目标。</p><p translation-origin="off">Whether the calendar UI is in touch mode. In touch mode the calendar opens in a dialog rather
+than a dropdown and elements have more padding to allow for bigger touch targets.</p>
+
+</td>
 </tr>
 
 
@@ -1326,7 +948,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>xPosition: DatepickerDropdownPositionX</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日期选择器在 X 轴上的首选位置。</p><p translation-origin="off">Preferred position of the datepicker in the X axis.</p>
+
+</td>
 </tr>
 
 
@@ -1339,7 +963,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>yPosition: DatepickerDropdownPositionY</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日期选择器在 Y 轴上的首选位置。</p><p translation-origin="off">Preferred position of the datepicker in the Y axis.</p>
+
+</td>
 </tr>
 
 
@@ -1352,7 +978,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>closedStream: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当日期选择器已关闭时触发。</p><p translation-origin="off">Emits when the datepicker has been closed.</p>
+
+</td>
 </tr>
 
 
@@ -1365,7 +993,10 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>monthSelected: EventEmitter&lt;D&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">在年份视图中选定月份时触发。这并不会更改选定日期。</p><p translation-origin="off">Emits selected month in year view.
+This doesn't imply a change on the selected date.</p>
+
+</td>
 </tr>
 
 
@@ -1378,7 +1009,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>openedStream: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当日期选择器打开时发出通知。</p><p translation-origin="off">Emits when the datepicker has been opened.</p>
+
+</td>
 </tr>
 
 
@@ -1391,7 +1024,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>viewChanged: EventEmitter&lt;MatCalendarView&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当前视图发生变化时触发。</p><p translation-origin="off">Emits when the current view changes.</p>
+
+</td>
 </tr>
 
 
@@ -1404,7 +1039,10 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>yearSelected: EventEmitter&lt;D&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">在多年视图中选出年份时触发。这并不会更改选定日期。</p><p translation-origin="off">Emits selected year in multiyear view.
+This doesn't imply a change on the selected date.</p>
+
+</td>
 </tr>
 
 
@@ -1416,7 +1054,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>datepickerInput: C</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">此日期选择器关联到的输入框元素。</p><p translation-origin="off">The input element this datepicker is associated with.</p>
+
+</td>
 </tr>
 
 
@@ -1428,7 +1068,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>id: string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日期选择器日历的 id。</p><p translation-origin="off">The id for the datepicker calendar.</p>
+
+</td>
 </tr>
 
 
@@ -1440,7 +1082,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>stateChanges: Subject&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当日期选择器的状态发生变化时触发。</p><p translation-origin="off">Emits when the datepicker's state changes.</p>
+
+</td>
 </tr>
 
 
@@ -1448,7 +1092,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-5">方法</h5>
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-3">方法</h5>
   
     
 
@@ -1458,7 +1102,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">close
       </th>
     </tr>
-  </thead></table>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">关闭日历。</p><p translation-origin="off">Close the calendar.</p>
+
+
+    </td>
+  </tr></tbody></table>
 
 
   
@@ -1470,7 +1120,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">open
       </th>
     </tr>
-  </thead></table>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">打开日历。</p><p translation-origin="off">Open the calendar.</p>
+
+
+    </td>
+  </tr></tbody></table>
 
 
   
@@ -1482,7 +1138,15 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">registerActions
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">使用日期选择器注册一个包含操作按钮的传送点。</p><p translation-origin="off">Registers a portal containing action buttons with the datepicker.</p>
+
+<p translation-result="on">要注册的传送点。</p><p translation-origin="off">@param portal Portal to be registered.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1513,7 +1177,17 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">registerInput
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">用这个日期选择器注册一个输入框。</p><p translation-origin="off">Register an input with this datepicker.</p>
+
+<p translation-result="on">要注册这个日期选择器的输入框。</p><p translation-origin="off">@param input The datepicker input to register with this datepicker.</p>
+
+<p translation-result="on">输入应该挂钩到的选择模型。</p><p translation-origin="off">@returns Selection model that the input should hook itself up to.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1559,7 +1233,15 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">removeActions
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">从日期选择器中删除一个包含动作按钮的传送点。</p><p translation-origin="off">Removes a portal containing action buttons from the datepicker.</p>
+
+<p translation-result="on">要删除的传送点。</p><p translation-origin="off">@param portal Portal to be removed.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1590,7 +1272,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">select
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">选择指定的日期</p><p translation-origin="off">Selects the given date</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1630,7 +1318,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   
     <span class="docs-api-class-selector-name">input[matStartDate]</span>
   
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-5">属性</h5>
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-3">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -1645,7 +1333,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">datepicker-input 是否被禁用了。</p><p translation-origin="off">Whether the datepicker-input is disabled.</p>
+
+</td>
 </tr>
 
 
@@ -1671,7 +1361,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>value: D | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">输入框的值。</p><p translation-origin="off">The value of the input.</p>
+
+</td>
 </tr>
 
 
@@ -1684,7 +1376,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>dateChange: EventEmitter&lt;MatDatepickerInputEvent&lt;D, S&gt;&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on"><code>&lt;input&gt;</code> 上触发 <code>change</code> 事件时发出通知。</p><p translation-origin="off">Emits when a <code>change</code> event is fired on this <code>&lt;input&gt;</code>.</p>
+
+</td>
 </tr>
 
 
@@ -1697,7 +1391,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>dateInput: EventEmitter&lt;MatDatepickerInputEvent&lt;D, S&gt;&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on"><code>&lt;input&gt;</code> 上触发 <code>input</code> 事件时发出通知。</p><p translation-origin="off">Emits when an <code>input</code> event is fired on this <code>&lt;input&gt;</code>.</p>
+
+</td>
 </tr>
 
 
@@ -1721,7 +1417,8 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>ngControl: NgControl</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p>@docs-private</p>
+</td>
 </tr>
 
 
@@ -1741,7 +1438,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-6">方法</h5>
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-4">方法</h5>
   
     
 
@@ -1751,7 +1448,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">focus
       </th>
     </tr>
-  </thead></table>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">让输入框获得焦点。</p><p translation-origin="off">Focuses the input.</p>
+
+
+    </td>
+  </tr></tbody></table>
 
 
   
@@ -1796,7 +1499,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">isEmpty
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取输入框的结果是否为空。</p><p translation-origin="off">Gets whether the input is empty.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -1823,7 +1532,12 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">registerOnValidatorChange
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>@docs-private</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1866,7 +1580,12 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">validate
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>@docs-private</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -1921,7 +1640,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   
     <span class="docs-api-class-selector-name">input[matEndDate]</span>
   
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-6">属性</h5>
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-4">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -1936,7 +1655,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">datepicker-input 是否被禁用了。</p><p translation-origin="off">Whether the datepicker-input is disabled.</p>
+
+</td>
 </tr>
 
 
@@ -1962,7 +1683,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>value: D | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">输入框的值。</p><p translation-origin="off">The value of the input.</p>
+
+</td>
 </tr>
 
 
@@ -1975,7 +1698,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>dateChange: EventEmitter&lt;MatDatepickerInputEvent&lt;D, S&gt;&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on"><code>&lt;input&gt;</code> 上触发 <code>change</code> 事件时发出通知。</p><p translation-origin="off">Emits when a <code>change</code> event is fired on this <code>&lt;input&gt;</code>.</p>
+
+</td>
 </tr>
 
 
@@ -1988,7 +1713,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>dateInput: EventEmitter&lt;MatDatepickerInputEvent&lt;D, S&gt;&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on"><code>&lt;input&gt;</code> 上触发 <code>input</code> 事件时发出通知。</p><p translation-origin="off">Emits when an <code>input</code> event is fired on this <code>&lt;input&gt;</code>.</p>
+
+</td>
 </tr>
 
 
@@ -2012,7 +1739,8 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>ngControl: NgControl</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p>@docs-private</p>
+</td>
 </tr>
 
 
@@ -2032,7 +1760,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-7">方法</h5>
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-5">方法</h5>
   
     
 
@@ -2042,7 +1770,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">focus
       </th>
     </tr>
-  </thead></table>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">让输入框获得焦点。</p><p translation-origin="off">Focuses the input.</p>
+
+
+    </td>
+  </tr></tbody></table>
 
 
   
@@ -2054,7 +1788,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">isEmpty
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">获取输入框的结果是否为空。</p><p translation-origin="off">Gets whether the input is empty.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
         <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
     </tr>
@@ -2081,7 +1821,12 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">registerOnValidatorChange
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>@docs-private</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2124,7 +1869,12 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">validate
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>@docs-private</p>
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2180,7 +1930,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
     <span class="docs-api-class-selector-name">mat-calendar-header</span>
   
 </div><span class="docs-api-class-export-label">导出为：</span>
-<span class="docs-api-class-export-name">matCalendarHeader</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-7">属性</h5>
+<span class="docs-api-class-export-name">matCalendarHeader</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-5">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -2256,7 +2006,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-8">方法</h5>
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-6">方法</h5>
   
     
 
@@ -2396,7 +2146,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
     <span class="docs-api-class-selector-name">mat-datepicker</span>
   
 </div><span class="docs-api-class-export-label">导出为：</span>
-<span class="docs-api-class-export-name">matDatepicker</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-8">属性</h5>
+<span class="docs-api-class-export-name">matDatepicker</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-6">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -2411,7 +2161,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>calendarHeaderComponent: ComponentType&lt;any&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">一个输入属性，用于指示日历的自定义标头组件的类型（如果已设置）。</p><p translation-origin="off">An input indicating the type of the custom header component for the calendar, if set.</p>
+
+</td>
 </tr>
 
 
@@ -2424,7 +2176,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>color: ThemePalette</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">要在日期选择器的日历上使用的调色板。</p><p translation-origin="off">Color palette to use on the datepicker's calendar.</p>
+
+</td>
 </tr>
 
 
@@ -2437,7 +2191,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>dateClass: MatCalendarCellClassFunction&lt;D&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">可以用来为日期添加自定义 CSS 类的函数。</p><p translation-origin="off">Function that can be used to add custom CSS classes to dates.</p>
+
+</td>
 </tr>
 
 
@@ -2450,7 +2206,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">是否应该禁用日期选择器的弹出窗口。</p><p translation-origin="off">Whether the datepicker pop-up should be disabled.</p>
+
+</td>
 </tr>
 
 
@@ -2463,7 +2221,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>opened: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日历是否处于打开状态。</p><p translation-origin="off">Whether the calendar is open.</p>
+
+</td>
 </tr>
 
 
@@ -2476,7 +2236,10 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>panelClass: string | string[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">要传递给日期选择器面板的类。支持字符串和字符串数组的值，类似于 <code>ngClass</code> 。</p><p translation-origin="off">Classes to be passed to the date picker panel.
+Supports string and string array values, similar to <code>ngClass</code>.</p>
+
+</td>
 </tr>
 
 
@@ -2489,7 +2252,11 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>restoreFocus: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当日历关闭时，是否要把焦点恢复到之前拥有焦点的元素。请注意，自动恢复焦点是一种无障碍功能，如果你决定将其关闭，建议你提供自己的等效对象。</p><p translation-origin="off">Whether to restore focus to the previously-focused element when the calendar is closed.
+Note that automatic focus restoration is an accessibility feature and it is recommended that
+you provide your own equivalent, if you decide to turn it off.</p>
+
+</td>
 </tr>
 
 
@@ -2502,7 +2269,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>startAt: D | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">打开日历时的初始日期。</p><p translation-origin="off">The date to open the calendar to initially.</p>
+
+</td>
 </tr>
 
 
@@ -2515,7 +2284,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>startView: 'month' | 'year' | 'multi-year'</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日历应该启动到哪个视图。</p><p translation-origin="off">The view that the calendar should start in.</p>
+
+</td>
 </tr>
 
 
@@ -2528,7 +2299,10 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>touchUi: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日历 UI 是否处于触控模式。在触控模式下，日历会在一个对话框中打开，而不是下拉框，而且元素有更大的衬距，以允许更大的触控目标。</p><p translation-origin="off">Whether the calendar UI is in touch mode. In touch mode the calendar opens in a dialog rather
+than a dropdown and elements have more padding to allow for bigger touch targets.</p>
+
+</td>
 </tr>
 
 
@@ -2541,7 +2315,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>xPosition: DatepickerDropdownPositionX</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日期选择器在 X 轴上的首选位置。</p><p translation-origin="off">Preferred position of the datepicker in the X axis.</p>
+
+</td>
 </tr>
 
 
@@ -2554,7 +2330,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>yPosition: DatepickerDropdownPositionY</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日期选择器在 Y 轴上的首选位置。</p><p translation-origin="off">Preferred position of the datepicker in the Y axis.</p>
+
+</td>
 </tr>
 
 
@@ -2567,7 +2345,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>closedStream: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当日期选择器已关闭时触发。</p><p translation-origin="off">Emits when the datepicker has been closed.</p>
+
+</td>
 </tr>
 
 
@@ -2580,7 +2360,10 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>monthSelected: EventEmitter&lt;D&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">在年份视图中选定月份时触发。这并不会更改选定日期。</p><p translation-origin="off">Emits selected month in year view.
+This doesn't imply a change on the selected date.</p>
+
+</td>
 </tr>
 
 
@@ -2593,7 +2376,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>openedStream: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当日期选择器打开时发出通知。</p><p translation-origin="off">Emits when the datepicker has been opened.</p>
+
+</td>
 </tr>
 
 
@@ -2606,7 +2391,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>viewChanged: EventEmitter&lt;MatCalendarView&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当前视图发生变化时触发。</p><p translation-origin="off">Emits when the current view changes.</p>
+
+</td>
 </tr>
 
 
@@ -2619,7 +2406,10 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>yearSelected: EventEmitter&lt;D&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">在多年视图中选出年份时触发。这并不会更改选定日期。</p><p translation-origin="off">Emits selected year in multiyear view.
+This doesn't imply a change on the selected date.</p>
+
+</td>
 </tr>
 
 
@@ -2631,7 +2421,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>datepickerInput: C</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">此日期选择器关联到的输入框元素。</p><p translation-origin="off">The input element this datepicker is associated with.</p>
+
+</td>
 </tr>
 
 
@@ -2643,7 +2435,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>id: string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">日期选择器日历的 id。</p><p translation-origin="off">The id for the datepicker calendar.</p>
+
+</td>
 </tr>
 
 
@@ -2655,7 +2449,9 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <code>stateChanges: Subject&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"></td>
+  <td class="docs-api-property-description"><p translation-result="on">当日期选择器的状态发生变化时触发。</p><p translation-origin="off">Emits when the datepicker's state changes.</p>
+
+</td>
 </tr>
 
 
@@ -2663,7 +2459,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-9">方法</h5>
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-7">方法</h5>
   
     
 
@@ -2673,7 +2469,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">close
       </th>
     </tr>
-  </thead></table>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">关闭日历。</p><p translation-origin="off">Close the calendar.</p>
+
+
+    </td>
+  </tr></tbody></table>
 
 
   
@@ -2685,7 +2487,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">open
       </th>
     </tr>
-  </thead></table>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">打开日历。</p><p translation-origin="off">Open the calendar.</p>
+
+
+    </td>
+  </tr></tbody></table>
 
 
   
@@ -2697,7 +2505,15 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">registerActions
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">使用日期选择器注册一个包含操作按钮的传送点。</p><p translation-origin="off">Registers a portal containing action buttons with the datepicker.</p>
+
+<p translation-result="on">要注册的传送点。</p><p translation-origin="off">@param portal Portal to be registered.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2728,7 +2544,17 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">registerInput
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">用这个日期选择器注册一个输入框。</p><p translation-origin="off">Register an input with this datepicker.</p>
+
+<p translation-result="on">要注册这个日期选择器的输入框。</p><p translation-origin="off">@param input The datepicker input to register with this datepicker.</p>
+
+<p translation-result="on">输入应该挂钩到的选择模型。</p><p translation-origin="off">@returns Selection model that the input should hook itself up to.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2774,7 +2600,15 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">removeActions
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">从日期选择器中删除一个包含动作按钮的传送点。</p><p translation-origin="off">Removes a portal containing action buttons from the datepicker.</p>
+
+<p translation-result="on">要删除的传送点。</p><p translation-origin="off">@param portal Portal to be removed.</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2805,7 +2639,13 @@ is true if the current selection has a non-null <code>start</code> and <code>end
       <th colspan="2" class="docs-api-method-name-cell">select
       </th>
     </tr>
-  </thead><thead>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p translation-result="on">选择指定的日期</p><p translation-origin="off">Selects the given date</p>
+
+
+    </td>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
       <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
     </tr>
@@ -2865,7 +2705,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
     <span class="docs-api-class-selector-name">mat-datepicker-toggle</span>
   
 </div><span class="docs-api-class-export-label">导出为：</span>
-<span class="docs-api-class-export-name">matDatepickerToggle</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-9">属性</h5>
+<span class="docs-api-class-export-name">matDatepickerToggle</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-7">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -2952,7 +2792,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
     <span class="docs-api-class-selector-name">mat-date-range-input</span>
   
 </div><span class="docs-api-class-export-label">导出为：</span>
-<span class="docs-api-class-export-name">matDateRangeInput</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-10">属性</h5>
+<span class="docs-api-class-export-name">matDateRangeInput</span><h5 class="docs-api-h5 docs-api-method-header" id="属性-8">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -3209,7 +3049,7 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-10">方法</h5>
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-8">方法</h5>
   
     
 
@@ -3234,6 +3074,38 @@ is true if the current selection has a non-null <code>start</code> and <code>end
   <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">ElementRef</code>
+    </td>
+    <td class="docs-api-method-returns-description-cell">
+      <div class="docs-api-method-returns-description">
+        
+      </div>
+    </td>
+  </tr></tbody></table>
+
+
+  
+    
+
+<table class="docs-api-method-table">
+  <thead>
+    <tr class="docs-api-method-name-row">
+      <th colspan="2" class="docs-api-method-name-cell">getOverlayLabelId
+      </th>
+    </tr>
+  </thead><tbody><tr class="docs-api-method-description-row">
+    <td colspan="2" class="docs-api-method-description-cell">
+      <p>Gets the ID of an element that should be used a description for the calendar overlay.</p>
+
+    </td>
+  </tr></tbody><thead>
+    <tr class="docs-api-method-returns-header-row">
+        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
+    </tr>
+    
+  </thead>
+  <tbody><tr>
+    <td class="docs-api-method-returns-type-cell">
+      <code class="docs-api-method-returns-type">string | null</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
@@ -3398,7 +3270,7 @@ to the bottom of a datepicker or date range picker.</p>
 input or change event because the event may have been triggered by the user clicking on the
 calendar popup. For consistency, we always use MatDatepickerInputEvent instead.</p>
 
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-11">属性</h5>
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-9">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -3461,7 +3333,7 @@ calendar popup. For consistency, we always use MatDatepickerInputEvent instead.<
   
 </h4><div class="docs-api-class-description"><p translation-result="on">表示日期范围的类。</p><p translation-origin="off">A class representing a range of dates.</p>
 
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-12">属性</h5>
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-10">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -3501,249 +3373,6 @@ calendar popup. For consistency, we always use MatDatepickerInputEvent instead.<
 
 
 
-    
-      
-
-<h4 id="MatDateSelectionModel" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="MatDateSelectionModel"></span>
-  <code>MatDateSelectionModel</code>
-  
-</h4><div class="docs-api-class-description"><p translation-result="on">包含选定日期的选择模型。</p><p translation-origin="off">A selection model containing a date selection.</p>
-
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-13">属性</h5>
-  <table class="docs-api-properties-table">
-    <tbody><tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">名称</th>
-      <th class="docs-api-properties-th">描述</th>
-    </tr>
-    
-      
-
-<tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>selection: S</code>
-    </p>
-  </td>
-  <td class="docs-api-property-description"><p>The current selection.</p>
-</td>
-</tr>
-
-
-    
-      
-
-<tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>selectionChanged: Observable&lt;DateSelectionModelChange&lt;S&gt;&gt;</code>
-    </p>
-  </td>
-  <td class="docs-api-property-description"><p translation-result="on">当选择发生变化时会触发。</p><p translation-origin="off">Emits when the selection has changed.</p>
-
-</td>
-</tr>
-
-
-    
-  </tbody></table>
-
-
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-11">方法</h5>
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">add
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">在当前选择里添加一个日期。</p><p translation-origin="off">Adds a date to the current selection.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
-    </tr>
-    
-  </thead>
-  
-  <tbody><tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        date</p>
-      <code class="docs-api-method-parameter-type">D</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        
-      </div>
-    </td>
-  </tr>
-  </tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">isComplete
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">检查当前选择是否已完成。</p><p translation-origin="off">Checks whether the current selection is complete.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-returns-header-row">
-        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
-    </tr>
-    
-  </thead>
-  <tbody><tr>
-    <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">boolean</code>
-    </td>
-    <td class="docs-api-method-returns-description-cell">
-      <div class="docs-api-method-returns-description">
-        
-      </div>
-    </td>
-  </tr></tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">isValid
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">检查当前选择是否有效。</p><p translation-origin="off">Checks whether the current selection is valid.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-returns-header-row">
-        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
-    </tr>
-    
-  </thead>
-  <tbody><tr>
-    <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">boolean</code>
-    </td>
-    <td class="docs-api-method-returns-description-cell">
-      <div class="docs-api-method-returns-description">
-        
-      </div>
-    </td>
-  </tr></tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell">updateSelection
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">更新模型中的当前选择。</p><p translation-origin="off">Updates the current selection in the model.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell"><p translation-result="on">参数</p><p translation-origin="off">Parameters</p></th>
-    </tr>
-    
-  </thead>
-  
-  <tbody><tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        value</p>
-      <code class="docs-api-method-parameter-type">S</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        <p translation-result="on">应该赋值的新选择。</p><p translation-origin="off">New selection that should be assigned.</p>
-
-
-      </div>
-    </td>
-  </tr>
-  
-  <tr class="docs-api-method-parameter-row">
-    <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        source</p>
-      <code class="docs-api-method-parameter-type">unknown</code>
-    </td>
-    <td class="docs-api-method-parameter-description-cell">
-      <div class="docs-api-method-parameter-description">
-        <p translation-result="on">触发了选择更改的对象。</p><p translation-origin="off">Object that triggered the selection change.</p>
-
-
-      </div>
-    </td>
-  </tr>
-  </tbody></table>
-
-
-  
-    
-
-<table class="docs-api-method-table">
-  <thead>
-    <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v12.0.0 中删除">
-            已弃用
-          </div>clone
-      </th>
-    </tr>
-  </thead><tbody><tr class="docs-api-method-description-row">
-    <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">克隆选择模型。</p><p translation-origin="off">Clones the selection model.</p>
-
-
-    </td>
-  </tr></tbody><thead>
-    <tr class="docs-api-method-returns-header-row">
-        <th colspan="2" class="docs-api-method-returns-header-cell"><p translation-result="on">返回值</p><p translation-origin="off">Returns</p></th>
-    </tr>
-    
-  </thead>
-  <tbody><tr>
-    <td class="docs-api-method-returns-type-cell">
-      <code class="docs-api-method-returns-type">MatDateSelectionModel&lt;S, D&gt;</code>
-    </td>
-    <td class="docs-api-method-returns-description-cell">
-      <div class="docs-api-method-returns-description">
-        
-      </div>
-    </td>
-  </tr></tbody></table>
-
-
-  
-
-
-
     <h3 id="material-datepicker-interfaces" class="docs-header-link docs-api-h3">
       <span header-link="interfaces"></span>
       接口
@@ -3759,7 +3388,7 @@ calendar popup. For consistency, we always use MatDatepickerInputEvent instead.<
 </div>
 
 
-<h5 class="docs-api-h5 docs-api-method-header" id="方法-12">方法</h5>
+<h5 class="docs-api-h5 docs-api-method-header" id="方法-9">方法</h5>
   
     
 
@@ -3773,6 +3402,14 @@ calendar popup. For consistency, we always use MatDatepickerInputEvent instead.<
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">当用户激活一个新日期时（例如，通过将鼠标悬停在此区域或移动焦点上）以及当日历尝试显示一个日期范围时，就会调用它。</p><p translation-origin="off">Called when the user has activated a new date (e.g. by hovering over
 it or moving focus) and the calendar tries to display a date range.</p>
+
+<p translation-result="on">用户已激活的日期。如果用户把焦点移到了一个不是日历单元格的元素上，它就是 null。</p><p translation-origin="off">@param activeDate Date that the user has activated. Will be null if the user moved
+   focus to an element that's no a calendar cell.</p>
+
+<p translation-result="on">当前在日历里显示的范围。</p><p translation-origin="off">@param currentRange Range that is currently shown in the calendar.</p>
+
+<p translation-result="on">导致预览发生变化的 DOM 事件。可能是 <code>mouseenter</code>/<code>mouseleave</code> 或 <code>focus</code>/<code>blur</code>，具体取决于用户的导航方式。</p><p translation-origin="off">@param event DOM event that caused the preview to be changed. Will be either a
+   <code>mouseenter</code>/<code>mouseleave</code> or <code>focus</code>/<code>blur</code> depending on how the user is navigating.</p>
 
 
     </td>
@@ -3791,10 +3428,7 @@ it or moving focus) and the calendar tries to display a date range.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">用户已激活的日期。如果用户把焦点移到了一个不是日历单元格的元素上，它就是 null。</p><p translation-origin="off">Date that the user has activated. Will be null if the user moved
-   focus to an element that's no a calendar cell.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3807,9 +3441,7 @@ it or moving focus) and the calendar tries to display a date range.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">当前在日历里显示的范围。</p><p translation-origin="off">Range that is currently shown in the calendar.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3822,10 +3454,7 @@ it or moving focus) and the calendar tries to display a date range.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">导致预览发生变化的 DOM 事件。可能是 <code>mouseenter</code>/<code>mouseleave</code> 或 <code>focus</code>/<code>blur</code>，具体取决于用户的导航方式。</p><p translation-origin="off">DOM event that caused the preview to be changed. Will be either a
-   <code>mouseenter</code>/<code>mouseleave</code> or <code>focus</code>/<code>blur</code> depending on how the user is navigating.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3860,6 +3489,13 @@ it or moving focus) and the calendar tries to display a date range.</p>
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">当用户选择完一个值时调用。</p><p translation-origin="off">Called when the user has finished selecting a value.</p>
 
+<p translation-result="on">被选定的日期。如果用户清除了该选项，则该值为 null。</p><p translation-origin="off">@param date Date that was selected. Will be null if the user cleared the selection.</p>
+
+<p translation-result="on">当前显示在日历表中的范围。</p><p translation-origin="off">@param currentRange Range that is currently show in the calendar.</p>
+
+<p translation-result="on">触发了此次选择的 DOM 事件。目前，它只对应一个 <code>click</code> 事件，但以后可能会进一步扩展。</p><p translation-origin="off">@param event DOM event that triggered the selection. Currently only corresponds to a <code>click</code>
+   event, but it may get expanded in the future.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3877,9 +3513,7 @@ it or moving focus) and the calendar tries to display a date range.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">被选定的日期。如果用户清除了该选项，则该值为 null。</p><p translation-origin="off">Date that was selected. Will be null if the user cleared the selection.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3892,9 +3526,7 @@ it or moving focus) and the calendar tries to display a date range.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">当前显示在日历表中的范围。</p><p translation-origin="off">Range that is currently show in the calendar.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3907,10 +3539,7 @@ it or moving focus) and the calendar tries to display a date range.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <div class="docs-api-method-parameter-description">
-        <p translation-result="on">触发了此次选择的 DOM 事件。目前，它只对应一个 <code>click</code> 事件，但以后可能会进一步扩展。</p><p translation-origin="off">DOM event that triggered the selection. Currently only corresponds to a <code>click</code>
-   event, but it may get expanded in the future.</p>
-
-
+        
       </div>
     </td>
   </tr>
@@ -3944,7 +3573,7 @@ it or moving focus) and the calendar tries to display a date range.</p>
   <code>MatCalendarUserEvent</code>
 </h4><div class="docs-api-interface-description"><p translation-result="on">当用户操作后发出日历中日期的事件。</p><p translation-origin="off">Event emitted when a date inside the calendar is triggered as a result of a user action.</p>
 
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-14">属性</h5>
+</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-11">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
       <th class="docs-api-properties-th">名称</th>
@@ -3971,56 +3600,6 @@ it or moving focus) and the calendar tries to display a date range.</p>
     </p>
   </td>
   <td class="docs-api-property-description"></td>
-</tr>
-
-
-    
-  </tbody></table>
-
-
-
-
-
-
-    
-      
-
-<h4 id="DateSelectionModelChange" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="DateSelectionModelChange"></span>
-  <code>DateSelectionModelChange</code>
-</h4><div class="docs-api-interface-description"><p translation-result="on">日期选择模型在选择模型改变时发出的事件。</p><p translation-origin="off">Event emitted by the date selection model when its selection changes.</p>
-
-</div><h5 class="docs-api-h5 docs-api-method-header" id="属性-15">属性</h5>
-  <table class="docs-api-properties-table">
-    <tbody><tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">名称</th>
-      <th class="docs-api-properties-th">描述</th>
-    </tr>
-    
-      
-
-<tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>selection: S</code>
-    </p>
-  </td>
-  <td class="docs-api-property-description"><p translation-result="on">选择的新值。</p><p translation-origin="off">New value for the selection.</p>
-
-</td>
-</tr>
-
-
-    
-      
-
-<tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>source: unknown</code>
-    </p>
-  </td>
-  <td class="docs-api-property-description"><p translation-result="on">触发变更的对象。</p><p translation-origin="off">Object that triggered the change.</p>
-
-</td>
 </tr>
 
 
@@ -4160,34 +3739,6 @@ it or moving focus) and the calendar tries to display a date range.</p>
   <code>yearsPerRow</code>
 </h4><div class="docs-markdown">
 <pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">const</span> yearsPerRow: <span class="hljs-number">4</span>;</code>
-</pre>
-</div>
-
-
-    
-      
-
-<h4 id="MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER"></span>
-  <code>MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER</code>
-</h4><div class="docs-api-constant-description"><p translation-result="on">用于为组件提供单选模型。</p><p translation-origin="off">Used to provide a single selection model to a component.</p>
-
-</div><div class="docs-markdown">
-<pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">const</span> MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER: FactoryProvider;</code>
-</pre>
-</div>
-
-
-    
-      
-
-<h4 id="MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER"></span>
-  <code>MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER</code>
-</h4><div class="docs-api-constant-description"><p translation-result="on">用于为组件提供范围选择模型。</p><p translation-origin="off">Used to provide a range selection model to a component.</p>
-
-</div><div class="docs-markdown">
-<pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">const</span> MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER: FactoryProvider;</code>
 </pre>
 </div>
 

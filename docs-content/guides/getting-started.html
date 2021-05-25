@@ -1,4 +1,4 @@
-<html><head></head><body><div class="docs-markdown"><h1 id="getting-started-with-angular-material" translation-result="on">Angular Material 入门指南</h1><h1 translation-origin="off">Getting Started with Angular Material</h1><p translation-result="on">本指南讲解了如何设置 Angular 项目以开始使用 Angular Material。它包含有关先决条件的信息、如何安装 Angular Material，以及在应用中显示一个 Material 范例组件，以验证你的设置。</p><p translation-origin="off">This guide explains how to setup your Angular project to begin using Angular Material. It includes information on prerequisites, installing Angular Material, and optionally displaying a sample material component in your application to verify your setup.</p>
+<html><head></head><body><div class="docs-markdown"><h1 id="getting-started-with-angular-material" translation-result="on">Angular Material 入门指南</h1><h1 translation-origin="off">Getting Started with Angular Material</h1><p translation-result="on">本指南讲解了如何设置 Angular 项目以开始使用 Angular Material。它包含有关先决条件的信息、如何安装 Angular Material，以及在应用中显示一个 Material 范例组件，以验证你的设置。</p><p translation-origin="off">This guide explains how to set up your Angular project to begin using Angular Material. It includes information on prerequisites, installing Angular Material, and optionally displaying a sample material component in your application to verify your setup.</p>
 
 <p translation-result="on"><em>Angular 资源</em></p><p translation-origin="off"><em>Angular Resources</em></p>
 
@@ -7,24 +7,25 @@
 <p translation-result="on">对于已有的应用，请按照以下步骤开始使用 Angular Material。</p><p translation-origin="off">For existing applications, follow the steps below to begin using Angular Material.</p>
 
 
-        <h3 id="install-angular-material" class="docs-header-link" translation-result="on">
+        <h2 id="install-angular-material" class="docs-header-link" translation-result="on">
           <span header-link="安装-angular-material"></span>
           安装 Angular Material
-        </h3><h3 class="docs-header-link" translation-origin="off">
+        </h2><h2 class="docs-header-link" translation-origin="off">
           <span header-link="install-angular-material"></span>
           Install Angular Material
-        </h3>
+        </h2>
       
         
-      <p translation-result="on">使用 Angular CLI 的安装<a href="https://material.angular.cn/guide/schematics">原理图</a>通过运行以下命令来设置你的 Angular Material 项目：</p><p translation-origin="off">Use the Angular CLI's install <a href="https://material.angular.io/guide/schematics">schematic</a> to set up your Angular Material project by running the following command:</p>
+      <p translation-result="on">使用 Angular CLI 的安装<a href="https://material.angular.cn/guide/schematics">原理图</a>通过运行以下命令来设置你的 Angular Material 项目：</p><p translation-origin="off">Use the Angular CLI's installation <a href="https://material.angular.io/guide/schematics">schematic</a> to set up your Angular Material project by running the following command:</p>
 
-<pre><code class="language-bash">ng add @angular/material</code></pre>
+<pre><code class="language-bash">ng add @angular/material
+</code></pre>
 <p translation-result="on">该 <code>ng add</code> 命令将安装 Angular Material、<a href="https://material.angular.cn/cdk/categories">组件开发工具包（CDK）</a>、<a href="https://angular.cn/guide/animations">Angular 动画</a>，并询问下列问题，以确定要包括哪些功能：</p><p translation-origin="off">The <code>ng add</code> command will install Angular Material, the <a href="https://material.angular.io/cdk/categories">Component Dev Kit (CDK)</a>, <a href="https://angular.io/guide/animations">Angular Animations</a> and ask you the following questions to determine which features to include:</p>
 
 <ol>
 <li><p translation-result="on">选择一个预置的主题名或为自定义主题选择 “custom”：</p><p translation-origin="off">Choose a prebuilt theme name, or "custom" for a custom theme:</p>
 
-<p translation-result="on">你可以选择一个<a href="https://material.angular.cn/guide/theming#using-a-pre-built-theme">预置的 Material Design 主题</a>或建立一个可扩展的<a href="https://material.angular.cn/guide/theming#defining-a-custom-theme">自定义主题</a>。</p><p translation-origin="off">You can choose from <a href="https://material.angular.io/guide/theming#using-a-pre-built-theme">prebuilt material design themes</a> or set up an extensible <a href="https://material.angular.io/guide/theming#defining-a-custom-theme">custom theme</a>.</p>
+<p translation-result="on">你可以选择一个<a href="https://material.angular.cn/guide/theming#using-a-pre-built-theme">预置的 Material Design 主题</a>或建立一个可扩展的<a href="https://material.angular.cn/guide/theming#defining-a-custom-theme">自定义主题</a>。</p><p translation-origin="off">You can choose from <a href="https://material.angular.io/guide/theming#using-a-pre-built-theme">prebuilt material design themes</a> or set up an extensible <a href="https://material.angular.io/guide/theming#defining-a-theme">custom theme</a>.</p>
 
 </li>
 <li><p translation-result="on">设置全局 Angular Material 排版样式：</p><p translation-origin="off">Set up global Angular Material typography styles:</p>
@@ -87,17 +88,20 @@
   <span class="hljs-attr">imports</span>: [...,
   MatSliderModule,
 …]
-})</code></pre>
+})
+</code></pre>
 <p translation-result="on">把 <code>&lt;mat-slider&gt;</code> 标签添加到 <code>app.component.html</code>，就像这样：</p><p translation-origin="off">Add the <code>&lt;mat-slider&gt;</code> tag to the <code>app.component.html</code> like so:</p>
 
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-slider</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">step</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">mat-slider</span>&gt;</span></code></pre>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-slider</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">step</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">mat-slider</span>&gt;</span>
+</code></pre>
 <p translation-result="on">运行本地开发服务器：</p><p translation-origin="off">Run your local dev server:</p>
 
-<pre><code class="language-bash">ng serve</code></pre>
-<p translation-result="on">让浏览器访问 <a href="http://localhost:4200">http://localhost:4200</a></p><p translation-origin="off">and point your browser to <a href="http://localhost:4200">http://localhost:4200</a></p>
+<pre><code class="language-bash">ng serve
+</code></pre>
+<p translation-result="on">让浏览器访问 <a href="http://localhost:4200">http://localhost:4200</a></p><p translation-origin="off">Then point your browser to <a href="http://localhost:4200">http://localhost:4200</a></p>
 
 <p translation-result="on">你会在页面上看到这个 Material 滑块组件。</p><p translation-origin="off">You should see the material slider component on the page.</p>
 
-<p translation-result="on">除了安装原理图之外，Angular Material 还带有<a href="https://material.angular.cn/guide/schematics">另外一些原理图</a>（如导航、表格、地址表单等），可用于方便地在应用中生成预置的组件。</p><p translation-origin="off">In addition to the install schematic, Angular Material comes with <a href="https://material.angular.io/guide/schematics">several schematics</a> (like nav, table, address-form, etc.) that can be used to easily generate pre-built components in your application.</p>
+<p translation-result="on">除了安装原理图之外，Angular Material 还带有<a href="https://material.angular.cn/guide/schematics">另外一些原理图</a>（如导航、表格、地址表单等），可用于方便地在应用中生成预置的组件。</p><p translation-origin="off">In addition to the installation schematic, Angular Material comes with <a href="https://material.angular.io/guide/schematics">several schematics</a> (like nav, table, address-form, etc.) that can be used to easily generate pre-built components in your application.</p>
 
 </div></body></html>
