@@ -156,13 +156,14 @@ automatically trigger an update to the rows each time a new data array is emitte
 manage data. The <code>DataSource</code> is meant to serve as a place to encapsulate any sorting, filtering,
 pagination, and data retrieval logic specific to the application.</p>
 
-<p>A <code>DataSource</code> is simply a class that has at a minimum the following methods: <code>connect</code> and 
+<p translation-result="on">DataSource 是一个至少拥有两个函数的类：<code>connect</code> 和 <code>disconnect</code>。
+表格会调用 <code>connect</code> 函数，以接收一个流，流中会发出要渲染的数组型数据。当表格销毁时，就会调用 <code>disconnect</code>，它是清理 <code>connect</code> 期间所做的各种订阅的最佳时机。</p><p translation-origin="off">A <code>DataSource</code> is simply a class that has at a minimum the following methods: <code>connect</code> and 
 <code>disconnect</code>. The <code>connect</code> method will be called by the table to provide an <code>Observable</code> that emits 
 the data array that should be rendered. The table will call <code>disconnect</code> when the table is destroyed,
 which may be the right time to clean up any subscriptions that may have been registered in the 
 <code>connect</code> method. </p>
-<p translation-result="on">DataSource 是一个拥有两个函数的基类：<code>connect</code> 和 <code>disconnect</code>。
-表格会调用 <code>connect</code> 函数，以接收一个流，流中会发出要渲染的数组型数据。当表格销毁时，就会调用 <code>disconnect</code>，它是清理 <code>connect</code> 期间所做的各种订阅的最佳时机。</p><p translation-origin="off">Although Angular Material provides a ready-made table <code>DataSource</code> class, <code>MatTableDataSource</code>, you may
+
+<p translation-result="on">虽然 Angular Material 提供了现成的表格 <code>DataSource</code> 类 <code>MatTableDataSource</code>，但是你可能希望针对更复杂的用例创建自己的 <code>DataSource</code> 类。你可以用一个自定义的 <code>DataSource</code> 类来扩展抽象类 <code>DataSource</code>，然后实现其 <code>connect</code> 和 <code>disconnect</code> 方法。对于这些复杂用例，自定义 <code>DataSource</code> 必须通过扩展其他基类（ <code>MyCustomDataSource extends SomeOtherBaseClass implements DataSource</code> ）来继承其功能，以遵守 Typescript 的限制，即只能实现一个基类。</p><p translation-origin="off">Although Angular Material provides a ready-made table <code>DataSource</code> class, <code>MatTableDataSource</code>, you may
 want to create your own custom <code>DataSource</code> class for more complex use cases. This can be done by 
 extending the abstract <code>DataSource</code> class with a custom <code>DataSource</code> class that then implements the 
 <code>connect</code> and <code>disconnect</code> methods. For use cases where the custom <code>DataSource</code> must also inherit 
