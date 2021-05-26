@@ -1,4 +1,4 @@
-<html><head></head><body><mat-selection-list #shoes="" [multiple]="false">
+<mat-selection-list #shoes="" [multiple]="false">
   <mat-list-option *ngfor="let shoe of typesOfShoes" [value]="shoe">
     {{shoe}}
   </mat-list-option>
@@ -7,4 +7,3 @@
 <p>
   Option selected: {{shoes.selectedOptions.selected[0]?.value}}
 </p>
-</body></html>

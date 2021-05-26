@@ -1,4 +1,4 @@
-<html><head></head><body><cdk-table [datasource]="dataSource">
+<cdk-table [datasource]="dataSource">
   <!-- Position Column -->
   <ng-container cdkcolumndef="position">
     <cdk-header-cell *cdkheadercelldef=""> No. </cdk-header-cell>
@@ -26,4 +26,3 @@
   <cdk-header-row *cdkheaderrowdef="displayedColumns"></cdk-header-row>
   <cdk-row *cdkrowdef="let row; columns: displayedColumns;"></cdk-row>
 </cdk-table>
-</body></html>

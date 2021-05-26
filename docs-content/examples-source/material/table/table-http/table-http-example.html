@@ -1,4 +1,4 @@
-<html><head></head><body><div class="example-container mat-elevation-z8">
+<div class="example-container mat-elevation-z8">
   <div class="example-loading-shade" *ngif="isLoadingResults || isRateLimitReached">
     <mat-spinner *ngif="isLoadingResults"></mat-spinner>
     <div class="example-rate-limit-reached" *ngif="isRateLimitReached">
@@ -42,4 +42,3 @@
 
   <mat-paginator [length]="resultsLength" [pagesize]="30"></mat-paginator>
 </div>
-</body></html>

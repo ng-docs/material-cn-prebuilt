@@ -1,4 +1,4 @@
-<html><head></head><body><cdk-table class="example-table" editable="" [datasource]="dataSource">
+<cdk-table class="example-table" editable="" [datasource]="dataSource">
   <!--
     This edit lens is specified outside of the cell and must explicitly declare
     its context. It could be reused in multiple cells.
@@ -69,4 +69,3 @@
   <cdk-header-row *cdkheaderrowdef="displayedColumns"></cdk-header-row>
   <cdk-row *cdkrowdef="let row; columns: displayedColumns;"></cdk-row>
 </cdk-table>
-</body></html>

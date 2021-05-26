@@ -1,4 +1,4 @@
-<html><head></head><body><div class="docs-markdown"><p translation-result="on"><code>a11y</code> 包提供了许多提高无障碍性（可访问性）的工具，如下所述。</p><p translation-origin="off">The <code>a11y</code> package provides a number of tools to improve accessibility, described below.</p>
+<div class="docs-markdown"><p translation-result="on"><code>a11y</code> 包提供了许多提高无障碍性（可访问性）的工具，如下所述。</p><p translation-origin="off">The <code>a11y</code> package provides a number of tools to improve accessibility, described below.</p>
 
 
         <h3 id="listkeymanager" class="docs-header-link" translation-result="on">
@@ -184,8 +184,8 @@ details.</p>
 
 
         <h3 id="liveannouncer" class="docs-header-link" translation-result="on">
-          <span header-link="liveannouncer（直播播音员）"></span>
-          LiveAnnouncer（直播播音员）
+          <span header-link="liveannouncer（播报员）"></span>
+          LiveAnnouncer（播报员）
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="liveannouncer"></span>
           LiveAnnouncer
@@ -303,19 +303,27 @@ the host element with <code>checkChildren</code> set to <code>true</code>. Each 
         </h3>
       
         
-      <p>The <code>cdk/a11y</code> package comes with Sass mixins that produce styles useful for building
+      <p translation-result="on"><code>cdk/a11y</code> 包中附带了一组 Sass Mixin，可生成一些有用的样式，以构建无障碍化体验。</p><p translation-origin="off">The <code>cdk/a11y</code> package comes with Sass mixins that produce styles useful for building
 accessible experiences. </p>
 
-        <h4 id="hiding-elements-in-an-accessible-way" class="docs-header-link">
+
+        <h4 id="hiding-elements-in-an-accessible-way" class="docs-header-link" translation-result="on">
+          <span header-link="以无障碍化的方式隐藏元素"></span>
+          以无障碍化的方式隐藏元素
+        </h4><h4 class="docs-header-link" translation-origin="off">
           <span header-link="hiding-elements-in-an-accessible-way"></span>
           Hiding elements in an accessible way
         </h4>
-      <p>Screen readers and other assistive technology skip elements that have <code>display: none</code>,
+      
+        
+      <p translation-result="on">屏幕阅读器和其它辅助科技会跳过带有 <code>display: none</code>、<code>visibility: hidden</code>、<code>opacity: 0</code>、<code>height: 0</code> 或 <code>width: 0</code> 的元素。某些情况下，你需要在视觉上隐藏掉某个元素，但是仍然让它对辅助科技可用。你可以使用 Sass Mixin <code>a11y-visually-hidden</code> 来实现这一点，它会生成一个 CSS 类 <code>.cdk-visually-hidden</code>。</p><p translation-origin="off">Screen readers and other assistive technology skip elements that have <code>display: none</code>,
 <code>visibility: hidden</code>, <code>opacity: 0</code>, <code>height: 0</code>, or <code>width: 0</code>. In some cases you may need to
 visually hide an element while keeping it available to assistive technology. You can do so using
 the <code>a11y-visually-hidden</code> Sass mixin, which emits the <code>.cdk-visually-hidden</code> CSS class.</p>
-<p>If you're using Angular Material, this class is included automatically by Angular Material's theming
+
+<p translation-result="on">如果你正在使用 Angular Material，这个类会自动被 Angular Material 的主题体系包含尽量。否则，你就要在全局样式表中包含这个 Mixin。</p><p translation-origin="off">If you're using Angular Material, this class is included automatically by Angular Material's theming
 system. Otherwise, you can include this mixin in a global stylesheet.</p>
+
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'~@angular/cdk'</span>;
 
 <span class="hljs-keyword">@include</span> cdk.a11y-visually-hidden();
@@ -334,11 +342,13 @@ system. Otherwise, you can include this mixin in a global stylesheet.</p>
         </h4>
       
         
-      <p>Microsoft Windows includes an accessibility feature called <a href="https://support.microsoft.com/en-us/windows/use-high-contrast-mode-in-windows-10-fedc744c-90ac-69df-aed5-c8a90125e696">Windows High Contrast Mode</a>. The
+      <p translation-result="on">Microsoft Windows 包含一种称为<a href="https://support.microsoft.com/en-us/windows/use-high-contrast-mode-in-windows-10-fedc744c-90ac-69df-aed5-c8a90125e696">Windows 高对比度模式</a>的无障碍功能。<code>cdk/a11y</code> 包提供了一个 Sass mixin，可让你定义仅适用于高对比度模式的样式。要创建高对比度样式，请在 <code>high-contrast</code> mixin 中定义样式。</p><p translation-origin="off">Microsoft Windows includes an accessibility feature called [Windows High Contrast Mode][]. The
 <code>cdk/a11y</code> package provides a Sass mixin that lets you define styles that only apply in high
 contrast mode. To create a high contrast style, define your style inside the <code>high-contrast</code> mixin.</p>
-<p>The mixin works by targeting a CSS class which is added to the <code>body</code> by the CDK when high contrast
+
+<p translation-result="on">这个 Mixin 会借助某个 CSS 类来起作用。在运行期间，当 CDK 借助 <code>HighContrastModeDetector</code> 服务检测到高对比度模式时，就会把这个类添加到 <code>body</code> 上。</p><p translation-origin="off">The mixin works by targeting a CSS class which is added to the <code>body</code> by the CDK when high contrast
 mode is detected at runtime, via the <code>HighContrastModeDetector</code> service.</p>
+
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'~@angular/cdk'</span>;
 
 <span class="hljs-selector-tag">button</span> {
@@ -347,15 +357,18 @@ mode is detected at runtime, via the <code>HighContrastModeDetector</code> servi
   }
 }
 </code></pre>
-<p>The <code>high-contrast</code> mixin accepts two optional parameters, <code>$target</code> and <code>$encapsulation</code>.</p>
-<p>The <code>$target</code> parameter allows you to specify which variation of high contrast mode your style
+<p translation-result="on"><code>high-contrast</code> 这个 mixin 接受两个可选参数 <code>$target</code> 和 <code>$encapsulation</code>。</p><p translation-origin="off">The <code>high-contrast</code> mixin accepts two optional parameters, <code>$target</code> and <code>$encapsulation</code>.</p>
+
+<p translation-result="on"><code>$target</code> 参数允许你指定这些样式要用高对比度模式的哪个变体。接受的值是 <code>active</code> （默认），<code>black-on-white</code> 和 <code>white-on-black</code> 。这些值对应于 <a href="https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/"><code>-ms-high-contrast</code> 媒体查询</a> 所支持的值。</p><p translation-origin="off">The <code>$target</code> parameter allows you to specify which variation of high contrast mode your style
 targets. The accepted values are <code>active</code> (default), <code>black-on-white</code>, and <code>white-on-black</code>. These
 values correspond to the supported values for the
 <a href="https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/"><code>-ms-high-contrast</code> media query</a>.</p>
-<p>The <code>$encapsulation</code> parameter affects how the emitted styles interact with style encapsulation.
+
+<p translation-result="on"><code>$encapsulation</code> 参数会影响所生成的样式与样式封装的互动。支持的值是 <code>on</code>、<code>off</code> 和 <code>any</code> 。默认值为 <code>any</code>，它生成的两个选择器，可用于任何封装方案。指定为 <code>on</code> 或 <code>off</code>，可以将样式分别限制为启用或禁用样式封装，可以轻微减小生成的 CSS 的大小。这些为带封装的组件生成的样式，会作用于 Angular 的模拟（emulated）样式封装和原生（native） Shadow DOM 封装方式。</p><p translation-origin="off">The <code>$encapsulation</code> parameter affects how the emitted styles interact with style encapsulation.
 The supported values are <code>on</code>, <code>off</code>, and <code>any</code>. The default value is <code>any</code>, which works for any
 encapsulation scenario by emitting two selectors. Specifying either <code>on</code> or <code>off</code> slightly reduces
 the amount of CSS emitted by limiting the styles to components with encapsulation enabled or
 disabled, respectively. The styles emitted for encapsulated components work for both Angular's
 emulated style encapsulation and for native Shadow DOM encapsulation.</p>
-</div></body></html>
+
+</div>

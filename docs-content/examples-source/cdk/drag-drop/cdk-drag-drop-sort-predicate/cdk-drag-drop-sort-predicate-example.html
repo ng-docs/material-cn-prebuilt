@@ -1,4 +1,3 @@
-<html><head></head><body><div cdkdroplist="" class="example-list" (cdkdroplistdropped)="drop($event)" [cdkdroplistsortpredicate]="sortPredicate">
+<div cdkdroplist="" class="example-list" (cdkdroplistdropped)="drop($event)" [cdkdroplistsortpredicate]="sortPredicate">
   <div class="example-box" *ngfor="let number of numbers" [cdkdragdata]="number" cdkdrag="">{{number}}</div>
 </div>
-</body></html>

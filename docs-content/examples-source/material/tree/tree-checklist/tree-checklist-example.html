@@ -1,4 +1,4 @@
-<html><head></head><body><mat-tree [datasource]="dataSource" [treecontrol]="treeControl">
+<mat-tree [datasource]="dataSource" [treecontrol]="treeControl">
   <mat-tree-node *mattreenodedef="let node" mattreenodetoggle="" mattreenodepadding="">
     <button mat-icon-button="" disabled=""></button>
     <mat-checkbox class="checklist-leaf-node" [checked]="checklistSelection.isSelected(node)" (change)="todoLeafItemSelectionToggle(node)">{{node.item}}</mat-checkbox>
@@ -23,4 +23,3 @@
     <button mat-icon-button="" (click)="addNewItem(node)"><mat-icon>add</mat-icon></button>
   </mat-tree-node>
 </mat-tree>
-</body></html>

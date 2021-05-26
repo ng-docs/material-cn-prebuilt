@@ -1,4 +1,4 @@
-<html><head></head><body><ng-container [ngswitch]="stepperOrientation | async">
+<ng-container [ngswitch]="stepperOrientation | async">
   <div *ngswitchcase="'horizontal'">Make your screen smaller to see a vertical stepper</div>
   <div *ngswitchcase="'vertical'">Make your screen larger to see a horizontal stepper</div>
 </ng-container>
@@ -47,4 +47,3 @@
     </div>
   </mat-step>
 </mat-stepper>
-</body></html>

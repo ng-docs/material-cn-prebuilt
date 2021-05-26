@@ -1,4 +1,4 @@
-<html><head></head><body><mat-form-field appearance="fill">
+<mat-form-field appearance="fill">
   <mat-label>Toppings</mat-label>
   <mat-select [formcontrol]="toppings" multiple="">
     <mat-select-trigger>
@@ -10,4 +10,3 @@
     <mat-option *ngfor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
   </mat-select>
 </mat-form-field>
-</body></html>

@@ -1,4 +1,4 @@
-<html><head></head><body><cdk-virtual-scroll-viewport [itemsize]="18 * 7" class="example-viewport">
+<cdk-virtual-scroll-viewport [itemsize]="18 * 7" class="example-viewport">
   <div *cdkvirtualfor="let item of items;
                        let index = index;
                        let count = count;
@@ -15,4 +15,3 @@
     <div class="example-item-detail">Odd: {{odd ? 'Yes' : 'No'}}</div>
   </div>
 </cdk-virtual-scroll-viewport>
-</body></html>

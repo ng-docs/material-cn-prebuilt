@@ -1,4 +1,4 @@
-<html><head></head><body><div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngif="shouldRun">
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngif="shouldRun">
   <mat-toolbar color="primary" class="example-toolbar">
     <button mat-icon-button="" (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
     <h1 class="example-app-name" id="responsive-app">Responsive App</h1>
@@ -18,4 +18,3 @@
 </div>
 
 <div *ngif="!shouldRun">Please open on Stackblitz to see result</div>
-</body></html>

@@ -1,4 +1,4 @@
-<html><head></head><body><mat-form-field appearance="fill">
+<mat-form-field appearance="fill">
   <mat-label>Enter a date range</mat-label>
   <mat-date-range-input [formgroup]="range" [rangepicker]="picker">
     <input matstartdate="" formcontrolname="start" placeholder="Start date">
@@ -12,4 +12,3 @@
 </mat-form-field>
 
 <p>Selected range: {{range.value | json}}</p>
-</body></html>

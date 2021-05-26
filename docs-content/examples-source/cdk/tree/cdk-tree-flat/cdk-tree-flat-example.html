@@ -1,4 +1,4 @@
-<html><head></head><body><cdk-tree [datasource]="dataSource" [treecontrol]="treeControl">
+<cdk-tree [datasource]="dataSource" [treecontrol]="treeControl">
   <!-- This is the tree node template for leaf nodes -->
   <cdk-tree-node *cdktreenodedef="let node" cdktreenodepadding="" [style.display]="shouldRender(node) ? 'flex' : 'none'" class="example-tree-node">
     <!-- use a disabled button to provide padding for tree leaf -->
@@ -15,4 +15,3 @@
     {{node.name}}
   </cdk-tree-node>
 </cdk-tree>
-</body></html>

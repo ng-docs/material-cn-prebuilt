@@ -1,4 +1,4 @@
-<html><head></head><body><ng-template #weightedit="" let-element="">
+<ng-template #weightedit="" let-element="">
     <div style="background-color: white;">
       <form #f="ngForm" cdkeditcontrol="" (ngsubmit)="onSubmitWeight(element, f)" [cdkeditcontrolpreservedformvalue]="preservedWeightValues.get(element)" (cdkeditcontrolpreservedformvaluechange)="preservedWeightValues.set(element, $event)"></form>
         Edit b:
@@ -68,4 +68,3 @@
   </tr><tr cdk-header-row="" *cdkheaderrowdef="displayedColumns"></tr>
   <tr cdk-row="" *cdkrowdef="let row; columns: displayedColumns;"></tr>
 </tbody></table>
-</body></html>

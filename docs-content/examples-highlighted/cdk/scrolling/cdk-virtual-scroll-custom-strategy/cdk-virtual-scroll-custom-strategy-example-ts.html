@@ -1,4 +1,4 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {FixedSizeVirtualScrollStrategy, VIRTUAL_SCROLL_STRATEGY} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/scrolling'</span>;
+<span class="hljs-keyword">import</span> {FixedSizeVirtualScrollStrategy, VIRTUAL_SCROLL_STRATEGY} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/scrolling'</span>;
 <span class="hljs-keyword">import</span> {ChangeDetectionStrategy, Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomVirtualScrollStrategy</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">FixedSizeVirtualScrollStrategy</span> </span>{
@@ -18,4 +18,3 @@
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CdkVirtualScrollCustomStrategyExample</span> </span>{
   items = <span class="hljs-built_in">Array</span>.from({<span class="hljs-attr">length</span>: <span class="hljs-number">100000</span>}).map(<span class="hljs-function">(<span class="hljs-params">_, i</span>) =&gt;</span> <span class="hljs-string">`Item #<span class="hljs-subst">${i}</span>`</span>);
 }
-</body></html>

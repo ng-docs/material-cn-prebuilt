@@ -1,4 +1,4 @@
-<html><head></head><body><button mat-raised-button="" (click)="addColumn()"> Add column </button>
+<button mat-raised-button="" (click)="addColumn()"> Add column </button>
 <button mat-raised-button="" (click)="removeColumn()"> Remove column </button>
 <button mat-raised-button="" (click)="shuffle()"> Shuffle </button>
 
@@ -11,4 +11,3 @@
   </tr><tr mat-header-row="" *matheaderrowdef="columnsToDisplay"></tr>
   <tr mat-row="" *matrowdef="let row; columns: columnsToDisplay;"></tr>
 </tbody></table>
-</body></html>

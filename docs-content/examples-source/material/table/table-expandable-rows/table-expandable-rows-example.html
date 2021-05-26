@@ -1,4 +1,4 @@
-<html><head></head><body><ng-container matcolumndef="{{column}}" *ngfor="let column of columnsToDisplay">
+<ng-container matcolumndef="{{column}}" *ngfor="let column of columnsToDisplay">
     </ng-container><ng-container matcolumndef="expandedDetail">
     </ng-container><table mat-table="" [datasource]="dataSource" multitemplatedatarows="" class="mat-elevation-z8">
   <tbody><tr><th mat-header-cell="" *matheadercelldef=""> {{column}} </th>
@@ -27,4 +27,3 @@
   </tr>
   <tr mat-row="" *matrowdef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
 </tbody></table>
-</body></html>

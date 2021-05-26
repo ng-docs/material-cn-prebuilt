@@ -1,4 +1,4 @@
-<html><head></head><body><button mat-raised-button="" (click)="isLinear = !isLinear" id="toggle-linear">
+<button mat-raised-button="" (click)="isLinear = !isLinear" id="toggle-linear">
   {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
 </button>
 <mat-horizontal-stepper [linear]="isLinear" #stepper="">
@@ -37,4 +37,3 @@
     </div>
   </mat-step>
 </mat-horizontal-stepper>
-</body></html>

@@ -1,4 +1,4 @@
-<html><head></head><body><h3 id="native-input"><code>native input</code></h3>
+<h3 id="native-input"><code>native input</code></h3>
 Selected: {{selected1}}
 <ul cdkselection="" [datasource]="data" [cdkselectionmultiple]="true" (cdkselectionchange)="selected1 = getCurrentSelected($event)">
   <input type="checkbox" cdkselectall="" #alltoggler="cdkSelectAll" [checked]="allToggler.checked | async" [indeterminate]="allToggler.indeterminate | async" (click)="allToggler.toggle($event)">
@@ -39,4 +39,3 @@ Selected: {{selected4}}
 
 <button (click)="changeElementName()">Change element names and the already selected stays</button>
 <button (click)="reset()">reset</button>
-</body></html>

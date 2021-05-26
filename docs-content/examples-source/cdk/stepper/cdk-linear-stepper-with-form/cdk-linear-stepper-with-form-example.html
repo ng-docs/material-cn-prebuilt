@@ -1,4 +1,4 @@
-<html><head></head><body><example-custom-linear-stepper [linear]="isLinear">
+<example-custom-linear-stepper [linear]="isLinear">
   <cdk-step [stepcontrol]="firstFormGroup">
     <label for="stepOneInput">Step 1 input</label>
     <form [formgroup]="firstFormGroup">
@@ -15,4 +15,3 @@
 <button class="example-toggle-linear-button" (click)="toggleLinearity()">
   {{isLinear ? 'Disable linear mode' : 'Enable linear mode'}}
 </button>
-</body></html>

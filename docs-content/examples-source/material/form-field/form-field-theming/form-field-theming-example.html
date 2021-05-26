@@ -1,4 +1,4 @@
-<html><head></head><body><form class="example-container" [formgroup]="options" [style.fontsize.px]="getFontSize()">
+<form class="example-container" [formgroup]="options" [style.fontsize.px]="getFontSize()">
   <mat-form-field appearance="fill" [color]="colorControl.value">
     <mat-label>Color</mat-label>
     <mat-select [formcontrol]="colorControl">
@@ -15,4 +15,3 @@
     <mat-error *ngif="fontSizeControl.invalid">Min size: 10px</mat-error>
   </mat-form-field>
 </form>
-</body></html>

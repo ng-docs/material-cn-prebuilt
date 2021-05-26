@@ -1,4 +1,4 @@
-<html><head></head><body><mat-form-field appearance="fill">
+<mat-form-field appearance="fill">
   <mat-label>Input &amp; change events</mat-label>
   <input matinput="" [matdatepicker]="picker" (dateinput)="addEvent('input', $event)" (datechange)="addEvent('change', $event)">
   <mat-datepicker-toggle matsuffix="" [for]="picker"></mat-datepicker-toggle>
@@ -8,4 +8,3 @@
 <div class="example-events">
   <div *ngfor="let e of events">{{e}}</div>
 </div>
-</body></html>

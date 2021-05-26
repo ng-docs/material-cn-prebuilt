@@ -1,4 +1,4 @@
-<html><head></head><body><ng-template #weightedit="" let-element="">
+<ng-template #weightedit="" let-element="">
     <div style="background-color: white; width: 100%">
       <form #f="ngForm" cdkeditcontrol="" cdkeditcontrolclickoutbehavior="submit" (ngsubmit)="onSubmitWeight(element, f)" [cdkeditcontrolpreservedformvalue]="preservedWeightValues.get(element)" (cdkeditcontrolpreservedformvaluechange)="preservedWeightValues.set(element, $event)"></form>
         <input type="number" [ngmodel]="element.weight" name="weight" required="">
@@ -43,4 +43,3 @@
     <td> {{element.symbol}} </td>
   </tr>
 </tbody></table>
-</body></html>

@@ -1,4 +1,4 @@
-<html><head></head><body><mat-form-field class="example-chip-list">
+<mat-form-field class="example-chip-list">
   <mat-label>Favorite Fruits</mat-label>
   <mat-chip-list #chiplist="" aria-label="Fruit selection">
     <mat-chip *ngfor="let fruit of fruits" [selectable]="selectable" [removable]="removable" (removed)="remove(fruit)">
@@ -13,4 +13,3 @@
     </mat-option>
   </mat-autocomplete>
 </mat-form-field>
-</body></html>

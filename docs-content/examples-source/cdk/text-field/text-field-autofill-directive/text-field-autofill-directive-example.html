@@ -1,4 +1,4 @@
-<html><head></head><body><form (submit)="$event.preventDefault()">
+<form (submit)="$event.preventDefault()">
   <mat-form-field>
     <mat-label>First name</mat-label>
     <input matinput="" (cdkautofill)="firstNameAutofilled = $event.isAutofilled">
@@ -11,4 +11,3 @@
   </mat-form-field>
   <button mat-raised-button="">Submit</button>
 </form>
-</body></html>
