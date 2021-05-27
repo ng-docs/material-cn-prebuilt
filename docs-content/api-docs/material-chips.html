@@ -393,7 +393,8 @@ are no eligible chips.</p>
       <code>color: ThemePalette</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Theme color palette for the component.</p>
+  <td class="docs-api-property-description"><p translation-result="on">此组件的主题调色板。</p><p translation-origin="off">Theme color palette for the component.</p>
+
 </td>
 </tr>
 
@@ -407,7 +408,8 @@ are no eligible chips.</p>
       <code>disableRipple: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether ripples are disabled.</p>
+  <td class="docs-api-property-description"><p translation-result="on">是否禁用涟漪。</p><p translation-origin="off">Whether ripples are disabled.</p>
+
 </td>
 </tr>
 
@@ -421,7 +423,7 @@ are no eligible chips.</p>
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on">该纸片是否被禁用了。</p><p translation-origin="off">Whether the chip is disabled.</p>
+  <td class="docs-api-property-description"><p translation-result="on">该纸片是否已禁用了。</p><p translation-origin="off">Whether the chip is disabled.</p>
 
 </td>
 </tr>
@@ -585,7 +587,8 @@ not selectable.</p>
       <code>defaultColor: ThemePalette | undefined</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Default color to fall back to if no value is set.</p>
+  <td class="docs-api-property-description"><p translation-result="on">如果未设置任何值，则默认颜色恢复为原来的颜色。</p><p translation-origin="off">Default color to fall back to if no value is set.</p>
+
 </td>
 </tr>
 
@@ -598,7 +601,8 @@ not selectable.</p>
       <code>defaultTabIndex: number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Tabindex to which to fall back to if no value is set.</p>
+  <td class="docs-api-property-description"><p translation-result="on">如果未设置任何值，将退回到 Tabindex。</p><p translation-origin="off">Tabindex to which to fall back to if no value is set.</p>
+
 </td>
 </tr>
 
@@ -876,7 +880,7 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on">输入框是否被禁用。</p><p translation-origin="off">Whether the input is disabled.</p>
+  <td class="docs-api-property-description"><p translation-result="on">输入框是否已禁用。</p><p translation-origin="off">Whether the input is disabled.</p>
 
 </td>
 </tr>
@@ -923,7 +927,7 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">会触发 chipEnd 事件的键盘代码列表。</p><p translation-origin="off">The list of key codes that will trigger a chipEnd event.</p>
 
-<p translation-result="on">默认为 <code>[ENTER]</code> 。</p><p translation-origin="off">Defaults to <code>[ENTER]</code>.</p>
+<p translation-result="on">默认为 <code>[ENTER]</code>。</p><p translation-origin="off">Defaults to <code>[ENTER]</code>.</p>
 
 </td>
 </tr>
@@ -1002,7 +1006,8 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Clears the input</p>
+      <p translation-result="on">清除输入</p><p translation-origin="off">Clears the input</p>
+
 
     </td>
   </tr></tbody></table>
@@ -1226,8 +1231,10 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
       <code>chipInput: MatChipInput</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Reference to the chip input that emitted the event.
-@breaking-change 13.0.0 This property will be made required.</p>
+  <td class="docs-api-property-description"><p translation-result="on">对发出事件的纸片输入的引用。</p><p translation-origin="off">Reference to the chip input that emitted the event.</p>
+
+<p translation-result="on">此属性为必填项。</p><p translation-origin="off">@breaking-change 13.0.0 This property will be made required.</p>
+
 </td>
 </tr>
 
@@ -1250,7 +1257,9 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v13.0.0 This property will be removed. 或更高版本中删除">
+  <td class="docs-api-properties-name-cell"><div class="docs-api-deprecated-marker" title="将会在 v13.0.0 This property will be removed.
+
+此属性将被删除。 或更高版本中删除">
         已弃用
       </div><p class="docs-api-property-name">
       <code>input: HTMLInputElement</code>
@@ -1258,8 +1267,10 @@ May be placed inside or outside of an <code>&lt;mat-chip-list&gt;</code>.</p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">触发该事件的原生 <code>&lt;input&gt;</code></p><p translation-origin="off">The native <code>&lt;input&gt;</code> element that the event is being fired for.</p>
 
-<p>@deprecated Use <code>MatChipInputEvent#chipInput.inputElement</code> instead.
-@breaking-change 13.0.0 This property will be removed.</p>
+<p translation-result="on">请改用 <code>MatChipInputEvent#chipInput.inputElement</code>。</p><p translation-origin="off">@deprecated Use <code>MatChipInputEvent#chipInput.inputElement</code> instead.</p>
+
+<p translation-result="on">此属性将被删除。</p><p translation-origin="off">@breaking-change 13.0.0 This property will be removed.</p>
+
 </td>
 </tr>
 

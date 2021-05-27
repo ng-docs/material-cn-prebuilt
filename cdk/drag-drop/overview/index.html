@@ -1148,7 +1148,7 @@ draggable.</p>
         </h3>
       
         
-      <p translation-result="on">默认情况下，一个容器中的所有 <code>cdkDrag</code> 项都可以移动到另一个相连的容器中。如果你想对可拖放的条目进行更精细的控制，你可以使用 <code>cdkDropListEnterPredicate</code> ，它会在条目即将进入新容器时调用。根据它是返回的是 <code>true</code> 还是 <code>false</code>，可以允许或不允许该条目进入新容器。</p><p translation-origin="off">By default, all <code>cdkDrag</code> items from one container can be moved into another connected container.
+      <p translation-result="on">默认情况下，一个容器中的所有 <code>cdkDrag</code> 项都可以移动到另一个相连的容器中。如果你想对可拖放的条目进行更精细的控制，你可以使用 <code>cdkDropListEnterPredicate</code>，它会在条目即将进入新容器时调用。根据它是返回的是 <code>true</code> 还是 <code>false</code>，可以允许或不允许该条目进入新容器。</p><p translation-origin="off">By default, all <code>cdkDrag</code> items from one container can be moved into another connected container.
 If you want more fine-grained control over which items can be dropped, you can use the
 <code>cdkDropListEnterPredicate</code> which will be called whenever an item is about to enter a
 new container. Depending on whether the predicate returns <code>true</code> or <code>false</code>, the item may or may not
@@ -1201,7 +1201,7 @@ decides to return the item.</p>
         </h3>
       
         
-      <p translation-result="on">默认情况下，只要用户把指针放在 <code>cdkDrag</code> ，就会启动拖动序列。这种对于触控设备上的全屏可拖动元素等情况可能并不理想，因为用户在滚动页面时可能会意外触发拖动。对于这类情况，你可以使用输入属性 <code>cdkDragStartDelay</code> 来延迟拖动，它会先等待用户按住指定的毫秒数之后才开始移动此元素。</p><p translation-origin="off">By default as soon as the user puts their pointer down on a <code>cdkDrag</code>, the dragging sequence will
+      <p translation-result="on">默认情况下，只要用户把指针放在 <code>cdkDrag</code>，就会启动拖动序列。这种对于触控设备上的全屏可拖动元素等情况可能并不理想，因为用户在滚动页面时可能会意外触发拖动。对于这类情况，你可以使用输入属性 <code>cdkDragStartDelay</code> 来延迟拖动，它会先等待用户按住指定的毫秒数之后才开始移动此元素。</p><p translation-origin="off">By default as soon as the user puts their pointer down on a <code>cdkDrag</code>, the dragging sequence will
 be started. This might not be desirable in cases like fullscreen draggable elements on touch
 devices where the user might accidentally trigger a drag as they're scrolling the page. For
 cases like these you can delay the dragging sequence using the <code>cdkDragStartDelay</code> input which
@@ -1239,7 +1239,7 @@ draggable's position after a user has navigated away and then returned.</p>
         </h3>
       
         
-      <p translation-result="on">默认情况下，<code>cdkDrag</code> 的条目可以放到 <code>cdkDropList</code> 中的任意位置（序号）上。你可以通过设置 <code>cdkDropListSortPredicate</code> 来改变这种行为。每当一个条目要移到一个新的序号上时，就会调用一个谓词函数。如果该谓词返回 <code>true</code> ，则该项将被移入新序号，否则会保持当前位置。</p><p translation-origin="off"><code>cdkDrag</code> items can be sorted into any position inside of a <code>cdkDropList</code> by default. You can change
+      <p translation-result="on">默认情况下，<code>cdkDrag</code> 的条目可以放到 <code>cdkDropList</code> 中的任意位置（序号）上。你可以通过设置 <code>cdkDropListSortPredicate</code> 来改变这种行为。每当一个条目要移到一个新的序号上时，就会调用一个谓词函数。如果该谓词返回 <code>true</code>，则该项将被移入新序号，否则会保持当前位置。</p><p translation-origin="off"><code>cdkDrag</code> items can be sorted into any position inside of a <code>cdkDropList</code> by default. You can change
 this behavior by setting a <code>cdkDropListSortPredicate</code>. The predicate function will be called
 whenever an item is about to be moved into a new index. If the predicate returns <code>true</code>, the
 item will be moved into the new index, otherwise it will keep its current position.</p>

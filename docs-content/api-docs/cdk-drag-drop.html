@@ -745,18 +745,25 @@ Can be used to restore the element's position for a returning user.</p>
       <code>previewContainer: PreviewContainer</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Configures the place into which the preview of the item will be inserted. Can be configured
+  <td class="docs-api-property-description"><p translation-result="on">配置项目预览的插入位置。可以通过 <code>CDK_DROP_LIST</code> 进行全局配置。可能的值有：</p><p translation-origin="off">Configures the place into which the preview of the item will be inserted. Can be configured
 globally through <code>CDK_DROP_LIST</code>. Possible values:</p>
+
 <ul>
-<li><code>global</code> - Preview will be inserted at the bottom of the <code>&lt;body&gt;</code>. The advantage is that
+<li><p translation-result="on"><code>global</code> —— 预览将插入在 <code>&lt;body&gt;</code> 的底部。其优点是你不必担心 <code>overflow: hidden</code> 或 <code>z-index</code>，但项目不会保留它继承的样式。</p><p translation-origin="off"><code>global</code> - Preview will be inserted at the bottom of the <code>&lt;body&gt;</code>. The advantage is that
 you don't have to worry about <code>overflow: hidden</code> or <code>z-index</code>, but the item won't retain
-its inherited styles.</li>
-<li><code>parent</code> - Preview will be inserted into the parent of the drag item. The advantage is that
+its inherited styles.</p>
+
+</li>
+<li><p translation-result="on"><code>parent</code> —— 预览将插入到拖动项的父级中。优点是已继承的样式将被保留，但可能会被 <code>overflow: hidden</code> 裁剪，或由于 <code>z-index</code> 而变得不可见。此外，该预览将对选择器如 <code>:nth-child</code> 和一些 flexbox 配置产生影响。</p><p translation-origin="off"><code>parent</code> - Preview will be inserted into the parent of the drag item. The advantage is that
 inherited styles will be preserved, but it may be clipped by <code>overflow: hidden</code> or not be
 visible due to <code>z-index</code>. Furthermore, the preview is going to have an effect over selectors
-like <code>:nth-child</code> and some flexbox configurations.</li>
-<li><code>ElementRef&lt;HTMLElement&gt; | HTMLElement</code> - Preview will be inserted into a specific element.
-Same advantages and disadvantages as <code>parent</code>.</li>
+like <code>:nth-child</code> and some flexbox configurations.</p>
+
+</li>
+<li><p translation-result="on"><code>ElementRef&lt;HTMLElement&gt; | HTMLElement</code> 预览将插入到特定元素中。具有和 <code>parent</code> 一样的优点和缺点。</p><p translation-origin="off"><code>ElementRef&lt;HTMLElement&gt; | HTMLElement</code> - Preview will be inserted into a specific element.
+Same advantages and disadvantages as <code>parent</code>.</p>
+
+</li>
 </ul>
 </td>
 </tr>
@@ -1989,7 +1996,8 @@ While dragging this is the placeholder, otherwise it's the root element.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sets the parent ref that the ref is nested in.</p>
+      <p translation-result="on">设置嵌套引用的父引用。</p><p translation-origin="off">Sets the parent ref that the ref is nested in.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2094,8 +2102,10 @@ While dragging this is the placeholder, otherwise it's the root element.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sets the container into which to insert the preview element.
-@param value Container into which to insert the preview.</p>
+      <p translation-result="on">设置要在其中插入预览元素的容器。</p><p translation-origin="off">Sets the container into which to insert the preview element.</p>
+
+<p translation-result="on">要将预览插入其中的容器。</p><p translation-origin="off">@param value Container into which to insert the preview.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -3431,7 +3441,8 @@ considers them to have changed the drag direction.</p>
 }</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Position where the pointer was when the item was dropped</p>
+  <td class="docs-api-property-description"><p translation-result="on">放置项目时指针所处的位置</p><p translation-origin="off">Position where the pointer was when the item was dropped</p>
+
 </td>
 </tr>
 
@@ -3643,7 +3654,8 @@ drop container by moving it into another one.</p>
 }</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Position where the pointer was when the item was dropped</p>
+  <td class="docs-api-property-description"><p translation-result="on">放置条目时指针所处的位置</p><p translation-origin="off">Position where the pointer was when the item was dropped</p>
+
 </td>
 </tr>
 
@@ -3737,7 +3749,7 @@ drop container by moving it into another one.</p>
 }</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on">指示用户沿每个轴拖动元素的方向。 <code>1</code> 表示位置在增加（例如，用户向右或向下移动），而 <code>-1</code> 表示它正在减少（它们向左或向上移动）。 <code>0</code> 意味着该位置没有变化。</p><p translation-origin="off">Indicates the direction in which the user is dragging the element along each axis.
+  <td class="docs-api-property-description"><p translation-result="on">指示用户沿每个轴拖动元素的方向。<code>1</code> 表示位置在增加（例如，用户向右或向下移动），而 <code>-1</code> 表示它正在减少（它们向左或向上移动）。<code>0</code> 意味着该位置没有变化。</p><p translation-origin="off">Indicates the direction in which the user is dragging the element along each axis.
 <code>1</code> means that the position is increasing (e.g. the user is moving to the right or downwards),
 whereas <code>-1</code> means that it's decreasing (they're moving to the left or upwards). <code>0</code> means
 that the position hasn't changed.</p>
@@ -4316,17 +4328,24 @@ original position in current array.</p>
 <h4 id="PreviewContainer" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
   <span header-link="PreviewContainer"></span>
   <code>PreviewContainer</code>
-</h4><div class="docs-api-type-alias-description"><p>Possible places into which the preview of a drag item can be inserted.</p>
+</h4><div class="docs-api-type-alias-description"><p translation-result="on">可以在其中插入拖动条目预览的可能位置。</p><p translation-origin="off">Possible places into which the preview of a drag item can be inserted.</p>
+
 <ul>
-<li><code>global</code> - Preview will be inserted at the bottom of the <code>&lt;body&gt;</code>. The advantage is that
+<li><p translation-result="on"><code>global</code> —— 预览将插入在 <code>&lt;body&gt;</code> 的底部。优点是你不必担心 <code>overflow: hidden</code> 或 <code>z-index</code>，但条目不会保留其继承的样式。</p><p translation-origin="off"><code>global</code> - Preview will be inserted at the bottom of the <code>&lt;body&gt;</code>. The advantage is that
 you don't have to worry about <code>overflow: hidden</code> or <code>z-index</code>, but the item won't retain
-its inherited styles.</li>
-<li><code>parent</code> - Preview will be inserted into the parent of the drag item. The advantage is that
+its inherited styles.</p>
+
+</li>
+<li><p translation-result="on"><code>parent</code> —— 预览将插入到拖动条目的父级中。优点是已继承的样式将被保留，但可能会被 <code>overflow: hidden</code> 裁剪，由于 <code>z-index</code> 而变得不可见。此外，该预览将对选择器如 <code>:nth-child</code> 和一些 flexbox 配置产生影响。</p><p translation-origin="off"><code>parent</code> - Preview will be inserted into the parent of the drag item. The advantage is that
 inherited styles will be preserved, but it may be clipped by <code>overflow: hidden</code> or not be
 visible due to <code>z-index</code>. Furthermore, the preview is going to have an effect over selectors
-like <code>:nth-child</code> and some flexbox configurations.</li>
-<li><code>ElementRef&lt;HTMLElement&gt; | HTMLElement</code> - Preview will be inserted into a specific element.
-Same advantages and disadvantages as <code>parent</code>.</li>
+like <code>:nth-child</code> and some flexbox configurations.</p>
+
+</li>
+<li><p translation-result="on"><code>ElementRef&lt;HTMLElement&gt; | HTMLElement</code> 预览将插入到特定元素中。具有和 <code>parent</code> 一样的优点和缺点。</p><p translation-origin="off"><code>ElementRef&lt;HTMLElement&gt; | HTMLElement</code> - Preview will be inserted into a specific element.
+Same advantages and disadvantages as <code>parent</code>.</p>
+
+</li>
 </ul>
 </div><div class="docs-markdown">
 <pre class="docs-markdown-pre"><code class="docs-markdown-code"><span class="hljs-keyword">type</span> PreviewContainer = <span class="hljs-string">'global'</span> | <span class="hljs-string">'parent'</span> | ElementRef&lt;HTMLElement&gt; | HTMLElement;</code>

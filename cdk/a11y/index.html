@@ -352,7 +352,7 @@ details.</p>
         </h3>
       
         
-      <p translation-result="on"><code>LiveAnnouncer</code> 用于通过 <code>aria-live</code> 区域为屏幕阅读器用户播报信息。关于 <code>aria-live</code> 区域的详细信息，请参见 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-live">W3C 的 WAI-ARIA</a> 。</p><p translation-origin="off"><code>LiveAnnouncer</code> is used to announce messages for screen-reader users using an <code>aria-live</code> region.
+      <p translation-result="on"><code>LiveAnnouncer</code> 用于通过 <code>aria-live</code> 区域为屏幕阅读器用户播报信息。关于 <code>aria-live</code> 区域的详细信息，请参见 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-live">W3C 的 WAI-ARIA</a>。</p><p translation-origin="off"><code>LiveAnnouncer</code> is used to announce messages for screen-reader users using an <code>aria-live</code> region.
 See <a href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#aria-live">the W3C's WAI-ARIA</a>
 for more information on aria-live regions.</p>
 
@@ -389,7 +389,7 @@ state of an element. It's more powerful than just listening for <code>focus</cod
 tells you how the element was focused (via the mouse, keyboard, touch, or programmatically). It also
 allows listening for focus on descendant elements if desired.</p>
 
-<p translation-result="on">要监听某个元素的焦点变化，可以用 <code>monitor</code> 方法传入要监控的元素和一个可选的逻辑标志 <code>checkChildren</code>。给 <code>checkChildren</code> 传入 <code>true</code> 会告诉 <code>FocusMonitor</code> ：如果该元素的任何各级子元素有焦点，就认为该元素有焦点。如果没有指定，该选项默认为 <code>false</code> 。<code>monitor</code> 方法会返回一个可观察对象，当焦点状态改变时，该对象会发送一个 <code>FocusOrigin</code>。 <code>FocusOrigin</code> 是下列值之一：</p><p translation-origin="off">To listen for focus changes on an element, use the <code>monitor</code> method which takes an element to
+<p translation-result="on">要监听某个元素的焦点变化，可以用 <code>monitor</code> 方法传入要监控的元素和一个可选的逻辑标志 <code>checkChildren</code>。给 <code>checkChildren</code> 传入 <code>true</code> 会告诉 <code>FocusMonitor</code> ：如果该元素的任何各级子元素有焦点，就认为该元素有焦点。如果没有指定，该选项默认为 <code>false</code>。<code>monitor</code> 方法会返回一个可观察对象，当焦点状态改变时，该对象会发送一个 <code>FocusOrigin</code>。<code>FocusOrigin</code> 是下列值之一：</p><p translation-origin="off">To listen for focus changes on an element, use the <code>monitor</code> method which takes an element to
 monitor and an optional boolean flag <code>checkChildren</code>. Passing true for <code>checkChildren</code> will tell the
 <code>FocusMonitor</code> to consider the element focused if any of its descendants are focused. This option
 defaults to <code>false</code> if not specified. The <code>monitor</code> method will return an Observable that emits the
@@ -447,7 +447,7 @@ will just be focused like normal.</p>
         </h4>
       
         
-      <p translation-result="on">为了方便使用，CDK 还提供了两个指令，可以简单地监控某个元素。<code>cdkMonitorElementFocus</code> 相当于在 <code>checkChildren</code> 为 <code>false</code> 的宿主元素上调用 <code>monitor</code>。 <code>cdkMonitorSubtreeFocus</code> 相当于在 <code>checkChildren</code> 为 <code>true</code> 的宿主元素上调用 <code>monitor</code>。这两个指令都有一个 <code>@Output()</code> <code>cdkFocusChange</code>，每当它发生变化时都会通过该事件发出新的 <code>FocusOrigin</code>。</p><p translation-origin="off">For convenience, the CDK also provides two directives that allow for easily monitoring an element.
+      <p translation-result="on">为了方便使用，CDK 还提供了两个指令，可以简单地监控某个元素。<code>cdkMonitorElementFocus</code> 相当于在 <code>checkChildren</code> 为 <code>false</code> 的宿主元素上调用 <code>monitor</code>。<code>cdkMonitorSubtreeFocus</code> 相当于在 <code>checkChildren</code> 为 <code>true</code> 的宿主元素上调用 <code>monitor</code>。这两个指令都有一个 <code>@Output()</code> <code>cdkFocusChange</code>，每当它发生变化时都会通过该事件发出新的 <code>FocusOrigin</code>。</p><p translation-origin="off">For convenience, the CDK also provides two directives that allow for easily monitoring an element.
 <code>cdkMonitorElementFocus</code> is the equivalent of calling <code>monitor</code> on the host element with
 <code>checkChildren</code> set to <code>false</code>. <code>cdkMonitorSubtreeFocus</code> is the equivalent of calling <code>monitor</code> on
 the host element with <code>checkChildren</code> set to <code>true</code>. Each of these directives has an <code>@Output()</code>
@@ -521,12 +521,12 @@ mode is detected at runtime, via the <code>HighContrastModeDetector</code> servi
 </code></pre>
 <p translation-result="on"><code>high-contrast</code> 这个 mixin 接受两个可选参数 <code>$target</code> 和 <code>$encapsulation</code>。</p><p translation-origin="off">The <code>high-contrast</code> mixin accepts two optional parameters, <code>$target</code> and <code>$encapsulation</code>.</p>
 
-<p translation-result="on"><code>$target</code> 参数允许你指定这些样式要用高对比度模式的哪个变体。接受的值是 <code>active</code> （默认），<code>black-on-white</code> 和 <code>white-on-black</code> 。这些值对应于 <a href="https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/"><code>-ms-high-contrast</code> 媒体查询</a> 所支持的值。</p><p translation-origin="off">The <code>$target</code> parameter allows you to specify which variation of high contrast mode your style
+<p translation-result="on"><code>$target</code> 参数允许你指定这些样式要用高对比度模式的哪个变体。接受的值是 <code>active</code> （默认），<code>black-on-white</code> 和 <code>white-on-black</code>。这些值对应于 <a href="https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/"><code>-ms-high-contrast</code> 媒体查询</a> 所支持的值。</p><p translation-origin="off">The <code>$target</code> parameter allows you to specify which variation of high contrast mode your style
 targets. The accepted values are <code>active</code> (default), <code>black-on-white</code>, and <code>white-on-black</code>. These
 values correspond to the supported values for the
 <a href="https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/"><code>-ms-high-contrast</code> media query</a>.</p>
 
-<p translation-result="on"><code>$encapsulation</code> 参数会影响所生成的样式与样式封装的互动。支持的值是 <code>on</code>、<code>off</code> 和 <code>any</code> 。默认值为 <code>any</code>，它生成的两个选择器，可用于任何封装方案。指定为 <code>on</code> 或 <code>off</code>，可以将样式分别限制为启用或禁用样式封装，可以轻微减小生成的 CSS 的大小。这些为带封装的组件生成的样式，会作用于 Angular 的模拟（emulated）样式封装和原生（native） Shadow DOM 封装方式。</p><p translation-origin="off">The <code>$encapsulation</code> parameter affects how the emitted styles interact with style encapsulation.
+<p translation-result="on"><code>$encapsulation</code> 参数会影响所生成的样式与样式封装的互动。支持的值是 <code>on</code>、<code>off</code> 和 <code>any</code>。默认值为 <code>any</code>，它生成的两个选择器，可用于任何封装方案。指定为 <code>on</code> 或 <code>off</code>，可以将样式分别限制为启用或禁用样式封装，可以轻微减小生成的 CSS 的大小。这些为带封装的组件生成的样式，会作用于 Angular 的模拟（emulated）样式封装和原生（native） Shadow DOM 封装方式。</p><p translation-origin="off">The <code>$encapsulation</code> parameter affects how the emitted styles interact with style encapsulation.
 The supported values are <code>on</code>, <code>off</code>, and <code>any</code>. The default value is <code>any</code>, which works for any
 encapsulation scenario by emitting two selectors. Specifying either <code>on</code> or <code>off</code> slightly reduces
 the amount of CSS emitted by limiting the styles to components with encapsulation enabled or

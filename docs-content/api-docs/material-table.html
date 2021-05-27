@@ -346,8 +346,9 @@ do not match are replaced by the '-' character.</p>
   <span header-link="MatRecycleRows"></span>
   <code>MatRecycleRows</code>
   
-</h4><div class="docs-api-class-description"><p>Enables the recycle view repeater strategy, which reduces rendering latency. Not compatible with
+</h4><div class="docs-api-class-description"><p translation-result="on">启用复写器的视图回收策略，从而减少渲染延迟。与为行设置动画的表格不兼容。</p><p translation-origin="off">Enables the recycle view repeater strategy, which reduces rendering latency. Not compatible with
 tables that animate rows.</p>
+
 </div><div class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">选择器：</span>
   
@@ -443,7 +444,7 @@ subscriptions registered during the connect process).</p>
       <code>fixedLayout: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on">是否使用固定（fixed）表格布局。启用此选项会强制让所有列宽一致，并优化渲染原生表格的粘性样式。 对弹性（flex）表格无效。</p><p translation-origin="off">Whether to use a fixed table layout. Enabling this option will enforce consistent column widths
+  <td class="docs-api-property-description"><p translation-result="on">是否使用固定（fixed）表格布局。启用此选项会强制让所有列宽一致，并优化渲染原生表格的粘性样式。对弹性（flex）表格无效。</p><p translation-origin="off">Whether to use a fixed table layout. Enabling this option will enforce consistent column widths
 and optimize rendering sticky styles for native tables. No-op for flex tables.</p>
 
 </td>
@@ -1700,7 +1701,7 @@ input.</p>
     </p>
   </td>
   <td class="docs-api-property-description"><p translation-result="on">访问器函数用来检索为要每个单元格渲染的数据。如果未设置此属性，数据单元格将渲染数据属性中与该列名匹配的值。
-例如，如果列的名字是 <code>id</code> ，那么渲染的值就是 data 的 <code>id</code> 属性定义的值。</p><p translation-origin="off">Accessor function to retrieve the data rendered for each cell. If this
+例如，如果列的名字是 <code>id</code>，那么渲染的值就是 data 的 <code>id</code> 属性定义的值。</p><p translation-origin="off">Accessor function to retrieve the data rendered for each cell. If this
 property is not set, the data cells will render the value found in the data's property matching
 the column's name. For example, if the column is named <code>id</code>, then the rendered value will be
 value defined by the data's <code>id</code> property.</p>
@@ -1783,7 +1784,7 @@ properties are accessed. Also allows for filter customization by overriding filt
 which defines how row data is converted to a string for filter matching.</p>
 
 <p translation-result="on"><strong>注意：</strong>这个类是一个简单的数据源，可以帮助你入门。因此，它无法处理某些更高级的案例，比如提供强大的 i18n 支持或服务器端交互。
-如果你的应用需要支持更高级的用例，可以考虑实现自己的 <code>DataSource</code> 。</p><p translation-origin="off"><strong>Note:</strong> This class is meant to be a simple data source to help you get started. As such
+如果你的应用需要支持更高级的用例，可以考虑实现自己的 <code>DataSource</code>。</p><p translation-origin="off"><strong>Note:</strong> This class is meant to be a simple data source to help you get started. As such
 it isn't equipped to handle some more advanced cases like robust i18n support or server-side
 interactions. If your app needs to support more advanced use cases, consider implementing your
 own <code>DataSource</code>.</p>
@@ -1878,7 +1879,7 @@ shown to the user rather than all the data.</p>
 displayed. Page changes emitted by the MatPaginator will trigger an update to the
 table's rendered data.</p>
 
-<p translation-result="on">注意，数据源会使用此分页器的属性来计算应该显示哪个页面的数据。如果分页器要通过模板输入接收其属性，比如 <code>[pageLength]=100</code> 或者 <code>[pageIndex]=1</code> ，那就要确保此分页器的视图已经初始化了，然后再赋值给这个数据源。</p><p translation-origin="off">Note that the data source uses the paginator's properties to calculate which page of data
+<p translation-result="on">注意，数据源会使用此分页器的属性来计算应该显示哪个页面的数据。如果分页器要通过模板输入接收其属性，比如 <code>[pageLength]=100</code> 或者 <code>[pageIndex]=1</code>，那就要确保此分页器的视图已经初始化了，然后再赋值给这个数据源。</p><p translation-origin="off">Note that the data source uses the paginator's properties to calculate which page of data
 should be displayed. If the paginator receives its properties as template inputs,
 e.g. <code>[pageLength]=100</code> or <code>[pageIndex]=1</code>, then be sure that the paginator's view has been
 initialized before assigning it to this data source.</p>
@@ -1895,7 +1896,7 @@ initialized before assigning it to this data source.</p>
       <code>sort: MatSort | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on">该表格使用 MatSort 指令的实例来控制它的排序。 MatSort 发出的排序变化会触发对该表格所渲染数据的更新。</p><p translation-origin="off">Instance of the MatSort directive used by the table to control its sorting. Sort changes
+  <td class="docs-api-property-description"><p translation-result="on">该表格使用 MatSort 指令的实例来控制它的排序。MatSort 发出的排序变化会触发对该表格所渲染数据的更新。</p><p translation-origin="off">Instance of the MatSort directive used by the table to control its sorting. Sort changes
 emitted by the MatSort will trigger an update to the table's rendered data.</p>
 
 </td>
@@ -1966,8 +1967,9 @@ May be set to a custom function for different behavior.</p>
 <h4 id="MatTableDataSourcePageEvent" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="MatTableDataSourcePageEvent"></span>
   <code>MatTableDataSourcePageEvent</code>
-</h4><div class="docs-api-interface-description"><p>Interface that matches the required API parts for the MatPaginator's PageEvent.
+</h4><div class="docs-api-interface-description"><p translation-result="on">与 MatPaginator 的 PageEvent 所需的 API 部分匹配的接口。这种解耦让用户可以依赖旧版或基于 MDC 的分页器。</p><p translation-origin="off">Interface that matches the required API parts for the MatPaginator's PageEvent.
 Decoupled so that users can depend on either the legacy or MDC-based paginator.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-8">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -2024,8 +2026,9 @@ Decoupled so that users can depend on either the legacy or MDC-based paginator.<
 <h4 id="MatTableDataSourcePaginator" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="MatTableDataSourcePaginator"></span>
   <code>MatTableDataSourcePaginator</code>
-</h4><div class="docs-api-interface-description"><p>Interface that matches the required API parts of the MatPaginator.
+</h4><div class="docs-api-interface-description"><p translation-result="on">与 MatPaginator 所需的 API 部分匹配的接口。这种解耦让用户可以依赖旧版或基于 MDC 的分页器。</p><p translation-origin="off">Interface that matches the required API parts of the MatPaginator.
 Decoupled so that users can depend on either the legacy or MDC-based paginator.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-9">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">

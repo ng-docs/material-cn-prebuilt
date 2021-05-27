@@ -166,13 +166,13 @@ predicate.</p>
 
 </li>
 </ul>
-<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 会拒绝。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 会拒绝。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> rejects. The type that the <code>Promise</code> resolves to is a union of all result types for
   each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -232,13 +232,13 @@ predicate.</p>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 会拒绝。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 会拒绝。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> rejects. The type that the <code>Promise</code> resolves to is a union of all result types for
   each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -287,7 +287,7 @@ predicate.</p>
 
 </li>
 </ul>
-<p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。 <code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for all
+<p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。<code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for all
   elements and harnesses matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If an element matches more than
   one <code>ComponentHarness</code> class, the locator gets an instance of each for the same element. If
@@ -295,7 +295,7 @@ predicate.</p>
   for that element. The type that the <code>Promise</code> resolves to is an array where each element is
   the union of all result types for each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
 
 <ul>
@@ -332,7 +332,7 @@ predicate.</p>
 ]</code></p>
 
 </li>
-<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code>。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
 
 </li>
 </ul>
@@ -382,7 +382,7 @@ predicate.</p>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。 <code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for all
+        <p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。<code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for all
   elements and harnesses matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If an element matches more than
   one <code>ComponentHarness</code> class, the locator gets an instance of each for the same element. If
@@ -390,7 +390,7 @@ predicate.</p>
   for that element. The type that the <code>Promise</code> resolves to is an array where each element is
   the union of all result types for each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
 
 <ul>
@@ -427,7 +427,7 @@ predicate.</p>
 ]</code></p>
 
 </li>
-<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code>。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
 
 </li>
 </ul>
@@ -466,13 +466,13 @@ predicate.</p>
 
 </li>
 </ul>
-<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会被解析为 <code>null</code>。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
   result types for each query or null.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -482,7 +482,7 @@ predicate.</p>
 <li><p translation-result="on"><code>await ch.locatorForOptional('div', DivHarness)()</code> 获取 <code>#d1</code> <code>TestElement</code> 实例</p><p translation-origin="off"><code>await ch.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
 
 </li>
-<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code> 。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code>。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
 
 </li>
 </ul>
@@ -532,13 +532,13 @@ predicate.</p>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会被解析为 <code>null</code>。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
   result types for each query or null.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -548,7 +548,7 @@ predicate.</p>
 <li><p translation-result="on"><code>await ch.locatorForOptional('div', DivHarness)()</code> 获取 <code>#d1</code> <code>TestElement</code> 实例</p><p translation-origin="off"><code>await ch.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
 
 </li>
-<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code> 。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code>。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
 
 </li>
 </ul>
@@ -2370,7 +2370,7 @@ component is found, an error is thrown.</p>
 <h4 id="LocatorFactory" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="LocatorFactory"></span>
   <code>LocatorFactory</code>
-</h4><div class="docs-api-interface-description"><p translation-result="on">用来创建异步定位器函数的接口，用于查找元素和组件测试工具。 这个接口供 <code>ComponentHarness</code> 的作者使用，用于为其 <code>ComponentHarness</code> 子类创建定位器函数。</p><p translation-origin="off">Interface used to create asynchronous locator functions used find elements and component
+</h4><div class="docs-api-interface-description"><p translation-result="on">用来创建异步定位器函数的接口，用于查找元素和组件测试工具。这个接口供 <code>ComponentHarness</code> 的作者使用，用于为其 <code>ComponentHarness</code> 子类创建定位器函数。</p><p translation-origin="off">Interface used to create asynchronous locator functions used find elements and component
 harnesses. This interface is used by <code>ComponentHarness</code> authors to create locator functions for
 their <code>ComponentHarness</code> subclass.</p>
 
@@ -2388,7 +2388,7 @@ their <code>ComponentHarness</code> subclass.</p>
       <code>rootElement: TestElement</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on"><code>LocatorFactory</code> 的根元素是一个 <code>TestElement</code> 。</p><p translation-origin="off">The root element of this <code>LocatorFactory</code> as a <code>TestElement</code>.</p>
+  <td class="docs-api-property-description"><p translation-result="on"><code>LocatorFactory</code> 的根元素是一个 <code>TestElement</code>。</p><p translation-origin="off">The root element of this <code>LocatorFactory</code> as a <code>TestElement</code>.</p>
 
 </td>
 </tr>
@@ -2688,8 +2688,8 @@ each query.</p><p translation-origin="off">A <code>HarnessPredicate</code> searc
 
 </li>
 </ul>
-<p>一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会拒绝（reject）。 <code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p>
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p>一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会拒绝（reject）。<code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p>
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -2749,13 +2749,13 @@ each query.</p><p translation-origin="off">A <code>HarnessPredicate</code> searc
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会拒绝（reject）。 <code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+        <p translation-result="on">一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会拒绝（reject）。<code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> rejects. The type that the <code>Promise</code> resolves to is a union of all result types for
   each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -2812,7 +2812,7 @@ predicate.</p>
   for that element. The type that the <code>Promise</code> resolves to is an array where each element is
   the union of all result types for each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
 
 <ul>
@@ -2849,7 +2849,7 @@ predicate.</p>
 ]</code></p>
 
 </li>
-<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code>。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
 
 </li>
 </ul>
@@ -2907,7 +2907,7 @@ predicate.</p>
   for that element. The type that the <code>Promise</code> resolves to is an array where each element is
   the union of all result types for each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
 
 <ul>
@@ -2944,7 +2944,7 @@ predicate.</p>
 ]</code></p>
 
 </li>
-<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code>。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
 
 </li>
 </ul>
@@ -2983,13 +2983,13 @@ predicate.</p>
 
 </li>
 </ul>
-<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会被解析为 <code>null</code>。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
   result types for each query or null.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -2999,7 +2999,7 @@ predicate.</p>
 <li><p translation-result="on"><code>await lf.locatorForOptional('div', DivHarness)()</code> 会获取 <code>#d1</code> 的 <code>TestElement</code> 实例</p><p translation-origin="off"><code>await lf.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
 
 </li>
-<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code> 。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code>。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
 
 </li>
 </ul>
@@ -3049,13 +3049,13 @@ predicate.</p>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会被解析为 <code>null</code>。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
   result types for each query or null.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -3065,7 +3065,7 @@ predicate.</p>
 <li><p translation-result="on"><code>await lf.locatorForOptional('div', DivHarness)()</code> 会获取 <code>#d1</code> 的 <code>TestElement</code> 实例</p><p translation-origin="off"><code>await lf.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
 
 </li>
-<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code> 。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code>。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
 
 </li>
 </ul>
@@ -3384,7 +3384,7 @@ interface through which the ComponentHarness interacts with the component's DOM.
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">让元素失去焦点。</p><p translation-origin="off">Blur the element.</p>
+      <p translation-result="on">让元素失焦。</p><p translation-origin="off">Blur the element.</p>
 
 
     </td>
@@ -3457,7 +3457,7 @@ interface through which the ComponentHarness interacts with the component's DOM.
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">单击当前环境下位于默认位置的元素。
-如果你需要保证在某个特定的位置单击该元素，可以考虑 <code>click('center')</code> 或 <code>click(x, y)</code> 。</p><p translation-origin="off">Click the element at the default location for the current environment. If you need to guarantee
+如果你需要保证在某个特定的位置单击该元素，可以考虑 <code>click('center')</code> 或 <code>click(x, y)</code>。</p><p translation-origin="off">Click the element at the default location for the current environment. If you need to guarantee
 the element is clicked at a specific location, consider using <code>click('center')</code> or
 <code>click(x, y)</code> instead.</p>
 
@@ -3996,7 +3996,7 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">让鼠标远离元素。</p><p translation-origin="off">Moves the mouse away from the element.</p>
+      <p translation-result="on">将鼠标从此元素移开。</p><p translation-origin="off">Moves the mouse away from the element.</p>
 
 
     </td>
@@ -4697,7 +4697,7 @@ changes.</p>
 <h4 id="HarnessQuery" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
   <span header-link="HarnessQuery"></span>
   <code>HarnessQuery</code>
-</h4><div class="docs-api-type-alias-description"><p translation-result="on"><code>ComponentHarness</code> 的查询，它表示为一个 <code>ComponentHarnessConstructor</code> 或 <code>HarnessPredicate</code> 。</p><p translation-origin="off">A query for a <code>ComponentHarness</code>, which is expressed as either a <code>ComponentHarnessConstructor</code> or
+</h4><div class="docs-api-type-alias-description"><p translation-result="on"><code>ComponentHarness</code> 的查询，它表示为一个 <code>ComponentHarnessConstructor</code> 或 <code>HarnessPredicate</code>。</p><p translation-origin="off">A query for a <code>ComponentHarness</code>, which is expressed as either a <code>ComponentHarnessConstructor</code> or
 a <code>HarnessPredicate</code>.</p>
 
 </div><div class="docs-markdown">
@@ -4724,7 +4724,7 @@ might be a harness of type <code>C1</code></p>
 harness of type <code>C2</code></p>
 
 </li>
-<li><p translation-result="on">如果其中一个查询是针对某个 <code>string</code>，那就意味着该结果可能是一个 <code>TestElement</code> 。</p><p translation-origin="off">If one of the queries is for a <code>string</code>, it means that the result might be a <code>TestElement</code>.</p>
+<li><p translation-result="on">如果其中一个查询是针对某个 <code>string</code>，那就意味着该结果可能是一个 <code>TestElement</code>。</p><p translation-origin="off">If one of the queries is for a <code>string</code>, it means that the result might be a <code>TestElement</code>.</p>
 
 </li>
 </ul>

@@ -25,7 +25,7 @@
     </a>
   </span>
   
-</h4><div class="docs-api-class-description"><p translation-result="on">嵌套节点是 <code>&lt;cdk-tree&gt;</code> 的子节点。它适用于嵌套树。通过在树节点模板中使用 <code>cdk-nested-tree-node</code> 组件，会把父节点的子节点添加到树节点模板的  <code>cdkTreeNodeOutlet</code> 中。 该节点的子节点会自动添加到 <code>cdkTreeNodeOutlet</code> 中。</p><p translation-origin="off">Nested node is a child of <code>&lt;cdk-tree&gt;</code>. It works with nested tree.
+</h4><div class="docs-api-class-description"><p translation-result="on">嵌套节点是 <code>&lt;cdk-tree&gt;</code> 的子节点。它适用于嵌套树。通过在树节点模板中使用 <code>cdk-nested-tree-node</code> 组件，会把父节点的子节点添加到树节点模板的  <code>cdkTreeNodeOutlet</code> 中。该节点的子节点会自动添加到 <code>cdkTreeNodeOutlet</code> 中。</p><p translation-origin="off">Nested node is a child of <code>&lt;cdk-tree&gt;</code>. It works with nested tree.
 By using <code>cdk-nested-tree-node</code> component in tree node template, children of the parent node will
 be added in the <code>cdkTreeNodeOutlet</code> in tree node template.
 The children of node will be automatically added to <code>cdkTreeNodeOutlet</code>.</p>
@@ -774,7 +774,8 @@ within the data node view container.</p>
   <span header-link="BaseTreeControl"></span>
   <code>BaseTreeControl</code>
   
-</h4><div class="docs-api-class-description"><p>Base tree control. It has basic toggle/expand/collapse operations on a single data node.</p>
+</h4><div class="docs-api-class-description"><p translation-result="on">基本树控件。它在单个数据节点上具有基本的切换/展开/折叠操作。</p><p translation-origin="off">Base tree control. It has basic toggle/expand/collapse operations on a single data node.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-7">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -789,7 +790,8 @@ within the data node view container.</p>
       <code>dataNodes: T[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Saved data node for <code>expandAll</code> action.</p>
+  <td class="docs-api-property-description"><p translation-result="on">已保存的数据节点，以执行 <code>expandAll</code> 动作。</p><p translation-origin="off">Saved data node for <code>expandAll</code> action.</p>
+
 </td>
 </tr>
 
@@ -802,7 +804,8 @@ within the data node view container.</p>
       <code>expansionModel: SelectionModel&lt;K&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>A selection model with multi-selection to track expansion status.</p>
+  <td class="docs-api-property-description"><p translation-result="on">具有多选功能以跟踪展开状态的选择模型。</p><p translation-origin="off">A selection model with multi-selection to track expansion status.</p>
+
 </td>
 </tr>
 
@@ -815,7 +818,8 @@ within the data node view container.</p>
       <code>getChildren: (dataNode: T) =&gt; (Observable&lt;T[]&gt; | T[] | undefined | null)</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Gets a stream that emits whenever the given data node's children change.</p>
+  <td class="docs-api-property-description"><p translation-result="on">获取在给定数据节点的子代发生更改时会发出事件的流。</p><p translation-origin="off">Gets a stream that emits whenever the given data node's children change.</p>
+
 </td>
 </tr>
 
@@ -828,7 +832,8 @@ within the data node view container.</p>
       <code>getLevel: (dataNode: T) =&gt; number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Get depth of a given data node, return the level number. This is for flat tree node.</p>
+  <td class="docs-api-property-description"><p translation-result="on">获取给定数据节点的深度，返回其级别数字。这是用于扁平树节点的。</p><p translation-origin="off">Get depth of a given data node, return the level number. This is for flat tree node.</p>
+
 </td>
 </tr>
 
@@ -841,8 +846,9 @@ within the data node view container.</p>
       <code>isExpandable: (dataNode: T) =&gt; boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the data node is expandable. Returns true if expandable.
+  <td class="docs-api-property-description"><p translation-result="on">数据节点是否可展开。如果可展开，则返回 true。这是用于扁平树节点的。</p><p translation-origin="off">Whether the data node is expandable. Returns true if expandable.
 This is for flat tree node.</p>
+
 </td>
 </tr>
 
@@ -855,9 +861,11 @@ This is for flat tree node.</p>
       <code>trackBy: (dataNode: T) =&gt; K</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Returns the identifier by which a dataNode should be tracked, should its
+  <td class="docs-api-property-description"><p translation-result="on">返回要更改其引用的标识符，该标识符应用来跟踪 dataNode。</p><p translation-origin="off">Returns the identifier by which a dataNode should be tracked, should its
 reference change.</p>
-<p>Similar to trackBy for *ngFor</p>
+
+<p translation-result="on">与* ngFor 的 trackBy 相似</p><p translation-origin="off">Similar to trackBy for *ngFor</p>
+
 </td>
 </tr>
 
@@ -878,7 +886,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapses one single data node.</p>
+      <p translation-result="on">折叠一个数据节点。</p><p translation-origin="off">Collapses one single data node.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -914,7 +923,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapse all dataNodes in the tree.</p>
+      <p translation-result="on">折叠此树中的所有 dataNode。</p><p translation-origin="off">Collapse all dataNodes in the tree.</p>
+
 
     </td>
   </tr></tbody></table>
@@ -931,7 +941,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapses a subtree rooted at given data node recursively.</p>
+      <p translation-result="on">递归折叠以给定数据节点为根的子树。</p><p translation-origin="off">Collapses a subtree rooted at given data node recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -967,7 +978,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands one single data node.</p>
+      <p translation-result="on">展开一个数据节点。</p><p translation-origin="off">Expands one single data node.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1003,7 +1015,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands all data nodes in the tree.</p>
+      <p translation-result="on">展开树中的所有数据节点。</p><p translation-origin="off">Expands all data nodes in the tree.</p>
+
 
     </td>
   </tr></tbody></table>
@@ -1020,7 +1033,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands a subtree rooted at given data node recursively.</p>
+      <p translation-result="on">递归展开以给定数据节点为根的子树。</p><p translation-origin="off">Expands a subtree rooted at given data node recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1056,7 +1070,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets a list of descendent data nodes of a subtree rooted at given data node recursively.</p>
+      <p translation-result="on">递归获取以给定数据节点为根的子树的后代数据节点的列表。</p><p translation-origin="off">Gets a list of descendent data nodes of a subtree rooted at given data node recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1107,7 +1122,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether a given data node is expanded or not. Returns true if the data node is expanded.</p>
+      <p translation-result="on">给定数据节点是否已展开。如果数据节点已展开，则返回 true。</p><p translation-origin="off">Whether a given data node is expanded or not. Returns true if the data node is expanded.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1158,7 +1174,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggles one single data node's expanded/collapsed state.</p>
+      <p translation-result="on">切换一个数据节点的展开/折叠状态。</p><p translation-origin="off">Toggles one single data node's expanded/collapsed state.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1194,7 +1211,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggles a subtree rooted at <code>node</code> recursively.</p>
+      <p translation-result="on">递归切换以 <code>node</code> 为根的子树。</p><p translation-origin="off">Toggles a subtree rooted at <code>node</code> recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1237,7 +1255,8 @@ reference change.</p>
     </a>
   </span>
   
-</h4><div class="docs-api-class-description"><p>Flat tree control. Able to expand/collapse a subtree recursively for flattened tree.</p>
+</h4><div class="docs-api-class-description"><p translation-result="on">扁平树控件。能够对扁平树中的子树进行递归地展开/折叠。</p><p translation-origin="off">Flat tree control. Able to expand/collapse a subtree recursively for flattened tree.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-8">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -1252,7 +1271,8 @@ reference change.</p>
       <code>dataNodes: T[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Saved data node for <code>expandAll</code> action.</p>
+  <td class="docs-api-property-description"><p translation-result="on">已保存的数据节点，以执行 <code>expandAll</code> 动作。</p><p translation-origin="off">Saved data node for <code>expandAll</code> action.</p>
+
 </td>
 </tr>
 
@@ -1265,7 +1285,8 @@ reference change.</p>
       <code>expansionModel: SelectionModel&lt;K&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>A selection model with multi-selection to track expansion status.</p>
+  <td class="docs-api-property-description"><p translation-result="on">具有多选功能以跟踪展开状态的选择模型。</p><p translation-origin="off">A selection model with multi-selection to track expansion status.</p>
+
 </td>
 </tr>
 
@@ -1278,7 +1299,8 @@ reference change.</p>
       <code>getChildren: (dataNode: T) =&gt; (Observable&lt;T[]&gt; | T[] | undefined | null)</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Gets a stream that emits whenever the given data node's children change.</p>
+  <td class="docs-api-property-description"><p translation-result="on">获取在给定数据节点的子代发生更改时会发出事件的流。</p><p translation-origin="off">Gets a stream that emits whenever the given data node's children change.</p>
+
 </td>
 </tr>
 
@@ -1327,9 +1349,11 @@ reference change.</p>
       <code>trackBy: (dataNode: T) =&gt; K</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Returns the identifier by which a dataNode should be tracked, should its
+  <td class="docs-api-property-description"><p translation-result="on">返回要更改其引用的标识符，该标识符应用来跟踪 dataNode。</p><p translation-origin="off">Returns the identifier by which a dataNode should be tracked, should its
 reference change.</p>
-<p>Similar to trackBy for *ngFor</p>
+
+<p translation-result="on">与* ngFor 的 trackBy 相似</p><p translation-origin="off">Similar to trackBy for *ngFor</p>
+
 </td>
 </tr>
 
@@ -1350,7 +1374,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapses one single data node.</p>
+      <p translation-result="on">折叠一个数据节点。</p><p translation-origin="off">Collapses one single data node.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1386,7 +1411,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapse all dataNodes in the tree.</p>
+      <p translation-result="on">折叠此树中的所有 dataNode。</p><p translation-origin="off">Collapse all dataNodes in the tree.</p>
+
 
     </td>
   </tr></tbody></table>
@@ -1403,7 +1429,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapses a subtree rooted at given data node recursively.</p>
+      <p translation-result="on">递归折叠以给定数据节点为根的子树。</p><p translation-origin="off">Collapses a subtree rooted at given data node recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1439,7 +1466,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands one single data node.</p>
+      <p translation-result="on">展开一个数据节点。</p><p translation-origin="off">Expands one single data node.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1475,9 +1503,11 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands all data nodes in the tree.</p>
-<p>To make this working, the <code>dataNodes</code> variable of the TreeControl must be set to all flattened
+      <p translation-result="on">展开树中的所有数据节点。</p><p translation-origin="off">Expands all data nodes in the tree.</p>
+
+<p translation-result="on">为了使它起作用，<code>dataNodes</code> 变量必须设置为树的所有扁平化的数据节点。</p><p translation-origin="off">To make this working, the <code>dataNodes</code> variable of the TreeControl must be set to all flattened
 data nodes of the tree.</p>
+
 
     </td>
   </tr></tbody></table>
@@ -1494,7 +1524,8 @@ data nodes of the tree.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands a subtree rooted at given data node recursively.</p>
+      <p translation-result="on">递归展开以给定数据节点为根的子树。</p><p translation-origin="off">Expands a subtree rooted at given data node recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1530,9 +1561,11 @@ data nodes of the tree.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets a list of the data node's subtree of descendent data nodes.</p>
-<p>To make this working, the <code>dataNodes</code> of the TreeControl must be flattened tree nodes
+      <p translation-result="on">获取后代数据节点的数据节点子树的列表。</p><p translation-origin="off">Gets a list of the data node's subtree of descendent data nodes.</p>
+
+<p translation-result="on">为了使它工作正常，<code>dataNodes</code> 节点必须展平为具有正确级别的树节点。</p><p translation-origin="off">To make this working, the <code>dataNodes</code> of the TreeControl must be flattened tree nodes
 with correct levels.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1583,7 +1616,8 @@ with correct levels.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether a given data node is expanded or not. Returns true if the data node is expanded.</p>
+      <p translation-result="on">给定数据节点是否已展开。如果数据节点已展开，则返回 true。</p><p translation-origin="off">Whether a given data node is expanded or not. Returns true if the data node is expanded.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1634,7 +1668,8 @@ with correct levels.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggles one single data node's expanded/collapsed state.</p>
+      <p translation-result="on">切换一个数据节点的展开/折叠状态。</p><p translation-origin="off">Toggles one single data node's expanded/collapsed state.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1670,7 +1705,8 @@ with correct levels.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggles a subtree rooted at <code>node</code> recursively.</p>
+      <p translation-result="on">递归切换以 <code>node</code> 为根的子树。</p><p translation-origin="off">Toggles a subtree rooted at <code>node</code> recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1713,7 +1749,8 @@ with correct levels.</p>
     </a>
   </span>
   
-</h4><div class="docs-api-class-description"><p>Nested tree control. Able to expand/collapse a subtree recursively for NestedNode type.</p>
+</h4><div class="docs-api-class-description"><p translation-result="on">嵌套树控件。能够递归地扩展/折叠 NestedNode 类型的子树。</p><p translation-origin="off">Nested tree control. Able to expand/collapse a subtree recursively for NestedNode type.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-9">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -1728,7 +1765,8 @@ with correct levels.</p>
       <code>dataNodes: T[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Saved data node for <code>expandAll</code> action.</p>
+  <td class="docs-api-property-description"><p translation-result="on">已保存的数据节点，以执行 <code>expandAll</code> 动作。</p><p translation-origin="off">Saved data node for <code>expandAll</code> action.</p>
+
 </td>
 </tr>
 
@@ -1741,7 +1779,8 @@ with correct levels.</p>
       <code>expansionModel: SelectionModel&lt;K&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>A selection model with multi-selection to track expansion status.</p>
+  <td class="docs-api-property-description"><p translation-result="on">具有多选功能以跟踪展开状态的选择模型。</p><p translation-origin="off">A selection model with multi-selection to track expansion status.</p>
+
 </td>
 </tr>
 
@@ -1766,7 +1805,8 @@ with correct levels.</p>
       <code>getLevel: (dataNode: T) =&gt; number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Get depth of a given data node, return the level number. This is for flat tree node.</p>
+  <td class="docs-api-property-description"><p translation-result="on">获取给定数据节点的深度，返回其级别数字。这是用于扁平树节点的。</p><p translation-origin="off">Get depth of a given data node, return the level number. This is for flat tree node.</p>
+
 </td>
 </tr>
 
@@ -1779,8 +1819,9 @@ with correct levels.</p>
       <code>isExpandable: (dataNode: T) =&gt; boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the data node is expandable. Returns true if expandable.
+  <td class="docs-api-property-description"><p translation-result="on">数据节点是否可展开。如果可展开，则返回 true。这是用于扁平树节点的。</p><p translation-origin="off">Whether the data node is expandable. Returns true if expandable.
 This is for flat tree node.</p>
+
 </td>
 </tr>
 
@@ -1805,9 +1846,11 @@ This is for flat tree node.</p>
       <code>trackBy: (dataNode: T) =&gt; K</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Returns the identifier by which a dataNode should be tracked, should its
+  <td class="docs-api-property-description"><p translation-result="on">返回要更改其引用的标识符，该标识符应用来跟踪 dataNode。</p><p translation-origin="off">Returns the identifier by which a dataNode should be tracked, should its
 reference change.</p>
-<p>Similar to trackBy for *ngFor</p>
+
+<p translation-result="on">与* ngFor 的 trackBy 相似</p><p translation-origin="off">Similar to trackBy for *ngFor</p>
+
 </td>
 </tr>
 
@@ -1828,7 +1871,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapses one single data node.</p>
+      <p translation-result="on">折叠一个数据节点。</p><p translation-origin="off">Collapses one single data node.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1864,7 +1908,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapse all dataNodes in the tree.</p>
+      <p translation-result="on">折叠此树中的所有 dataNode。</p><p translation-origin="off">Collapse all dataNodes in the tree.</p>
+
 
     </td>
   </tr></tbody></table>
@@ -1881,7 +1926,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapses a subtree rooted at given data node recursively.</p>
+      <p translation-result="on">递归折叠以给定数据节点为根的子树。</p><p translation-origin="off">Collapses a subtree rooted at given data node recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1917,7 +1963,8 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands one single data node.</p>
+      <p translation-result="on">展开一个数据节点。</p><p translation-origin="off">Expands one single data node.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -1953,9 +2000,11 @@ reference change.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands all dataNodes in the tree.</p>
-<p>To make this working, the <code>dataNodes</code> variable of the TreeControl must be set to all root level
+      <p translation-result="on">展开树中的所有 dataNodes。</p><p translation-origin="off">Expands all dataNodes in the tree.</p>
+
+<p translation-result="on">为了使它起作用，<code>dataNodes</code> 变量必须设置为树的所有根级数据节点。</p><p translation-origin="off">To make this working, the <code>dataNodes</code> variable of the TreeControl must be set to all root level
 data nodes of the tree.</p>
+
 
     </td>
   </tr></tbody></table>
@@ -1972,7 +2021,8 @@ data nodes of the tree.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expands a subtree rooted at given data node recursively.</p>
+      <p translation-result="on">递归展开以给定数据节点为根的子树。</p><p translation-origin="off">Expands a subtree rooted at given data node recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2008,7 +2058,8 @@ data nodes of the tree.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets a list of descendant dataNodes of a subtree rooted at given data node recursively.</p>
+      <p translation-result="on">递归获取以给定数据节点为根的子树的后代 dataNode 列表。</p><p translation-origin="off">Gets a list of descendant dataNodes of a subtree rooted at given data node recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2059,7 +2110,8 @@ data nodes of the tree.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether a given data node is expanded or not. Returns true if the data node is expanded.</p>
+      <p translation-result="on">给定数据节点是否已展开。如果数据节点已展开，则返回 true。</p><p translation-origin="off">Whether a given data node is expanded or not. Returns true if the data node is expanded.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2110,7 +2162,8 @@ data nodes of the tree.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggles one single data node's expanded/collapsed state.</p>
+      <p translation-result="on">切换一个数据节点的展开/折叠状态。</p><p translation-origin="off">Toggles one single data node's expanded/collapsed state.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2146,7 +2199,8 @@ data nodes of the tree.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggles a subtree rooted at <code>node</code> recursively.</p>
+      <p translation-result="on">递归切换以 <code>node</code> 为根的子树。</p><p translation-origin="off">Toggles a subtree rooted at <code>node</code> recursively.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2264,7 +2318,8 @@ data nodes of the tree.</p>
 <h4 id="FlatTreeControlOptions" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="FlatTreeControlOptions"></span>
   <code>FlatTreeControlOptions</code>
-</h4><div class="docs-api-interface-description"><p>Optional set of configuration that can be provided to the FlatTreeControl.</p>
+</h4><div class="docs-api-interface-description"><p translation-result="on">可以提供给 FlatTreeControl 的一组可选配置。</p><p translation-origin="off">Optional set of configuration that can be provided to the FlatTreeControl.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-11">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -2297,7 +2352,8 @@ data nodes of the tree.</p>
 <h4 id="NestedTreeControlOptions" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="NestedTreeControlOptions"></span>
   <code>NestedTreeControlOptions</code>
-</h4><div class="docs-api-interface-description"><p>Optional set of configuration that can be provided to the NestedTreeControl.</p>
+</h4><div class="docs-api-interface-description"><p translation-result="on">可以提供给 NestedTreeControl 的一组可选配置。</p><p translation-origin="off">Optional set of configuration that can be provided to the NestedTreeControl.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-12">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -2330,9 +2386,10 @@ data nodes of the tree.</p>
 <h4 id="TreeControl" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="TreeControl"></span>
   <code>TreeControl</code>
-</h4><div class="docs-api-interface-description"><p>Tree control interface. User can implement TreeControl to expand/collapse dataNodes in the tree.
+</h4><div class="docs-api-interface-description"><p translation-result="on">树控件接口。用户可以实现 TreeControl 来展开/折叠树中的 dataNodes。CDKTree 将使用此 TreeControl 来展开/折叠节点。用户还可以在 <code>&lt;cdk-tree&gt;</code> 之外使用它来控制树的展开状态。</p><p translation-origin="off">Tree control interface. User can implement TreeControl to expand/collapse dataNodes in the tree.
 The CDKTree will use this TreeControl to expand/collapse a node.
 User can also use it outside the <code>&lt;cdk-tree&gt;</code> to control the expansion status of the tree.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-13">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -2347,7 +2404,8 @@ User can also use it outside the <code>&lt;cdk-tree&gt;</code> to control the ex
       <code>dataNodes: T[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The saved tree nodes data for <code>expandAll</code> action.</p>
+  <td class="docs-api-property-description"><p translation-result="on">保存的树节点数据可用于 <code>expandAll</code> 动作。</p><p translation-origin="off">The saved tree nodes data for <code>expandAll</code> action.</p>
+
 </td>
 </tr>
 
@@ -2360,7 +2418,8 @@ User can also use it outside the <code>&lt;cdk-tree&gt;</code> to control the ex
       <code>expansionModel: SelectionModel&lt;K&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The expansion model</p>
+  <td class="docs-api-property-description"><p translation-result="on">展开模型</p><p translation-origin="off">The expansion model</p>
+
 </td>
 </tr>
 
@@ -2373,7 +2432,8 @@ User can also use it outside the <code>&lt;cdk-tree&gt;</code> to control the ex
       <code>getChildren: (dataNode: T) =&gt; Observable&lt;T[]&gt; | T[] | undefined | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Gets a stream that emits whenever the given data node's children change.</p>
+  <td class="docs-api-property-description"><p translation-result="on">获取在给定数据节点的子代发生更改时发出的流。</p><p translation-origin="off">Gets a stream that emits whenever the given data node's children change.</p>
+
 </td>
 </tr>
 
@@ -2386,7 +2446,8 @@ User can also use it outside the <code>&lt;cdk-tree&gt;</code> to control the ex
       <code>getLevel: (dataNode: T) =&gt; number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Get depth of a given data node, return the level number. This is for flat tree node.</p>
+  <td class="docs-api-property-description"><p translation-result="on">获取给定数据节点的深度，返回级别号。这是用于扁平树节点的。</p><p translation-origin="off">Get depth of a given data node, return the level number. This is for flat tree node.</p>
+
 </td>
 </tr>
 
@@ -2399,8 +2460,9 @@ User can also use it outside the <code>&lt;cdk-tree&gt;</code> to control the ex
       <code>isExpandable: (dataNode: T) =&gt; boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the data node is expandable. Returns true if expandable.
+  <td class="docs-api-property-description"><p translation-result="on">数据节点是否可展开。如果可展开，则返回 true。这是用于扁平树节点的。</p><p translation-origin="off">Whether the data node is expandable. Returns true if expandable.
 This is for flat tree node.</p>
+
 </td>
 </tr>
 
@@ -2421,7 +2483,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapse one data node</p>
+      <p translation-result="on">折叠一个数据节点</p><p translation-origin="off">Collapse one data node</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2457,7 +2520,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapse all the dataNodes in the tree</p>
+      <p translation-result="on">折叠树中的所有 dataNode</p><p translation-origin="off">Collapse all the dataNodes in the tree</p>
+
 
     </td>
   </tr></tbody></table>
@@ -2474,7 +2538,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Collapse a data node and all its descendants</p>
+      <p translation-result="on">折叠数据节点及其所有后代</p><p translation-origin="off">Collapse a data node and all its descendants</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2510,7 +2575,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expand one data node</p>
+      <p translation-result="on">展开一个数据节点</p><p translation-origin="off">Expand one data node</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2546,7 +2612,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expand all the dataNodes in the tree</p>
+      <p translation-result="on">展开树中的所有 dataNode</p><p translation-origin="off">Expand all the dataNodes in the tree</p>
+
 
     </td>
   </tr></tbody></table>
@@ -2563,7 +2630,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expand a data node and all its descendants</p>
+      <p translation-result="on">展开数据节点及其所有后代</p><p translation-origin="off">Expand a data node and all its descendants</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2599,7 +2667,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get all descendants of a data node</p>
+      <p translation-result="on">获取数据节点的所有后代</p><p translation-origin="off">Get all descendants of a data node</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2650,7 +2719,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether the data node is expanded or collapsed. Return true if it's expanded.</p>
+      <p translation-result="on">数据节点是展开还是折叠。如果已展开，则返回 true。</p><p translation-origin="off">Whether the data node is expanded or collapsed. Return true if it's expanded.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2701,7 +2771,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Expand or collapse data node</p>
+      <p translation-result="on">展开或折叠数据节点</p><p translation-origin="off">Expand or collapse data node</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -2737,7 +2808,8 @@ This is for flat tree node.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggle a data node by expand/collapse it and all its descendants</p>
+      <p translation-result="on">通过展开/折叠数据节点及其所有后代来切换数据节点</p><p translation-origin="off">Toggle a data node by expand/collapse it and all its descendants</p>
+
 
     </td>
   </tr></tbody><thead>

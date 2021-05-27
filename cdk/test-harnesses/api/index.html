@@ -248,13 +248,13 @@ predicate.</p>
 
 </li>
 </ul>
-<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 会拒绝。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 会拒绝。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> rejects. The type that the <code>Promise</code> resolves to is a union of all result types for
   each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -314,13 +314,13 @@ predicate.</p>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 会拒绝。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 会拒绝。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> rejects. The type that the <code>Promise</code> resolves to is a union of all result types for
   each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -369,7 +369,7 @@ predicate.</p>
 
 </li>
 </ul>
-<p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。 <code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for all
+<p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。<code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for all
   elements and harnesses matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If an element matches more than
   one <code>ComponentHarness</code> class, the locator gets an instance of each for the same element. If
@@ -377,7 +377,7 @@ predicate.</p>
   for that element. The type that the <code>Promise</code> resolves to is an array where each element is
   the union of all result types for each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
 
 <ul>
@@ -414,7 +414,7 @@ predicate.</p>
 ]</code></p>
 
 </li>
-<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code>。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
 
 </li>
 </ul>
@@ -464,7 +464,7 @@ predicate.</p>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。 <code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for all
+        <p translation-result="on">一个异步定位器函数，它会搜索和返回所有匹配指定搜索条件的元素和测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后查询列表中的顺序排序。如果一个元素与多个 <code>ComponentHarness</code> 类匹配，那么该定位器会为同一个元素获取每个元素的实例。如果一个元素匹配多个 <code>string</code> 选择器，只会为该元素返回一个 <code>TestElement</code> 实例。<code>Promise</code> 解析成的类型是一个数组，其中每个元素都是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for all
   elements and harnesses matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If an element matches more than
   one <code>ComponentHarness</code> class, the locator gets an instance of each for the same element. If
@@ -472,7 +472,7 @@ predicate.</p>
   for that element. The type that the <code>Promise</code> resolves to is an array where each element is
   the union of all result types for each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
 
 <ul>
@@ -509,7 +509,7 @@ predicate.</p>
 ]</code></p>
 
 </li>
-<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+<li><p translation-result="on"><code>await ch.locatorForAll('span')()</code> 会得到 <code>[]</code>。</p><p translation-origin="off"><code>await ch.locatorForAll('span')()</code> gets <code>[]</code>.</p>
 
 </li>
 </ul>
@@ -548,13 +548,13 @@ predicate.</p>
 
 </li>
 </ul>
-<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会被解析为 <code>null</code>。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
   result types for each query or null.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -564,7 +564,7 @@ predicate.</p>
 <li><p translation-result="on"><code>await ch.locatorForOptional('div', DivHarness)()</code> 获取 <code>#d1</code> <code>TestElement</code> 实例</p><p translation-origin="off"><code>await ch.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
 
 </li>
-<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code> 。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code>。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
 
 </li>
 </ul>
@@ -614,13 +614,13 @@ predicate.</p>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后在查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会被解析为 <code>null</code>。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
   result types for each query or null.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -630,7 +630,7 @@ predicate.</p>
 <li><p translation-result="on"><code>await ch.locatorForOptional('div', DivHarness)()</code> 获取 <code>#d1</code> <code>TestElement</code> 实例</p><p translation-origin="off"><code>await ch.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
 
 </li>
-<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code> 。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+<li><p translation-result="on"><code>await ch.locatorForOptional('span')()</code> 得到 <code>null</code>。</p><p translation-origin="off"><code>await ch.locatorForOptional('span')()</code> gets <code>null</code>.</p>
 
 </li>
 </ul>
@@ -2452,7 +2452,7 @@ component is found, an error is thrown.</p>
 <h4 id="LocatorFactory" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="LocatorFactory"><header-link class="ng-star-inserted"><a aria-label="Link to this heading" class="docs-markdown-a" href="/cdk/test-harnesses/api#LocatorFactory" aria-describedby="LocatorFactory"><mat-icon role="img" class="mat-icon notranslate material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">link</mat-icon></a></header-link></span>
   <code>LocatorFactory</code>
-</h4><div class="docs-api-interface-description"><p translation-result="on">用来创建异步定位器函数的接口，用于查找元素和组件测试工具。 这个接口供 <code>ComponentHarness</code> 的作者使用，用于为其 <code>ComponentHarness</code> 子类创建定位器函数。</p><p translation-origin="off">Interface used to create asynchronous locator functions used find elements and component
+</h4><div class="docs-api-interface-description"><p translation-result="on">用来创建异步定位器函数的接口，用于查找元素和组件测试工具。这个接口供 <code>ComponentHarness</code> 的作者使用，用于为其 <code>ComponentHarness</code> 子类创建定位器函数。</p><p translation-origin="off">Interface used to create asynchronous locator functions used find elements and component
 harnesses. This interface is used by <code>ComponentHarness</code> authors to create locator functions for
 their <code>ComponentHarness</code> subclass.</p>
 
@@ -2470,7 +2470,7 @@ their <code>ComponentHarness</code> subclass.</p>
       <code>rootElement: TestElement</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p translation-result="on"><code>LocatorFactory</code> 的根元素是一个 <code>TestElement</code> 。</p><p translation-origin="off">The root element of this <code>LocatorFactory</code> as a <code>TestElement</code>.</p>
+  <td class="docs-api-property-description"><p translation-result="on"><code>LocatorFactory</code> 的根元素是一个 <code>TestElement</code>。</p><p translation-origin="off">The root element of this <code>LocatorFactory</code> as a <code>TestElement</code>.</p>
 
 </td>
 </tr>
@@ -2770,8 +2770,8 @@ each query.</p><p translation-origin="off">A <code>HarnessPredicate</code> searc
 
 </li>
 </ul>
-<p>一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会拒绝（reject）。 <code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p>
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p>一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会拒绝（reject）。<code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p>
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -2831,13 +2831,13 @@ each query.</p><p translation-origin="off">A <code>HarnessPredicate</code> searc
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会拒绝（reject）。 <code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+        <p translation-result="on">一个异步定位器函数，用于搜索并返回满足指定搜索条件的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按在查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会拒绝（reject）。<code>Promise</code> 解析（resolve）成的类型是每个查询的所有结果类型的并集。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> rejects. The type that the <code>Promise</code> resolves to is a union of all result types for
   each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -2894,7 +2894,7 @@ predicate.</p>
   for that element. The type that the <code>Promise</code> resolves to is an array where each element is
   the union of all result types for each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
 
 <ul>
@@ -2931,7 +2931,7 @@ predicate.</p>
 ]</code></p>
 
 </li>
-<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code>。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
 
 </li>
 </ul>
@@ -2989,7 +2989,7 @@ predicate.</p>
   for that element. The type that the <code>Promise</code> resolves to is an array where each element is
   the union of all result types for each query.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> 和 <code>IdIsD1Harness.hostSelector === '#d1'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code> and <code>IdIsD1Harness.hostSelector === '#d1'</code>:</p>
 
 <ul>
@@ -3026,7 +3026,7 @@ predicate.</p>
 ]</code></p>
 
 </li>
-<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code> 。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
+<li><p translation-result="on"><code>await lf.locatorForAll('span')()</code> 会得到 <code>[]</code>。</p><p translation-origin="off"><code>await lf.locatorForAll('span')()</code> gets <code>[]</code>.</p>
 
 </li>
 </ul>
@@ -3065,13 +3065,13 @@ predicate.</p>
 
 </li>
 </ul>
-<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+<p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会被解析为 <code>null</code>。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">@return An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
   result types for each query or null.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -3081,7 +3081,7 @@ predicate.</p>
 <li><p translation-result="on"><code>await lf.locatorForOptional('div', DivHarness)()</code> 会获取 <code>#d1</code> 的 <code>TestElement</code> 实例</p><p translation-origin="off"><code>await lf.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
 
 </li>
-<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code> 。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code>。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
 
 </li>
 </ul>
@@ -3131,13 +3131,13 @@ predicate.</p>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <div class="docs-api-method-returns-description">
-        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目， <code>Promise</code> 就会被解析为 <code>null</code> 。 <code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
+        <p translation-result="on">一个异步定位器函数，用于搜索和返回与指定搜索条件匹配的第一个元素或测试工具的 <code>Promise</code>。匹配结果首先按照 DOM 中的顺序排序，然后按查询列表中的顺序排序。如果找不到匹配条目，<code>Promise</code> 就会被解析为 <code>null</code>。<code>Promise</code> 解析成的类型是每个查询的所有结果类型的并集，或 null。</p><p translation-origin="off">An asynchronous locator function that searches for and returns a <code>Promise</code> for the
   first element or harness matching the given search criteria. Matches are ordered first by
   order in the DOM, and second by order in the queries list. If no matches are found, the
   <code>Promise</code> is resolved with <code>null</code>. The type that the <code>Promise</code> resolves to is a union of all
   result types for each query or null.</p>
 
-<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code> ，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
+<p translation-result="on">例如，指定以下 DOM： <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>，并假设 <code>DivHarness.hostSelector === 'div'</code> ：</p><p translation-origin="off">e.g. Given the following DOM: <code>&lt;div id="d1" /&gt;&lt;div id="d2" /&gt;</code>, and assuming
 <code>DivHarness.hostSelector === 'div'</code>:</p>
 
 <ul>
@@ -3147,7 +3147,7 @@ predicate.</p>
 <li><p translation-result="on"><code>await lf.locatorForOptional('div', DivHarness)()</code> 会获取 <code>#d1</code> 的 <code>TestElement</code> 实例</p><p translation-origin="off"><code>await lf.locatorForOptional('div', DivHarness)()</code> gets a <code>TestElement</code> instance for <code>#d1</code></p>
 
 </li>
-<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code> 。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
+<li><p translation-result="on"><code>await lf.locatorForOptional('span')()</code> 会得到 <code>null</code>。</p><p translation-origin="off"><code>await lf.locatorForOptional('span')()</code> gets <code>null</code>.</p>
 
 </li>
 </ul>
@@ -3466,7 +3466,7 @@ interface through which the ComponentHarness interacts with the component's DOM.
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">让元素失去焦点。</p><p translation-origin="off">Blur the element.</p>
+      <p translation-result="on">让元素失焦。</p><p translation-origin="off">Blur the element.</p>
 
 
     </td>
@@ -3539,7 +3539,7 @@ interface through which the ComponentHarness interacts with the component's DOM.
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p translation-result="on">单击当前环境下位于默认位置的元素。
-如果你需要保证在某个特定的位置单击该元素，可以考虑 <code>click('center')</code> 或 <code>click(x, y)</code> 。</p><p translation-origin="off">Click the element at the default location for the current environment. If you need to guarantee
+如果你需要保证在某个特定的位置单击该元素，可以考虑 <code>click('center')</code> 或 <code>click(x, y)</code>。</p><p translation-origin="off">Click the element at the default location for the current environment. If you need to guarantee
 the element is clicked at a specific location, consider using <code>click('center')</code> or
 <code>click(x, y)</code> instead.</p>
 
@@ -4078,7 +4078,7 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p translation-result="on">让鼠标远离元素。</p><p translation-origin="off">Moves the mouse away from the element.</p>
+      <p translation-result="on">将鼠标从此元素移开。</p><p translation-origin="off">Moves the mouse away from the element.</p>
 
 
     </td>
@@ -4779,7 +4779,7 @@ changes.</p>
 <h4 id="HarnessQuery" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
   <span header-link="HarnessQuery"><header-link class="ng-star-inserted"><a aria-label="Link to this heading" class="docs-markdown-a" href="/cdk/test-harnesses/api#HarnessQuery" aria-describedby="HarnessQuery"><mat-icon role="img" class="mat-icon notranslate material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">link</mat-icon></a></header-link></span>
   <code>HarnessQuery</code>
-</h4><div class="docs-api-type-alias-description"><p translation-result="on"><code>ComponentHarness</code> 的查询，它表示为一个 <code>ComponentHarnessConstructor</code> 或 <code>HarnessPredicate</code> 。</p><p translation-origin="off">A query for a <code>ComponentHarness</code>, which is expressed as either a <code>ComponentHarnessConstructor</code> or
+</h4><div class="docs-api-type-alias-description"><p translation-result="on"><code>ComponentHarness</code> 的查询，它表示为一个 <code>ComponentHarnessConstructor</code> 或 <code>HarnessPredicate</code>。</p><p translation-origin="off">A query for a <code>ComponentHarness</code>, which is expressed as either a <code>ComponentHarnessConstructor</code> or
 a <code>HarnessPredicate</code>.</p>
 
 </div><div class="docs-markdown">
@@ -4806,7 +4806,7 @@ might be a harness of type <code>C1</code></p>
 harness of type <code>C2</code></p>
 
 </li>
-<li><p translation-result="on">如果其中一个查询是针对某个 <code>string</code>，那就意味着该结果可能是一个 <code>TestElement</code> 。</p><p translation-origin="off">If one of the queries is for a <code>string</code>, it means that the result might be a <code>TestElement</code>.</p>
+<li><p translation-result="on">如果其中一个查询是针对某个 <code>string</code>，那就意味着该结果可能是一个 <code>TestElement</code>。</p><p translation-origin="off">If one of the queries is for a <code>string</code>, it means that the result might be a <code>TestElement</code>.</p>
 
 </li>
 </ul>
@@ -4884,7 +4884,8 @@ is equivalent to:
     </a>
   </span>
   
-</h4><div class="docs-api-class-description"><p>A <code>HarnessEnvironment</code> implementation for Angular's Testbed.</p>
+</h4><div class="docs-api-class-description"><p translation-result="on">Angular Testbed 的 <code>HarnessEnvironment</code> 实现。</p><p translation-origin="off">A <code>HarnessEnvironment</code> implementation for Angular's Testbed.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -4919,7 +4920,8 @@ is equivalent to:
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Creates a <code>HarnessLoader</code> rooted at the given raw element.</p>
+      <p translation-result="on">创建一个以给定的原始元素为根的 <code>HarnessLoader</code>。</p><p translation-origin="off">Creates a <code>HarnessLoader</code> rooted at the given raw element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -4970,7 +4972,8 @@ is equivalent to:
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Creates a <code>TestElement</code> from a raw element.</p>
+      <p translation-result="on">从原始元素创建一个 <code>TestElement</code>。</p><p translation-origin="off">Creates a <code>TestElement</code> from a raw element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5050,9 +5053,10 @@ is equivalent to:
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Flushes change detection and async tasks captured in the Angular zone.
+      <p translation-result="on">刷新在 Angular Zone 中已捕获的变更检测和异步任务。在大多数情况下，没有必要手动调用此方法。但是，在某些极端情况下，需要完全刷新动画事件。</p><p translation-origin="off">Flushes change detection and async tasks captured in the Angular zone.
 In most cases it should not be necessary to call this manually. However, there may be some edge
 cases where it is needed to fully flush animation events.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5183,7 +5187,8 @@ cases where it is needed to fully flush animation events.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets a list of all elements matching the given selector under this environment's root element.</p>
+      <p translation-result="on">获取此环境的根元素下与给定选择器匹配的所有元素的列表。</p><p translation-origin="off">Gets a list of all elements matching the given selector under this environment's root element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5282,7 +5287,8 @@ cases where it is needed to fully flush animation events.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the root element for the document.</p>
+      <p translation-result="on">获取文档的根元素。</p><p translation-origin="off">Gets the root element for the document.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5675,8 +5681,9 @@ cases where it is needed to fully flush animation events.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Waits for all scheduled or running async tasks to complete. This allows harness
+      <p translation-result="on">等待所有已计划或正在运行的异步任务完成。这使测试工具作者可以在 Angular Zone 之外等待异步任务。</p><p translation-origin="off">Waits for all scheduled or running async tasks to complete. This allows harness
 authors to wait for async tasks outside of the Angular zone.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5709,7 +5716,8 @@ authors to wait for async tasks outside of the Angular zone.</p>
   <span header-link="UnitTestElement"><header-link class="ng-star-inserted"><a aria-label="Link to this heading" class="docs-markdown-a" href="/cdk/test-harnesses/api#UnitTestElement" aria-describedby="UnitTestElement"><mat-icon role="img" class="mat-icon notranslate material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">link</mat-icon></a></header-link></span>
   <code>UnitTestElement</code>
   
-</h4><div class="docs-api-class-description"><p>A <code>TestElement</code> implementation for unit tests.</p>
+</h4><div class="docs-api-class-description"><p translation-result="on">用于单元测试的 <code>TestElement</code></p><p translation-origin="off">A <code>TestElement</code> implementation for unit tests.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-1">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -5746,7 +5754,8 @@ authors to wait for async tasks outside of the Angular zone.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Blur the element.</p>
+      <p translation-result="on">让此元素失焦。</p><p translation-origin="off">Blur the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5781,7 +5790,8 @@ authors to wait for async tasks outside of the Angular zone.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Clear the element's input (for input and textarea elements only).</p>
+      <p translation-result="on">清除此元素的输入（仅适用于 input 和 textarea 元素）。</p><p translation-origin="off">Clear the element's input (for input and textarea elements only).</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5816,9 +5826,10 @@ authors to wait for async tasks outside of the Angular zone.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Click the element at the default location for the current environment. If you need to guarantee
+      <p translation-result="on">单击当前环境默认位置上的元素。如果需要确保在特定位置上单击元素，请考虑改用 <code>click('center')</code> 或 <code>click(x, y)</code>。</p><p translation-origin="off">Click the element at the default location for the current environment. If you need to guarantee
 the element is clicked at a specific location, consider using <code>click('center')</code> or
 <code>click(x, y)</code> instead.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5872,7 +5883,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Click the element at the element's center.</p>
+      <p translation-result="on">单击此元素中心的元素。</p><p translation-origin="off">Click the element at the element's center.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -5939,10 +5951,14 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Click the element at the specified coordinates relative to the top-left of the element.
-@param relativeX Coordinate within the element, along the X-axis at which to click.
-@param relativeY Coordinate within the element, along the Y-axis at which to click.
-@param modifiers Modifier keys held while clicking</p>
+      <p translation-result="on">单击相对于元素左上角的指定坐标处的元素。</p><p translation-origin="off">Click the element at the specified coordinates relative to the top-left of the element.</p>
+
+<p translation-result="on">要点击的 X 轴的元素内坐标。</p><p translation-origin="off">@param relativeX Coordinate within the element, along the X-axis at which to click.</p>
+
+<p translation-result="on">要点击的 Y 轴的元素内坐标。</p><p translation-origin="off">@param relativeY Coordinate within the element, along the Y-axis at which to click.</p>
+
+<p translation-result="on">单击时按住的修饰键</p><p translation-origin="off">@param modifiers Modifier keys held while clicking</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6022,8 +6038,10 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Dispatches an event with a particular name.
-@param name Name of the event to be dispatched.</p>
+      <p translation-result="on">派发具有特定名称的事件。</p><p translation-origin="off">Dispatches an event with a particular name.</p>
+
+<p translation-result="on">要派发的事件的名称。</p><p translation-origin="off">@param name Name of the event to be dispatched.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6090,7 +6108,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Focus the element.</p>
+      <p translation-result="on">让此元素获得焦点。</p><p translation-origin="off">Focus the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6125,7 +6144,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the value for the given attribute from the element.</p>
+      <p translation-result="on">从此元素获取给定属性的值。</p><p translation-origin="off">Gets the value for the given attribute from the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6178,7 +6198,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the computed value of the given CSS property for the element.</p>
+      <p translation-result="on">获取此元素的给定 CSS 属性的已计算值。</p><p translation-origin="off">Get the computed value of the given CSS property for the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6231,7 +6252,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the dimensions of the element.</p>
+      <p translation-result="on">获取此元素的尺寸。</p><p translation-origin="off">Gets the dimensions of the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6265,7 +6287,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the value of a property of an element.</p>
+      <p translation-result="on">获取此元素的属性的值。</p><p translation-origin="off">Gets the value of a property of an element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6318,7 +6341,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Checks whether the element has the given class.</p>
+      <p translation-result="on">检查此元素是否具有给定的类。</p><p translation-origin="off">Checks whether the element has the given class.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6371,7 +6395,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Hovers the mouse over the element.</p>
+      <p translation-result="on">将鼠标悬停在此元素上。</p><p translation-origin="off">Hovers the mouse over the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6406,7 +6431,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Checks whether the element is focused.</p>
+      <p translation-result="on">检查此元素是否拥有焦点。</p><p translation-origin="off">Checks whether the element is focused.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6440,7 +6466,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Checks whether this element matches the given selector.</p>
+      <p translation-result="on">检查此元素是否与给定的选择器匹配。</p><p translation-origin="off">Checks whether this element matches the given selector.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6493,7 +6520,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Moves the mouse away from the element.</p>
+      <p translation-result="on">将鼠标从此元素移开。</p><p translation-origin="off">Moves the mouse away from the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6577,7 +6605,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Selects the options at the specified indexes inside of a native <code>select</code> element.</p>
+      <p translation-result="on">选择此 <code>select</code> 元素内指定索引处的选择项。</p><p translation-origin="off">Selects the options at the specified indexes inside of a native <code>select</code> element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6631,8 +6660,9 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sends the given string to the input as a series of key presses. Also fires input events
+      <p translation-result="on">通过一系列按键将给定的字符串发送到输入框。还会触发 input 事件，并尝试将字符串添加到 Element 的值。</p><p translation-origin="off">Sends the given string to the input as a series of key presses. Also fires input events
 and attempts to add the string to the Element's value.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6686,8 +6716,9 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sends the given string to the input as a series of key presses. Also fires input events
+      <p translation-result="on">通过一系列按键将给定的字符串发送到输入框。还触发 input 事件，并尝试将字符串添加到 Element 的值。</p><p translation-origin="off">Sends the given string to the input as a series of key presses. Also fires input events
 and attempts to add the string to the Element's value.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6754,7 +6785,8 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sets the value of a property of an input.</p>
+      <p translation-result="on">设置输入属性的值。</p><p translation-origin="off">Sets the value of a property of an input.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6808,8 +6840,10 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the text from the element.
-@param options Options that affect what text is included.</p>
+      <p translation-result="on">从元素获取文本。</p><p translation-origin="off">Gets the text from the element.</p>
+
+<p translation-result="on">影响包括哪些文本的选项。</p><p translation-origin="off">@param options Options that affect what text is included.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6863,7 +6897,8 @@ and attempts to add the string to the Element's value.</p>
 <h4 id="TestbedHarnessEnvironmentOptions" class="docs-header-link docs-api-h4 docs-api-interface-name">
   <span header-link="TestbedHarnessEnvironmentOptions"><header-link class="ng-star-inserted"><a aria-label="Link to this heading" class="docs-markdown-a" href="/cdk/test-harnesses/api#TestbedHarnessEnvironmentOptions" aria-describedby="TestbedHarnessEnvironmentOptions"><mat-icon role="img" class="mat-icon notranslate material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">link</mat-icon></a></header-link></span>
   <code>TestbedHarnessEnvironmentOptions</code>
-</h4><div class="docs-api-interface-description"><p>Options to configure the environment.</p>
+</h4><div class="docs-api-interface-description"><p translation-result="on">用于配置环境的选项。</p><p translation-origin="off">Options to configure the environment.</p>
+
 </div><h5 class="docs-api-h5 docs-api-method-header" id="属性-2">属性</h5>
   <table class="docs-api-properties-table">
     <tbody><tr class="docs-api-properties-header-row">
@@ -6878,7 +6913,8 @@ and attempts to add the string to the Element's value.</p>
       <code>queryFn: (selector: string, root: Element) =&gt; Iterable&lt;Element&gt; | ArrayLike&lt;Element&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The query function used to find DOM elements.</p>
+  <td class="docs-api-property-description"><p translation-result="on">用于查找 DOM 元素的查询功能。</p><p translation-origin="off">The query function used to find DOM elements.</p>
+
 </td>
 </tr>
 
@@ -6952,7 +6988,8 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Blur the element.</p>
+      <p translation-result="on">让此元素失焦。</p><p translation-origin="off">Blur the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -6987,7 +7024,8 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Clear the element's input (for input and textarea elements only).</p>
+      <p translation-result="on">清除元素的输入（仅适用于 input 和 textarea 元素）。</p><p translation-origin="off">Clear the element's input (for input and textarea elements only).</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7022,9 +7060,10 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Click the element at the default location for the current environment. If you need to guarantee
+      <p translation-result="on">单击当前环境默认位置的元素。如果需要确保在特定位置单击元素，请考虑改用 <code>click('center')</code> 或 <code>click(x, y)</code>。</p><p translation-origin="off">Click the element at the default location for the current environment. If you need to guarantee
 the element is clicked at a specific location, consider using <code>click('center')</code> or
 <code>click(x, y)</code> instead.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7078,7 +7117,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Click the element at the element's center.</p>
+      <p translation-result="on">单击此元素中心的元素。</p><p translation-origin="off">Click the element at the element's center.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7145,10 +7185,14 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Click the element at the specified coordinates relative to the top-left of the element.
-@param relativeX Coordinate within the element, along the X-axis at which to click.
-@param relativeY Coordinate within the element, along the Y-axis at which to click.
-@param modifiers Modifier keys held while clicking</p>
+      <p translation-result="on">单击相对于元素左上角的指定坐标处的元素。</p><p translation-origin="off">Click the element at the specified coordinates relative to the top-left of the element.</p>
+
+<p translation-result="on">沿元素的坐标在 X 轴上单击。</p><p translation-origin="off">@param relativeX Coordinate within the element, along the X-axis at which to click.</p>
+
+<p translation-result="on">在元素内沿单击的 Y 轴进行坐标调整。</p><p translation-origin="off">@param relativeY Coordinate within the element, along the Y-axis at which to click.</p>
+
+<p translation-result="on">单击时按住修饰键</p><p translation-origin="off">@param modifiers Modifier keys held while clicking</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7228,8 +7272,10 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Dispatches an event with a particular name.
-@param name Name of the event to be dispatched.</p>
+      <p translation-result="on">派发具有特定名称的事件。</p><p translation-origin="off">Dispatches an event with a particular name.</p>
+
+<p translation-result="on">要派发的事件的名称。</p><p translation-origin="off">@param name Name of the event to be dispatched.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7296,7 +7342,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Focus the element.</p>
+      <p translation-result="on">让元素获得焦点。</p><p translation-origin="off">Focus the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7331,7 +7378,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the value for the given attribute from the element.</p>
+      <p translation-result="on">从此元素获取给定属性的值。</p><p translation-origin="off">Gets the value for the given attribute from the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7384,7 +7432,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the computed value of the given CSS property for the element.</p>
+      <p translation-result="on">获取元素的给定 CSS 属性的已计算值。</p><p translation-origin="off">Get the computed value of the given CSS property for the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7437,7 +7486,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the dimensions of the element.</p>
+      <p translation-result="on">获取此元素的尺寸。</p><p translation-origin="off">Gets the dimensions of the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7471,7 +7521,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the value of a property of an element.</p>
+      <p translation-result="on">获取此元素的属性的值。</p><p translation-origin="off">Gets the value of a property of an element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7524,7 +7575,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Checks whether the element has the given class.</p>
+      <p translation-result="on">检查此元素是否具有给定的类。</p><p translation-origin="off">Checks whether the element has the given class.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7577,7 +7629,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Hovers the mouse over the element.</p>
+      <p translation-result="on">将鼠标悬停在元素上。</p><p translation-origin="off">Hovers the mouse over the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7612,7 +7665,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Checks whether the element is focused.</p>
+      <p translation-result="on">检查元素是否具有焦点。</p><p translation-origin="off">Checks whether the element is focused.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7646,7 +7700,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Checks whether this element matches the given selector.</p>
+      <p translation-result="on">检查此元素是否与给定的选择器匹配。</p><p translation-origin="off">Checks whether this element matches the given selector.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7699,7 +7754,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Moves the mouse away from the element.</p>
+      <p translation-result="on">将鼠标从此元素移开。</p><p translation-origin="off">Moves the mouse away from the element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7783,7 +7839,8 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Selects the options at the specified indexes inside of a native <code>select</code> element.</p>
+      <p translation-result="on">在 <code>select</code> 元素内的指定索引处选择选项。</p><p translation-origin="off">Selects the options at the specified indexes inside of a native <code>select</code> element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7837,8 +7894,9 @@ the element is clicked at a specific location, consider using <code>click('cente
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sends the given string to the input as a series of key presses. Also fires input events
+      <p translation-result="on">通过一系列按键将给定的字符串发送到输入。还触发输入事件，并尝试将字符串添加到 Element 的值。</p><p translation-origin="off">Sends the given string to the input as a series of key presses. Also fires input events
 and attempts to add the string to the Element's value.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7892,8 +7950,9 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sends the given string to the input as a series of key presses. Also fires input events
+      <p translation-result="on">通过一系列按键将给定的字符串发送到输入框。还会触发输入事件，并尝试将字符串添加到 Element 的值。</p><p translation-origin="off">Sends the given string to the input as a series of key presses. Also fires input events
 and attempts to add the string to the Element's value.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -7960,7 +8019,8 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sets the value of a property of an input.</p>
+      <p translation-result="on">设置输入属性的值。</p><p translation-origin="off">Sets the value of a property of an input.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -8014,8 +8074,10 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the text from the element.
-@param options Options that affect what text is included.</p>
+      <p translation-result="on">从此元素获取文本。</p><p translation-origin="off">Gets the text from the element.</p>
+
+<p translation-result="on">影响包括哪些文本的选项。</p><p translation-origin="off">@param options Options that affect what text is included.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -8111,7 +8173,8 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Creates a <code>HarnessLoader</code> rooted at the given raw element.</p>
+      <p translation-result="on">创建一个以给定的原始元素为根的 <code>HarnessLoader</code>。</p><p translation-origin="off">Creates a <code>HarnessLoader</code> rooted at the given raw element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -8162,7 +8225,8 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Creates a <code>TestElement</code> from a raw element.</p>
+      <p translation-result="on">从原始元素创建一个 <code>TestElement</code>。</p><p translation-origin="off">Creates a <code>TestElement</code> from a raw element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -8242,9 +8306,10 @@ and attempts to add the string to the Element's value.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Flushes change detection and async tasks captured in the Angular zone.
+      <p translation-result="on">刷新在 Angular Zone 中捕获的变更检测和异步任务。在大多数情况下，没有必要手动调用此方法。但是，在某些极端情况下，需要完全刷新动画事件。</p><p translation-origin="off">Flushes change detection and async tasks captured in the Angular zone.
 In most cases it should not be necessary to call this manually. However, there may be some edge
 cases where it is needed to fully flush animation events.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -8375,7 +8440,8 @@ cases where it is needed to fully flush animation events.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets a list of all elements matching the given selector under this environment's root element.</p>
+      <p translation-result="on">获取此环境的根元素下与给定选择器匹配的所有元素的列表。</p><p translation-origin="off">Gets a list of all elements matching the given selector under this environment's root element.</p>
+
 
     </td>
   </tr></tbody><thead>
@@ -8474,7 +8540,8 @@ cases where it is needed to fully flush animation events.</p>
     </tr>
   </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the root element for the document.</p>
+      <p translation-result="on">获取此文档的根元素。</p><p translation-origin="off">Gets the root element for the document.</p>
+
 
     </td>
   </tr></tbody><thead>

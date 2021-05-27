@@ -177,7 +177,7 @@ from your backend to the datepicker. However, the datepicker will not accept dat
 in user format such as <code>"1/2/2017"</code> as this is ambiguous and will mean different things depending on
 the locale of the browser running the code.</p>
 
-<p translation-result="on">像 <code>&lt;input&gt;</code> 的其它类型一样，日期选择器也能和 <code>@angular/forms</code> 中的指令协同工作，比如 <code>formGroup</code>、<code>formControl</code>、<code>ngModel</code> 等。 </p><p translation-origin="off">As with other types of <code>&lt;input&gt;</code>, the datepicker works with <code>@angular/forms</code> directives such as
+<p translation-result="on">像 <code>&lt;input&gt;</code> 的其它类型一样，日期选择器也能和 <code>@angular/forms</code> 中的指令协同工作，比如 <code>formGroup</code>、<code>formControl</code>、<code>ngModel</code> 等。</p><p translation-origin="off">As with other types of <code>&lt;input&gt;</code>, the datepicker works with <code>@angular/forms</code> directives such as
 <code>formGroup</code>, <code>formControl</code>, <code>ngModel</code>, etc.</p>
 
 <div material-docs-example="datepicker-value"></div>
@@ -261,7 +261,7 @@ Therefore, the datepicker input also has support for <code>(dateInput)</code> an
 trigger when the user interacts with either the input or the popup.</p>
 
 <p translation-result="on">每当用户正在输入或正在日历中点选日期时都会触发 <code>(dateInput)</code> 事件。
-而当用户结束了输入（<code>&lt;input&gt;</code> 失去焦点）或在日历中选好了日期时，就会触发 <code>(dateChange)</code> 事件。</p><p translation-origin="off">The <code>(dateInput)</code> event will fire whenever the value changes due to the user typing or selecting a
+而当用户结束了输入（<code>&lt;input&gt;</code> 失焦）或在日历中选好了日期时，就会触发 <code>(dateChange)</code> 事件。</p><p translation-origin="off">The <code>(dateInput)</code> event will fire whenever the value changes due to the user typing or selecting a
 date from the calendar. The <code>(dateChange)</code> event will fire whenever the user finishes typing input
 (on <code>&lt;input&gt;</code> blur), or when the user chooses a date from the calendar.</p>
 
@@ -326,7 +326,7 @@ datepicker to only assign the value to the data model if the user presses "Apply
         </h3>
       
         
-      <p translation-result="on">如果你的用户需要把他们当前正在选择的日期范围与另一个范围进行比较，你可以使用 <code>comparisonStart</code> 和 <code>comparisonEnd</code> 绑定来为 <code>mat-date-range-input</code> 提供比较范围。比较范围会在日历中静态呈现，但会改变颜色，以便指示哪些日期与用户选定的范围重叠。</p><p translation-origin="off">If your users need to compare the date range that they're currently selecting with another range,
+      <p translation-result="on">如果你的用户需要把他们当前正在选择的日期范围与另一个范围进行比较，你可以使用 <code>comparisonStart</code> 和 <code>comparisonEnd</code> 绑定来为 <code>mat-date-range-input</code> 提供比较范围。比较范围会在日历中静态渲染，但会改变颜色，以便指示哪些日期与用户选定的范围重叠。</p><p translation-origin="off">If your users need to compare the date range that they're currently selecting with another range,
 you can provide the comparison range start and end dates to the <code>mat-date-range-input</code> using the
 <code>comparisonStart</code> and <code>comparisonEnd</code> bindings. The comparison range will be rendered statically
 within the calendar, but it will change colors to indicate which dates overlap with the user's
@@ -539,7 +539,7 @@ example:</p>
   ]
 })
 </code></pre>
-<p translation-result="on">默认情况下， <code>MomentDateAdapter</code> 会以<a href="https://momentjs.com/guides/#/parsing/forgiving-mode/">宽容方式</a>解析日期。这可能导致日期被错误解析。你可以通过提供 <code>MAT_MOMENT_DATE_ADAPTER_OPTIONS</code> 并把它设置为 <code>strict: true</code> 来修改默认行为以便<a href="https://momentjs.com/guides/#/parsing/strict-mode/">严格解析日期</a>。</p><p translation-origin="off">By default the <code>MomentDateAdapter</code> will parse dates in a
+<p translation-result="on">默认情况下，<code>MomentDateAdapter</code> 会以<a href="https://momentjs.com/guides/#/parsing/forgiving-mode/">宽容方式</a>解析日期。这可能导致日期被错误解析。你可以通过提供 <code>MAT_MOMENT_DATE_ADAPTER_OPTIONS</code> 并把它设置为 <code>strict: true</code> 来修改默认行为以便<a href="https://momentjs.com/guides/#/parsing/strict-mode/">严格解析日期</a>。</p><p translation-origin="off">By default the <code>MomentDateAdapter</code> will parse dates in a
 <a href="https://momentjs.com/guides/#/parsing/forgiving-mode/">forgiving way</a>. This may result in dates
 being parsed incorrectly. You can change the default behaviour to
 <a href="https://momentjs.com/guides/#/parsing/strict-mode/">parse dates strictly</a> by providing

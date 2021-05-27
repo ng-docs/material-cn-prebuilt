@@ -124,7 +124,7 @@ directly to place it on the clipboard.</p>
   }
 }
 </code></pre>
-<p translation-result="on">但是，对于更长的文本，浏览器需要时间来填充一个临时 textarea 元素并复制内容。在这种情况下，直接调用 <code>copy</code> 可能会失败，所以你可以通过调用 <code>beginCopy</code> 来预加载该文本。这个方法会返回一个 <code>PendingCopy</code> 对象，它有一个 <code>copy</code> 方法来真正复制缓存的文本。请注意，如果你调用过 <code>beginCopy</code> ，就必须在完成后调用 <code>destroy</code> 来清理这个 <code>PendingCopy</code> 对象。</p><p translation-origin="off">However, for longer text the browser needs time to fill an intermediate textarea element and copy
+<p translation-result="on">但是，对于更长的文本，浏览器需要时间来填充一个临时 textarea 元素并复制内容。在这种情况下，直接调用 <code>copy</code> 可能会失败，所以你可以通过调用 <code>beginCopy</code> 来预加载该文本。这个方法会返回一个 <code>PendingCopy</code> 对象，它有一个 <code>copy</code> 方法来真正复制缓存的文本。请注意，如果你调用过 <code>beginCopy</code>，就必须在完成后调用 <code>destroy</code> 来清理这个 <code>PendingCopy</code> 对象。</p><p translation-origin="off">However, for longer text the browser needs time to fill an intermediate textarea element and copy
 the content. Directly calling <code>copy</code> may fail in this case, so you can pre-load the text by calling
 <code>beginCopy</code>. This method returns a <code>PendingCopy</code> object that has a <code>copy</code> method to finish copying
 the text that was buffered. Please note, if you call <code>beginCopy</code>, you must clean up the

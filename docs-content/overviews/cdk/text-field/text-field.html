@@ -32,7 +32,7 @@ affecting the <code>&lt;textarea&gt;</code> have changed.</p>
         </h3>
       
         
-      <p translation-result="on"><code>AutofillMonitor</code> 是一个可注入的服务，它允许用户监控 <code>&lt;input&gt;</code> 的自动填充状态。它有一个 <code>monitor</code> 方法，可以接受一个要监视的元素，并返回带有 <code>target</code> 和 <code>isAutofilled</code> 属性的 <code>Observable</code>。每当指定 <code>&lt;input&gt;</code> 的自动填充状态发生变化时，该可观察对就会发出事件。你所监控的任何元素最终都应该通过调用 <code>stopMonitoring</code> ，并传入同一个元素来停止监控。</p><p translation-origin="off">The <code>AutofillMonitor</code> is an injectable service that allows the user to monitor the autofill state of
+      <p translation-result="on"><code>AutofillMonitor</code> 是一个可注入的服务，它允许用户监控 <code>&lt;input&gt;</code> 的自动填充状态。它有一个 <code>monitor</code> 方法，可以接受一个要监视的元素，并返回带有 <code>target</code> 和 <code>isAutofilled</code> 属性的 <code>Observable</code>。每当指定 <code>&lt;input&gt;</code> 的自动填充状态发生变化时，该可观察对就会发出事件。你所监控的任何元素最终都应该通过调用 <code>stopMonitoring</code>，并传入同一个元素来停止监控。</p><p translation-origin="off">The <code>AutofillMonitor</code> is an injectable service that allows the user to monitor the autofill state of
 an <code>&lt;input&gt;</code>. It has a <code>monitor</code> method that takes an element to monitor and returns an
 <code>Observable</code> of autofill event objects with a <code>target</code> and <code>isAutofilled</code> property. The observable
 emits every time the autofill state of the given <code>&lt;input&gt;</code> changes. Any element you monitor should
